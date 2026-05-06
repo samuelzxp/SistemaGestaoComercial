@@ -493,6 +493,33 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
 }
 
 /* ========================================= */
+/* VISÃO PERFORMANCE (PRODUTOS)              */
+/* ========================================= */
+
+.btn-time {
+    background-color: #1a1a1a;
+    color: #888888;
+    border: 1px solid #333333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.btn-time:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn-time.active {
+    background-color: var(--primary);
+    color: #000000;
+    border-color: var(--primary);
+}
+
+/* ========================================= */
 /* MEDIA QUERIES (RESPONSIVIDADE MASTER)     */
 /* ========================================= */
 

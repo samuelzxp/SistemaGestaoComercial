@@ -5,7 +5,13 @@ Chart.register(ChartDataLabels);
 const AppState = { 
     filtro: { loja: 'ALL', modelo: 'ALL', gestao: 'ALL', dataInicio: '', dataFim: '' },
     sort: { coluna: 'faturamento', direcao: 'desc' },
-    ranking: { ref: 'vendedor', metrica: 'REALIZADO', nomeMetrica: 'Geral' }
+    ranking: { ref: 'vendedor', metrica: 'REALIZADO', nomeMetrica: 'Geral' },
+    perf: { 
+        top10: { pdv: 'ALL', metrica: 'ALL' }, 
+        bottom10: { pdv: 'ALL', metrica: 'ALL' }, 
+        mesVigente: '', // NOVA TRAVA DE MÊS
+        meses: [] 
+    }
 };
 
 const CORES = {
@@ -119,8 +125,13 @@ function processarEDataRender() {
     renderGraficosHibridos(baseFiltrada); 
     renderTabelaUnidades(baseFiltrada, d.tempo);
 
-    // --- [VEND] VISÃO VENDEDORES ---
+    // --- VISÃO VENDEDORES ---
     renderVisaoVendedores(baseFiltrada);
+
+    // --- VISÃO PERFORMANCE (PRODUTOS) ---
+    if (typeof renderVisaoPerformance === 'function') {
+        renderVisaoPerformance();
+    }
 
     document.getElementById('last-update').innerText = d.ultima_atualizacao;
 }
@@ -138,7 +149,10 @@ function configurarEventosRanking() {
     }));
 
     document.querySelectorAll('.btn-ranking-metric').forEach(btn => btn.addEventListener('click', (e) => {
-        document.querySelectorAll('.btn-ranking-metric').forEach(b => b.classList.remove('active'));
+        // Trava: Ignora botões da aba de performance para evitar conflito
+        if (e.currentTarget.hasAttribute('data-target-chart')) return;
+        
+        document.querySelectorAll('.btn-ranking-metric:not([data-target-chart])').forEach(b => b.classList.remove('active'));
         e.currentTarget.classList.add('active');
         AppState.ranking.metrica = e.currentTarget.getAttribute('data-metric');
         AppState.ranking.nomeMetrica = e.currentTarget.innerText; 
@@ -349,14 +363,12 @@ function renderVisaoVendedores(baseUnidades) {
         renderPodioMetas(baseMetas);
         renderHeatmapScore(baseConsultores);
         
-        // Passamos 'd' inteiro para o cruzamento inteligente de dados (Gap do Gráfico Resolvido)
         desenharMelhoresRegioes('chart-melhores-regioes', baseConsultores, d);
     }
 }
 
-// Instâncias para os Gráficos Principais
 let chartRankingInstancia = null;
-let chartRegioesInstancia = null; // Instância recuperada da rosca
+let chartRegioesInstancia = null; 
 
 function desenharGraficoRanking(id, labels, valores, metrica) {
     const ctx = document.getElementById(id);
@@ -472,9 +484,6 @@ function renderHeatmapScore(base) {
     container.innerHTML = html;
 }
 
-// ==========================================
-// GRÁFICO DE ROSCA BLINDADO (TOP 5 REGIÕES)
-// ==========================================
 function desenharMelhoresRegioes(id, baseConsultores, d) {
     const ctx = document.getElementById(id);
     if (!ctx) return;
@@ -488,7 +497,6 @@ function desenharMelhoresRegioes(id, baseConsultores, d) {
             let regiaoStr = 'Sem Região';
             const idLojaStr = String(v['ID_LOJA']);
 
-            // Tentativa 1: Busca pela tabela de Regiões (O Padrão)
             if (d.regioes) {
                 const r = d.regioes.find(loc => String(loc['ID_LOJA']) === idLojaStr);
                 if (r && (r.LOCALIZACAO || r['cidade - estado'] || r.REGIAO)) {
@@ -496,7 +504,6 @@ function desenharMelhoresRegioes(id, baseConsultores, d) {
                 }
             }
             
-            // Tentativa 2 (Fallback Inteligente): Se a tabela de Regiões não existir, pega o Nome da Loja na tabela de Unidades
             if (regiaoStr === 'Sem Região' && d.unidades) {
                 const u = d.unidades.find(loc => String(loc['ID_LOJA']) === idLojaStr);
                 if (u) {
@@ -538,9 +545,6 @@ function desenharMelhoresRegioes(id, baseConsultores, d) {
     });
 }
 
-// ==========================================
-// MÓDULOS DA VISÃO UNIDADES
-// ==========================================
 function renderCardsUnidades(baseFiltrada, metas, tempo) {
     const diasTotalMes = tempo?.total ?? 30;
     const diaAtual = tempo?.dia ?? 1;
@@ -930,7 +934,7 @@ function renderMixDonut(id, dados, paleta) {
         type: 'doughnut',
         data: { labels: Object.keys(dados), datasets: [{ data: Object.values(dados), backgroundColor: Object.keys(dados).map(chave => paleta[chave] || '#444444'), borderColor: '#121212', borderWidth: 2 }] },
         options: { 
-            layout: { padding: { top: 10, bottom: 10, left: 25, right: 25 } }, radius: 85, cutout: 55, responsive: true, maintainAspectRatio: false,
+            layout: { padding: { top: 10, bottom: 5, left: 25, right: 25 } }, radius: 70, cutout: 55, responsive: true, maintainAspectRatio: false,
             plugins: { 
                 legend: { position: 'bottom', labels: { color: '#888', font: { size: 10 }, padding: 20, boxWidth: 10 } },
                 datalabels: { anchor: 'end', align: 'end', offset: 8, color: '#fff', font: { size: 10, weight: 'bold' },
@@ -960,7 +964,9 @@ function renderGauge(id, valor, labelId, atingIdeal) {
     const v = Math.min(100, Math.max(0, valor));
     const cor = obterCorGauge(valor, atingIdeal);
     document.getElementById(labelId).innerText = `${v.toFixed(1)}%`;
-    new Chart(ctx, { type: 'doughnut', data: { datasets: [{ data: [v, 100 - v], backgroundColor: [cor, CORES.rastro], borderWidth: 0 }] },
+    new Chart(ctx, { 
+        type: 'doughnut', 
+        data: { datasets: [{ data: [v, 100 - v], backgroundColor: [cor, CORES.rastro], borderWidth: 0 }] },
         options: { cutout: '88%', responsive: true, maintainAspectRatio: false, plugins: { datalabels: { display: false }, tooltip: { enabled: false } } }
     });
 }
@@ -992,7 +998,7 @@ function fmt(v) { return new Intl.NumberFormat('pt-BR', { style: 'currency', cur
 function atualizarRelogio() { const el = document.getElementById('relogio'); if (el) el.innerText = new Date().toLocaleTimeString(); }
 
 // ==========================================
-// ROTEAMENTO SPA (MODIFICADO PARA A ABA VENDEDORES)
+// ROTEAMENTO SPA (CONTROLE DAS ABAS)
 // ==========================================
 function iniciarRoteamento() {
     const botoesMenu = document.querySelectorAll('.nav-item[data-target]');
@@ -1041,4 +1047,350 @@ function iniciarRoteamento() {
     });
 
     aplicarRegraDeFiltros('visao-geral');
+}
+
+// ==========================================
+// [PERF] MÓDULOS DA VISÃO PERFORMANCE (PRODUTOS)
+// ==========================================
+
+let chartTop10 = null;
+let chartBottom10 = null;
+let chartTier = null;
+let chartTempo = null;
+let agrupamentoTempoAtual = 'mes'; 
+let filtrosPerfInicializados = false; 
+
+function renderVisaoPerformance() {
+    const d = dadosDashboard;
+    if (!d.produtos || !d.historico_dias) return; 
+
+    const baseProdutos = d.produtos;
+    const baseTempo = d.historico_dias;
+
+    inicializarFiltrosPerformance(baseProdutos, d.tempo);
+
+    desenharTop10(baseProdutos);
+    desenharBottom10(baseProdutos);
+    desenharTiers(baseProdutos);
+    
+    document.querySelectorAll('.btn-time').forEach(btn => {
+        btn.onclick = null; 
+        btn.onclick = (e) => {
+            document.querySelectorAll('.btn-time').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            agrupamentoTempoAtual = e.target.getAttribute('data-agrupamento');
+            desenharTendenciaTemporal(baseTempo);
+        };
+    });
+    desenharTendenciaTemporal(baseTempo);
+}
+
+function inicializarFiltrosPerformance(base, tempoObj) {
+    if (filtrosPerfInicializados) return;
+    
+    // Calcula o Mês Vigente Dinamicamente
+    const mesesDisponiveis = [...new Set(base.map(i => i.AnoMes))].filter(Boolean).sort();
+    let mesAtualStr = String(tempoObj.mes).padStart(2, '0') + '/' + String(tempoObj.ano).slice(-2);
+    if (!mesesDisponiveis.includes(mesAtualStr) && mesesDisponiveis.length > 0) {
+        mesAtualStr = mesesDisponiveis[mesesDisponiveis.length - 1]; 
+    }
+
+    AppState.perf = { 
+        top10: { pdv: 'ALL', metrica: 'ALL' }, 
+        bottom10: { pdv: 'ALL', metrica: 'ALL' }, 
+        mesVigente: mesAtualStr, // <-- TRAVA DO MÊS VIGENTE
+        meses: [mesAtualStr] 
+    };
+    
+    const pdvs = [...new Set(base.map(i => i.PDV))].filter(Boolean).sort();
+    
+    // Filtros de PDV (Exclusivos)
+    ['top10', 'bottom10'].forEach(id => {
+        const sel = document.getElementById(`filtro-pdv-${id}`);
+        if(sel) {
+            pdvs.forEach(p => sel.add(new Option(p, p)));
+            sel.addEventListener('change', (e) => {
+                AppState.perf[id].pdv = e.target.value;
+                if(id === 'top10') desenharTop10(base);
+                else desenharBottom10(base);
+            });
+        }
+    });
+
+    // Filtros de Métrica/Categoria (Exclusivos)
+    document.querySelectorAll('.btn-perf-metric').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const targetChart = e.target.getAttribute('data-target-chart'); 
+            const val = e.target.getAttribute('data-metric');
+            
+            AppState.perf[targetChart].metrica = val;
+            
+            // Apaga o 'active' apenas dos botões que pertencem àquele quadrante
+            document.querySelectorAll(`.btn-perf-metric[data-target-chart="${targetChart}"]`).forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            
+            if(targetChart === 'top10') desenharTop10(base);
+            else desenharBottom10(base);
+        });
+    });
+
+    // Menu Dropdown Customizado de Meses (Tiers)
+    const containerMes = document.getElementById('container-filtro-mes-tier');
+    if (containerMes) {
+        let optionsHtml = '';
+        mesesDisponiveis.forEach(m => {
+            const checked = m === mesAtualStr ? 'checked' : '';
+            optionsHtml += `<label style="display: flex; gap: 8px; padding: 6px; cursor: pointer; color: #fff; font-size: 0.75rem;"><input type="checkbox" value="${m}" class="cb-filtro-mes-tier" ${checked}> ${m}</label>`;
+        });
+
+        containerMes.innerHTML = `
+            <div id="btn-drop-mes-tier" style="background: #1a1a1a; border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; cursor: pointer; color: var(--text-main); font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-weight: 600; min-width: 100px;">
+                <span id="lbl-drop-mes-tier">Mês: ${mesAtualStr}</span>
+                <span class="material-symbols-outlined" style="font-size: 16px;">expand_more</span>
+            </div>
+            <div id="list-drop-mes-tier" style="display: none; position: absolute; top: 100%; right: 0; width: 140px; background: #121212; border: 1px solid var(--border); border-radius: 6px; margin-top: 5px; max-height: 200px; overflow-y: auto; padding: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.8);">
+                ${optionsHtml}
+            </div>
+        `;
+
+        const btnDrop = document.getElementById('btn-drop-mes-tier');
+        const listDrop = document.getElementById('list-drop-mes-tier');
+        const cbs = document.querySelectorAll('.cb-filtro-mes-tier');
+        const lbl = document.getElementById('lbl-drop-mes-tier');
+
+        btnDrop.addEventListener('click', () => {
+            listDrop.style.display = listDrop.style.display === 'none' ? 'block' : 'none';
+        });
+
+        cbs.forEach(cb => cb.addEventListener('change', () => {
+            const selecionados = Array.from(cbs).filter(c => c.checked).map(c => c.value);
+            
+            if (selecionados.length === 0) {
+                cb.checked = true;
+                return;
+            }
+            
+            AppState.perf.meses = selecionados;
+            lbl.innerText = selecionados.length > 1 ? `Meses (${selecionados.length})` : `Mês: ${selecionados[0]}`;
+            desenharTiers(base);
+        }));
+
+        document.addEventListener('click', (e) => {
+            if(!containerMes.contains(e.target)) listDrop.style.display = 'none';
+        });
+    }
+
+    filtrosPerfInicializados = true;
+}
+
+function desenharTop10(base) {
+    // 0. TRAVA DE SEGURANÇA: Isola os dados APENAS no mês vigente
+    let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
+
+    // 1. Filtro de PDV
+    if (AppState.perf.top10.pdv !== 'ALL') {
+        baseFiltrada = baseFiltrada.filter(i => i.PDV === AppState.perf.top10.pdv);
+    }
+    
+    // 2. Filtro de Métrica (Categoria) Normalizado e Cego a erros do Excel
+    if (AppState.perf.top10.metrica !== 'ALL') {
+        const metricaDesejada = String(AppState.perf.top10.metrica).trim().toUpperCase();
+        baseFiltrada = baseFiltrada.filter(i => String(i.CATEGORIA || '').trim().toUpperCase() === metricaDesejada);
+    }
+
+    const agrupado = {};
+    baseFiltrada.forEach(i => {
+        const nome = i.PRODUTO || 'Desconhecido';
+        agrupado[nome] = (agrupado[nome] || 0) + (i.REALIZADO || 0);
+    });
+
+    const top10 = Object.entries(agrupado).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+    const ctx = document.getElementById('chart-top10-produtos');
+    if (!ctx) return;
+    if (chartTop10) chartTop10.destroy();
+
+    chartTop10 = new Chart(ctx, {
+        type: 'bar',
+        data: { labels: top10.map(i => i[0]), datasets: [{ data: top10.map(i => i[1]), backgroundColor: CORES.ace, borderRadius: 4, barThickness: 12 }] },
+        options: {
+            indexAxis: 'y', responsive: true, maintainAspectRatio: false, 
+            layout: { padding: { right: 80, left: 2 } }, 
+            plugins: { 
+                legend: { display: false }, 
+                datalabels: { 
+                    clip: false, 
+                    anchor: 'end', align: 'right', color: '#c6c6c6', font: { size: 9, weight: 'bold' }, 
+                    formatter: v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }) 
+                } 
+            },
+            scales: { 
+                x: { display: false, grace: '40%' }, 
+                y: { 
+                    grid: { display: false }, 
+                    ticks: { 
+                        color: '#fff', font: { size: 9 }, crossAlign: 'near', align: 'start',
+                        callback: function(value) {
+                            let label = this.getLabelForValue(value) || '';
+                            return label.length > 25 ? label.substr(0, 25) + '...' : label; 
+                        }
+                    } 
+                } 
+            }
+        }
+    });
+}
+
+function desenharBottom10(base) {
+    // 0. TRAVA DE SEGURANÇA: Isola os dados APENAS no mês vigente
+    let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
+
+    // 1. Filtro de PDV
+    if (AppState.perf.bottom10.pdv !== 'ALL') {
+        baseFiltrada = baseFiltrada.filter(i => i.PDV === AppState.perf.bottom10.pdv);
+    }
+    
+    // 2. Filtro de Métrica (Categoria) Normalizado e Cego a erros do Excel
+    if (AppState.perf.bottom10.metrica !== 'ALL') {
+        const metricaDesejada = String(AppState.perf.bottom10.metrica).trim().toUpperCase();
+        baseFiltrada = baseFiltrada.filter(i => String(i.CATEGORIA || '').trim().toUpperCase() === metricaDesejada);
+    }
+
+    const agrupado = {};
+    baseFiltrada.forEach(i => {
+        const nome = i.PRODUTO || 'Desconhecido';
+        agrupado[nome] = (agrupado[nome] || 0) + (i.REALIZADO || 0);
+    });
+
+    // Pega os piores que venderam (ignorando quem vendeu zero)
+    const bottom10 = Object.entries(agrupado).filter(i => i[1] > 0).sort((a, b) => a[1] - b[1]).slice(0, 10);
+
+    const ctx = document.getElementById('chart-bottom10-produtos');
+    if (!ctx) return;
+    if (chartBottom10) chartBottom10.destroy();
+
+    chartBottom10 = new Chart(ctx, {
+        type: 'bar',
+        data: { labels: bottom10.map(i => i[0]), datasets: [{ data: bottom10.map(i => i[1]), backgroundColor: CORES.prt, borderRadius: 4, barThickness: 12 }] },
+        options: {
+            indexAxis: 'y', responsive: true, maintainAspectRatio: false, 
+            layout: { padding: { right: 80, left: 2 } }, 
+            plugins: { 
+                legend: { display: false }, 
+                datalabels: { 
+                    clip: false, 
+                    anchor: 'end', align: 'right', color: '#c6c6c6', font: { size: 9, weight: 'bold' }, 
+                    formatter: v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }) 
+                } 
+            },
+            scales: { 
+                x: { display: false, grace: '40%' }, 
+                y: { 
+                    grid: { display: false }, 
+                    ticks: { 
+                        color: '#fff', font: { size: 9 }, crossAlign: 'near', align: 'start',
+                        callback: function(value) {
+                            let label = this.getLabelForValue(value) || '';
+                            return label.length > 25 ? label.substr(0, 25) + '...' : label; 
+                        }
+                    } 
+                } 
+            }
+        }
+    });
+}
+
+function desenharTiers(base) {
+    const baseFiltrada = base.filter(i => AppState.perf.meses.includes(i.AnoMes));
+
+    const ordemTiers = ['Low', 'Mid-E', 'Mid-S', 'High', 'Super High'];
+    const metricas = { 'Low': { qtd: 0, fat: 0 }, 'Mid-E': { qtd: 0, fat: 0 }, 'Mid-S': { qtd: 0, fat: 0 }, 'High': { qtd: 0, fat: 0 }, 'Super High': { qtd: 0, fat: 0 } };
+
+    baseFiltrada.forEach(i => {
+        const t = i.TIER;
+        if (metricas[t] !== undefined) {
+            metricas[t].qtd += (i.QTD_FAT || 0);
+            metricas[t].fat += (i.REALIZADO || 0);
+        }
+    });
+
+    const ctx = document.getElementById('chart-tier-combo');
+    if (!ctx) return;
+    if (chartTier) chartTier.destroy();
+
+    chartTier = new Chart(ctx, {
+        data: {
+            labels: ordemTiers,
+            datasets: [
+                { type: 'bar', label: 'Qtd Aparelhos', data: ordemTiers.map(t => metricas[t].qtd), backgroundColor: '#895129', borderRadius: 4, yAxisID: 'y' },
+                { type: 'line', label: 'Faturamento', data: ordemTiers.map(t => metricas[t].fat), borderColor: CORES.primary, backgroundColor: CORES.primary, borderWidth: 3, pointRadius: 4, yAxisID: 'y1' }
+            ]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { 
+                legend: { display: true, position: 'bottom', labels: { color: '#888', font: { size: 10 }, boxWidth: 12 } },
+                datalabels: {
+                    color: '#fff', font: { size: 10, weight: 'bold' },
+                    formatter: (v, ctx) => {
+                        if (v === 0) return '';
+                        return ctx.dataset.type === 'line' ? new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact' }).format(v) : v;
+                    },
+                    align: (ctx) => ctx.dataset.type === 'line' ? 'top' : 'center',
+                    anchor: (ctx) => ctx.dataset.type === 'line' ? 'bottom' : 'center'
+                }
+            },
+            scales: {
+                x: { grid: { display: false }, ticks: { color: '#888', font: { size: 10 } } },
+                y: { display: false, position: 'left' },
+                y1: { display: false, position: 'right', grid: { display: false } }
+            }
+        }
+    });
+}
+
+function desenharTendenciaTemporal(baseTempo) {
+    if (baseTempo.length === 0) return;
+
+    const agrupado = {};
+    
+    baseTempo.forEach(dia => {
+        const dataOriginal = new Date(dia.data + 'T12:00:00'); 
+        let chaveLabel = '';
+
+        if (agrupamentoTempoAtual === 'mes') {
+            chaveLabel = dataOriginal.toLocaleString('pt-BR', { month: 'short', year: '2-digit' }).toUpperCase();
+        } 
+        else if (agrupamentoTempoAtual === 'quinzena') {
+            const mes = dataOriginal.toLocaleString('pt-BR', { month: 'short' }).toUpperCase();
+            const quinzena = dataOriginal.getDate() <= 15 ? '1ªQ' : '2ªQ';
+            chaveLabel = `${quinzena} ${mes}`;
+        } 
+
+        agrupado[chaveLabel] = (agrupado[chaveLabel] || 0) + (dia.faturamento || 0);
+    });
+
+    const ctx = document.getElementById('chart-tendencia-tempo');
+    if (!ctx) return;
+    if (chartTempo) chartTempo.destroy();
+
+    chartTempo = new Chart(ctx, {
+        type: 'line',
+        data: { 
+            labels: Object.keys(agrupado), 
+            datasets: [{ label: 'Faturamento', data: Object.values(agrupado), borderColor: CORES.primary, borderWidth: 3, pointBackgroundColor: '#121212', pointBorderColor: CORES.primary, pointRadius: 4, pointHoverRadius: 6, fill: true, backgroundColor: 'rgba(248, 181, 24, 0.1)', tension: 0.3 }] 
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            layout: { padding: { top: 20 } },
+            plugins: {
+                legend: { display: false },
+                datalabels: { display: true, align: 'top', color: '#c6c6c6', font: { size: 10, weight: 'bold' }, formatter: v => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', notation: 'compact' }).format(v) }
+            },
+            scales: {
+                x: { grid: { color: '#2a2a2a', borderDash: [4, 4] }, ticks: { color: '#888', font: { size: 9 } } },
+                y: { display: false, min: 0, grace: '20%' }
+            }
+        }
+    });
 }

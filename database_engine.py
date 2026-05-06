@@ -31,6 +31,7 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         df_vendedores = pd.read_excel(CAMINHO_DIM, sheet_name='Vendedores')
         df_planos = pd.read_excel(CAMINHO_DIM, sheet_name='Planos')
         df_regioes = pd.read_excel(CAMINHO_DIM, sheet_name='Regiões')
+        df_produtos = pd.read_excel(CAMINHO_DIM, sheet_name='Dim_produtos') #* Adicionado para Visão Performance
         
         #* 2. Carga das Vendas Fato
         df_cat = pd.read_excel(CAMINHO_DB, sheet_name='F_Vendas_cat')
@@ -67,13 +68,15 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
             'vendas_snapshot': df_snapshot,
             'vendas_plano': df_plano,
             'vendas_prod': df_prod,
+            'vendas_cat_historico': df_cat, #* Adicionado para Análise Quadrimestral
             'dim_lojas': df_lojas,
             'dim_vendedores': df_vendedores,
             'dim_planos': df_planos,
-            'dim_regioes': df_regioes  #* Adicionado para suprir o Quadrante 4 (Ofensores por Região)
+            'dim_regioes': df_regioes,
+            'dim_produtos': df_produtos     #* Adicionado para Tiers de Produtos
         }
 
-        print(f"✅ Sucesso: {len(df_snapshot)} linhas processadas.")
+        print(f"✅ Sucesso: {len(df_snapshot)} linhas processadas no snapshot do mês.")
         return db, metas_pdv, metas_vend
 
     except Exception as e:

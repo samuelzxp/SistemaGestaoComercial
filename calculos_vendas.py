@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime
 from calendar import monthrange
 import json
-
+import re  
 #TODO ==> 1. SISTEMA DE TEMPO E MÉTRICAS DE CALENDÁRIO
 #? Função central para controle de períodos e cálculos de projeção (Mês Vigente)
 def obter_metricas_tempo():
@@ -201,7 +201,7 @@ def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
     df_snap = db['vendas_snapshot'].copy()
     df_lojas = db['dim_lojas'].copy()
 
-    #* [NOVO] TRATAMENTO: LIMPEZA DE DADOS (DEDUPLICAÇÃO)
+    #* TRATAMENTO: LIMPEZA DE DADOS (DEDUPLICAÇÃO)
     df_snap['VENDEDOR'] = df_snap['VENDEDOR'].astype(str).str.replace(r'\s*\(\s*\d+\s*\)$', '', regex=True).str.strip().str.upper()
 
     #* 1. Agrupamento Básico do Vendedor
@@ -265,6 +265,117 @@ def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
 
     return base_vend.to_dict(orient='records')
 
+#TODO ==> 4.6 PERFORMANCE DE PRODUTOS E TEMPO (NOVO MOTOR DE LIMPEZA INTELIGENTE)
+#? Função avançada para extrair o Modelo Canônico e a Capacidade (GB/RAM)
+def limpar_nome_produto(nome_sujo):
+    if pd.isna(nome_sujo):
+        return "DESCONHECIDO"
+        
+    nome = str(nome_sujo).upper().strip().replace('"', '')
+    
+    # 1. Remove ID no final (ex: (1422))
+    nome = re.sub(r'\s*\(\s*\d+\s*\)\s*$', '', nome)
+    
+    # 2. Tratamento Inteligente do Traço (-)
+    # Mantém a 1ª parte (Modelo) e só guarda as partes seguintes se tiverem números (ex: "- 128GB")
+    if '-' in nome:
+        partes = nome.split('-')
+        partes_mantidas = [partes[0]]
+        for p in partes[1:]:
+            if re.search(r'\d', p) or 'GB' in p or 'RAM' in p:
+                partes_mantidas.append(p)
+        nome = ' '.join(partes_mantidas)
+        
+    # 3. Remove termos genéricos que sujam o agrupamento
+    termos_remover = [
+        r'\bCELULAR\b', r'\bSMARTPHONE\b', r'\bBARRINHA\b', r'\bTABLET\b',
+        r'\bFONE BLUETOOTH\b', r'\bVITRINE\b', r'\bSEMINOVO\b', r'\bSEMI NOVO\b',
+        r'\bANATEL\b', r'\bLOJA\b', r'\bKIT\b', r'\bINTERNET VIA SATELITE\b'
+    ]
+    for termo in termos_remover:
+        nome = re.sub(termo, '', nome)
+        
+    # 4. Filtro de Cores (Dicionário Reverso) - Apaga a cor onde quer que ela esteja
+    cores = [
+        'PRETO', 'BRANCO', 'AZUL', 'VERDE', 'CINZA', 'PRATA', 'DOURADO', 'ROSA',
+        'ROXO', 'LARANJA', 'COBRE', 'GRAFITE', 'LILAC', 'VIOLET', 'PURPLE',
+        'RED', 'RUBY', 'ORANGE', 'YELLOW', 'AMARILLO', 'NEGRO', 'BLANCO',
+        'CAFE', 'LILA', 'CORAL', 'BLACK', 'WHITE', 'BLUE', 'GREEN', 'GREY',
+        'GRAY', 'SILVER', 'GOLD', 'TITANIUM', 'MIDNIGHT', 'STARLIGHT', 'OCEAN',
+        'MAGIC', 'SKIN', 'ORBIT', 'STARTRAIL', 'GLITTERY', 'SWAN', 'FOREST',
+        'PEACOCK', 'KINGFISHER', 'PARROT', 'LIGHTNING', 'STARRY', 'LUNAR',
+        'SANDY', 'ICE', 'MINT', 'WAVE', 'SANDSTONE', 'AURORA', 'STARLIT',
+        'MARBLE', 'VOYAGE', 'SAFARI', 'WILDERNESS', 'BEACH', 'OBSIDIAN', 'MIST'
+    ]
+    regex_cores = r'\b(?:' + '|'.join(cores) + r')\b'
+    nome = re.sub(regex_cores, '', nome)
+    
+    # 5. Padroniza os separadores e limpa espaços duplos
+    nome = nome.replace('/', ' ').replace('\\', ' ')
+    nome = re.sub(r'\s+', ' ', nome).strip()
+    
+    return nome if nome else "PRODUTO SEM NOME"
+
+#? Função auxiliar para definir o Tier
+def classificar_tier(preco):
+    if preco < 1100: return 'Low'
+    elif preco < 1500: return 'Mid-E'
+    elif preco < 2000: return 'Mid-S'
+    elif preco <= 4000: return 'High'
+    else: return 'Super High'
+
+#? Motor para cruzamento de Produtos e Tiers
+def preparar_base_produtos(df_dim_produtos, df_fatos_produtos):
+    if df_dim_produtos.empty or df_fatos_produtos.empty:
+        return []
+
+    #* Preparação da Tabela da Verdade
+    df_dim = df_dim_produtos.copy()
+    df_dim['PRODUTO_LIMPO'] = df_dim['PRODUTO'].apply(limpar_nome_produto)
+    
+    if df_dim['PREÇO'].dtype == 'object':
+        df_dim['PREÇO'] = df_dim['PREÇO'].apply(limpar_moeda)
+        
+    dim_agrupada = df_dim.groupby('PRODUTO_LIMPO')['PREÇO'].mean().reset_index()
+    dim_agrupada['TIER'] = dim_agrupada['PREÇO'].apply(classificar_tier)
+    
+    #* Preparação da Tabela de Vendas
+    df_fatos = df_fatos_produtos.copy()
+    df_fatos['PRODUTO_LIMPO'] = df_fatos['PRODUTO'].apply(limpar_nome_produto)
+    
+    #* Merge
+    df_final = df_fatos.merge(dim_agrupada[['PRODUTO_LIMPO', 'TIER']], on='PRODUTO_LIMPO', how='left')
+    df_final['TIER'] = df_final['TIER'].fillna('Sem Categoria')
+    
+    colunas_finais = ['AnoMes', 'PDV', 'CATEGORIA', 'PRODUTO_LIMPO', 'TIER', 'QTD_FAT', 'REALIZADO']
+    colunas_existentes = [col for col in colunas_finais if col in df_final.columns]
+    
+    df_dashboard = df_final[colunas_existentes].copy()
+    df_dashboard.rename(columns={'PRODUTO_LIMPO': 'PRODUTO'}, inplace=True)
+    
+    #* Blindagem: Garante que o AnoMes volte a ser String, evitando erro de Timestamp
+    if 'AnoMes' in df_dashboard.columns:
+        df_dashboard['AnoMes'] = df_dashboard['AnoMes'].astype(str)
+        
+    return df_dashboard.to_dict(orient='records')
+
+#? Motor para análise Quadrimestral via F_vendas_cat
+def preparar_tendencia_temporal(df_fatos_cat):
+    if df_fatos_cat.empty or 'Date' not in df_fatos_cat.columns:
+        return []
+        
+    df = df_fatos_cat.copy()
+    df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
+    
+    if df['REALIZADO'].dtype == 'object':
+        df['REALIZADO'] = df['REALIZADO'].apply(limpar_moeda)
+        
+    agrupado = df.groupby(df['Date'].dt.strftime('%Y-%m-%d'))['REALIZADO'].sum().reset_index()
+    agrupado.rename(columns={'Date': 'data', 'REALIZADO': 'faturamento'}, inplace=True)
+    agrupado = agrupado.sort_values('data')
+    
+    return agrupado.to_dict(orient='records')
+
 #TODO ==> 5. EXPORTADOR DE DADOS (DADOS.JS)
 #? Compila todas as métricas em um JSON estruturado para o Frontend
 def exportar_dados_dashboard(db, df_metas_pdv, df_metas_vend, caminho_destino='dashboard/dados.js'):
@@ -275,7 +386,6 @@ def exportar_dados_dashboard(db, df_metas_pdv, df_metas_vend, caminho_destino='d
         #* Prepara a dimensão Regiões para o JSON (Quadrante 4)
         df_regioes = db.get('dim_regioes', pd.DataFrame()).copy()
         if not df_regioes.empty and 'ID LOJA' in df_regioes.columns:
-            # Padroniza nomes das chaves para o JavaScript não falhar
             df_regioes.rename(columns={'ID LOJA': 'ID_LOJA', 'LOCALIZAÇÃO': 'LOCALIZACAO'}, inplace=True)
             df_regioes['ID_LOJA'] = df_regioes['ID_LOJA'].astype(str)
             regioes_export = df_regioes.to_dict(orient='records')
@@ -290,12 +400,16 @@ def exportar_dados_dashboard(db, df_metas_pdv, df_metas_vend, caminho_destino='d
             "unidades": preparar_base_unidades_completa(db, df_metas_pdv),
             "analise_geral": preparar_analise_geral_completa(db),
             "regioes": regioes_export,
-            "vendedores": preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend)
+            "vendedores": preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend),
+            
+            #* Adição da visão de Performance e Tempo ao Payload
+            "produtos": preparar_base_produtos(db.get('dim_produtos', pd.DataFrame()), db.get('vendas_prod', pd.DataFrame())),
+            "historico_dias": preparar_tendencia_temporal(db.get('vendas_cat_historico', pd.DataFrame()))
         }
         
-        #* Escrita física do arquivo JS
+        #* Escrita física do arquivo JS (Blindado contra Timestamp)
         with open(caminho_destino, 'w', encoding='utf-8') as f:
-            f.write(f"const dadosDashboard = {json.dumps(payload, indent=4, ensure_ascii=False)};")
+            f.write(f"const dadosDashboard = {json.dumps(payload, indent=4, ensure_ascii=False, default=str)};")
         
         print(f"✅ Sucesso: Métricas processadas e exportadas para {caminho_destino}")
         return True

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
-    <!-- Bibliotecas Base do Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 </head>
@@ -234,14 +233,10 @@
                 </div>
             </section>
 
-            <!-- ========================================== -->
-            <!-- BLOCO 4: VISÃO VENDEDORES (GRID 2x2)       -->
-            <!-- ========================================== -->
             <section id="visao-vendedores" class="view-section">
                 
                 <div class="vendedores-grid-2x2">
                     
-                    <!-- 1º QUADRANTE: Ranking Dinâmico -->
                     <div class="ranking-chart-box">
                         <div class="ranking-header">
                             <h3 id="ranking-title" class="section-title" style="color: #fff;">Ranking Dinâmico</h3>
@@ -252,7 +247,6 @@
                                 </div>
                                 <span class="divider-vertical"></span>
                                 <div class="button-group">
-                                    <!-- A métrica base continua sendo o Realizado, mas a exibição (label) é Geral -->
                                     <button class="btn-ranking-metric active" data-metric="REALIZADO">Geral</button>
                                     <button class="btn-ranking-metric" data-metric="CEL">CEL</button>
                                     <button class="btn-ranking-metric" data-metric="ACE">ACE</button>
@@ -268,7 +262,6 @@
                         </div>
                     </div>
 
-                    <!-- 2º QUADRANTE: Pódio de Metas (Top 3) -->
                     <div class="ranking-chart-box" id="quad-metas">
                         <div class="ranking-header" style="flex-direction: row; justify-content: space-between; align-items: flex-start;">
                             <div>
@@ -276,7 +269,6 @@
                                 <span style="font-size: 0.75rem; color: var(--text-dim);">Média das metas obrigatórias (Geral, Acessórios e Protect)</span>
                             </div>
                             
-                            <!-- Filtro Múltiplo (Nativo). Segure CTRL para selecionar vários -->
                             <div style="display: flex; flex-direction: column; gap: 4px;">
                                 <label style="font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Filtro de Lojas</label>
                                 <select id="filtro-metas-interno" class="select-dark" multiple size="3" style="background: #1a1a1a; padding: 4px 8px; border-radius: 6px; min-width: 140px; height: 50px;">
@@ -285,10 +277,8 @@
                             </div>
                         </div>
                         
-                        <!-- O Esqueleto do Pódio -->
                         <div class="podio-container" id="container-podio">
                             
-                            <!-- 2º LUGAR -->
                             <div class="podio-item pos-2">
                                 <div class="podio-avatar">🥈</div>
                                 <div class="podio-nome" id="podio-nome-2">--</div>
@@ -296,7 +286,6 @@
                                 <div class="podio-barra"></div>
                             </div>
 
-                            <!-- 1º LUGAR -->
                             <div class="podio-item pos-1">
                                 <div class="podio-avatar">🥇</div>
                                 <div class="podio-nome" id="podio-nome-1">--</div>
@@ -304,7 +293,6 @@
                                 <div class="podio-barra"></div>
                             </div>
 
-                            <!-- 3º LUGAR -->
                             <div class="podio-item pos-3">
                                 <div class="podio-avatar">🥉</div>
                                 <div class="podio-nome" id="podio-nome-3">--</div>
@@ -315,19 +303,15 @@
                         </div>
                     </div>
                     
-                    <!-- 3º QUADRANTE: Score de Performance -->
                     <div class="ranking-chart-box" id="quad-score">
                         <div class="ranking-header">
                             <h3 class="section-title" style="color: var(--primary);">Score de Performance (Top 5)</h3>
                             <span style="font-size: 0.75rem; color: var(--text-dim);">Matriz avaliando Geral, Acessórios, Protect, Ticket e P.A.</span>
                         </div>
-                        <!-- Removido o estilo de rolagem (overflow-y) -->
                         <div class="canvas-wrapper-ranking" id="container-heatmap">
-                            <!-- O JS injetará a tabela de calor aqui -->
                         </div>
                     </div>
 
-                    <!-- 4º QUADRANTE: Mapa de Regiões -->
                     <div class="ranking-chart-box" id="quad-regioes">
                         <div class="ranking-header">
                             <h3 class="section-title" style="color: var(--success);">Top Melhores Regiões</h3>
@@ -342,8 +326,78 @@
             </section>
 
             <section id="visao-performance" class="view-section">
-                <div class="kpi-card" style="justify-content: center;">
-                    <b style="color: var(--text-dim);">Painel de Performance em Construção...</b>
+                <div class="vendedores-grid-2x2">
+                    
+                    <div class="ranking-chart-box">
+                        <div class="ranking-header">
+                            <h3 style="font-size: 0.9rem; color: #fff; margin-bottom: 5px;">Top 10 - Melhores Produtos</h3>
+                            <div class="ranking-controls-inline">
+                                <select id="filtro-pdv-top10" class="select-dark" style="padding: 4px; border-radius: 4px; font-size: 0.7rem;">
+                                    <option value="ALL">Escolha o PDV</option>
+                                </select>
+                                <span class="divider-vertical"></span>
+                                <div class="button-group">
+                                    <button class="btn-perf-metric btn-ranking-metric active" data-target-chart="top10" data-metric="ALL">Geral</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="top10" data-metric="CEL">CEL</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="top10" data-metric="ACE">ACE</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="top10" data-metric="PRT">PRT</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="top10" data-metric="SOM">SOM</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper-ranking">
+                            <canvas id="chart-top10-produtos"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="ranking-chart-box">
+                        <div class="ranking-header">
+                            <h3 style="font-size: 0.9rem; color: #fff; margin-bottom: 5px;">Bottom 10 - Piores Produtos</h3>
+                            <div class="ranking-controls-inline">
+                                <select id="filtro-pdv-bottom10" class="select-dark" style="padding: 4px; border-radius: 4px; font-size: 0.7rem;">
+                                    <option value="ALL">Escolha o PDV</option>
+                                </select>
+                                <span class="divider-vertical"></span>
+                                <div class="button-group">
+                                    <button class="btn-perf-metric btn-ranking-metric active" data-target-chart="bottom10" data-metric="ALL">Geral</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="bottom10" data-metric="CEL">CEL</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="bottom10" data-metric="ACE">ACE</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="bottom10" data-metric="PRT">PRT</button>
+                                    <button class="btn-perf-metric btn-ranking-metric" data-target-chart="bottom10" data-metric="SOM">SOM</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper-ranking">
+                            <canvas id="chart-bottom10-produtos"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="ranking-chart-box">
+                        <div class="ranking-header" style="flex-direction: row; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h3 style="font-size: 0.9rem; color: #fff;">Performance por Tier</h3>
+                                <span style="font-size: 0.7rem; color: var(--text-dim);">Qtd (Barras) vs R$ (Linha)</span>
+                            </div>
+                            <div id="container-filtro-mes-tier" style="position: relative; z-index: 100;"></div>
+                        </div>
+                        <div class="canvas-wrapper-ranking">
+                            <canvas id="chart-tier-combo"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="ranking-chart-box">
+                        <div class="ranking-header" style="flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h3 style="font-size: 0.9rem; color: #fff;">Evolução Quadrimestral</h3>
+                            <div class="button-group-time" style="display: flex; gap: 5px;">
+                                <button class="btn-time active" data-agrupamento="mes">Mensal</button>
+                                <button class="btn-time" data-agrupamento="quinzena">Quinzenal</button>
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper-ranking">
+                            <canvas id="chart-tendencia-tempo"></canvas>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
