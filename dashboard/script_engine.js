@@ -43,24 +43,32 @@ document.addEventListener('DOMContentLoaded', () => {
     
     atualizarRelogio();
     setInterval(atualizarRelogio, 1000);
-    setTimeout(() => processarEDataRender(), 150);
+    
+    // Timeout para aguardar o auth.js validar a sessão do Firebase
+    setTimeout(() => { if (window.usuarioLogado) processarEDataRender(); }, 500);
     
     iniciarRoteamento();
 });
 
-window.addEventListener('resize', () => processarEDataRender());
+// Só re-renderiza se houver um usuário logado validado
+window.addEventListener('resize', () => { if (window.usuarioLogado) processarEDataRender(); });
 
 // ==========================================
 // MOTOR DE FILTRAGEM GLOBAL (MACRO)
 // ==========================================
-function filtrarBase(base) {
+// Adicionado o parâmetro 'ignoreStoreFilter' para a visão da Rede
+function filtrarBase(base, ignoreStoreFilter = false) {
     if (!base) return [];
     return base.filter(item => {
         const id = Number(item['ID TIPO']);
         const modeloItem = (id === 1 || id === 2) ? 'LOJA' : 'QUIOSQUE';
         const gestaoItem = (id === 1 || id === 3) ? 'PRÓPRIA' : 'FRANQUIA';
 
-        const matchLoja = AppState.filtro.loja === 'ALL' || String(item['ID_LOJA']) === String(AppState.filtro.loja);
+        let matchLoja = true;
+        if (!ignoreStoreFilter) {
+            matchLoja = AppState.filtro.loja === 'ALL' || String(item['ID_LOJA']) === String(AppState.filtro.loja);
+        }
+        
         const matchModelo = AppState.filtro.modelo === 'ALL' || modeloItem === AppState.filtro.modelo;
         const matchGestao = AppState.filtro.gestao === 'ALL' || gestaoItem === AppState.filtro.gestao;
 
@@ -72,12 +80,54 @@ function filtrarBase(base) {
 // ORQUESTRADOR DE RENDERIZAÇÃO
 // ==========================================
 function processarEDataRender() {
-    const d = dadosDashboard;
-    const baseFiltrada = filtrarBase(d.unidades);
-    const atingIdeal = d.tempo?.ideal ?? 0;
+    // 1. TRAVA DE SEGURANÇA: Só renderiza se estiver logado
+    if (!window.usuarioLogado) return;
 
-    // --- VISÃO GERAL ---
-    const stats = baseFiltrada.reduce((acc, curr) => {
+    const isLider = window.usuarioLogado.role === 'LIDER';
+    const userLoja = String(window.usuarioLogado.loja_id);
+
+    // 2. APLICAÇÃO DA VISÃO TÚNEL (RBAC)
+    if (isLider) {
+        // Trava o AppState na loja do Líder
+        AppState.filtro.loja = userLoja;
+        
+        // Esconde o dropdown de loja no topo
+        const elFiltroLoja = document.getElementById('container-filtro-loja');
+        if (elFiltroLoja) elFiltroLoja.style.display = 'none';
+
+        // Trava os dropdowns da aba Performance
+        ['top10', 'bottom10'].forEach(id => {
+            const sel = document.getElementById(`filtro-pdv-${id}`);
+            if (sel) {
+                sel.value = userLoja;
+                sel.disabled = true;
+                sel.style.opacity = '0.5';
+            }
+            AppState.perf[id].pdv = userLoja;
+        });
+    } else {
+        // Se for Master/Diretor, garante que os filtros apareçam
+        const elFiltroLoja = document.getElementById('container-filtro-loja');
+        if (elFiltroLoja && document.getElementById('visao-geral').classList.contains('active')) {
+            elFiltroLoja.style.display = 'flex';
+        }
+        ['top10', 'bottom10'].forEach(id => {
+            const sel = document.getElementById(`filtro-pdv-${id}`);
+            if (sel) { sel.disabled = false; sel.style.opacity = '1'; }
+        });
+    }
+
+    const d = dadosDashboard;
+    const atingIdeal = d.tempo?.ideal ?? 0;
+    
+    // 3. CRIAÇÃO DAS DUAS REALIDADES
+    // baseLocal = Respeita o filtro de loja (Líder só vê a dele)
+    // baseRede = Ignora o filtro de loja (Líder vê a rede toda na aba Unidades)
+    const baseLocal = filtrarBase(d.unidades, false);
+    const baseRede = filtrarBase(d.unidades, true);
+
+    // --- VISÃO GERAL (TÚNEL SE LIDER) ---
+    const stats = baseLocal.reduce((acc, curr) => {
         acc.faturamento += curr.REALIZADO || 0;
         acc.vendas += curr.N_VENDAS || 0;
         acc.pecas += curr.QTD_PEÇAS || 0;
@@ -86,7 +136,7 @@ function processarEDataRender() {
 
     renderKpiCards(stats);
 
-    const metas = baseFiltrada.reduce((acc, curr) => {
+    const metas = baseLocal.reduce((acc, curr) => {
         acc.real_g += curr.REALIZADO || 0; acc.meta_g += curr.META_GERAL || 0;
         acc.real_a += curr.ACE || 0; acc.meta_a += curr.META_ACE || 0;
         acc.real_p += curr.PRT || 0; acc.meta_p += curr.META_PRT || 0;
@@ -101,7 +151,7 @@ function processarEDataRender() {
     const dynCat = { 'CEL': 0, 'SOM': 0, 'ACE': 0, 'PRT': 0 };
     const dynPlanos = {};
 
-    baseFiltrada.forEach(loja => {
+    baseLocal.forEach(loja => {
         const sazLocal = loja.sazonalidade || {};
         Object.keys(sazLocal).forEach(dia => { if(dynSaz.hasOwnProperty(dia)) dynSaz[dia] += sazLocal[dia] || 0; });
 
@@ -120,17 +170,23 @@ function processarEDataRender() {
     renderMixDonut('chart-mix-cat', dynCat, PALETAS_MIX.categorias);
     renderMixDonut('chart-mix-planos', planosFinal, PALETAS_MIX.planos);
 
-    // --- VISÃO UNIDADES ---
-    renderCardsUnidades(baseFiltrada, metas, d.tempo);
-    renderGraficosHibridos(baseFiltrada); 
-    renderTabelaUnidades(baseFiltrada, d.tempo);
+    // --- VISÃO UNIDADES (REDE TODA) ---
+    // Precisamos de um objeto de metas total para a Rede poder calcular o ritmo total da rede
+    const metasRede = baseRede.reduce((acc, curr) => {
+        acc.real_g += curr.REALIZADO || 0; acc.meta_g += curr.META_GERAL || 0;
+        return acc;
+    }, { real_g: 0, meta_g: 0 });
 
-    // --- VISÃO VENDEDORES ---
-    renderVisaoVendedores(baseFiltrada);
+    renderCardsUnidades(baseRede, metasRede, d.tempo);
+    renderGraficosHibridos(baseRede); 
+    renderTabelaUnidades(baseRede, d.tempo);
+
+    // --- VISÃO VENDEDORES (TÚNEL SE LIDER, EXCETO MAPA DE REGIÕES) ---
+    renderVisaoVendedores(baseLocal);
 
     // --- VISÃO PERFORMANCE (PRODUTOS) ---
     if (typeof renderVisaoPerformance === 'function') {
-        renderVisaoPerformance();
+        renderVisaoPerformance(); // Filtros PDV já foram travados no topo desta função
     }
 
     document.getElementById('last-update').innerText = d.ultima_atualizacao;
@@ -201,6 +257,11 @@ function inicializarFiltroLojas(lojasUnicas, d) {
     const btn = document.getElementById('btn-drop-lojas');
     const lista = document.getElementById('list-drop-lojas');
     const cbs = document.querySelectorAll('.cb-filtro-loja');
+
+    // Se for Líder, esconde o botão de filtro, pois ele já tem visão túnel
+    if (window.usuarioLogado && window.usuarioLogado.role === 'LIDER') {
+        btn.style.display = 'none';
+    }
 
     btn.addEventListener('click', () => {
         lista.style.display = lista.style.display === 'none' ? 'block' : 'none';
@@ -306,9 +367,12 @@ function calcularScoreVendedores(vendedoresBase) {
     });
 }
 
-function renderVisaoVendedores(baseUnidades) {
+function renderVisaoVendedores(baseUnidadesLocal) {
     const d = dadosDashboard;
     const { ref, metrica, nomeMetrica } = AppState.ranking;
+
+    const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
+    const userLoja = window.usuarioLogado ? String(window.usuarioLogado.loja_id) : 'ALL';
 
     const aplicarFiltroTopo = (base) => base.filter(item => {
         const idTipo = Number(item['ID TIPO'] || 0);
@@ -317,11 +381,17 @@ function renderVisaoVendedores(baseUnidades) {
         return matchModelo && matchGestao;
     });
 
-    let baseRawRanking = ref === 'pdv' ? [...baseUnidades] : (d.vendedores ? [...d.vendedores] : []);
+    let baseRawRanking = ref === 'pdv' ? [...baseUnidadesLocal] : (d.vendedores ? [...d.vendedores] : []);
     let baseRawConsultores = d.vendedores ? [...d.vendedores] : [];
 
     baseRawRanking = aplicarFiltroTopo(baseRawRanking);
     baseRawConsultores = aplicarFiltroTopo(baseRawConsultores);
+
+    // O Lider tem visão túnel dos seus vendedores, rankings, pódios
+    if (isLider) {
+        baseRawRanking = baseRawRanking.filter(v => String(v['ID_LOJA']) === userLoja);
+        baseRawConsultores = baseRawConsultores.filter(v => String(v['ID_LOJA']) === userLoja);
+    }
 
     const baseRanking = unificarBase(baseRawRanking, ref);
     const baseConsultores = unificarBase(baseRawConsultores, 'vendedor');
@@ -348,22 +418,31 @@ function renderVisaoVendedores(baseUnidades) {
         const lojasUnicas = [...new Set(baseRawConsultores.map(v => v['ID_LOJA']))];
         inicializarFiltroLojas(lojasUnicas, d);
 
-        const checkboxes = document.querySelectorAll('.cb-filtro-loja:checked');
-        let lojasSelecionadas = Array.from(checkboxes).map(cb => cb.value);
-        if (lojasSelecionadas.length === 0) lojasSelecionadas = ['ALL'];
-
         let baseMetas;
-        if (lojasSelecionadas.includes('ALL')) {
-            baseMetas = baseConsultores;
+        if (isLider) {
+            baseMetas = baseConsultores; // Líder já está filtrado
         } else {
-            const rawFiltrada = baseRawConsultores.filter(v => lojasSelecionadas.includes(String(v['ID_LOJA'])));
-            baseMetas = unificarBase(rawFiltrada, 'vendedor');
+            const checkboxes = document.querySelectorAll('.cb-filtro-loja:checked');
+            let lojasSelecionadas = Array.from(checkboxes).map(cb => cb.value);
+            if (lojasSelecionadas.length === 0) lojasSelecionadas = ['ALL'];
+
+            if (lojasSelecionadas.includes('ALL')) {
+                baseMetas = baseConsultores;
+            } else {
+                const rawFiltrada = baseRawConsultores.filter(v => lojasSelecionadas.includes(String(v['ID_LOJA'])));
+                baseMetas = unificarBase(rawFiltrada, 'vendedor');
+            }
         }
             
         renderPodioMetas(baseMetas);
         renderHeatmapScore(baseConsultores);
         
-        desenharMelhoresRegioes('chart-melhores-regioes', baseConsultores, d);
+        // MAPA DE REGIÕES: Exceção da regra! O Lider vê o mapa com a rede toda calculada.
+        let baseRegioesRaw = d.vendedores ? [...d.vendedores] : [];
+        baseRegioesRaw = aplicarFiltroTopo(baseRegioesRaw);
+        const baseConsultoresRedeCompleta = unificarBase(baseRegioesRaw, 'vendedor');
+        calcularScoreVendedores(baseConsultoresRedeCompleta);
+        desenharMelhoresRegioes('chart-melhores-regioes', baseConsultoresRedeCompleta, d);
     }
 }
 
@@ -545,14 +624,14 @@ function desenharMelhoresRegioes(id, baseConsultores, d) {
     });
 }
 
-function renderCardsUnidades(baseFiltrada, metas, tempo) {
+function renderCardsUnidades(baseRede, metasRede, tempo) {
     const diasTotalMes = tempo?.total ?? 30;
     const diaAtual = tempo?.dia ?? 1;
 
     const fatDiarioRede = {};
     const metaDiariaOriginalRede = {};
     
-    baseFiltrada.forEach(loja => {
+    baseRede.forEach(loja => {
         const metaGerLocal = loja.META_GERAL || 0;
         const metaDiariaOrigLocal = metaGerLocal / diasTotalMes; 
         
@@ -596,8 +675,8 @@ function renderCardsUnidades(baseFiltrada, metas, tempo) {
     });
     const constancia = totalDiasAvaliados > 0 ? (diasMetaBatida / totalDiasAvaliados) * 100 : 0;
 
-    const esperadoHoje = (metas.meta_g / diasTotalMes) * diaAtual;
-    const gapRitmo = metas.real_g - esperadoHoje;
+    const esperadoHoje = (metasRede.meta_g / diasTotalMes) * diaAtual;
+    const gapRitmo = metasRede.real_g - esperadoHoje;
 
     const elFatD1 = document.querySelector('#kpi-uni-fat-d1 b');
     const elCresc = document.getElementById('val-crescimento-d1');
@@ -844,7 +923,12 @@ function renderTabelaUnidades(baseFiltrada, tempo) {
 
     const diasRestantesMes = Math.max((tempo?.total ?? 30) - (tempo?.dia ?? 1), 1);
 
+    // Variáveis para destacar a loja do Líder
+    const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
+    const userLoja = window.usuarioLogado ? String(window.usuarioLogado.loja_id) : '';
+
     baseOrdenada.forEach(loja => {
+        const idLoja = String(loja['ID_LOJA']);
         const pdv = loja['NOME PDV'] || 'N/A';
         const meta = loja.META_GERAL || 0;
         const fat = loja.REALIZADO || 0;
@@ -876,9 +960,13 @@ function renderTabelaUnidades(baseFiltrada, tempo) {
             ? `<span style="color: ${CORES.ace}; font-size: 10px; margin-left: 4px;" title="Acima da média da rede">▲</span>` 
             : `<span style="color: ${CORES.prt}; font-size: 10px; margin-left: 4px;" title="Abaixo da média da rede">▼</span>`;
 
+        const isMinhaLoja = isLider && idLoja === userLoja;
+        const bgTr = isMinhaLoja ? 'background-color: rgba(248, 181, 24, 0.1); border-left: 3px solid var(--primary);' : '';
+
         const tr = document.createElement('tr');
+        tr.style.cssText = bgTr;
         tr.innerHTML = `
-            <td style="font-weight: 700;">${pdv}</td>
+            <td style="font-weight: 700; color: ${isMinhaLoja ? 'var(--primary)' : 'inherit'};">${isMinhaLoja ? `⭐ ${pdv}` : pdv}</td>
             <td>${fmt(meta)}</td>
             <td>${fmt(fat)}</td>
             <td style="color: ${corAting}; font-weight: 700;">${atingGeral.toFixed(1)}%</td>
@@ -1009,8 +1097,11 @@ function iniciarRoteamento() {
     const filtroData = document.getElementById('container-filtro-data');
 
     function aplicarRegraDeFiltros(targetId) {
+        // Regra de Ocultação Mestra: Se for líder, NUNCA mostra o filtro de Loja Top
+        const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
+
         if (targetId === 'visao-geral') {
-            if (filtroLoja) filtroLoja.style.display = 'flex';
+            if (filtroLoja) filtroLoja.style.display = isLider ? 'none' : 'flex';
             if (filtroData) filtroData.style.display = 'none';
         } else if (targetId === 'visao-unidades') {
             if (filtroLoja) filtroLoja.style.display = 'none';
@@ -1095,10 +1186,13 @@ function inicializarFiltrosPerformance(base, tempoObj) {
         mesAtualStr = mesesDisponiveis[mesesDisponiveis.length - 1]; 
     }
 
+    // Identifica se é Líder e força a loja inicial dele (ou ALL se for Master)
+    const lojaInicial = (window.usuarioLogado && window.usuarioLogado.role === 'LIDER') ? String(window.usuarioLogado.loja_id) : 'ALL';
+
     AppState.perf = { 
-        top10: { pdv: 'ALL', metrica: 'ALL' }, 
-        bottom10: { pdv: 'ALL', metrica: 'ALL' }, 
-        mesVigente: mesAtualStr, // <-- TRAVA DO MÊS VIGENTE
+        top10: { pdv: lojaInicial, metrica: 'ALL' }, 
+        bottom10: { pdv: lojaInicial, metrica: 'ALL' }, 
+        mesVigente: mesAtualStr, 
         meses: [mesAtualStr] 
     };
     
@@ -1109,6 +1203,8 @@ function inicializarFiltrosPerformance(base, tempoObj) {
         const sel = document.getElementById(`filtro-pdv-${id}`);
         if(sel) {
             pdvs.forEach(p => sel.add(new Option(p, p)));
+            // Aplica a loja inicial
+            sel.value = lojaInicial;
             sel.addEventListener('change', (e) => {
                 AppState.perf[id].pdv = e.target.value;
                 if(id === 'top10') desenharTop10(base);
@@ -1125,7 +1221,6 @@ function inicializarFiltrosPerformance(base, tempoObj) {
             
             AppState.perf[targetChart].metrica = val;
             
-            // Apaga o 'active' apenas dos botões que pertencem àquele quadrante
             document.querySelectorAll(`.btn-perf-metric[data-target-chart="${targetChart}"]`).forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
             
@@ -1184,15 +1279,12 @@ function inicializarFiltrosPerformance(base, tempoObj) {
 }
 
 function desenharTop10(base) {
-    // 0. TRAVA DE SEGURANÇA: Isola os dados APENAS no mês vigente
     let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
 
-    // 1. Filtro de PDV
     if (AppState.perf.top10.pdv !== 'ALL') {
         baseFiltrada = baseFiltrada.filter(i => i.PDV === AppState.perf.top10.pdv);
     }
     
-    // 2. Filtro de Métrica (Categoria) Normalizado e Cego a erros do Excel
     if (AppState.perf.top10.metrica !== 'ALL') {
         const metricaDesejada = String(AppState.perf.top10.metrica).trim().toUpperCase();
         baseFiltrada = baseFiltrada.filter(i => String(i.CATEGORIA || '').trim().toUpperCase() === metricaDesejada);
@@ -1242,15 +1334,12 @@ function desenharTop10(base) {
 }
 
 function desenharBottom10(base) {
-    // 0. TRAVA DE SEGURANÇA: Isola os dados APENAS no mês vigente
     let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
 
-    // 1. Filtro de PDV
     if (AppState.perf.bottom10.pdv !== 'ALL') {
         baseFiltrada = baseFiltrada.filter(i => i.PDV === AppState.perf.bottom10.pdv);
     }
     
-    // 2. Filtro de Métrica (Categoria) Normalizado e Cego a erros do Excel
     if (AppState.perf.bottom10.metrica !== 'ALL') {
         const metricaDesejada = String(AppState.perf.bottom10.metrica).trim().toUpperCase();
         baseFiltrada = baseFiltrada.filter(i => String(i.CATEGORIA || '').trim().toUpperCase() === metricaDesejada);
@@ -1262,7 +1351,6 @@ function desenharBottom10(base) {
         agrupado[nome] = (agrupado[nome] || 0) + (i.REALIZADO || 0);
     });
 
-    // Pega os piores que venderam (ignorando quem vendeu zero)
     const bottom10 = Object.entries(agrupado).filter(i => i[1] > 0).sort((a, b) => a[1] - b[1]).slice(0, 10);
 
     const ctx = document.getElementById('chart-bottom10-produtos');
