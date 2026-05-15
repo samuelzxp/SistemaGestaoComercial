@@ -80,10 +80,12 @@ let tempoInativo;
 
 function resetarTimer() {
     clearTimeout(tempoInativo);
-    // 90000 milissegundos = 1 minuto e 30 segundos
+    
+    // 90000 ms = 1 minuto e 30 segundos
     tempoInativo = setTimeout(() => {
-        if (window.usuarioLogado) {
-            alert("🔒 Sessão encerrada por inatividade (1m 30s).");
+        // A MÁGICA ACONTECE AQUI: Só desloga se houver usuário E o Modo TV estiver DESLIGADO
+        if (window.usuarioLogado && !window.isModoTV) {
+            alert("🔒 Sessão encerrada por inatividade de 1m 30s.");
             fazerLogout();
         }
     }, 90000);

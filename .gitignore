@@ -1,0 +1,11 @@
+# Ignorar dados sensíveis do painel web
+dashboard/dados.js
+
+# Ignorar bases de dados físicas (Excel/CSV)
+*.xlsx
+*.csv
+
+# Ignorar pastas de sistema do Python e do VS Code
+__pycache__/
+*.pyc
+.vscode/
