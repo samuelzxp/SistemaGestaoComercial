@@ -59,6 +59,11 @@ window.addEventListener('resize', () => { if (window.usuarioLogado) processarEDa
 // Adicionado o parâmetro 'ignoreStoreFilter' para a visão da Rede
 function filtrarBase(base, ignoreStoreFilter = false) {
     if (!base) return [];
+
+    const role = window.usuarioLogado?.role || '';
+    const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+    const lojasPermitidasIDs = window.usuarioLogado?.loja_id ? String(window.usuarioLogado.loja_id).split(',').map(s => s.trim()) : ['ALL'];
+
     return base.filter(item => {
         const id = Number(item['ID TIPO']);
         const modeloItem = (id === 1 || id === 2) ? 'LOJA' : 'QUIOSQUE';
@@ -66,7 +71,17 @@ function filtrarBase(base, ignoreStoreFilter = false) {
 
         let matchLoja = true;
         if (!ignoreStoreFilter) {
-            matchLoja = AppState.filtro.loja === 'ALL' || String(item['ID_LOJA']) === String(AppState.filtro.loja);
+            const idLoja = String(item['ID_LOJA']);
+            
+            // 1. Trava do Perfil (Líder ou Supervisor vê apenas as dele)
+            if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
+                matchLoja = lojasPermitidasIDs.includes(idLoja);
+            }
+            
+            // 2. Trava do filtro no cabeçalho (Para Master ou Supervisor analisando uma loja específica)
+            if (matchLoja && AppState.filtro.loja !== 'ALL') {
+                matchLoja = idLoja === String(AppState.filtro.loja);
+            }
         }
         
         const matchModelo = AppState.filtro.modelo === 'ALL' || modeloItem === AppState.filtro.modelo;
@@ -83,50 +98,63 @@ function processarEDataRender() {
     // 1. TRAVA DE SEGURANÇA: Só renderiza se estiver logado
     if (!window.usuarioLogado) return;
 
-    const isLider = window.usuarioLogado.role === 'LIDER';
-    const userLoja = String(window.usuarioLogado.loja_id);
+    const role = window.usuarioLogado.role;
+    const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+    const lojasPermitidasIDs = String(window.usuarioLogado.loja_id).split(',').map(s => s.trim());
+    const isMasterAdmin = !isRestrito;
 
-    // 2. APLICAÇÃO DA VISÃO TÚNEL (RBAC)
-    if (isLider) {
-        // Trava o AppState na loja do Líder
-        AppState.filtro.loja = userLoja;
-        
-        // Esconde o dropdown de loja no topo
-        const elFiltroLoja = document.getElementById('container-filtro-loja');
-        if (elFiltroLoja) elFiltroLoja.style.display = 'none';
+    const d = dadosDashboard;
 
-        // Trava os dropdowns da aba Performance
-        ['top10', 'bottom10'].forEach(id => {
-            const sel = document.getElementById(`filtro-pdv-${id}`);
-            if (sel) {
-                sel.value = userLoja;
-                sel.disabled = true;
-                sel.style.opacity = '0.5';
+    // 2. APLICAÇÃO DA VISÃO TÚNEL E DROPDOWNS (RBAC)
+    const elFiltroLoja = document.getElementById('container-filtro-loja');
+    const selLoja = document.getElementById('filter-loja');
+
+    if (isRestrito) {
+        // Se tiver só 1 loja (Líder), trava tudo e esconde dropdown
+        if (lojasPermitidasIDs.length === 1 && !lojasPermitidasIDs.includes('ALL')) {
+            AppState.filtro.loja = lojasPermitidasIDs[0];
+            if (elFiltroLoja) elFiltroLoja.style.display = 'none';
+        } 
+        // Se for Supervisor (várias lojas), mostra dropdown apenas com as lojas dele
+        else {
+            if (elFiltroLoja && document.getElementById('visao-geral').classList.contains('active')) {
+                elFiltroLoja.style.display = 'flex';
             }
-            AppState.perf[id].pdv = userLoja;
-        });
+            if (selLoja && !selLoja.dataset.populated && d.unidades) {
+                selLoja.innerHTML = '<option value="ALL">Todas as Minhas Lojas</option>';
+                d.unidades.forEach(l => {
+                    if (lojasPermitidasIDs.includes(String(l['ID_LOJA']))) {
+                        const opt = document.createElement('option');
+                        opt.value = l['ID_LOJA']; opt.innerText = l['NOME PDV'];
+                        selLoja.appendChild(opt);
+                    }
+                });
+                selLoja.dataset.populated = "true";
+            }
+        }
     } else {
-        // Se for Master/Diretor, garante que os filtros apareçam
-        const elFiltroLoja = document.getElementById('container-filtro-loja');
+        // Master e Diretor
         if (elFiltroLoja && document.getElementById('visao-geral').classList.contains('active')) {
             elFiltroLoja.style.display = 'flex';
         }
-        ['top10', 'bottom10'].forEach(id => {
-            const sel = document.getElementById(`filtro-pdv-${id}`);
-            if (sel) { sel.disabled = false; sel.style.opacity = '1'; }
-        });
+        if (selLoja && !selLoja.dataset.populated && d.unidades) {
+            selLoja.innerHTML = '<option value="ALL">Todas as Lojas</option>';
+            d.unidades.forEach(l => {
+                const opt = document.createElement('option');
+                opt.value = l['ID_LOJA']; opt.innerText = l['NOME PDV'];
+                selLoja.appendChild(opt);
+            });
+            selLoja.dataset.populated = "true";
+        }
     }
 
-    const d = dadosDashboard;
     const atingIdeal = d.tempo?.ideal ?? 0;
     
-    // 3. CRIAÇÃO DAS DUAS REALIDADES
-    // baseLocal = Respeita o filtro de loja (Líder só vê a dele)
-    // baseRede = Ignora o filtro de loja (Líder vê a rede toda na aba Unidades)
+    // 3. CRIAÇÃO DAS DUAS REALIDADES (baseLocal agora é filtrada pelo filtrarBase corretamente)
     const baseLocal = filtrarBase(d.unidades, false);
     const baseRede = filtrarBase(d.unidades, true);
 
-    // --- VISÃO GERAL (TÚNEL SE LIDER) ---
+    // --- VISÃO GERAL (TÚNEL) ---
     const stats = baseLocal.reduce((acc, curr) => {
         acc.faturamento += curr.REALIZADO || 0;
         acc.vendas += curr.N_VENDAS || 0;
@@ -171,7 +199,6 @@ function processarEDataRender() {
     renderMixDonut('chart-mix-planos', planosFinal, PALETAS_MIX.planos);
 
     // --- VISÃO UNIDADES (REDE TODA) ---
-    // Precisamos de um objeto de metas total para a Rede poder calcular o ritmo total da rede
     const metasRede = baseRede.reduce((acc, curr) => {
         acc.real_g += curr.REALIZADO || 0; acc.meta_g += curr.META_GERAL || 0;
         return acc;
@@ -181,12 +208,11 @@ function processarEDataRender() {
     renderGraficosHibridos(baseRede); 
     renderTabelaUnidades(baseRede, d.tempo);
 
-    // --- VISÃO VENDEDORES (TÚNEL SE LIDER, EXCETO MAPA DE REGIÕES) ---
+    // --- VISÃO VENDEDORES E PERFORMANCE ---
     renderVisaoVendedores(baseLocal);
 
-    // --- VISÃO PERFORMANCE (PRODUTOS) ---
     if (typeof renderVisaoPerformance === 'function') {
-        renderVisaoPerformance(); // Filtros PDV já foram travados no topo desta função
+        renderVisaoPerformance(); 
     }
 
     document.getElementById('last-update').innerText = d.ultima_atualizacao;
@@ -371,8 +397,9 @@ function renderVisaoVendedores(baseUnidadesLocal) {
     const d = dadosDashboard;
     const { ref, metrica, nomeMetrica } = AppState.ranking;
 
-    const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
-    const userLoja = window.usuarioLogado ? String(window.usuarioLogado.loja_id) : 'ALL';
+    const role = window.usuarioLogado ? window.usuarioLogado.role : '';
+    const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+    const lojasPermitidasIDs = window.usuarioLogado?.loja_id ? String(window.usuarioLogado.loja_id).split(',').map(s => s.trim()) : ['ALL'];
 
     const aplicarFiltroTopo = (base) => base.filter(item => {
         const idTipo = Number(item['ID TIPO'] || 0);
@@ -387,18 +414,17 @@ function renderVisaoVendedores(baseUnidadesLocal) {
     baseRawRanking = aplicarFiltroTopo(baseRawRanking);
     baseRawConsultores = aplicarFiltroTopo(baseRawConsultores);
 
-    // O Lider tem visão túnel dos seus vendedores, rankings, pódios
-    if (isLider) {
-        baseRawRanking = baseRawRanking.filter(v => String(v['ID_LOJA']) === userLoja);
-        baseRawConsultores = baseRawConsultores.filter(v => String(v['ID_LOJA']) === userLoja);
+    // O Supervisor / Líder tem visão túnel dos seus vendedores e rankings
+    if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
+        if (ref !== 'pdv') {
+            baseRawRanking = baseRawRanking.filter(v => lojasPermitidasIDs.includes(String(v['ID_LOJA'])));
+        }
+        baseRawConsultores = baseRawConsultores.filter(v => lojasPermitidasIDs.includes(String(v['ID_LOJA'])));
     }
 
     const baseRanking = unificarBase(baseRawRanking, ref);
     const baseConsultores = unificarBase(baseRawConsultores, 'vendedor');
 
-    // ===================================
-    // QUADRANTE 1: Ranking Dinâmico
-    // ===================================
     const tituloEl = document.getElementById('ranking-title');
     if (tituloEl) tituloEl.innerText = `Ranking - Visão ${nomeMetrica}`;
     
@@ -409,9 +435,6 @@ function renderVisaoVendedores(baseUnidadesLocal) {
         desenharGraficoRanking('chart-ranking', labels, valores, metrica);
     }
 
-    // ===================================
-    // QUADRANTES 2, 3 e 4
-    // ===================================
     if (baseConsultores.length > 0) {
         calcularScoreVendedores(baseConsultores);
 
@@ -419,8 +442,10 @@ function renderVisaoVendedores(baseUnidadesLocal) {
         inicializarFiltroLojas(lojasUnicas, d);
 
         let baseMetas;
-        if (isLider) {
-            baseMetas = baseConsultores; // Líder já está filtrado
+        
+        // Se tem só 1 loja (Líder ou Sup com 1 loja), pega tudo direto (não tem checkbox de filtro interno)
+        if (isRestrito && lojasPermitidasIDs.length === 1) {
+            baseMetas = baseConsultores; 
         } else {
             const checkboxes = document.querySelectorAll('.cb-filtro-loja:checked');
             let lojasSelecionadas = Array.from(checkboxes).map(cb => cb.value);
@@ -437,7 +462,7 @@ function renderVisaoVendedores(baseUnidadesLocal) {
         renderPodioMetas(baseMetas);
         renderHeatmapScore(baseConsultores);
         
-        // MAPA DE REGIÕES: Exceção da regra! O Lider vê o mapa com a rede toda calculada.
+        // MAPA DE REGIÕES: Rede toda (Exceção da regra para efeito de comparação)
         let baseRegioesRaw = d.vendedores ? [...d.vendedores] : [];
         baseRegioesRaw = aplicarFiltroTopo(baseRegioesRaw);
         const baseConsultoresRedeCompleta = unificarBase(baseRegioesRaw, 'vendedor');
@@ -1097,11 +1122,15 @@ function iniciarRoteamento() {
     const filtroData = document.getElementById('container-filtro-data');
 
     function aplicarRegraDeFiltros(targetId) {
-        // Regra de Ocultação Mestra: Se for líder, NUNCA mostra o filtro de Loja Top
-        const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
+        const role = window.usuarioLogado ? window.usuarioLogado.role : '';
+        const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+        const lojasPermitidasIDs = window.usuarioLogado?.loja_id ? String(window.usuarioLogado.loja_id).split(',').map(s=>s.trim()) : [];
+        
+        // Mostra dropdown global apenas se for Master/Admin/Diretor OU se for Supervisor com mais de 1 loja
+        const exibeDropdownLoja = (!isRestrito) || (isRestrito && lojasPermitidasIDs.length > 1);
 
         if (targetId === 'visao-geral') {
-            if (filtroLoja) filtroLoja.style.display = isLider ? 'none' : 'flex';
+            if (filtroLoja) filtroLoja.style.display = exibeDropdownLoja ? 'flex' : 'none';
             if (filtroData) filtroData.style.display = 'none';
         } else if (targetId === 'visao-unidades') {
             if (filtroLoja) filtroLoja.style.display = 'none';
@@ -1155,10 +1184,43 @@ function renderVisaoPerformance() {
     const d = dadosDashboard;
     if (!d.produtos || !d.historico_dias) return; 
 
-    const baseProdutos = d.produtos;
-    const baseTempo = d.historico_dias;
+    let baseProdutos = d.produtos;
+    let baseTempo = d.historico_dias; // Agora já possui a coluna ID_LOJA vinda do Python
 
-    inicializarFiltrosPerformance(baseProdutos, d.tempo);
+    // --- INÍCIO DO FILTRO TÚNEL (DEMANDA G e H) ---
+    const role = window.usuarioLogado ? window.usuarioLogado.role : '';
+    const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+    
+    // Pega array de IDs permitidos. Ex: ['1'] ou ['1', '4', '9']
+    const lojasPermitidasIDs = window.usuarioLogado?.loja_id 
+        ? String(window.usuarioLogado.loja_id).split(',').map(s => s.trim()) 
+        : ['ALL'];
+    
+    let nomesPDVsPermitidos = [];
+
+    if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
+        // 1. Descobre os nomes dos PDVs permitidos cruzando o ID com a base de Unidades
+        const unidadesPermitidas = d.unidades.filter(u => lojasPermitidasIDs.includes(String(u['ID_LOJA'])));
+        nomesPDVsPermitidos = unidadesPermitidas.map(u => String(u['NOME PDV']).trim().toUpperCase());
+
+        // Filtra a aba de Produtos (Isso blinda os Tiers e Top/Bottom 10)
+        baseProdutos = d.produtos.filter(p => {
+            const nomeNoProduto = String(p.PDV || '').trim().toUpperCase();
+            return nomesPDVsPermitidos.includes(nomeNoProduto);
+        });
+
+        // 2. Filtra a Evolução Quadrimestral (Tempo) pelo ID_LOJA recém-adicionado no Python
+        baseTempo = d.historico_dias.filter(dia => {
+            // Cobre as possíveis nomenclaturas que o Python pode exportar
+            const idDia = String(dia.ID_LOJA || dia['ID LOJA'] || dia.id_loja || '').trim();
+            // Se por acaso a linha não tiver ID (falha no Excel), ignora o filtro para não travar a tela
+            if (!idDia) return true; 
+            return lojasPermitidasIDs.includes(idDia);
+        });
+    }
+    // --- FIM DO FILTRO TÚNEL ---
+
+    inicializarFiltrosPerformance(baseProdutos, d.tempo, nomesPDVsPermitidos, isRestrito);
 
     desenharTop10(baseProdutos);
     desenharBottom10(baseProdutos);
@@ -1176,18 +1238,21 @@ function renderVisaoPerformance() {
     desenharTendenciaTemporal(baseTempo);
 }
 
-function inicializarFiltrosPerformance(base, tempoObj) {
+function inicializarFiltrosPerformance(base, tempoObj, pdvsPermitidosNomes = [], isRestrito = false) {
     if (filtrosPerfInicializados) return;
     
     // Calcula o Mês Vigente Dinamicamente
     const mesesDisponiveis = [...new Set(base.map(i => i.AnoMes))].filter(Boolean).sort();
-    let mesAtualStr = String(tempoObj.mes).padStart(2, '0') + '/' + String(tempoObj.ano).slice(-2);
+    let mesAtualStr = tempoObj ? String(tempoObj.mes).padStart(2, '0') + '/' + String(tempoObj.ano).slice(-2) : '';
     if (!mesesDisponiveis.includes(mesAtualStr) && mesesDisponiveis.length > 0) {
         mesAtualStr = mesesDisponiveis[mesesDisponiveis.length - 1]; 
     }
 
-    // Identifica se é Líder e força a loja inicial dele (ou ALL se for Master)
-    const lojaInicial = (window.usuarioLogado && window.usuarioLogado.role === 'LIDER') ? String(window.usuarioLogado.loja_id) : 'ALL';
+    // Se for Líder (1 loja só), o dropdown já trava nela. Se for Supervisor ou Master, começa em 'ALL'
+    let lojaInicial = 'ALL';
+    if (isRestrito && pdvsPermitidosNomes.length === 1) {
+        lojaInicial = pdvsPermitidosNomes[0];
+    }
 
     AppState.perf = { 
         top10: { pdv: lojaInicial, metrica: 'ALL' }, 
@@ -1202,9 +1267,22 @@ function inicializarFiltrosPerformance(base, tempoObj) {
     ['top10', 'bottom10'].forEach(id => {
         const sel = document.getElementById(`filtro-pdv-${id}`);
         if(sel) {
+            sel.innerHTML = ''; // Limpa opções antigas vazias
+            
+            // Texto adaptado para Supervisor (que vê as lojas dele juntas) vs Master (que vê tudo)
+            const txtAll = (isRestrito && pdvsPermitidosNomes.length > 1) ? "Todas as minhas Lojas" : "Escolha o PDV";
+            sel.add(new Option(txtAll, 'ALL'));
+
             pdvs.forEach(p => sel.add(new Option(p, p)));
-            // Aplica a loja inicial
+            
             sel.value = lojaInicial;
+            
+            // Trava o dropdown se for apenas 1 loja permitida
+            if (isRestrito && pdvsPermitidosNomes.length === 1) {
+                sel.disabled = true;
+                sel.style.opacity = '0.5';
+            }
+
             sel.addEventListener('change', (e) => {
                 AppState.perf[id].pdv = e.target.value;
                 if(id === 'top10') desenharTop10(base);
@@ -1438,11 +1516,15 @@ function desenharTiers(base) {
 }
 
 function desenharTendenciaTemporal(baseTempo) {
-    if (baseTempo.length === 0) return;
+    if (!baseTempo || baseTempo.length === 0) return;
+
+    // Ordena do mais antigo para o mais novo para garantir que o corte da linha do tempo funcione
+    const baseOrdenada = [...baseTempo].sort((a,b) => new Date(a.data) - new Date(b.data));
 
     const agrupado = {};
     
-    baseTempo.forEach(dia => {
+    baseOrdenada.forEach(dia => {
+        // 'T12:00:00' evita bug de fuso horário voltar 1 dia para trás
         const dataOriginal = new Date(dia.data + 'T12:00:00'); 
         let chaveLabel = '';
 
@@ -1458,6 +1540,19 @@ function desenharTendenciaTemporal(baseTempo) {
         agrupado[chaveLabel] = (agrupado[chaveLabel] || 0) + (dia.faturamento || 0);
     });
 
+    // --- CORTE ESTUDADO: 6 MESES OU 10 QUINZENAS ---
+    let chaves = Object.keys(agrupado);
+    const limite = agrupamentoTempoAtual === 'mes' ? 6 : 10;
+    
+    // Se passar do limite, fatia pegando apenas os últimos valores do array
+    if (chaves.length > limite) {
+        chaves = chaves.slice(-limite);
+    }
+
+    const labelsFinais = chaves;
+    const valoresFinais = chaves.map(c => agrupado[c]);
+    // --- FIM DO CORTE ---
+
     const ctx = document.getElementById('chart-tendencia-tempo');
     if (!ctx) return;
     if (chartTempo) chartTempo.destroy();
@@ -1465,8 +1560,20 @@ function desenharTendenciaTemporal(baseTempo) {
     chartTempo = new Chart(ctx, {
         type: 'line',
         data: { 
-            labels: Object.keys(agrupado), 
-            datasets: [{ label: 'Faturamento', data: Object.values(agrupado), borderColor: CORES.primary, borderWidth: 3, pointBackgroundColor: '#121212', pointBorderColor: CORES.primary, pointRadius: 4, pointHoverRadius: 6, fill: true, backgroundColor: 'rgba(248, 181, 24, 0.1)', tension: 0.3 }] 
+            labels: labelsFinais, 
+            datasets: [{ 
+                label: 'Faturamento', 
+                data: valoresFinais, 
+                borderColor: CORES.primary, 
+                borderWidth: 3, 
+                pointBackgroundColor: '#121212', 
+                pointBorderColor: CORES.primary, 
+                pointRadius: 4, 
+                pointHoverRadius: 6, 
+                fill: true, 
+                backgroundColor: 'rgba(248, 181, 24, 0.1)', 
+                tension: 0.3 
+            }] 
         },
         options: {
             responsive: true, maintainAspectRatio: false,

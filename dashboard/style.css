@@ -35,7 +35,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    overflow: hidden; /* Trava a rolagem principal no notebook */
+    overflow: hidden; 
 }
 
 h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
@@ -49,7 +49,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
     background-color: var(--bg-dark);
-    z-index: 9999; /* Fica por cima de absolutamente tudo */
+    z-index: 9999; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 .login-footer a:hover { text-decoration: underline; }
 
 /* ========================================= */
-/* MENU LATERAL                              */
+/* MENU LATERAL (SIDEBAR)                    */
 /* ========================================= */
 .sidebar {
     width: var(--sidebar-width);
@@ -152,12 +152,25 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 .nav-text {
     opacity: 0; white-space: nowrap; transition: 0.2s;
     font-weight: 600; font-size: 0.9rem;
+    visibility: hidden;
 }
 
-.sidebar:hover .nav-text { opacity: 1; }
+.sidebar:hover .nav-text { opacity: 1; visibility: visible; }
 
-.sidebar-footer { padding: 20px; border-top: 1px solid var(--border); }
-.user-profile { display: flex; align-items: center; gap: 12px; }
+/* Rodapé da Sidebar (Onde mora o Perfil e o Logout) */
+.sidebar-footer { 
+    padding: 20px; 
+    border-top: 1px solid var(--border); 
+    overflow: hidden; 
+}
+
+.user-profile { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    width: 100%;
+}
+
 .avatar { 
     min-width: 32px; height: 32px; 
     background: var(--primary); border-radius: 8px; 
@@ -165,10 +178,38 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     display: flex; align-items: center; justify-content: center; 
     font-family: var(--font-heading);
 }
-.user-info { opacity: 0; transition: 0.2s; white-space: nowrap; }
-.sidebar:hover .user-info { opacity: 1; }
-.user-name { display: block; font-size: 0.8rem; font-weight: 600; }
+
+/* Informações do Usuário e Botão de Logout (Ocultos no estado recolhido) */
+.user-info, .btn-logout-sidebar { 
+    opacity: 0; 
+    transition: var(--transition); 
+    white-space: nowrap; 
+    visibility: hidden;
+}
+
+.sidebar:hover .user-info, 
+.sidebar:hover .btn-logout-sidebar { 
+    opacity: 1; 
+    visibility: visible;
+}
+
+.user-name { display: block; font-size: 0.8rem; font-weight: 600; color: #fff; }
 .user-role { font-size: 0.65rem; color: var(--text-dim); }
+
+/* Ajuste Fino do Botão de Logout para não estourar */
+.btn-logout-sidebar {
+    background: none; 
+    border: none; 
+    color: #444; 
+    cursor: pointer; 
+    margin-left: auto; 
+    display: flex; 
+    align-items: center; 
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.btn-logout-sidebar:hover { color: var(--danger); }
 
 /* ========================================= */
 /* ESTRUTURA PRINCIPAL E CABEÇALHO           */
@@ -208,7 +249,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     display: none; 
     flex-direction: column;
     gap: 10px;
-    overflow: auto; /* Permite rolagem apenas se a tela for menor que os dados */
+    overflow: auto; 
 }
 .view-section.active { display: flex; }
 
@@ -500,7 +541,6 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
 .pos-3 .podio-barra { height: 45px; background: linear-gradient(180deg, #cd7f32 0%, #8b5a2b 100%); }
 .pos-3 .podio-nota { color: #cd7f32; }
 
-
 .select-dark {
     background: transparent;
     color: var(--text-main);
@@ -511,10 +551,7 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
     cursor: pointer;
     outline: none;
 }
-.select-dark option {
-    background: var(--bg-card);
-    color: var(--text-main);
-}
+.select-dark option { background: var(--bg-card); color: var(--text-main); }
 
 /* ----------------------------------------- */
 /* QUADRANTE 3: MATRIZ DE CALOR (HEATMAP)    */
@@ -564,16 +601,8 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
     transition: all var(--transition);
 }
 
-.btn-time:hover {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.btn-time.active {
-    background-color: var(--primary);
-    color: #000000;
-    border-color: var(--primary);
-}
+.btn-time:hover { background-color: #333333; color: #ffffff; }
+.btn-time.active { background-color: var(--primary); color: #000000; border-color: var(--primary); }
 
 /* ========================================= */
 /* MEDIA QUERIES (RESPONSIVIDADE MASTER)     */
@@ -584,29 +613,10 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
 }
 
 @media (max-width: 1024px) {
-    body { 
-        overflow-y: auto; 
-        overflow-x: hidden; 
-    }
-    
-    .main-content, .view-section {
-        height: auto;
-        min-height: 100vh;
-        overflow-y: visible;
-    }
-
-    .main-charts-row,
-    .atingimento-row,
-    .vendedores-grid-2x2 { 
-        grid-template-columns: 1fr;
-        grid-template-rows: auto; 
-        height: auto;
-    }
-    
-    .ranking-chart-box {
-        min-height: 400px; 
-    }
-
+    body { overflow-y: auto; overflow-x: hidden; }
+    .main-content, .view-section { height: auto; min-height: 100vh; overflow-y: visible; }
+    .main-charts-row, .atingimento-row, .vendedores-grid-2x2 { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
+    .ranking-chart-box { min-height: 400px; }
     .kpi-grid { height: auto; }
 }
 
@@ -618,12 +628,7 @@ canvas { width: 100% !important; height: 100% !important; display: block; }
 @media (max-width: 600px) {
     .sidebar { display: none; }
     .main-content { margin-left: 0; width: 100vw; }
-    
-    .kpi-grid,
-    #visao-unidades .kpi-grid { 
-        grid-template-columns: 1fr !important; 
-    }
-
+    .kpi-grid, #visao-unidades .kpi-grid { grid-template-columns: 1fr !important; }
     .chart-box { min-height: 320px; }
     .gauge-box { min-height: 250px; }
     .table-container { min-height: 400px; }

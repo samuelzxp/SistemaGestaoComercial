@@ -36,7 +36,8 @@
                 <button type="submit" class="btn-login" id="btn-login-submit">Entrar no Painel</button>
             </form>
 
-            <div class="login-footer">
+            <div class="login-footer" style="display: flex; justify-content: space-between;">
+                <a href="#" id="btn-show-forgot" style="color: var(--text-dim);">Esqueci a senha</a>
                 <a href="#" id="btn-show-register">Solicitar Acesso</a>
             </div>
         </div>
@@ -64,6 +65,24 @@
             </form>
             <div class="login-footer">
                 <a href="#" id="btn-show-login">Voltar para o Login</a>
+            </div>
+        </div>
+
+        <div class="login-box" id="forgot-box" style="display: none;">
+            <div class="login-header">
+                <h2>Recuperar Senha</h2>
+                <p>Enviaremos um link de redefinição para o seu e-mail.</p>
+            </div>
+            
+            <form id="forgot-form" class="login-form">
+                <div class="input-group">
+                    <label>E-mail Corporativo</label>
+                    <input type="email" id="forgot-email" required placeholder="seu.nome@phonestore.com">
+                </div>
+                <button type="submit" class="btn-login">Enviar Link de Recuperação</button>
+            </form>
+            <div class="login-footer">
+                <a href="#" id="btn-back-login">Voltar para o Login</a>
             </div>
         </div>
     </div>
@@ -105,7 +124,7 @@
                     <span class="user-role">Aguarde</span>
                 </div>
                 
-                <button onclick="fazerLogout()" style="background: none; border: none; color: #bd0000; cursor: pointer; margin-left: auto; display: flex; align-items: center; padding: 5px;" title="Sair com Segurança">
+                <button onclick="fazerLogout()" class="btn-logout-sidebar" title="Sair com Segurança">
                     <span class="material-symbols-outlined" style="font-size: 20px;">logout</span>
                 </button>
             </div>
@@ -467,7 +486,7 @@
                 <div class="ranking-chart-box" style="flex: 1; display: flex; flex-direction: column;">
                     <div class="ranking-header">
                         <h3 class="section-title" style="color: var(--primary);">Controle de Acessos (RH)</h3>
-                        <span style="font-size: 0.75rem; color: var(--text-dim);">Aprove usuários pendentes, altere papéis e vincule os Líderes às suas lojas.</span>
+                        <span style="font-size: 0.75rem; color: var(--text-dim);">Aprove usuários pendentes, altere papéis e vincule os Líderes às suas lojas. Para Supervisor, separe os IDs por vírgula.</span>
                     </div>
                     
                     <div class="table-container" style="flex: 1; margin-top: 10px;">
@@ -479,7 +498,7 @@
                                     <th>E-mail</th>
                                     <th>Data Solicitação</th>
                                     <th>Cargo (Role)</th>
-                                    <th>ID Loja (Apenas P/ Líder)</th>
+                                    <th>ID Loja (Líder/Supervisor)</th>
                                     <th>Ações Master</th>
                                 </tr>
                             </thead>

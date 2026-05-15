@@ -3,7 +3,6 @@ from datetime import datetime
 import os
 
 #* CONFIGURAÇÃO DE CAMINHOS
-CAMINHO_DIM = 'dimensoes.xlsx'
 CAMINHO_DB = r"C:\Users\PHONE STORE\Documents\Análise de Dados PHONE STORE\Dados Phone Store Base.xlsx"
 
 #TODO ==> 1. TRATAMENTO DE DADOS BÁSICOS
@@ -23,15 +22,15 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
     try:
         print(f"🔍 Conectando aos bancos de dados...")
         
-        if not os.path.exists(CAMINHO_DIM) or not os.path.exists(CAMINHO_DB):
+        if not os.path.exists(CAMINHO_DB):
             raise FileNotFoundError("Arquivos de base (.xlsx) não encontrados.")
 
         #* 1. Carga das Dimensões
-        df_lojas = pd.read_excel(CAMINHO_DIM, sheet_name='Lojas')
-        df_vendedores = pd.read_excel(CAMINHO_DIM, sheet_name='Vendedores')
-        df_planos = pd.read_excel(CAMINHO_DIM, sheet_name='Planos')
-        df_regioes = pd.read_excel(CAMINHO_DIM, sheet_name='Regiões')
-        df_produtos = pd.read_excel(CAMINHO_DIM, sheet_name='Dim_produtos') #* Adicionado para Visão Performance
+        df_lojas = pd.read_excel(CAMINHO_DB, sheet_name='Lojas')
+        df_vendedores = pd.read_excel(CAMINHO_DB, sheet_name='D_Vendedores')
+        df_planos = pd.read_excel(CAMINHO_DB, sheet_name='D_Plano')
+        df_regioes = pd.read_excel(CAMINHO_DB, sheet_name='Regiões')
+        df_produtos = pd.read_excel(CAMINHO_DB, sheet_name='Dim_produtos') #* Adicionado para Visão Performance
         
         #* 2. Carga das Vendas Fato
         df_cat = pd.read_excel(CAMINHO_DB, sheet_name='F_Vendas_cat')

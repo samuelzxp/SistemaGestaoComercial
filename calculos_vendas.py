@@ -4,6 +4,7 @@ from datetime import datetime
 from calendar import monthrange
 import json
 import re  
+
 #TODO ==> 1. SISTEMA DE TEMPO E MÉTRICAS DE CALENDÁRIO
 #? Função central para controle de períodos e cálculos de projeção (Mês Vigente)
 def obter_metricas_tempo():
@@ -277,7 +278,6 @@ def limpar_nome_produto(nome_sujo):
     nome = re.sub(r'\s*\(\s*\d+\s*\)\s*$', '', nome)
     
     # 2. Tratamento Inteligente do Traço (-)
-    # Mantém a 1ª parte (Modelo) e só guarda as partes seguintes se tiverem números (ex: "- 128GB")
     if '-' in nome:
         partes = nome.split('-')
         partes_mantidas = [partes[0]]
@@ -295,7 +295,7 @@ def limpar_nome_produto(nome_sujo):
     for termo in termos_remover:
         nome = re.sub(termo, '', nome)
         
-    # 4. Filtro de Cores (Dicionário Reverso) - Apaga a cor onde quer que ela esteja
+    # 4. Filtro de Cores (Dicionário Reverso)
     cores = [
         'PRETO', 'BRANCO', 'AZUL', 'VERDE', 'CINZA', 'PRATA', 'DOURADO', 'ROSA',
         'ROXO', 'LARANJA', 'COBRE', 'GRAFITE', 'LILAC', 'VIOLET', 'PURPLE',
@@ -370,8 +370,18 @@ def preparar_tendencia_temporal(df_fatos_cat):
     if df['REALIZADO'].dtype == 'object':
         df['REALIZADO'] = df['REALIZADO'].apply(limpar_moeda)
         
-    agrupado = df.groupby(df['Date'].dt.strftime('%Y-%m-%d'))['REALIZADO'].sum().reset_index()
-    agrupado.rename(columns={'Date': 'data', 'REALIZADO': 'faturamento'}, inplace=True)
+    #* Identifica a coluna correta de Loja e injeta no agrupamento (Fallback de segurança)
+    col_id = 'ID LOJA' if 'ID LOJA' in df.columns else 'ID_LOJA'
+    if col_id not in df.columns:
+        df[col_id] = 'ALL' 
+
+    df['data_formatada'] = df['Date'].dt.strftime('%Y-%m-%d')
+    
+    #* Agora o GroupBy abraça também o ID da Loja!
+    agrupado = df.groupby(['data_formatada', col_id])['REALIZADO'].sum().reset_index()
+    
+    #* Renomeia exatamente para as chaves que o JavaScript espera
+    agrupado.rename(columns={'data_formatada': 'data', 'REALIZADO': 'faturamento', col_id: 'ID_LOJA'}, inplace=True)
     agrupado = agrupado.sort_values('data')
     
     return agrupado.to_dict(orient='records')
