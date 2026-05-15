@@ -1589,3 +1589,55 @@ function desenharTendenciaTemporal(baseTempo) {
         }
     });
 }
+
+// ==========================================
+// MÓDULO: MODO TV (DEMANDA B)
+// ==========================================
+window.isModoTV = false;
+let loopTVInterval = null;
+let currentViewIndex = 0;
+// Lista exata com o data-target de cada botão do menu lateral
+const viewsTv = ['visao-geral', 'visao-unidades', 'visao-vendedores', 'visao-performance'];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btnModoTV = document.getElementById('btn-modo-tv');
+    
+    if (btnModoTV) {
+        btnModoTV.addEventListener('click', () => {
+            window.isModoTV = !window.isModoTV;
+
+            if (window.isModoTV) {
+                // LIGA MODO TV
+                btnModoTV.classList.add('ativo');
+                document.body.classList.add('tv-mode'); // CSS esconde a sidebar
+                
+                // Força Tela Cheia (Fullscreen API)
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen().catch(e => console.log("Fullscreen bloqueado pelo navegador.", e));
+                }
+
+                // Inicia o Loop a cada 30 segundos (30000 milissegundos)
+                loopTVInterval = setInterval(() => {
+                    currentViewIndex = (currentViewIndex + 1) % viewsTv.length;
+                    const nextTarget = viewsTv[currentViewIndex];
+                    
+                    // Simula o clique no botão do menu para disparar os eventos corretamente (títulos, refilters)
+                    const btnNav = document.querySelector(`.nav-item[data-target="${nextTarget}"]`);
+                    if (btnNav) btnNav.click();
+                    
+                }, 30000); 
+
+            } else {
+                // DESLIGA MODO TV
+                btnModoTV.classList.remove('ativo');
+                document.body.classList.remove('tv-mode');
+                clearInterval(loopTVInterval);
+                
+                // Sai da Tela Cheia
+                if (document.fullscreenElement) {
+                    document.exitFullscreen().catch(e => console.log("Erro ao sair do fullscreen.", e));
+                }
+            }
+        });
+    }
+});

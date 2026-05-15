@@ -157,11 +157,11 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 
 .sidebar:hover .nav-text { opacity: 1; visibility: visible; }
 
-/* Rodapé da Sidebar (Onde mora o Perfil e o Logout) */
+/* Rodapé da Sidebar e Ajuste do Logout (Demanda I) */
 .sidebar-footer { 
-    padding: 20px; 
+    padding: 10px; 
     border-top: 1px solid var(--border); 
-    overflow: hidden; 
+    overflow: hidden; /* Corta o que sobrar */
 }
 
 .user-profile { 
@@ -169,6 +169,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     align-items: center; 
     gap: 12px; 
     width: 100%;
+    transition: all var(--transition);
 }
 
 .avatar { 
@@ -179,7 +180,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     font-family: var(--font-heading);
 }
 
-/* Informações do Usuário e Botão de Logout (Ocultos no estado recolhido) */
+/* Oculta infos e botão quando sidebar encolhida */
 .user-info, .btn-logout-sidebar { 
     opacity: 0; 
     transition: var(--transition); 
@@ -196,7 +197,6 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 .user-name { display: block; font-size: 0.8rem; font-weight: 600; color: #fff; }
 .user-role { font-size: 0.65rem; color: var(--text-dim); }
 
-/* Ajuste Fino do Botão de Logout para não estourar */
 .btn-logout-sidebar {
     background: none; 
     border: none; 
@@ -207,6 +207,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     align-items: center; 
     padding: 5px;
     transition: color 0.3s;
+    flex-shrink: 0; /* Impede o botão de esmagar o texto */
 }
 
 .btn-logout-sidebar:hover { color: var(--danger); }
@@ -221,6 +222,7 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
     display: flex;
     flex-direction: column;
     overflow: hidden; 
+    transition: margin-left var(--transition), width var(--transition);
 }
 
 .top-header {
@@ -239,6 +241,50 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 #last-update{ color: #fff; font-family: var(--font-heading); }
 .header-left .sub-info { display: flex; align-items: center; gap: 10px; font-size: 0.75rem; color: var(--primary); }
 .divider { color: var(--primary); }
+
+/* ========================================= */
+/* MODO TV (DEMANDA B)                       */
+/* ========================================= */
+.btn-tv {
+    background: #1a1a1a;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-tv:hover {
+    color: var(--text-main);
+    border-color: #555;
+}
+
+.btn-tv.ativo {
+    background: rgba(45, 81, 40, 0.2); 
+    color: var(--success);
+    border-color: var(--success);
+    animation: pulsar-tv 2s infinite;
+}
+
+@keyframes pulsar-tv {
+    0% { box-shadow: 0 0 0 0 rgba(45, 81, 40, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(45, 81, 40, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(45, 81, 40, 0); }
+}
+
+/* Classes dinâmicas injetadas pelo JS quando o Modo TV for ativado */
+body.tv-mode .sidebar {
+    display: none !important;
+}
+
+body.tv-mode .main-content {
+    margin-left: 0 !important;
+    width: 100vw !important;
+}
 
 /* ========================================= */
 /* SISTEMA SPA: CONTROLE DE SEÇÕES           */
