@@ -1,20 +1,20 @@
 const dadosDashboard = {
-    "ultima_atualizacao": "15/05/2026 16:38",
+    "ultima_atualizacao": "18/05/2026 11:46",
     "tempo": {
-        "dia": 15,
+        "dia": 18,
         "total": 31,
         "mes": 5,
         "ano": 2026,
-        "ideal": 48.39
+        "ideal": 58.06
     },
     "geral": {
-        "fat": 1307845.6900393146,
-        "vendas": 1741,
-        "pecas": 1945,
-        "ticket": 751.2037277652582,
-        "pa": 1.1171740379092476,
-        "atg_geral": 34.87588506771505,
-        "atg_ideal": 48.39
+        "fat": 1567513.1500324383,
+        "vendas": 2075,
+        "pecas": 2330,
+        "ticket": 755.4280241120184,
+        "pa": 1.1228915662650603,
+        "atg_geral": 41.80035066753169,
+        "atg_ideal": 58.06
     },
     "unidades": [
         {
@@ -23,54 +23,54 @@ const dadosDashboard = {
             "META_ACE": 10000.0,
             "META_PRT": 3500.0000000000005,
             "ID LOJA_x": "1",
-            "REALIZADO": 25123.040001678466,
-            "N_VENDAS": 55,
-            "QTD_PEÇAS": 61,
-            "ACE": 2488.970001678467,
+            "REALIZADO": 28402.030003356933,
+            "N_VENDAS": 61,
+            "QTD_PEÇAS": 68,
+            "ACE": 2814.9600033569336,
             "PRT": 571.0,
-            "CEL": 22063.07,
+            "CEL": 25016.07,
             "SOM": 0.0,
             "Seg": 1709.98,
             "Ter": 6936.99,
             "Qua": 2314.990001678467,
             "Qui": 7644.99,
-            "Sex": 1400.0,
-            "Sáb": 3886.1,
+            "Sex": 4423.0,
+            "Sáb": 4142.090001678467,
             "Dom": 1229.99,
             "BRASIL CARD": 2100.0,
-            "CARTÃO": 5095.99,
-            "CREDIÁRIO": 12485.08,
-            "DINHEIRO": 1714.0,
+            "CARTÃO": 5240.980001678467,
+            "CREDIÁRIO": 14888.08,
+            "DINHEIRO": 1894.0,
             "ODRES F": 30.0,
             "ID LOJA_y": "1",
             "NOME PDV": "PS - AÇAILÂNDIA",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 51920.949336802165,
-            "PROJECAO_PERC": 51.92094933680217,
-            "TICKET": 456.782545485063,
-            "PA": 1.1090909090909091,
-            "META_DIARIA": 4679.809999895096,
+            "PROJECAO_VAL": 48914.60722800361,
+            "PROJECAO_PERC": 48.91460722800361,
+            "TICKET": 465.60704923535957,
+            "PA": 1.1147540983606556,
+            "META_DIARIA": 5507.536153587928,
             "sazonalidade": {
                 "Seg": 1709.98,
                 "Ter": 6936.99,
                 "Qua": 2314.990001678467,
                 "Qui": 7644.99,
-                "Sex": 1400.0,
-                "Sáb": 3886.1,
+                "Sex": 4423.0,
+                "Sáb": 4142.090001678467,
                 "Dom": 1229.99
             },
             "mix_categorias": {
-                "CEL": 22063.07,
+                "CEL": 25016.07,
                 "SOM": 0.0,
-                "ACE": 2488.970001678467,
+                "ACE": 2814.9600033569336,
                 "PRT": 571.0
             },
             "mix_planos": {
                 "BRASIL CARD": 2100.0,
-                "CARTÃO": 5095.99,
-                "CREDIÁRIO": 12485.08,
-                "DINHEIRO": 1714.0,
+                "CARTÃO": 5240.980001678467,
+                "CREDIÁRIO": 14888.08,
+                "DINHEIRO": 1894.0,
                 "ODRES F": 30.0
             },
             "historico_diario": [
@@ -194,6 +194,28 @@ const dadosDashboard = {
                     "CEL": 0.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "1",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 3023.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 70.0,
+                    "CEL": 2953.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "1",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 255.9900016784668,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 4,
+                    "ACE": 255.9900016784668,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -203,54 +225,54 @@ const dadosDashboard = {
             "META_ACE": 12000.0,
             "META_PRT": 4200.0,
             "ID LOJA_x": "2",
-            "REALIZADO": 44579.99996948242,
-            "N_VENDAS": 55,
-            "QTD_PEÇAS": 61,
-            "ACE": 1670.0,
-            "PRT": 330.0,
-            "CEL": 42579.99996948242,
+            "REALIZADO": 52947.97999191284,
+            "N_VENDAS": 66,
+            "QTD_PEÇAS": 74,
+            "ACE": 2155.98002243042,
+            "PRT": 512.0,
+            "CEL": 50279.99996948242,
             "SOM": 0.0,
             "Seg": 3270.0,
             "Ter": 1696.0,
             "Qua": 6600.0,
             "Qui": 9561.5,
-            "Sex": 4201.5,
-            "Sáb": 19250.999969482422,
+            "Sex": 7611.5,
+            "Sáb": 24208.97999191284,
             "Dom": 0.0,
-            "BRASIL CARD": 1500.0,
-            "CARTÃO": 3126.0,
-            "CREDIÁRIO": 30288.67998046875,
-            "DINHEIRO": 4946.8,
+            "BRASIL CARD": 3000.0,
+            "CARTÃO": 4183.990020751953,
+            "CREDIÁRIO": 35171.67998046875,
+            "DINHEIRO": 5633.790001678467,
             "ODRES F": 412.5199890136719,
             "ID LOJA_y": "2",
             "NOME PDV": "PS - COMERCIO",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 92131.99993693034,
-            "PROJECAO_PERC": 76.7766666141086,
-            "TICKET": 810.5454539905895,
-            "PA": 1.1090909090909091,
-            "META_DIARIA": 4713.750001907349,
+            "PROJECAO_VAL": 91188.18776384988,
+            "PROJECAO_PERC": 75.9901564698749,
+            "TICKET": 802.2421210895885,
+            "PA": 1.121212121212121,
+            "META_DIARIA": 5157.847692929781,
             "sazonalidade": {
                 "Seg": 3270.0,
                 "Ter": 1696.0,
                 "Qua": 6600.0,
                 "Qui": 9561.5,
-                "Sex": 4201.5,
-                "Sáb": 19250.999969482422,
+                "Sex": 7611.5,
+                "Sáb": 24208.97999191284,
                 "Dom": 0.0
             },
             "mix_categorias": {
-                "CEL": 42579.99996948242,
+                "CEL": 50279.99996948242,
                 "SOM": 0.0,
-                "ACE": 1670.0,
-                "PRT": 330.0
+                "ACE": 2155.98002243042,
+                "PRT": 512.0
             },
             "mix_planos": {
-                "BRASIL CARD": 1500.0,
-                "CARTÃO": 3126.0,
-                "CREDIÁRIO": 30288.67998046875,
-                "DINHEIRO": 4946.8,
+                "BRASIL CARD": 3000.0,
+                "CARTÃO": 4183.990020751953,
+                "CREDIÁRIO": 35171.67998046875,
+                "DINHEIRO": 5633.790001678467,
                 "ODRES F": 412.5199890136719
             },
             "historico_diario": [
@@ -374,6 +396,28 @@ const dadosDashboard = {
                     "CEL": 4600.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "2",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 3410.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 5,
+                    "ACE": 210.0,
+                    "CEL": 3200.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "2",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 4957.98002243042,
+                    "N_VENDAS": 8,
+                    "QTD_PEÇAS": 8,
+                    "ACE": 275.9800224304199,
+                    "CEL": 4500.0,
+                    "PRT": 182.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -383,54 +427,54 @@ const dadosDashboard = {
             "META_ACE": 12000.0,
             "META_PRT": 4200.0,
             "ID LOJA_x": "3",
-            "REALIZADO": 49794.97000946875,
-            "N_VENDAS": 49,
-            "QTD_PEÇAS": 51,
-            "ACE": 438.99,
+            "REALIZADO": 51494.97000946875,
+            "N_VENDAS": 52,
+            "QTD_PEÇAS": 54,
+            "ACE": 488.99,
             "PRT": 0.0,
-            "CEL": 49355.98000946875,
+            "CEL": 51005.98000946875,
             "SOM": 0.0,
             "Seg": 9249.020029,
             "Ter": 6363.99,
             "Qua": 8596.0,
             "Qui": 12185.0,
-            "Sex": 7069.99,
-            "Sáb": 6330.96998046875,
+            "Sex": 7969.99,
+            "Sáb": 7130.96998046875,
             "Dom": 0.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 11979.0,
+            "CARTÃO": 13629.0,
             "CREDIÁRIO": 31060.959990234376,
-            "DINHEIRO": 3360.030029,
+            "DINHEIRO": 3410.030029,
             "ODRES F": 570.0,
             "ID LOJA_y": "3",
             "NOME PDV": "PS - MACEIO CENTRO",
             "ID TIPO": 2,
             "TIPO PDV": "LOJA FRANQUIA",
-            "PROJECAO_VAL": 102909.60468623543,
-            "PROJECAO_PERC": 85.75800390519619,
-            "TICKET": 1016.2238777442602,
-            "PA": 1.0408163265306123,
-            "META_DIARIA": 4387.814374408203,
+            "PROJECAO_VAL": 88685.78168297396,
+            "PROJECAO_PERC": 73.90481806914497,
+            "TICKET": 990.287884797476,
+            "PA": 1.0384615384615385,
+            "META_DIARIA": 5269.617691579327,
             "sazonalidade": {
                 "Seg": 9249.020029,
                 "Ter": 6363.99,
                 "Qua": 8596.0,
                 "Qui": 12185.0,
-                "Sex": 7069.99,
-                "Sáb": 6330.96998046875,
+                "Sex": 7969.99,
+                "Sáb": 7130.96998046875,
                 "Dom": 0.0
             },
             "mix_categorias": {
-                "CEL": 49355.98000946875,
+                "CEL": 51005.98000946875,
                 "SOM": 0.0,
-                "ACE": 438.99,
+                "ACE": 488.99,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 11979.0,
+                "CARTÃO": 13629.0,
                 "CREDIÁRIO": 31060.959990234376,
-                "DINHEIRO": 3360.030029,
+                "DINHEIRO": 3410.030029,
                 "ODRES F": 570.0
             },
             "historico_diario": [
@@ -554,6 +598,28 @@ const dadosDashboard = {
                     "CEL": 5364.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "3",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 900.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 50.0,
+                    "CEL": 850.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "3",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 800.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 0.0,
+                    "CEL": 800.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -563,54 +629,54 @@ const dadosDashboard = {
             "META_ACE": 20000.0,
             "META_PRT": 7000.000000000001,
             "ID LOJA_x": "4",
-            "REALIZADO": 107567.92009253906,
-            "N_VENDAS": 97,
-            "QTD_PEÇAS": 108,
-            "ACE": 4019.98999,
-            "PRT": 2004.4200122070313,
-            "CEL": 101543.51009033203,
+            "REALIZADO": 120520.92009253906,
+            "N_VENDAS": 111,
+            "QTD_PEÇAS": 122,
+            "ACE": 4359.98999,
+            "PRT": 2364.420012207031,
+            "CEL": 113796.51009033203,
             "SOM": 0.0,
             "Seg": 17452.98,
             "Ter": 20924.98,
             "Qua": 20541.970031503908,
             "Qui": 16040.0,
-            "Sex": 3302.0,
-            "Sáb": 29305.990061035154,
-            "Dom": 0.0,
+            "Sex": 5902.0,
+            "Sáb": 37998.990061035154,
+            "Dom": 1660.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 58831.9600415039,
-            "CREDIÁRIO": 30157.800048828125,
-            "DINHEIRO": 7903.98,
+            "CARTÃO": 62905.9600415039,
+            "CREDIÁRIO": 36443.800048828125,
+            "DINHEIRO": 9221.98,
             "ODRES F": 420.0,
             "ID LOJA_y": "4",
             "NOME PDV": "PS - CASTANHAL II",
             "ID TIPO": 2,
             "TIPO PDV": "LOJA FRANQUIA",
-            "PROJECAO_VAL": 222307.03485791406,
-            "PROJECAO_PERC": 111.15351742895703,
-            "TICKET": 1108.9476298199904,
-            "PA": 1.1134020618556701,
-            "META_DIARIA": 5777.004994216309,
+            "PROJECAO_VAL": 207563.80682603948,
+            "PROJECAO_PERC": 103.78190341301973,
+            "TICKET": 1085.7740548877393,
+            "PA": 1.0990990990990992,
+            "META_DIARIA": 6113.775377496995,
             "sazonalidade": {
                 "Seg": 17452.98,
                 "Ter": 20924.98,
                 "Qua": 20541.970031503908,
                 "Qui": 16040.0,
-                "Sex": 3302.0,
-                "Sáb": 29305.990061035154,
-                "Dom": 0.0
+                "Sex": 5902.0,
+                "Sáb": 37998.990061035154,
+                "Dom": 1660.0
             },
             "mix_categorias": {
-                "CEL": 101543.51009033203,
+                "CEL": 113796.51009033203,
                 "SOM": 0.0,
-                "ACE": 4019.98999,
-                "PRT": 2004.4200122070313
+                "ACE": 4359.98999,
+                "PRT": 2364.420012207031
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 58831.9600415039,
-                "CREDIÁRIO": 30157.800048828125,
-                "DINHEIRO": 7903.98,
+                "CARTÃO": 62905.9600415039,
+                "CREDIÁRIO": 36443.800048828125,
+                "DINHEIRO": 9221.98,
                 "ODRES F": 420.0
             },
             "historico_diario": [
@@ -734,6 +800,39 @@ const dadosDashboard = {
                     "CEL": 3900.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "4",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 2600.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 0.0,
+                    "CEL": 2600.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "4",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 8693.0,
+                    "N_VENDAS": 10,
+                    "QTD_PEÇAS": 10,
+                    "ACE": 340.0,
+                    "CEL": 8353.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "4",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 1660.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 0.0,
+                    "CEL": 1300.0,
+                    "PRT": 360.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -743,54 +842,54 @@ const dadosDashboard = {
             "META_ACE": 6000.0,
             "META_PRT": 4200.0,
             "ID LOJA_x": "5",
-            "REALIZADO": 19363.94,
-            "N_VENDAS": 38,
-            "QTD_PEÇAS": 44,
-            "ACE": 1748.0,
+            "REALIZADO": 21183.929990234374,
+            "N_VENDAS": 41,
+            "QTD_PEÇAS": 47,
+            "ACE": 1968.0,
             "PRT": 744.94,
-            "CEL": 16871.0,
+            "CEL": 18470.989990234375,
             "SOM": 0.0,
             "Seg": 4702.0,
             "Ter": 3619.6,
             "Qua": 4351.34,
             "Qui": 5374.0,
-            "Sex": 220.0,
-            "Sáb": 1067.0,
+            "Sex": 1839.989990234375,
+            "Sáb": 1267.0,
             "Dom": 30.0,
             "BRASIL CARD": 1300.74,
             "CARTÃO": 9425.6,
-            "CREDIÁRIO": 5924.5,
-            "DINHEIRO": 1324.5,
+            "CREDIÁRIO": 6963.5,
+            "DINHEIRO": 2105.489990234375,
             "ODRES F": 55.0,
             "ID LOJA_y": "5",
             "NOME PDV": "PS - ABAETETUBA I (QUIOSQUE)",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 40018.80933333333,
-            "PROJECAO_PERC": 33.34900777777778,
-            "TICKET": 509.5773684210526,
-            "PA": 1.1578947368421053,
-            "META_DIARIA": 6289.75375,
+            "PROJECAO_VAL": 36483.434983181425,
+            "PROJECAO_PERC": 30.40286248598452,
+            "TICKET": 516.6812192740091,
+            "PA": 1.146341463414634,
+            "META_DIARIA": 7601.236154597355,
             "sazonalidade": {
                 "Seg": 4702.0,
                 "Ter": 3619.6,
                 "Qua": 4351.34,
                 "Qui": 5374.0,
-                "Sex": 220.0,
-                "Sáb": 1067.0,
+                "Sex": 1839.989990234375,
+                "Sáb": 1267.0,
                 "Dom": 30.0
             },
             "mix_categorias": {
-                "CEL": 16871.0,
+                "CEL": 18470.989990234375,
                 "SOM": 0.0,
-                "ACE": 1748.0,
+                "ACE": 1968.0,
                 "PRT": 744.94
             },
             "mix_planos": {
                 "BRASIL CARD": 1300.74,
                 "CARTÃO": 9425.6,
-                "CREDIÁRIO": 5924.5,
-                "DINHEIRO": 1324.5,
+                "CREDIÁRIO": 6963.5,
+                "DINHEIRO": 2105.489990234375,
                 "ODRES F": 55.0
             },
             "historico_diario": [
@@ -925,6 +1024,28 @@ const dadosDashboard = {
                     "CEL": 1100.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "5",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 1619.989990234375,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 20.0,
+                    "CEL": 1599.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "5",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 200.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 200.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -934,54 +1055,54 @@ const dadosDashboard = {
             "META_ACE": 20000.0,
             "META_PRT": 7000.000000000001,
             "ID LOJA_x": "6",
-            "REALIZADO": 64813.93005126953,
-            "N_VENDAS": 105,
-            "QTD_PEÇAS": 122,
-            "ACE": 5985.96,
-            "PRT": 1303.0,
-            "CEL": 49424.97005126953,
-            "SOM": 8100.0,
+            "REALIZADO": 78211.92004150391,
+            "N_VENDAS": 117,
+            "QTD_PEÇAS": 134,
+            "ACE": 6105.96,
+            "PRT": 1431.0,
+            "CEL": 53824.97005126953,
+            "SOM": 16849.989990234375,
             "Seg": 6091.97,
             "Ter": 2815.0,
             "Qua": 11707.99,
             "Qui": 6873.979990234375,
-            "Sex": 10380.0,
-            "Sáb": 26876.990061035154,
+            "Sex": 16487.989990234375,
+            "Sáb": 34166.990061035154,
             "Dom": 68.0,
-            "BRASIL CARD": 12378.0,
-            "CARTÃO": 12758.190012207031,
-            "CREDIÁRIO": 21821.780039062498,
-            "DINHEIRO": 12153.96,
+            "BRASIL CARD": 14378.0,
+            "CARTÃO": 13908.190012207031,
+            "CREDIÁRIO": 25263.780039062498,
+            "DINHEIRO": 16129.96,
             "ODRES F": 1445.0,
             "ID LOJA_y": "6",
             "NOME PDV": "PS - ABAETETUBA II ( LOJA)",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 133948.78877262372,
-            "PROJECAO_PERC": 66.97439438631186,
-            "TICKET": 617.2755242978051,
-            "PA": 1.161904761904762,
-            "META_DIARIA": 8449.129371795654,
+            "PROJECAO_VAL": 134698.30673814562,
+            "PROJECAO_PERC": 67.34915336907281,
+            "TICKET": 668.477949072683,
+            "PA": 1.1452991452991452,
+            "META_DIARIA": 9368.313842961237,
             "sazonalidade": {
                 "Seg": 6091.97,
                 "Ter": 2815.0,
                 "Qua": 11707.99,
                 "Qui": 6873.979990234375,
-                "Sex": 10380.0,
-                "Sáb": 26876.990061035154,
+                "Sex": 16487.989990234375,
+                "Sáb": 34166.990061035154,
                 "Dom": 68.0
             },
             "mix_categorias": {
-                "CEL": 49424.97005126953,
-                "SOM": 8100.0,
-                "ACE": 5985.96,
-                "PRT": 1303.0
+                "CEL": 53824.97005126953,
+                "SOM": 16849.989990234375,
+                "ACE": 6105.96,
+                "PRT": 1431.0
             },
             "mix_planos": {
-                "BRASIL CARD": 12378.0,
-                "CARTÃO": 12758.190012207031,
-                "CREDIÁRIO": 21821.780039062498,
-                "DINHEIRO": 12153.96,
+                "BRASIL CARD": 14378.0,
+                "CARTÃO": 13908.190012207031,
+                "CREDIÁRIO": 25263.780039062498,
+                "DINHEIRO": 16129.96,
                 "ODRES F": 1445.0
             },
             "historico_diario": [
@@ -1127,6 +1248,28 @@ const dadosDashboard = {
                     "CEL": 1599.989990234375,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "6",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 6107.989990234375,
+                    "N_VENDAS": 5,
+                    "QTD_PEÇAS": 5,
+                    "ACE": 30.0,
+                    "CEL": 3200.0,
+                    "PRT": 78.0,
+                    "SOM": 2799.989990234375
+                },
+                {
+                    "ID LOJA": "6",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 7290.0,
+                    "N_VENDAS": 7,
+                    "QTD_PEÇAS": 7,
+                    "ACE": 90.0,
+                    "CEL": 1200.0,
+                    "PRT": 50.0,
+                    "SOM": 5950.0
                 }
             ]
         },
@@ -1136,54 +1279,54 @@ const dadosDashboard = {
             "META_ACE": 25000.0,
             "META_PRT": 8750.0,
             "ID LOJA_x": "7",
-            "REALIZADO": 98587.86005371093,
-            "N_VENDAS": 135,
-            "QTD_PEÇAS": 137,
-            "ACE": 6673.45,
-            "PRT": 4291.490002441406,
-            "CEL": 81852.92005126952,
+            "REALIZADO": 113303.3300377655,
+            "N_VENDAS": 161,
+            "QTD_PEÇAS": 164,
+            "ACE": 7700.940003585815,
+            "PRT": 5239.490002441406,
+            "CEL": 94592.90003173827,
             "SOM": 5770.0,
             "Seg": 13985.75,
             "Ter": 18953.79,
             "Qua": 12723.670002441406,
             "Qui": 7035.0,
-            "Sex": 15290.2,
-            "Sáb": 30599.45005126953,
-            "Dom": 0.0,
+            "Sex": 23205.17999382019,
+            "Sáb": 37309.940041503905,
+            "Dom": 90.0,
             "BRASIL CARD": 9944.19,
-            "CARTÃO": 23782.65999267578,
-            "CREDIÁRIO": 46048.25004882812,
-            "DINHEIRO": 10894.6,
+            "CARTÃO": 27696.1499924469,
+            "CREDIÁRIO": 48544.25004882812,
+            "DINHEIRO": 14974.589990234375,
             "ODRES F": 1850.0,
             "ID LOJA_y": "7",
             "NOME PDV": "PS - CASTANHAL LOJA",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 203748.24411100257,
-            "PROJECAO_PERC": 81.49929764440103,
-            "TICKET": 730.2804448423032,
-            "PA": 1.0148148148148148,
-            "META_DIARIA": 9463.258746643067,
+            "PROJECAO_VAL": 195133.51284281834,
+            "PROJECAO_PERC": 78.05340513712733,
+            "TICKET": 703.7473915389161,
+            "PA": 1.0186335403726707,
+            "META_DIARIA": 10515.128458633424,
             "sazonalidade": {
                 "Seg": 13985.75,
                 "Ter": 18953.79,
                 "Qua": 12723.670002441406,
                 "Qui": 7035.0,
-                "Sex": 15290.2,
-                "Sáb": 30599.45005126953,
-                "Dom": 0.0
+                "Sex": 23205.17999382019,
+                "Sáb": 37309.940041503905,
+                "Dom": 90.0
             },
             "mix_categorias": {
-                "CEL": 81852.92005126952,
+                "CEL": 94592.90003173827,
                 "SOM": 5770.0,
-                "ACE": 6673.45,
-                "PRT": 4291.490002441406
+                "ACE": 7700.940003585815,
+                "PRT": 5239.490002441406
             },
             "mix_planos": {
                 "BRASIL CARD": 9944.19,
-                "CARTÃO": 23782.65999267578,
-                "CREDIÁRIO": 46048.25004882812,
-                "DINHEIRO": 10894.6,
+                "CARTÃO": 27696.1499924469,
+                "CREDIÁRIO": 48544.25004882812,
+                "DINHEIRO": 14974.589990234375,
                 "ODRES F": 1850.0
             },
             "historico_diario": [
@@ -1307,6 +1450,39 @@ const dadosDashboard = {
                     "CEL": 1000.0,
                     "PRT": 300.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "7",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 7914.97999382019,
+                    "N_VENDAS": 11,
+                    "QTD_PEÇAS": 11,
+                    "ACE": 454.99000358581543,
+                    "CEL": 7159.989990234375,
+                    "PRT": 300.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "7",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 6710.489990234375,
+                    "N_VENDAS": 14,
+                    "QTD_PEÇAS": 15,
+                    "ACE": 482.5,
+                    "CEL": 5579.989990234375,
+                    "PRT": 648.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "7",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 90.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 90.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -1316,54 +1492,54 @@ const dadosDashboard = {
             "META_ACE": 7500.0,
             "META_PRT": 5250.000000000001,
             "ID LOJA_x": "8",
-            "REALIZADO": 40481.95999954223,
-            "N_VENDAS": 67,
-            "QTD_PEÇAS": 75,
-            "ACE": 4698.479999542236,
-            "PRT": 973.5,
-            "CEL": 34809.979999999996,
+            "REALIZADO": 52638.950028877254,
+            "N_VENDAS": 84,
+            "QTD_PEÇAS": 97,
+            "ACE": 5675.46999835968,
+            "PRT": 1033.5,
+            "CEL": 45929.980030517574,
             "SOM": 0.0,
             "Seg": 3453.5,
             "Ter": 9501.99,
             "Qua": 7479.0,
             "Qui": 5128.5,
-            "Sex": 1827.0,
-            "Sáb": 9931.979999771118,
-            "Dom": 3159.989999771118,
+            "Sex": 4271.989996910095,
+            "Sáb": 17446.980032196043,
+            "Dom": 5356.989999771118,
             "BRASIL CARD": 1400.0,
-            "CARTÃO": 3711.5,
-            "CREDIÁRIO": 24895.989999999998,
-            "DINHEIRO": 5001.99,
+            "CARTÃO": 7642.390054702759,
+            "CREDIÁRIO": 31620.08997558594,
+            "DINHEIRO": 5532.99,
             "ODRES F": 1076.9899997711182,
             "ID LOJA_y": "8",
             "NOME PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 83662.71733238727,
-            "PROJECAO_PERC": 55.775144888258176,
-            "TICKET": 604.2083582021229,
-            "PA": 1.1194029850746268,
-            "META_DIARIA": 6844.8775000286105,
+            "PROJECAO_VAL": 90655.9694941775,
+            "PROJECAO_PERC": 60.43731299611833,
+            "TICKET": 626.6541670104435,
+            "PA": 1.1547619047619047,
+            "META_DIARIA": 7489.311536240211,
             "sazonalidade": {
                 "Seg": 3453.5,
                 "Ter": 9501.99,
                 "Qua": 7479.0,
                 "Qui": 5128.5,
-                "Sex": 1827.0,
-                "Sáb": 9931.979999771118,
-                "Dom": 3159.989999771118
+                "Sex": 4271.989996910095,
+                "Sáb": 17446.980032196043,
+                "Dom": 5356.989999771118
             },
             "mix_categorias": {
-                "CEL": 34809.979999999996,
+                "CEL": 45929.980030517574,
                 "SOM": 0.0,
-                "ACE": 4698.479999542236,
-                "PRT": 973.5
+                "ACE": 5675.46999835968,
+                "PRT": 1033.5
             },
             "mix_planos": {
                 "BRASIL CARD": 1400.0,
-                "CARTÃO": 3711.5,
-                "CREDIÁRIO": 24895.989999999998,
-                "DINHEIRO": 5001.99,
+                "CARTÃO": 7642.390054702759,
+                "CREDIÁRIO": 31620.08997558594,
+                "DINHEIRO": 5532.99,
                 "ODRES F": 1076.9899997711182
             },
             "historico_diario": [
@@ -1509,6 +1685,39 @@ const dadosDashboard = {
                     "CEL": 1350.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "8",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 2444.989996910095,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 8,
+                    "ACE": 484.9899969100953,
+                    "CEL": 1900.0,
+                    "PRT": 60.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "8",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 7515.000032424927,
+                    "N_VENDAS": 7,
+                    "QTD_PEÇAS": 10,
+                    "ACE": 365.00000190734863,
+                    "CEL": 7150.000030517578,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "8",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 2197.0,
+                    "N_VENDAS": 4,
+                    "QTD_PEÇAS": 4,
+                    "ACE": 127.0,
+                    "CEL": 2070.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -1518,54 +1727,54 @@ const dadosDashboard = {
             "META_ACE": 23000.0,
             "META_PRT": 8050.000000000001,
             "ID LOJA_x": "9",
-            "REALIZADO": 74922.5,
-            "N_VENDAS": 79,
-            "QTD_PEÇAS": 96,
-            "ACE": 4809.0,
-            "PRT": 3524.5,
-            "CEL": 59539.0,
+            "REALIZADO": 89525.50001096725,
+            "N_VENDAS": 102,
+            "QTD_PEÇAS": 128,
+            "ACE": 5778.999995708466,
+            "PRT": 4327.500015258789,
+            "CEL": 72369.0,
             "SOM": 7050.0,
             "Seg": 4631.0,
             "Ter": 16157.0,
             "Qua": 4070.0,
             "Qui": 18148.5,
-            "Sex": 10734.0,
-            "Sáb": 11150.0,
-            "Dom": 10032.0,
+            "Sex": 17646.00001525879,
+            "Sáb": 17611.0,
+            "Dom": 11261.999995708466,
             "BRASIL CARD": 100.0,
-            "CARTÃO": 40433.0,
-            "CREDIÁRIO": 20186.0,
-            "DINHEIRO": 1759.5,
+            "CARTÃO": 42479.99999952316,
+            "CREDIÁRIO": 28581.0,
+            "DINHEIRO": 5140.500015258789,
             "ODRES F": 228.0,
             "ID LOJA_y": "9",
             "NOME PDV": "PS - CASTANHEIRA II (LOJA)",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 154839.8333333333,
-            "PROJECAO_PERC": 67.32166666666666,
-            "TICKET": 948.3860759493671,
-            "PA": 1.2151898734177216,
-            "META_DIARIA": 9692.34375,
+            "PROJECAO_VAL": 154182.8055744436,
+            "PROJECAO_PERC": 67.03600242367112,
+            "TICKET": 877.700980499679,
+            "PA": 1.2549019607843137,
+            "META_DIARIA": 10805.730768387135,
             "sazonalidade": {
                 "Seg": 4631.0,
                 "Ter": 16157.0,
                 "Qua": 4070.0,
                 "Qui": 18148.5,
-                "Sex": 10734.0,
-                "Sáb": 11150.0,
-                "Dom": 10032.0
+                "Sex": 17646.00001525879,
+                "Sáb": 17611.0,
+                "Dom": 11261.999995708466
             },
             "mix_categorias": {
-                "CEL": 59539.0,
+                "CEL": 72369.0,
                 "SOM": 7050.0,
-                "ACE": 4809.0,
-                "PRT": 3524.5
+                "ACE": 5778.999995708466,
+                "PRT": 4327.500015258789
             },
             "mix_planos": {
                 "BRASIL CARD": 100.0,
-                "CARTÃO": 40433.0,
-                "CREDIÁRIO": 20186.0,
-                "DINHEIRO": 1759.5,
+                "CARTÃO": 42479.99999952316,
+                "CREDIÁRIO": 28581.0,
+                "DINHEIRO": 5140.500015258789,
                 "ODRES F": 228.0
             },
             "historico_diario": [
@@ -1711,6 +1920,39 @@ const dadosDashboard = {
                     "CEL": 15709.0,
                     "PRT": 1540.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "9",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 6912.000015258789,
+                    "N_VENDAS": 9,
+                    "QTD_PEÇAS": 11,
+                    "ACE": 330.0,
+                    "CEL": 6400.0,
+                    "PRT": 182.0000152587891,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "9",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 6461.0,
+                    "N_VENDAS": 10,
+                    "QTD_PEÇAS": 15,
+                    "ACE": 510.0,
+                    "CEL": 5330.0,
+                    "PRT": 621.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "9",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 1229.9999957084656,
+                    "N_VENDAS": 4,
+                    "QTD_PEÇAS": 6,
+                    "ACE": 129.9999957084656,
+                    "CEL": 1100.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -1720,54 +1962,54 @@ const dadosDashboard = {
             "META_ACE": 4500.0,
             "META_PRT": 3150.0000000000005,
             "ID LOJA_x": "10",
-            "REALIZADO": 27738.48000741005,
-            "N_VENDAS": 75,
-            "QTD_PEÇAS": 88,
-            "ACE": 4644.490007400513,
+            "REALIZADO": 29338.48000741005,
+            "N_VENDAS": 80,
+            "QTD_PEÇAS": 94,
+            "ACE": 4944.490007400513,
             "PRT": 294.0,
-            "CEL": 22799.990000009537,
+            "CEL": 24099.990000009537,
             "SOM": 0.0,
             "Seg": 8215.0,
             "Ter": 5510.0,
             "Qua": 6814.0,
             "Qui": 2834.4800074100494,
-            "Sex": 2130.0,
-            "Sáb": 2235.0,
+            "Sex": 3490.0,
+            "Sáb": 2475.0,
             "Dom": 0.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 5285.0000076293945,
-            "CREDIÁRIO": 14129.0,
-            "DINHEIRO": 3474.479999780655,
+            "CARTÃO": 5585.0000076293945,
+            "CREDIÁRIO": 15201.0,
+            "DINHEIRO": 3702.479999780655,
             "ODRES F": 0.0,
             "ID LOJA_y": "10",
             "NOME PDV": "PS - CIDADE NOVA",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 57326.1920153141,
-            "PROJECAO_PERC": 63.69576890590456,
-            "TICKET": 369.84640009880064,
-            "PA": 1.1733333333333333,
-            "META_DIARIA": 3891.344999536872,
+            "PROJECAO_VAL": 50527.382234983976,
+            "PROJECAO_PERC": 56.141535816648855,
+            "TICKET": 366.7310000926256,
+            "PA": 1.175,
+            "META_DIARIA": 4666.2707686607655,
             "sazonalidade": {
                 "Seg": 8215.0,
                 "Ter": 5510.0,
                 "Qua": 6814.0,
                 "Qui": 2834.4800074100494,
-                "Sex": 2130.0,
-                "Sáb": 2235.0,
+                "Sex": 3490.0,
+                "Sáb": 2475.0,
                 "Dom": 0.0
             },
             "mix_categorias": {
-                "CEL": 22799.990000009537,
+                "CEL": 24099.990000009537,
                 "SOM": 0.0,
-                "ACE": 4644.490007400513,
+                "ACE": 4944.490007400513,
                 "PRT": 294.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 5285.0000076293945,
-                "CREDIÁRIO": 14129.0,
-                "DINHEIRO": 3474.479999780655,
+                "CARTÃO": 5585.0000076293945,
+                "CREDIÁRIO": 15201.0,
+                "DINHEIRO": 3702.479999780655,
                 "ODRES F": 0.0
             },
             "historico_diario": [
@@ -1891,6 +2133,28 @@ const dadosDashboard = {
                     "CEL": 1199.990000009537,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "10",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 1360.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 60.0,
+                    "CEL": 1300.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "10",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 240.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 240.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -1900,54 +2164,54 @@ const dadosDashboard = {
             "META_ACE": 24000.0,
             "META_PRT": 8400.0,
             "ID LOJA_x": "11",
-            "REALIZADO": 69050.48,
-            "N_VENDAS": 93,
-            "QTD_PEÇAS": 109,
-            "ACE": 5839.48,
+            "REALIZADO": 80780.48,
+            "N_VENDAS": 107,
+            "QTD_PEÇAS": 124,
+            "ACE": 7969.48,
             "PRT": 2429.0,
-            "CEL": 60782.0,
+            "CEL": 70382.0,
             "SOM": 0.0,
             "Seg": 10571.99,
             "Ter": 9437.5,
             "Qua": 12852.0,
             "Qui": 10115.99,
-            "Sex": 3992.0,
-            "Sáb": 14990.0,
-            "Dom": 7091.0,
+            "Sex": 10672.0,
+            "Sáb": 17070.0,
+            "Dom": 10061.0,
             "BRASIL CARD": 2500.0,
-            "CARTÃO": 25940.489999999998,
-            "CREDIÁRIO": 29454.0,
-            "DINHEIRO": 1497.99,
+            "CARTÃO": 27260.489999999998,
+            "CREDIÁRIO": 36978.0,
+            "DINHEIRO": 2415.99,
             "ODRES F": 660.0,
             "ID LOJA_y": "11",
             "NOME PDV": "PS - METROPOLE I (LOJA)",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 142704.32533333334,
-            "PROJECAO_PERC": 59.46013555555556,
-            "TICKET": 742.4782795698924,
-            "PA": 1.1720430107526882,
-            "META_DIARIA": 10684.345000000001,
+            "PROJECAO_VAL": 139121.93777777776,
+            "PROJECAO_PERC": 57.96747407407407,
+            "TICKET": 754.9577570093458,
+            "PA": 1.158878504672897,
+            "META_DIARIA": 12247.655384615386,
             "sazonalidade": {
                 "Seg": 10571.99,
                 "Ter": 9437.5,
                 "Qua": 12852.0,
                 "Qui": 10115.99,
-                "Sex": 3992.0,
-                "Sáb": 14990.0,
-                "Dom": 7091.0
+                "Sex": 10672.0,
+                "Sáb": 17070.0,
+                "Dom": 10061.0
             },
             "mix_categorias": {
-                "CEL": 60782.0,
+                "CEL": 70382.0,
                 "SOM": 0.0,
-                "ACE": 5839.48,
+                "ACE": 7969.48,
                 "PRT": 2429.0
             },
             "mix_planos": {
                 "BRASIL CARD": 2500.0,
-                "CARTÃO": 25940.489999999998,
-                "CREDIÁRIO": 29454.0,
-                "DINHEIRO": 1497.99,
+                "CARTÃO": 27260.489999999998,
+                "CREDIÁRIO": 36978.0,
+                "DINHEIRO": 2415.99,
                 "ODRES F": 660.0
             },
             "historico_diario": [
@@ -2093,6 +2357,39 @@ const dadosDashboard = {
                     "CEL": 3360.0,
                     "PRT": 396.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "11",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 6680.0,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 7,
+                    "ACE": 780.0,
+                    "CEL": 5900.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "11",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 2080.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 880.0,
+                    "CEL": 1200.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "11",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 2970.0,
+                    "N_VENDAS": 5,
+                    "QTD_PEÇAS": 5,
+                    "ACE": 470.0,
+                    "CEL": 2500.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -2102,54 +2399,54 @@ const dadosDashboard = {
             "META_ACE": 12500.0,
             "META_PRT": 8750.0,
             "ID LOJA_x": "12",
-            "REALIZADO": 122616.27998474121,
-            "N_VENDAS": 171,
-            "QTD_PEÇAS": 193,
-            "ACE": 8006.49,
-            "PRT": 5520.799984741211,
-            "CEL": 109088.99,
+            "REALIZADO": 154089.2799537468,
+            "N_VENDAS": 212,
+            "QTD_PEÇAS": 240,
+            "ACE": 11000.489999523163,
+            "PRT": 5829.799984741211,
+            "CEL": 137258.9899694824,
             "SOM": 0.0,
             "Seg": 8306.99,
             "Ter": 11130.7,
             "Qua": 26323.99998474121,
             "Qui": 15663.5,
-            "Sex": 7608.5,
-            "Sáb": 39762.590000000004,
-            "Dom": 13820.0,
+            "Sex": 14608.5,
+            "Sáb": 59008.58996900558,
+            "Dom": 19047.0,
             "BRASIL CARD": 5920.0,
-            "CARTÃO": 41512.96998474121,
-            "CREDIÁRIO": 51250.52,
-            "DINHEIRO": 5150.8,
+            "CARTÃO": 48345.96998474121,
+            "CREDIÁRIO": 61388.51996948242,
+            "DINHEIRO": 5581.8,
             "ODRES F": 1805.0,
             "ID LOJA_y": "12",
             "NOME PDV": "PS - METROPOLE II (QUIOSQUE)",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 253406.97863513182,
-            "PROJECAO_PERC": 101.36279145405274,
-            "TICKET": 717.0542689166152,
-            "PA": 1.128654970760234,
-            "META_DIARIA": 7961.482500953674,
+            "PROJECAO_VAL": 265375.9821425639,
+            "PROJECAO_PERC": 106.15039285702557,
+            "TICKET": 726.8362261969188,
+            "PA": 1.1320754716981132,
+            "META_DIARIA": 7377.747695865632,
             "sazonalidade": {
                 "Seg": 8306.99,
                 "Ter": 11130.7,
                 "Qua": 26323.99998474121,
                 "Qui": 15663.5,
-                "Sex": 7608.5,
-                "Sáb": 39762.590000000004,
-                "Dom": 13820.0
+                "Sex": 14608.5,
+                "Sáb": 59008.58996900558,
+                "Dom": 19047.0
             },
             "mix_categorias": {
-                "CEL": 109088.99,
+                "CEL": 137258.9899694824,
                 "SOM": 0.0,
-                "ACE": 8006.49,
-                "PRT": 5520.799984741211
+                "ACE": 11000.489999523163,
+                "PRT": 5829.799984741211
             },
             "mix_planos": {
                 "BRASIL CARD": 5920.0,
-                "CARTÃO": 41512.96998474121,
-                "CREDIÁRIO": 51250.52,
-                "DINHEIRO": 5150.8,
+                "CARTÃO": 48345.96998474121,
+                "CREDIÁRIO": 61388.51996948242,
+                "DINHEIRO": 5581.8,
                 "ODRES F": 1805.0
             },
             "historico_diario": [
@@ -2295,6 +2592,39 @@ const dadosDashboard = {
                     "CEL": 3300.0,
                     "PRT": 154.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "12",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 7000.0,
+                    "N_VENDAS": 15,
+                    "QTD_PEÇAS": 17,
+                    "ACE": 1166.0,
+                    "CEL": 5600.0,
+                    "PRT": 234.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "12",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 19245.999969005585,
+                    "N_VENDAS": 14,
+                    "QTD_PEÇAS": 16,
+                    "ACE": 745.9999995231628,
+                    "CEL": 18499.999969482422,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "12",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 5227.0,
+                    "N_VENDAS": 12,
+                    "QTD_PEÇAS": 14,
+                    "ACE": 1082.0,
+                    "CEL": 4070.0,
+                    "PRT": 75.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -2304,22 +2634,22 @@ const dadosDashboard = {
             "META_ACE": 13000.0,
             "META_PRT": 4550.0,
             "ID LOJA_x": "13",
-            "REALIZADO": 15278.890000534058,
-            "N_VENDAS": 47,
-            "QTD_PEÇAS": 51,
-            "ACE": 5228.900000534058,
+            "REALIZADO": 20168.870011520386,
+            "N_VENDAS": 57,
+            "QTD_PEÇAS": 62,
+            "ACE": 7118.880011520386,
             "PRT": 0.0,
             "CEL": 4549.99,
-            "SOM": 5500.0,
+            "SOM": 8500.0,
             "Seg": 1710.0,
             "Ter": 1769.99,
             "Qua": 2358.9800054931643,
             "Qui": 929.9599957275391,
             "Sex": 329.99,
-            "Sáb": 4540.0,
-            "Dom": 3639.9699993133545,
+            "Sáb": 5979.980010986328,
+            "Dom": 7089.9699993133545,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 7974.959997406006,
+            "CARTÃO": 8624.95000289917,
             "CREDIÁRIO": 2839.0,
             "DINHEIRO": 556.0,
             "ODRES F": 0.0,
@@ -2327,29 +2657,29 @@ const dadosDashboard = {
             "NOME PDV": "PS - PARAUAPEBAS",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 31576.372667770385,
-            "PROJECAO_PERC": 24.28951743674645,
-            "TICKET": 325.0827659688097,
-            "PA": 1.0851063829787233,
-            "META_DIARIA": 7170.069374966622,
+            "PROJECAO_VAL": 34735.276130951774,
+            "PROJECAO_PERC": 26.71944317765521,
+            "TICKET": 353.83982476351554,
+            "PA": 1.087719298245614,
+            "META_DIARIA": 8448.548460652279,
             "sazonalidade": {
                 "Seg": 1710.0,
                 "Ter": 1769.99,
                 "Qua": 2358.9800054931643,
                 "Qui": 929.9599957275391,
                 "Sex": 329.99,
-                "Sáb": 4540.0,
-                "Dom": 3639.9699993133545
+                "Sáb": 5979.980010986328,
+                "Dom": 7089.9699993133545
             },
             "mix_categorias": {
                 "CEL": 4549.99,
-                "SOM": 5500.0,
-                "ACE": 5228.900000534058,
+                "SOM": 8500.0,
+                "ACE": 7118.880011520386,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 7974.959997406006,
+                "CARTÃO": 8624.95000289917,
                 "CREDIÁRIO": 2839.0,
                 "DINHEIRO": 556.0,
                 "ODRES F": 0.0
@@ -2497,6 +2827,28 @@ const dadosDashboard = {
                     "CEL": 0.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "13",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 1439.980010986328,
+                    "N_VENDAS": 7,
+                    "QTD_PEÇAS": 8,
+                    "ACE": 1439.980010986328,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "13",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 3450.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 450.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 3000.0
                 }
             ]
         },
@@ -2506,54 +2858,54 @@ const dadosDashboard = {
             "META_ACE": 20000.0,
             "META_PRT": 7000.000000000001,
             "ID LOJA_x": "14",
-            "REALIZADO": 61884.90000549316,
-            "N_VENDAS": 88,
-            "QTD_PEÇAS": 104,
-            "ACE": 5958.950005493164,
+            "REALIZADO": 74763.85004631043,
+            "N_VENDAS": 108,
+            "QTD_PEÇAS": 129,
+            "ACE": 7457.920004806519,
             "PRT": 3271.0,
-            "CEL": 52654.95,
+            "CEL": 64034.9300415039,
             "SOM": 0.0,
             "Seg": 9354.0,
             "Ter": 9784.0,
             "Qua": 18506.980005493162,
             "Qui": 4314.99,
-            "Sex": 4379.94,
-            "Sáb": 15074.99,
-            "Dom": 470.0,
+            "Sex": 9719.929997863768,
+            "Sáb": 21133.990047683714,
+            "Dom": 1949.9599952697754,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 31359.92999572754,
-            "CREDIÁRIO": 22292.78,
-            "DINHEIRO": 2540.010009765625,
+            "CARTÃO": 39885.900011253354,
+            "CREDIÁRIO": 25589.780045776366,
+            "DINHEIRO": 2700.010009765625,
             "ODRES F": 0.0,
             "ID LOJA_y": "14",
             "NOME PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "ID TIPO": 1,
             "TIPO PDV": "LOJA PRÓPRIA",
-            "PROJECAO_VAL": 127895.46001135252,
-            "PROJECAO_PERC": 63.94773000567626,
-            "TICKET": 703.2375000624223,
-            "PA": 1.1818181818181819,
-            "META_DIARIA": 8632.193749656677,
+            "PROJECAO_VAL": 128759.96396864574,
+            "PROJECAO_PERC": 64.37998198432287,
+            "TICKET": 692.2578707991706,
+            "PA": 1.1944444444444444,
+            "META_DIARIA": 9633.54999643766,
             "sazonalidade": {
                 "Seg": 9354.0,
                 "Ter": 9784.0,
                 "Qua": 18506.980005493162,
                 "Qui": 4314.99,
-                "Sex": 4379.94,
-                "Sáb": 15074.99,
-                "Dom": 470.0
+                "Sex": 9719.929997863768,
+                "Sáb": 21133.990047683714,
+                "Dom": 1949.9599952697754
             },
             "mix_categorias": {
-                "CEL": 52654.95,
+                "CEL": 64034.9300415039,
                 "SOM": 0.0,
-                "ACE": 5958.950005493164,
+                "ACE": 7457.920004806519,
                 "PRT": 3271.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 31359.92999572754,
-                "CREDIÁRIO": 22292.78,
-                "DINHEIRO": 2540.010009765625,
+                "CARTÃO": 39885.900011253354,
+                "CREDIÁRIO": 25589.780045776366,
+                "DINHEIRO": 2700.010009765625,
                 "ODRES F": 0.0
             },
             "historico_diario": [
@@ -2699,6 +3051,39 @@ const dadosDashboard = {
                     "CEL": 1300.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "14",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 5339.9899978637695,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 7,
+                    "ACE": 439.98999786376953,
+                    "CEL": 4900.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "14",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 6059.000047683716,
+                    "N_VENDAS": 8,
+                    "QTD_PEÇAS": 10,
+                    "ACE": 679.0099964141846,
+                    "CEL": 5379.990051269531,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "14",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 1479.9599952697754,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 8,
+                    "ACE": 379.9700050354004,
+                    "CEL": 1099.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -2708,53 +3093,53 @@ const dadosDashboard = {
             "META_ACE": 7500.0,
             "META_PRT": 5250.000000000001,
             "ID LOJA_x": "15",
-            "REALIZADO": 34281.96000167847,
-            "N_VENDAS": 61,
-            "QTD_PEÇAS": 65,
-            "ACE": 4581.970001678466,
+            "REALIZADO": 37231.94999954224,
+            "N_VENDAS": 67,
+            "QTD_PEÇAS": 72,
+            "ACE": 4931.959999542236,
             "PRT": 0.0,
-            "CEL": 29699.989999999998,
+            "CEL": 32299.989999999998,
             "SOM": 0.0,
             "Seg": 10933.99,
             "Ter": 3712.99,
             "Qua": 2379.9800016784666,
             "Qui": 7100.0,
-            "Sex": 60.0,
-            "Sáb": 6350.0,
-            "Dom": 3745.0,
+            "Sex": 1560.0,
+            "Sáb": 7669.9899978637695,
+            "Dom": 3875.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 10111.970001678466,
-            "CREDIÁRIO": 16165.0,
+            "CARTÃO": 11981.959999542236,
+            "CREDIÁRIO": 17245.0,
             "DINHEIRO": 72.0,
             "ODRES F": 400.0,
             "ID LOJA_y": "15",
             "NOME PDV": "PS - PATIO I (QUIOSQUE)",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 70849.38400346883,
-            "PROJECAO_PERC": 47.23292266897922,
-            "TICKET": 561.999344289811,
-            "PA": 1.0655737704918034,
-            "META_DIARIA": 7232.377499895096,
+            "PROJECAO_VAL": 64121.691665878294,
+            "PROJECAO_PERC": 42.74779444391886,
+            "TICKET": 555.7007462618244,
+            "PA": 1.0746268656716418,
+            "META_DIARIA": 8674.465384650597,
             "sazonalidade": {
                 "Seg": 10933.99,
                 "Ter": 3712.99,
                 "Qua": 2379.9800016784666,
                 "Qui": 7100.0,
-                "Sex": 60.0,
-                "Sáb": 6350.0,
-                "Dom": 3745.0
+                "Sex": 1560.0,
+                "Sáb": 7669.9899978637695,
+                "Dom": 3875.0
             },
             "mix_categorias": {
-                "CEL": 29699.989999999998,
+                "CEL": 32299.989999999998,
                 "SOM": 0.0,
-                "ACE": 4581.970001678466,
+                "ACE": 4931.959999542236,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 10111.970001678466,
-                "CREDIÁRIO": 16165.0,
+                "CARTÃO": 11981.959999542236,
+                "CREDIÁRIO": 17245.0,
                 "DINHEIRO": 72.0,
                 "ODRES F": 400.0
             },
@@ -2901,6 +3286,39 @@ const dadosDashboard = {
                     "CEL": 0.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "15",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 1500.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 0.0,
+                    "CEL": 1500.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "15",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 1319.9899978637695,
+                    "N_VENDAS": 4,
+                    "QTD_PEÇAS": 5,
+                    "ACE": 219.98999786376953,
+                    "CEL": 1100.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "15",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 130.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 130.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -2910,10 +3328,10 @@ const dadosDashboard = {
             "META_ACE": 13500.0,
             "META_PRT": 4725.0,
             "ID LOJA_x": "16",
-            "REALIZADO": 41276.97999,
-            "N_VENDAS": 103,
-            "QTD_PEÇAS": 116,
-            "ACE": 6671.98999,
+            "REALIZADO": 41696.96998977112,
+            "N_VENDAS": 112,
+            "QTD_PEÇAS": 125,
+            "ACE": 7091.979989771118,
             "PRT": 1355.0,
             "CEL": 33249.99,
             "SOM": 0.0,
@@ -2921,43 +3339,43 @@ const dadosDashboard = {
             "Ter": 5580.0,
             "Qua": 11849.99,
             "Qui": 10280.0,
-            "Sex": 2599.98999,
-            "Sáb": 5235.0,
-            "Dom": 2862.0,
+            "Sex": 2919.979989771118,
+            "Sáb": 5265.0,
+            "Dom": 2932.0,
             "BRASIL CARD": 5580.0,
-            "CARTÃO": 4860.0,
+            "CARTÃO": 5080.0,
             "CREDIÁRIO": 15112.99,
-            "DINHEIRO": 3630.0,
+            "DINHEIRO": 3690.0,
             "ODRES F": 872.0,
             "ID LOJA_y": "16",
             "NOME PDV": "PS - TERMINAL",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 85305.758646,
-            "PROJECAO_PERC": 63.189450848888896,
-            "TICKET": 400.7473785436893,
-            "PA": 1.1262135922330097,
-            "META_DIARIA": 5857.6887506250005,
+            "PROJECAO_VAL": 71811.44831571693,
+            "PROJECAO_PERC": 53.19366541904957,
+            "TICKET": 372.2943749086707,
+            "PA": 1.1160714285714286,
+            "META_DIARIA": 7177.156154632991,
             "sazonalidade": {
                 "Seg": 2870.0,
                 "Ter": 5580.0,
                 "Qua": 11849.99,
                 "Qui": 10280.0,
-                "Sex": 2599.98999,
-                "Sáb": 5235.0,
-                "Dom": 2862.0
+                "Sex": 2919.979989771118,
+                "Sáb": 5265.0,
+                "Dom": 2932.0
             },
             "mix_categorias": {
                 "CEL": 33249.99,
                 "SOM": 0.0,
-                "ACE": 6671.98999,
+                "ACE": 7091.979989771118,
                 "PRT": 1355.0
             },
             "mix_planos": {
                 "BRASIL CARD": 5580.0,
-                "CARTÃO": 4860.0,
+                "CARTÃO": 5080.0,
                 "CREDIÁRIO": 15112.99,
-                "DINHEIRO": 3630.0,
+                "DINHEIRO": 3690.0,
                 "ODRES F": 872.0
             },
             "historico_diario": [
@@ -3103,6 +3521,39 @@ const dadosDashboard = {
                     "CEL": 5900.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "16",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 319.98999977111816,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 6,
+                    "ACE": 319.98999977111816,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "16",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 30.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 30.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "16",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 70.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 70.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -3112,54 +3563,54 @@ const dadosDashboard = {
             "META_ACE": 7500.0,
             "META_PRT": 5250.000000000001,
             "ID LOJA_x": "17",
-            "REALIZADO": 74656.71995285034,
-            "N_VENDAS": 62,
-            "QTD_PEÇAS": 66,
-            "ACE": 1045.9800016784668,
+            "REALIZADO": 96565.69993331909,
+            "N_VENDAS": 81,
+            "QTD_PEÇAS": 85,
+            "ACE": 1455.9800016784668,
             "PRT": 364.0,
-            "CEL": 73246.73995117187,
+            "CEL": 94745.71993164062,
             "SOM": 0.0,
             "Seg": 12088.96,
             "Ter": 15900.87,
             "Qua": 19679.9399609375,
             "Qui": 7419.0,
-            "Sex": 5209.98,
-            "Sáb": 11463.980001678467,
-            "Dom": 2893.989990234375,
+            "Sex": 11494.969990234375,
+            "Sáb": 24077.96999191284,
+            "Dom": 5903.989990234375,
             "BRASIL CARD": 2400.0,
-            "CARTÃO": 7997.969991912842,
-            "CREDIÁRIO": 46892.7599609375,
-            "DINHEIRO": 8692.99,
+            "CARTÃO": 10007.969991912842,
+            "CREDIÁRIO": 64066.73994140625,
+            "DINHEIRO": 9797.99,
             "ODRES F": 228.0,
             "ID LOJA_y": "17",
             "NOME PDV": "PS - CAUCAIA",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 154290.55456922404,
-            "PROJECAO_PERC": 102.86036971281602,
-            "TICKET": 1204.1406444008119,
-            "PA": 1.064516129032258,
-            "META_DIARIA": 4708.955002946854,
+            "PROJECAO_VAL": 166307.5943296051,
+            "PROJECAO_PERC": 110.87172955307008,
+            "TICKET": 1192.169134979248,
+            "PA": 1.0493827160493827,
+            "META_DIARIA": 4110.33077436007,
             "sazonalidade": {
                 "Seg": 12088.96,
                 "Ter": 15900.87,
                 "Qua": 19679.9399609375,
                 "Qui": 7419.0,
-                "Sex": 5209.98,
-                "Sáb": 11463.980001678467,
-                "Dom": 2893.989990234375
+                "Sex": 11494.969990234375,
+                "Sáb": 24077.96999191284,
+                "Dom": 5903.989990234375
             },
             "mix_categorias": {
-                "CEL": 73246.73995117187,
+                "CEL": 94745.71993164062,
                 "SOM": 0.0,
-                "ACE": 1045.9800016784668,
+                "ACE": 1455.9800016784668,
                 "PRT": 364.0
             },
             "mix_planos": {
                 "BRASIL CARD": 2400.0,
-                "CARTÃO": 7997.969991912842,
-                "CREDIÁRIO": 46892.7599609375,
-                "DINHEIRO": 8692.99,
+                "CARTÃO": 10007.969991912842,
+                "CREDIÁRIO": 64066.73994140625,
+                "DINHEIRO": 9797.99,
                 "ODRES F": 228.0
             },
             "historico_diario": [
@@ -3305,6 +3756,39 @@ const dadosDashboard = {
                     "CEL": 3385.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "17",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 6284.989990234375,
+                    "N_VENDAS": 4,
+                    "QTD_PEÇAS": 4,
+                    "ACE": 0.0,
+                    "CEL": 6284.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "17",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 12613.989990234375,
+                    "N_VENDAS": 13,
+                    "QTD_PEÇAS": 13,
+                    "ACE": 410.0,
+                    "CEL": 12203.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "17",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 3010.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 0.0,
+                    "CEL": 3010.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -3314,54 +3798,54 @@ const dadosDashboard = {
             "META_ACE": 7250.0,
             "META_PRT": 5075.000000000001,
             "ID LOJA_x": "18",
-            "REALIZADO": 104589.63996810913,
-            "N_VENDAS": 123,
-            "QTD_PEÇAS": 141,
-            "ACE": 3603.8500071716308,
+            "REALIZADO": 125189.57994003296,
+            "N_VENDAS": 146,
+            "QTD_PEÇAS": 165,
+            "ACE": 4293.820008392334,
             "PRT": 4008.0,
-            "CEL": 96977.7899609375,
+            "CEL": 116887.75993164063,
             "SOM": 0.0,
             "Seg": 6606.95,
             "Ter": 25475.989999999998,
             "Qua": 11674.959982147217,
             "Qui": 18581.94000549316,
-            "Sex": 13842.96,
-            "Sáb": 19311.84998046875,
-            "Dom": 9094.99,
+            "Sex": 22916.919968566894,
+            "Sáb": 27186.819974060058,
+            "Dom": 12746.000009765625,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 20029.900007171633,
-            "CREDIÁRIO": 68398.7999609375,
-            "DINHEIRO": 5080.0,
+            "CARTÃO": 25714.890005035402,
+            "CREDIÁRIO": 80768.76993164062,
+            "DINHEIRO": 5210.0,
             "ODRES F": 500.0,
             "ID LOJA_y": "18",
             "NOME PDV": "PS - PORTO VELHO",
             "ID TIPO": 4,
             "TIPO PDV": "QUIOSQUE FRANQUIA",
-            "PROJECAO_VAL": 216151.92260075884,
-            "PROJECAO_PERC": 149.0702914487992,
-            "TICKET": 850.3222761634888,
-            "PA": 1.146341463414634,
-            "META_DIARIA": 2525.6475019931795,
+            "PROJECAO_VAL": 215604.2765633901,
+            "PROJECAO_PERC": 148.69260452647592,
+            "TICKET": 857.4628763015955,
+            "PA": 1.13013698630137,
+            "META_DIARIA": 1523.8784661513112,
             "sazonalidade": {
                 "Seg": 6606.95,
                 "Ter": 25475.989999999998,
                 "Qua": 11674.959982147217,
                 "Qui": 18581.94000549316,
-                "Sex": 13842.96,
-                "Sáb": 19311.84998046875,
-                "Dom": 9094.99
+                "Sex": 22916.919968566894,
+                "Sáb": 27186.819974060058,
+                "Dom": 12746.000009765625
             },
             "mix_categorias": {
-                "CEL": 96977.7899609375,
+                "CEL": 116887.75993164063,
                 "SOM": 0.0,
-                "ACE": 3603.8500071716308,
+                "ACE": 4293.820008392334,
                 "PRT": 4008.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 20029.900007171633,
-                "CREDIÁRIO": 68398.7999609375,
-                "DINHEIRO": 5080.0,
+                "CARTÃO": 25714.890005035402,
+                "CREDIÁRIO": 80768.76993164062,
+                "DINHEIRO": 5210.0,
                 "ODRES F": 500.0
             },
             "historico_diario": [
@@ -3507,6 +3991,39 @@ const dadosDashboard = {
                     "CEL": 8421.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "18",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 9073.959968566895,
+                    "N_VENDAS": 10,
+                    "QTD_PEÇAS": 11,
+                    "ACE": 399.9899978637695,
+                    "CEL": 8673.969970703125,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "18",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 7874.969993591309,
+                    "N_VENDAS": 11,
+                    "QTD_PEÇAS": 11,
+                    "ACE": 289.9800033569336,
+                    "CEL": 7584.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "18",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 3651.010009765625,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 0.0,
+                    "CEL": 3651.010009765625,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -3539,11 +4056,11 @@ const dadosDashboard = {
             "NOME PDV": "PS - MACAPA",
             "ID TIPO": 2,
             "TIPO PDV": "QUIOSQUE FRANQUIA",
-            "PROJECAO_VAL": 17545.85531315104,
-            "PROJECAO_PERC": 21.932319141438803,
+            "PROJECAO_VAL": 14621.546094292533,
+            "PROJECAO_PERC": 18.276932617865665,
             "TICKET": 943.3255544704859,
             "PA": 1.1111111111111112,
-            "META_DIARIA": 4469.379375610351,
+            "META_DIARIA": 5500.774616135817,
             "sazonalidade": {
                 "Seg": 7309.94,
                 "Ter": 0.0,
@@ -3608,45 +4125,45 @@ const dadosDashboard = {
             "META_ACE": 11000.0,
             "META_PRT": 3850.0000000000005,
             "ID LOJA_x": "20",
-            "REALIZADO": 38444.979999999996,
-            "N_VENDAS": 31,
-            "QTD_PEÇAS": 33,
+            "REALIZADO": 44744.979999999996,
+            "N_VENDAS": 35,
+            "QTD_PEÇAS": 37,
             "ACE": 454.98,
             "PRT": 330.0,
-            "CEL": 37660.0,
+            "CEL": 43960.0,
             "SOM": 0.0,
             "Seg": 4854.99,
             "Ter": 5200.0,
             "Qua": 7700.0,
             "Qui": 6959.99,
             "Sex": 3730.0,
-            "Sáb": 10000.0,
-            "Dom": 0.0,
+            "Sáb": 14800.0,
+            "Dom": 1500.0,
             "BRASIL CARD": 0.0,
             "CARTÃO": 12760.0,
             "CREDIÁRIO": 1927.0,
             "DINHEIRO": 4875.0,
-            "ODRES F": 18355.0,
+            "ODRES F": 24655.0,
             "ID LOJA_y": "20",
             "NOME PDV": "PS - CAPANEMA",
             "ID TIPO": 2,
             "TIPO PDV": "LOJA FRANQUIA",
-            "PROJECAO_VAL": 79452.95866666666,
-            "PROJECAO_PERC": 72.22996242424242,
-            "TICKET": 1240.1606451612902,
-            "PA": 1.064516129032258,
-            "META_DIARIA": 4472.18875,
+            "PROJECAO_VAL": 77060.79888888888,
+            "PROJECAO_PERC": 70.0552717171717,
+            "TICKET": 1278.4279999999999,
+            "PA": 1.0571428571428572,
+            "META_DIARIA": 5019.616923076924,
             "sazonalidade": {
                 "Seg": 4854.99,
                 "Ter": 5200.0,
                 "Qua": 7700.0,
                 "Qui": 6959.99,
                 "Sex": 3730.0,
-                "Sáb": 10000.0,
-                "Dom": 0.0
+                "Sáb": 14800.0,
+                "Dom": 1500.0
             },
             "mix_categorias": {
-                "CEL": 37660.0,
+                "CEL": 43960.0,
                 "SOM": 0.0,
                 "ACE": 454.98,
                 "PRT": 330.0
@@ -3656,7 +4173,7 @@ const dadosDashboard = {
                 "CARTÃO": 12760.0,
                 "CREDIÁRIO": 1927.0,
                 "DINHEIRO": 4875.0,
-                "ODRES F": 18355.0
+                "ODRES F": 24655.0
             },
             "historico_diario": [
                 {
@@ -3768,6 +4285,28 @@ const dadosDashboard = {
                     "CEL": 1100.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "20",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 4800.0,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 0.0,
+                    "CEL": 4800.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "20",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 1500.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 0.0,
+                    "CEL": 1500.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -3777,54 +4316,54 @@ const dadosDashboard = {
             "META_ACE": 18000.0,
             "META_PRT": 6300.000000000001,
             "ID LOJA_x": "21",
-            "REALIZADO": 77957.86996270862,
-            "N_VENDAS": 60,
-            "QTD_PEÇAS": 66,
-            "ACE": 1101.9700017711182,
+            "REALIZADO": 92047.85995294299,
+            "N_VENDAS": 72,
+            "QTD_PEÇAS": 79,
+            "ACE": 1281.9700017711182,
             "PRT": 0.0,
-            "CEL": 76855.8999609375,
+            "CEL": 90765.88995117188,
             "SOM": 0.0,
             "Seg": 15619.97,
             "Ter": 11821.98,
             "Qua": 10749.989990234375,
             "Qui": 13829.99,
-            "Sex": 6325.98,
-            "Sáb": 19609.959972474244,
+            "Sex": 14465.969990234375,
+            "Sáb": 25559.959972474244,
             "Dom": 0.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 25163.94998046875,
-            "CREDIÁRIO": 38108.93008046875,
-            "DINHEIRO": 4385.01,
+            "CARTÃO": 27123.94998046875,
+            "CREDIÁRIO": 48190.92007070313,
+            "DINHEIRO": 5705.01,
             "ODRES F": 0.0,
             "ID LOJA_y": "21",
             "NOME PDV": "PS - ICOARACI 2",
             "ID TIPO": 2,
             "TIPO PDV": "LOJA FRANQUIA",
-            "PROJECAO_VAL": 161112.93125626448,
-            "PROJECAO_PERC": 89.50718403125805,
-            "TICKET": 1299.2978327118103,
-            "PA": 1.1,
-            "META_DIARIA": 6377.633127330711,
+            "PROJECAO_VAL": 158526.86991895738,
+            "PROJECAO_PERC": 88.07048328830966,
+            "TICKET": 1278.4424993464304,
+            "PA": 1.0972222222222223,
+            "META_DIARIA": 6765.549234389001,
             "sazonalidade": {
                 "Seg": 15619.97,
                 "Ter": 11821.98,
                 "Qua": 10749.989990234375,
                 "Qui": 13829.99,
-                "Sex": 6325.98,
-                "Sáb": 19609.959972474244,
+                "Sex": 14465.969990234375,
+                "Sáb": 25559.959972474244,
                 "Dom": 0.0
             },
             "mix_categorias": {
-                "CEL": 76855.8999609375,
+                "CEL": 90765.88995117188,
                 "SOM": 0.0,
-                "ACE": 1101.9700017711182,
+                "ACE": 1281.9700017711182,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 25163.94998046875,
-                "CREDIÁRIO": 38108.93008046875,
-                "DINHEIRO": 4385.01,
+                "CARTÃO": 27123.94998046875,
+                "CREDIÁRIO": 48190.92007070313,
+                "DINHEIRO": 5705.01,
                 "ODRES F": 0.0
             },
             "historico_diario": [
@@ -3937,6 +4476,28 @@ const dadosDashboard = {
                     "CEL": 7100.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "21",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 8139.989990234375,
+                    "N_VENDAS": 7,
+                    "QTD_PEÇAS": 8,
+                    "ACE": 80.0,
+                    "CEL": 8059.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "21",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 5950.0,
+                    "N_VENDAS": 5,
+                    "QTD_PEÇAS": 5,
+                    "ACE": 100.0,
+                    "CEL": 5850.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -3946,54 +4507,54 @@ const dadosDashboard = {
             "META_ACE": 7500.0,
             "META_PRT": 5250.000000000001,
             "ID LOJA_x": "22",
-            "REALIZADO": 20994.790000610352,
-            "N_VENDAS": 42,
-            "QTD_PEÇAS": 46,
-            "ACE": 1884.8300103759766,
+            "REALIZADO": 25718.67998474121,
+            "N_VENDAS": 49,
+            "QTD_PEÇAS": 53,
+            "ACE": 2209.730004272461,
             "PRT": 0.0,
-            "CEL": 19109.959990234376,
+            "CEL": 23508.94998046875,
             "SOM": 0.0,
             "Seg": 3655.0,
             "Ter": 2979.98,
             "Qua": 1479.890007019043,
             "Qui": 3340.0,
-            "Sex": 2159.96,
-            "Sáb": 7299.959993591308,
-            "Dom": 80.0,
+            "Sex": 2214.96,
+            "Sáb": 9769.949983825683,
+            "Dom": 2278.8999938964844,
             "BRASIL CARD": 1500.0,
-            "CARTÃO": 13719.95,
-            "CREDIÁRIO": 2195.0,
-            "DINHEIRO": 1079.9799978637695,
+            "CARTÃO": 16689.83998413086,
+            "CREDIÁRIO": 3894.0,
+            "DINHEIRO": 1109.9799978637695,
             "ODRES F": 80.0,
             "ID LOJA_y": "22",
             "NOME PDV": "PS - SHOP RIO ANIL SLZ",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 43389.23266792806,
-            "PROJECAO_PERC": 28.92615511195204,
-            "TICKET": 499.87595239548455,
-            "PA": 1.0952380952380953,
-            "META_DIARIA": 8062.8256249618535,
+            "PROJECAO_VAL": 44293.2821959432,
+            "PROJECAO_PERC": 29.528854797295462,
+            "TICKET": 524.8710200967594,
+            "PA": 1.0816326530612246,
+            "META_DIARIA": 9560.101539635292,
             "sazonalidade": {
                 "Seg": 3655.0,
                 "Ter": 2979.98,
                 "Qua": 1479.890007019043,
                 "Qui": 3340.0,
-                "Sex": 2159.96,
-                "Sáb": 7299.959993591308,
-                "Dom": 80.0
+                "Sex": 2214.96,
+                "Sáb": 9769.949983825683,
+                "Dom": 2278.8999938964844
             },
             "mix_categorias": {
-                "CEL": 19109.959990234376,
+                "CEL": 23508.94998046875,
                 "SOM": 0.0,
-                "ACE": 1884.8300103759766,
+                "ACE": 2209.730004272461,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 1500.0,
-                "CARTÃO": 13719.95,
-                "CREDIÁRIO": 2195.0,
-                "DINHEIRO": 1079.9799978637695,
+                "CARTÃO": 16689.83998413086,
+                "CREDIÁRIO": 3894.0,
+                "DINHEIRO": 1109.9799978637695,
                 "ODRES F": 80.0
             },
             "historico_diario": [
@@ -4128,6 +4689,39 @@ const dadosDashboard = {
                     "CEL": 0.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "22",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 55.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 55.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "22",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 2469.989990234375,
+                    "N_VENDAS": 3,
+                    "QTD_PEÇAS": 3,
+                    "ACE": 70.0,
+                    "CEL": 2399.989990234375,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "22",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 2198.8999938964844,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 199.8999938964844,
+                    "CEL": 1999.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -4137,54 +4731,54 @@ const dadosDashboard = {
             "META_ACE": 6000.0,
             "META_PRT": 4200.0,
             "ID LOJA_x": "23",
-            "REALIZADO": 73607.91998809815,
-            "N_VENDAS": 64,
-            "QTD_PEÇAS": 69,
-            "ACE": 1911.9799978637695,
-            "PRT": 566.0,
-            "CEL": 71129.93999023437,
+            "REALIZADO": 91638.40998596192,
+            "N_VENDAS": 80,
+            "QTD_PEÇAS": 87,
+            "ACE": 2381.969995727539,
+            "PRT": 1701.5,
+            "CEL": 87554.93999023437,
             "SOM": 0.0,
             "Seg": 6610.0,
             "Ter": 16406.0,
             "Qua": 14949.98,
             "Qui": 11269.99,
-            "Sex": 4371.98,
-            "Sáb": 15729.969988098144,
+            "Sex": 10451.98,
+            "Sáb": 27680.459985961912,
             "Dom": 4270.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 18874.989999999998,
-            "CREDIÁRIO": 26472.959990234376,
-            "DINHEIRO": 13516.99,
+            "CARTÃO": 25642.989999999998,
+            "CREDIÁRIO": 33030.959990234376,
+            "DINHEIRO": 13876.99,
             "ODRES F": 350.0,
             "ID LOJA_y": "23",
             "NOME PDV": "PS - IT CENTER",
             "ID TIPO": 4,
             "TIPO PDV": "QUIOSQUE FRANQUIA",
-            "PROJECAO_VAL": 152123.03464206948,
-            "PROJECAO_PERC": 126.7691955350579,
-            "TICKET": 1150.1237498140335,
-            "PA": 1.078125,
-            "META_DIARIA": 2899.505000743866,
+            "PROJECAO_VAL": 157821.70608693443,
+            "PROJECAO_PERC": 131.5180884057787,
+            "TICKET": 1145.480124824524,
+            "PA": 1.0875,
+            "META_DIARIA": 2181.660770310622,
             "sazonalidade": {
                 "Seg": 6610.0,
                 "Ter": 16406.0,
                 "Qua": 14949.98,
                 "Qui": 11269.99,
-                "Sex": 4371.98,
-                "Sáb": 15729.969988098144,
+                "Sex": 10451.98,
+                "Sáb": 27680.459985961912,
                 "Dom": 4270.0
             },
             "mix_categorias": {
-                "CEL": 71129.93999023437,
+                "CEL": 87554.93999023437,
                 "SOM": 0.0,
-                "ACE": 1911.9799978637695,
-                "PRT": 566.0
+                "ACE": 2381.969995727539,
+                "PRT": 1701.5
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 18874.989999999998,
-                "CREDIÁRIO": 26472.959990234376,
-                "DINHEIRO": 13516.99,
+                "CARTÃO": 25642.989999999998,
+                "CREDIÁRIO": 33030.959990234376,
+                "DINHEIRO": 13876.99,
                 "ODRES F": 350.0
             },
             "historico_diario": [
@@ -4308,6 +4902,28 @@ const dadosDashboard = {
                     "CEL": 4400.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "23",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 6080.0,
+                    "N_VENDAS": 6,
+                    "QTD_PEÇAS": 7,
+                    "ACE": 380.0,
+                    "CEL": 5700.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "23",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 11950.48999786377,
+                    "N_VENDAS": 10,
+                    "QTD_PEÇAS": 11,
+                    "ACE": 89.98999786376953,
+                    "CEL": 10725.0,
+                    "PRT": 1135.5,
+                    "SOM": 0.0
                 }
             ]
         },
@@ -4317,10 +4933,10 @@ const dadosDashboard = {
             "META_ACE": 6500.0,
             "META_PRT": 4550.0,
             "ID LOJA_x": "24",
-            "REALIZADO": 11739.750009155274,
-            "N_VENDAS": 32,
-            "QTD_PEÇAS": 33,
-            "ACE": 1489.7600091552733,
+            "REALIZADO": 12119.750009155274,
+            "N_VENDAS": 36,
+            "QTD_PEÇAS": 38,
+            "ACE": 1869.7600091552733,
             "PRT": 0.0,
             "CEL": 10249.99,
             "SOM": 0.0,
@@ -4328,11 +4944,11 @@ const dadosDashboard = {
             "Ter": 119.98,
             "Qua": 2379.99,
             "Qui": 1329.8900091552734,
-            "Sex": 119.99,
-            "Sáb": 3199.9,
-            "Dom": 2100.0,
+            "Sex": 319.99,
+            "Sáb": 3319.9,
+            "Dom": 2160.0,
             "BRASIL CARD": 0.0,
-            "CARTÃO": 4800.780009155274,
+            "CARTÃO": 5120.780009155274,
             "CREDIÁRIO": 3789.0,
             "DINHEIRO": 200.0,
             "ODRES F": 800.0,
@@ -4340,29 +4956,29 @@ const dadosDashboard = {
             "NOME PDV": "PS - SHOP DA ILHA SLZ",
             "ID TIPO": 3,
             "TIPO PDV": "QUIOSQUE PRÓPRIO",
-            "PROJECAO_VAL": 24262.1500189209,
-            "PROJECAO_PERC": 18.663192322246847,
-            "TICKET": 366.8671877861023,
-            "PA": 1.03125,
-            "META_DIARIA": 7391.265624427795,
+            "PROJECAO_VAL": 20872.902793545192,
+            "PROJECAO_PERC": 16.05607907195784,
+            "TICKET": 336.65972247653536,
+            "PA": 1.0555555555555556,
+            "META_DIARIA": 9067.711537757286,
             "sazonalidade": {
                 "Seg": 2490.0,
                 "Ter": 119.98,
                 "Qua": 2379.99,
                 "Qui": 1329.8900091552734,
-                "Sex": 119.99,
-                "Sáb": 3199.9,
-                "Dom": 2100.0
+                "Sex": 319.99,
+                "Sáb": 3319.9,
+                "Dom": 2160.0
             },
             "mix_categorias": {
                 "CEL": 10249.99,
                 "SOM": 0.0,
-                "ACE": 1489.7600091552733,
+                "ACE": 1869.7600091552733,
                 "PRT": 0.0
             },
             "mix_planos": {
                 "BRASIL CARD": 0.0,
-                "CARTÃO": 4800.780009155274,
+                "CARTÃO": 5120.780009155274,
                 "CREDIÁRIO": 3789.0,
                 "DINHEIRO": 200.0,
                 "ODRES F": 800.0
@@ -4488,6 +5104,39 @@ const dadosDashboard = {
                     "CEL": 1000.0,
                     "PRT": 0.0,
                     "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "24",
+                    "Date": "2026-05-15",
+                    "REALIZADO": 200.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 200.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "24",
+                    "Date": "2026-05-16",
+                    "REALIZADO": 120.0,
+                    "N_VENDAS": 2,
+                    "QTD_PEÇAS": 2,
+                    "ACE": 120.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
+                },
+                {
+                    "ID LOJA": "24",
+                    "Date": "2026-05-17",
+                    "REALIZADO": 60.0,
+                    "N_VENDAS": 1,
+                    "QTD_PEÇAS": 1,
+                    "ACE": 60.0,
+                    "CEL": 0.0,
+                    "PRT": 0.0,
+                    "SOM": 0.0
                 }
             ]
         }
@@ -4498,22 +5147,22 @@ const dadosDashboard = {
             "Ter": 211799.32,
             "Qua": 228085.6399733679,
             "Qui": 201961.1900080204,
-            "Sex": 111285.95999,
-            "Sáb": 314382.6700496074,
-            "Dom": 64586.92998931885
+            "Sex": 205447.8099035971,
+            "Sáb": 450964.41013449396,
+            "Dom": 93510.7999839592
         },
         "mix_categorias": {
-            "ACE": 85148.45002434314,
-            "CEL": 1164396.5900155818,
-            "PRT": 31880.649999389647,
-            "SOM": 26420.0
+            "ACE": 102536.57005164684,
+            "CEL": 1391000.439975909,
+            "PRT": 35806.15001464844,
+            "SOM": 38169.989990234375
         },
         "mix_planos": {
-            "CREDIÁRIO": 568393.7300902344,
-            "CARTÃO": 399686.7500222778,
-            "DINHEIRO": 104000.61003641004,
-            "BRASIL CARD": 46622.93,
-            "ODRES F": 30137.50998878479
+            "CREDIÁRIO": 685208.7500563599,
+            "CARTÃO": 462056.9200800514,
+            "DINHEIRO": 127260.56003526565,
+            "BRASIL CARD": 50122.93,
+            "ODRES F": 36437.50998878479
         }
     },
     "regioes": [
@@ -4664,36 +5313,14 @@ const dadosDashboard = {
     ],
     "vendedores": [
         {
-            "ID VENDEDOR": "0",
-            "NOME VENDEDOR": "ÁDRYA TAINÁ DA SILVA CARDOSO",
-            "ID_LOJA": "16",
-            "REALIZADO": 30.0,
-            "QTD_PEÇAS": 1,
-            "N_VENDAS": 1,
-            "CEL": 0.0,
-            "ACE": 30.0,
-            "SOM": 0.0,
-            "PRT": 0.0,
-            "ID TIPO": 3,
-            "META_GERAL": 16875.0,
-            "META_ACE": 1687.5,
-            "META_PRT": 590.625,
-            "QTD_VEND_LOJA": 8,
-            "META_LOJA_GERAL": 135000.0,
-            "META_LOJA_ACE": 13500.0,
-            "META_LOJA_PRT": 4725.0,
-            "TICKET": 30.0,
-            "PA": 1.0
-        },
-        {
             "ID VENDEDOR": "V008",
             "NOME VENDEDOR": "EVELYN MACEDO SOARES",
             "ID_LOJA": "16",
-            "REALIZADO": 16989.989999999998,
-            "QTD_PEÇAS": 32,
-            "N_VENDAS": 27,
+            "REALIZADO": 17039.989999999998,
+            "QTD_PEÇAS": 33,
+            "N_VENDAS": 28,
             "CEL": 14599.99,
-            "ACE": 1630.0,
+            "ACE": 1680.0,
             "SOM": 0.0,
             "PRT": 760.0,
             "ID TIPO": 3,
@@ -4704,8 +5331,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 135000.0,
             "META_LOJA_ACE": 13500.0,
             "META_LOJA_PRT": 4725.0,
-            "TICKET": 629.2588888888888,
-            "PA": 1.1851851851851851
+            "TICKET": 608.5710714285714,
+            "PA": 1.1785714285714286
         },
         {
             "ID VENDEDOR": "V009",
@@ -4714,10 +5341,10 @@ const dadosDashboard = {
             "REALIZADO": 1330.0,
             "QTD_PEÇAS": 2,
             "N_VENDAS": 2,
-            "CEL": 26900.0,
-            "ACE": 1095.0,
+            "CEL": 30200.0,
+            "ACE": 1113.0,
             "SOM": 0.0,
-            "PRT": 330.0,
+            "PRT": 512.0,
             "ID TIPO": 1,
             "META_GERAL": 25000.0,
             "META_ACE": 2500.0,
@@ -4736,15 +5363,15 @@ const dadosDashboard = {
             "REALIZADO": 7385.0,
             "QTD_PEÇAS": 10,
             "N_VENDAS": 10,
-            "CEL": 26900.0,
-            "ACE": 1095.0,
+            "CEL": 30200.0,
+            "ACE": 1113.0,
             "SOM": 0.0,
-            "PRT": 330.0,
+            "PRT": 512.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -4755,13 +5382,13 @@ const dadosDashboard = {
             "ID VENDEDOR": "V009",
             "NOME VENDEDOR": "FLAVIA FARIAS MACHADO",
             "ID_LOJA": "2",
-            "REALIZADO": 19610.0,
-            "QTD_PEÇAS": 19,
-            "N_VENDAS": 17,
-            "CEL": 26900.0,
-            "ACE": 1095.0,
+            "REALIZADO": 23110.0,
+            "QTD_PEÇAS": 23,
+            "N_VENDAS": 21,
+            "CEL": 30200.0,
+            "ACE": 1113.0,
             "SOM": 0.0,
-            "PRT": 330.0,
+            "PRT": 512.0,
             "ID TIPO": 1,
             "META_GERAL": 30000.0,
             "META_ACE": 3000.0,
@@ -4770,20 +5397,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 1153.5294117647059,
-            "PA": 1.1176470588235294
+            "TICKET": 1100.4761904761904,
+            "PA": 1.0952380952380953
         },
         {
             "ID VENDEDOR": "V019",
             "NOME VENDEDOR": "ALESSANDRO FERREIRA DA CRUZ",
             "ID_LOJA": "6",
-            "REALIZADO": 24526.97,
-            "QTD_PEÇAS": 28,
-            "N_VENDAS": 25,
-            "CEL": 23089.98,
+            "REALIZADO": 25776.97,
+            "QTD_PEÇAS": 30,
+            "N_VENDAS": 27,
+            "CEL": 24289.98,
             "ACE": 782.99,
             "SOM": 0.0,
-            "PRT": 654.0,
+            "PRT": 704.0,
             "ID TIPO": 1,
             "META_GERAL": 28571.428571428572,
             "META_ACE": 2857.1428571428573,
@@ -4792,8 +5419,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 981.0788,
-            "PA": 1.12
+            "TICKET": 954.7025925925926,
+            "PA": 1.1111111111111112
         },
         {
             "ID VENDEDOR": "V022",
@@ -4821,13 +5448,13 @@ const dadosDashboard = {
             "ID VENDEDOR": "V026",
             "NOME VENDEDOR": "EVELYN PEREIRA PINHEIRO",
             "ID_LOJA": "6",
-            "REALIZADO": 15317.000061035156,
-            "QTD_PEÇAS": 19,
-            "N_VENDAS": 18,
-            "CEL": 9825.000061035156,
+            "REALIZADO": 20145.000061035156,
+            "QTD_PEÇAS": 22,
+            "N_VENDAS": 21,
+            "CEL": 11425.000061035156,
             "ACE": 1442.0,
-            "SOM": 4050.0,
-            "PRT": 0.0,
+            "SOM": 7200.0,
+            "PRT": 78.0,
             "ID TIPO": 1,
             "META_GERAL": 28571.428571428572,
             "META_ACE": 2857.1428571428573,
@@ -4836,17 +5463,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 850.9444478352865,
-            "PA": 1.0555555555555556
+            "TICKET": 959.2857171921503,
+            "PA": 1.0476190476190477
         },
         {
             "ID VENDEDOR": "V028",
             "NOME VENDEDOR": "MICHELLE CRISTINA PANTOJA BATISTA",
             "ID_LOJA": "5",
-            "REALIZADO": 15296.94,
-            "QTD_PEÇAS": 24,
-            "N_VENDAS": 20,
-            "CEL": 13971.0,
+            "REALIZADO": 16896.929990234374,
+            "QTD_PEÇAS": 25,
+            "N_VENDAS": 21,
+            "CEL": 15570.989990234375,
             "ACE": 805.0,
             "SOM": 0.0,
             "PRT": 520.9399999999999,
@@ -4858,20 +5485,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 6000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 764.847,
-            "PA": 1.2
+            "TICKET": 804.6157138206845,
+            "PA": 1.1904761904761905
         },
         {
             "ID VENDEDOR": "V033",
             "NOME VENDEDOR": "PEDRO LUCAS DA SILVA LIMA",
             "ID_LOJA": "7",
-            "REALIZADO": 22913.96,
-            "QTD_PEÇAS": 19,
-            "N_VENDAS": 19,
-            "CEL": 20919.97,
-            "ACE": 659.99,
+            "REALIZADO": 28472.449990234374,
+            "QTD_PEÇAS": 27,
+            "N_VENDAS": 26,
+            "CEL": 26099.959990234376,
+            "ACE": 768.49,
             "SOM": 0.0,
-            "PRT": 1334.0,
+            "PRT": 1604.0,
             "ID TIPO": 1,
             "META_GERAL": 41666.666666666664,
             "META_ACE": 4166.666666666667,
@@ -4880,20 +5507,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 1205.997894736842,
-            "PA": 1.0
+            "TICKET": 1095.0942303936297,
+            "PA": 1.0384615384615385
         },
         {
             "ID VENDEDOR": "V043",
             "NOME VENDEDOR": "ADRIANA JAMILE. MOREIRA DUARTE",
             "ID_LOJA": "8",
-            "REALIZADO": 19383.98,
-            "QTD_PEÇAS": 22,
-            "N_VENDAS": 19,
-            "CEL": 18169.98,
-            "ACE": 550.0,
+            "REALIZADO": 28448.980029563903,
+            "QTD_PEÇAS": 32,
+            "N_VENDAS": 26,
+            "CEL": 26689.980030517578,
+            "ACE": 1034.9999990463257,
             "SOM": 0.0,
-            "PRT": 664.0,
+            "PRT": 724.0,
             "ID TIPO": 3,
             "META_GERAL": 37500.0,
             "META_ACE": 1875.0,
@@ -4902,17 +5529,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 1020.2094736842105,
-            "PA": 1.1578947368421053
+            "TICKET": 1094.1915395986116,
+            "PA": 1.2307692307692308
         },
         {
             "ID VENDEDOR": "V046",
             "NOME VENDEDOR": "LARISSA DA SILVA SANTOS",
             "ID_LOJA": "9",
-            "REALIZADO": 15358.0,
-            "QTD_PEÇAS": 13,
-            "N_VENDAS": 13,
-            "CEL": 8799.0,
+            "REALIZADO": 17958.0,
+            "QTD_PEÇAS": 15,
+            "N_VENDAS": 15,
+            "CEL": 11399.0,
             "ACE": 105.0,
             "SOM": 6300.0,
             "PRT": 154.0,
@@ -4924,20 +5551,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 1181.3846153846155,
+            "TICKET": 1197.2,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V047",
             "NOME VENDEDOR": "LETICIA OLIVEIRA OLIVEIRA",
             "ID_LOJA": "9",
-            "REALIZADO": 10224.5,
-            "QTD_PEÇAS": 18,
-            "N_VENDAS": 15,
-            "CEL": 9360.0,
-            "ACE": 770.0,
+            "REALIZADO": 17246.50001525879,
+            "QTD_PEÇAS": 27,
+            "N_VENDAS": 22,
+            "CEL": 16090.0,
+            "ACE": 880.0,
             "SOM": 0.0,
-            "PRT": 94.5,
+            "PRT": 276.50001525878906,
             "ID TIPO": 1,
             "META_GERAL": 38333.333333333336,
             "META_ACE": 3833.3333333333335,
@@ -4946,8 +5573,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 681.6333333333333,
-            "PA": 1.2
+            "TICKET": 783.9318188753995,
+            "PA": 1.2272727272727273
         },
         {
             "ID VENDEDOR": "V048",
@@ -4957,7 +5584,7 @@ const dadosDashboard = {
             "QTD_PEÇAS": 8,
             "N_VENDAS": 7,
             "CEL": 6900.0,
-            "ACE": 990.0,
+            "ACE": 1030.0,
             "SOM": 0.0,
             "PRT": 294.0,
             "ID TIPO": 3,
@@ -4979,7 +5606,7 @@ const dadosDashboard = {
             "QTD_PEÇAS": 9,
             "N_VENDAS": 9,
             "CEL": 6900.0,
-            "ACE": 990.0,
+            "ACE": 1030.0,
             "SOM": 0.0,
             "PRT": 294.0,
             "ID TIPO": 1,
@@ -4994,13 +5621,35 @@ const dadosDashboard = {
             "PA": 1.0
         },
         {
+            "ID VENDEDOR": "V048",
+            "NOME VENDEDOR": "LUCCA PEREIRA CARNEIRO DANTAS",
+            "ID_LOJA": "15",
+            "REALIZADO": 40.0,
+            "QTD_PEÇAS": 2,
+            "N_VENDAS": 1,
+            "CEL": 6900.0,
+            "ACE": 1030.0,
+            "SOM": 0.0,
+            "PRT": 294.0,
+            "ID TIPO": 3,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
+            "META_LOJA_GERAL": 150000.0,
+            "META_LOJA_ACE": 7500.0,
+            "META_LOJA_PRT": 5250.000000000001,
+            "TICKET": 40.0,
+            "PA": 2.0
+        },
+        {
             "ID VENDEDOR": "V050",
             "NOME VENDEDOR": "MYCEILA RAYANNE SOUSA SOEIRO",
             "ID_LOJA": "9",
-            "REALIZADO": 44714.0,
-            "QTD_PEÇAS": 16,
-            "N_VENDAS": 14,
-            "CEL": 41380.0,
+            "REALIZADO": 48214.0,
+            "QTD_PEÇAS": 18,
+            "N_VENDAS": 16,
+            "CEL": 44880.0,
             "ACE": 282.0,
             "SOM": 0.0,
             "PRT": 3052.0,
@@ -5012,8 +5661,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 3193.8571428571427,
-            "PA": 1.1428571428571428
+            "TICKET": 3013.375,
+            "PA": 1.125
         },
         {
             "ID VENDEDOR": "V055",
@@ -5041,11 +5690,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V058",
             "NOME VENDEDOR": "KARLA SIQUEIRA",
             "ID_LOJA": "10",
-            "REALIZADO": 780.0000076293945,
-            "QTD_PEÇAS": 14,
-            "N_VENDAS": 11,
+            "REALIZADO": 970.0000076293945,
+            "QTD_PEÇAS": 16,
+            "N_VENDAS": 12,
             "CEL": 0.0,
-            "ACE": 780.0000076293945,
+            "ACE": 970.0000076293945,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -5056,52 +5705,52 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 90000.0,
             "META_LOJA_ACE": 4500.0,
             "META_LOJA_PRT": 3150.0000000000005,
-            "TICKET": 70.90909160267223,
-            "PA": 1.2727272727272727
+            "TICKET": 80.83333396911621,
+            "PA": 1.3333333333333333
         },
         {
             "ID VENDEDOR": "V060",
             "NOME VENDEDOR": "ANA JAINE OLIVEIRA PIRES",
             "ID_LOJA": "12",
-            "REALIZADO": 5630.0,
-            "QTD_PEÇAS": 5,
-            "N_VENDAS": 5,
-            "CEL": 4900.0,
-            "ACE": 70.0,
+            "REALIZADO": 8812.0,
+            "QTD_PEÇAS": 10,
+            "N_VENDAS": 10,
+            "CEL": 7600.0,
+            "ACE": 552.0,
             "SOM": 0.0,
             "PRT": 660.0,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 1126.0,
+            "TICKET": 881.2,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V062",
             "NOME VENDEDOR": "PEDRO RODRIGUES DOS SANTOS NETO",
             "ID_LOJA": "12",
-            "REALIZADO": 27566.989999999998,
-            "QTD_PEÇAS": 39,
-            "N_VENDAS": 33,
-            "CEL": 24999.989999999998,
-            "ACE": 1629.0,
+            "REALIZADO": 30876.989969005583,
+            "QTD_PEÇAS": 49,
+            "N_VENDAS": 41,
+            "CEL": 27399.98996948242,
+            "ACE": 2364.999999523163,
             "SOM": 0.0,
-            "PRT": 938.0,
+            "PRT": 1112.0,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 835.3633333333332,
-            "PA": 1.1818181818181819
+            "TICKET": 753.0973163172093,
+            "PA": 1.1951219512195121
         },
         {
             "ID VENDEDOR": "V070",
@@ -5129,33 +5778,33 @@ const dadosDashboard = {
             "ID VENDEDOR": "V071",
             "NOME VENDEDOR": "MARIA RITA LIMA",
             "ID_LOJA": "12",
-            "REALIZADO": 21311.2,
-            "QTD_PEÇAS": 35,
-            "N_VENDAS": 30,
-            "CEL": 19944.0,
-            "ACE": 836.5,
+            "REALIZADO": 23791.2,
+            "QTD_PEÇAS": 41,
+            "N_VENDAS": 35,
+            "CEL": 22044.0,
+            "ACE": 1216.5,
             "SOM": 0.0,
             "PRT": 530.7,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 710.3733333333333,
-            "PA": 1.1666666666666667
+            "TICKET": 679.7485714285715,
+            "PA": 1.1714285714285715
         },
         {
             "ID VENDEDOR": "V074",
             "NOME VENDEDOR": "GABRIEL FAVACHO DE LIMA",
             "ID_LOJA": "11",
-            "REALIZADO": 19251.989999999998,
-            "QTD_PEÇAS": 18,
-            "N_VENDAS": 18,
-            "CEL": 21382.0,
-            "ACE": 389.99,
+            "REALIZADO": 27411.989999999998,
+            "QTD_PEÇAS": 24,
+            "N_VENDAS": 24,
+            "CEL": 28482.0,
+            "ACE": 1449.99,
             "SOM": 0.0,
             "PRT": 410.0,
             "ID TIPO": 1,
@@ -5166,7 +5815,7 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 240000.0,
             "META_LOJA_ACE": 24000.0,
             "META_LOJA_PRT": 8400.0,
-            "TICKET": 1069.5549999999998,
+            "TICKET": 1142.16625,
             "PA": 1.0
         },
         {
@@ -5176,8 +5825,8 @@ const dadosDashboard = {
             "REALIZADO": 2930.0,
             "QTD_PEÇAS": 3,
             "N_VENDAS": 3,
-            "CEL": 21382.0,
-            "ACE": 389.99,
+            "CEL": 28482.0,
+            "ACE": 1449.99,
             "SOM": 0.0,
             "PRT": 410.0,
             "ID TIPO": 3,
@@ -5203,10 +5852,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -5217,11 +5866,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V082",
             "NOME VENDEDOR": "FRANCISCA VALERIA BEZERRA PEREIRA",
             "ID_LOJA": "17",
-            "REALIZADO": 21809.899962615964,
-            "QTD_PEÇAS": 23,
-            "N_VENDAS": 21,
-            "CEL": 21399.909960937497,
-            "ACE": 409.9900016784668,
+            "REALIZADO": 33974.88995285034,
+            "QTD_PEÇAS": 33,
+            "N_VENDAS": 31,
+            "CEL": 33354.89995117187,
+            "ACE": 619.9900016784668,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -5232,18 +5881,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 1038.5666648864744,
-            "PA": 1.0952380952380953
+            "TICKET": 1095.9641920274303,
+            "PA": 1.064516129032258
         },
         {
             "ID VENDEDOR": "V087",
             "NOME VENDEDOR": "LAIS AMANDA  OLIVEIRA DE SOUZA",
             "ID_LOJA": "2",
-            "REALIZADO": 242.5,
-            "QTD_PEÇAS": 4,
-            "N_VENDAS": 4,
+            "REALIZADO": 482.4800224304199,
+            "QTD_PEÇAS": 6,
+            "N_VENDAS": 6,
             "CEL": 0.0,
-            "ACE": 242.5,
+            "ACE": 482.4800224304199,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -5254,7 +5903,7 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 60.625,
+            "TICKET": 80.41333707173665,
             "PA": 1.0
         },
         {
@@ -5283,10 +5932,10 @@ const dadosDashboard = {
             "ID VENDEDOR": "V102",
             "NOME VENDEDOR": "SARA CARVALHO DA SILVA",
             "ID_LOJA": "20",
-            "REALIZADO": 17209.99,
-            "QTD_PEÇAS": 18,
-            "N_VENDAS": 17,
-            "CEL": 16660.0,
+            "REALIZADO": 18709.99,
+            "QTD_PEÇAS": 19,
+            "N_VENDAS": 18,
+            "CEL": 18160.0,
             "ACE": 219.99,
             "SOM": 0.0,
             "PRT": 330.0,
@@ -5298,17 +5947,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 110000.0,
             "META_LOJA_ACE": 11000.0,
             "META_LOJA_PRT": 3850.0000000000005,
-            "TICKET": 1012.3523529411766,
-            "PA": 1.0588235294117647
+            "TICKET": 1039.443888888889,
+            "PA": 1.0555555555555556
         },
         {
             "ID VENDEDOR": "V106",
             "NOME VENDEDOR": "STHEFANY CAMILLY",
             "ID_LOJA": "21",
-            "REALIZADO": 1350.0,
-            "QTD_PEÇAS": 1,
-            "N_VENDAS": 1,
-            "CEL": 1350.0,
+            "REALIZADO": 4450.0,
+            "QTD_PEÇAS": 3,
+            "N_VENDAS": 3,
+            "CEL": 4450.0,
             "ACE": 0.0,
             "SOM": 0.0,
             "PRT": 0.0,
@@ -5320,30 +5969,52 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 180000.0,
             "META_LOJA_ACE": 18000.0,
             "META_LOJA_PRT": 6300.000000000001,
-            "TICKET": 1350.0,
+            "TICKET": 1483.3333333333333,
+            "PA": 1.0
+        },
+        {
+            "ID VENDEDOR": "V109",
+            "NOME VENDEDOR": "LOJA",
+            "ID_LOJA": "25",
+            "REALIZADO": 1855.9900016784668,
+            "QTD_PEÇAS": 4,
+            "N_VENDAS": 4,
+            "CEL": 1756.0,
+            "ACE": 99.9900016784668,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 4,
+            "META_GERAL": 0.0,
+            "META_ACE": 0.0,
+            "META_PRT": 0.0,
+            "QTD_VEND_LOJA": 4,
+            "META_LOJA_GERAL": 0.0,
+            "META_LOJA_ACE": 0.0,
+            "META_LOJA_PRT": 0.0,
+            "TICKET": 463.9975004196167,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V113",
             "NOME VENDEDOR": "ADRIANY OLIVEIRA DA SILVA",
             "ID_LOJA": "15",
-            "REALIZADO": 14862.0,
-            "QTD_PEÇAS": 20,
-            "N_VENDAS": 19,
-            "CEL": 14000.0,
-            "ACE": 862.0,
+            "REALIZADO": 16092.0,
+            "QTD_PEÇAS": 22,
+            "N_VENDAS": 21,
+            "CEL": 15100.0,
+            "ACE": 992.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 782.2105263157895,
-            "PA": 1.0526315789473684
+            "TICKET": 766.2857142857143,
+            "PA": 1.0476190476190477
         },
         {
             "ID VENDEDOR": "V115",
@@ -5371,11 +6042,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V121",
             "NOME VENDEDOR": "ADRIELI SANTOS LIMA",
             "ID_LOJA": "7",
-            "REALIZADO": 12532.980061035156,
-            "QTD_PEÇAS": 19,
-            "N_VENDAS": 18,
+            "REALIZADO": 12757.980061035156,
+            "QTD_PEÇAS": 20,
+            "N_VENDAS": 19,
             "CEL": 11329.990061035156,
-            "ACE": 922.99,
+            "ACE": 1147.99,
             "SOM": 0.0,
             "PRT": 280.0,
             "ID TIPO": 1,
@@ -5386,8 +6057,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 696.2766700575087,
-            "PA": 1.0555555555555556
+            "TICKET": 671.472634791324,
+            "PA": 1.0526315789473684
         },
         {
             "ID VENDEDOR": "V125",
@@ -5415,10 +6086,10 @@ const dadosDashboard = {
             "ID VENDEDOR": "V139",
             "NOME VENDEDOR": "VICTOR W. GONDIM",
             "ID_LOJA": "20",
-            "REALIZADO": 21234.989999999998,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 14,
-            "CEL": 21000.0,
+            "REALIZADO": 26034.989999999998,
+            "QTD_PEÇAS": 18,
+            "N_VENDAS": 17,
+            "CEL": 25800.0,
             "ACE": 234.99,
             "SOM": 0.0,
             "PRT": 0.0,
@@ -5430,19 +6101,19 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 110000.0,
             "META_LOJA_ACE": 11000.0,
             "META_LOJA_PRT": 3850.0000000000005,
-            "TICKET": 1516.7849999999999,
-            "PA": 1.0714285714285714
+            "TICKET": 1531.4699999999998,
+            "PA": 1.0588235294117647
         },
         {
             "ID VENDEDOR": "V140",
             "NOME VENDEDOR": "DEJANE GUIMARAES DA SILVA",
             "ID_LOJA": "6",
-            "REALIZADO": 11130.99,
-            "QTD_PEÇAS": 25,
-            "N_VENDAS": 24,
+            "REALIZADO": 13930.979990234375,
+            "QTD_PEÇAS": 26,
+            "N_VENDAS": 25,
             "CEL": 5130.0,
             "ACE": 1549.99,
-            "SOM": 4050.0,
+            "SOM": 6849.989990234375,
             "PRT": 401.0,
             "ID TIPO": 1,
             "META_GERAL": 28571.428571428572,
@@ -5452,17 +6123,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 463.79125,
-            "PA": 1.0416666666666667
+            "TICKET": 557.239199609375,
+            "PA": 1.04
         },
         {
             "ID VENDEDOR": "V142",
             "NOME VENDEDOR": "JOÃO VICTOR DA SILVA QUEIROZ",
             "ID_LOJA": "7",
-            "REALIZADO": 14976.189990234376,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 15,
-            "CEL": 13902.989990234375,
+            "REALIZADO": 17136.17998046875,
+            "QTD_PEÇAS": 17,
+            "N_VENDAS": 17,
+            "CEL": 16062.97998046875,
             "ACE": 160.0,
             "SOM": 0.0,
             "PRT": 913.2,
@@ -5474,18 +6145,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 998.4126660156251,
+            "TICKET": 1008.0105870863971,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V147",
             "NOME VENDEDOR": "LUCILENE DO NASCIMENTO LOBATO",
             "ID_LOJA": "11",
-            "REALIZADO": 9482.0,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 9,
+            "REALIZADO": 9882.0,
+            "QTD_PEÇAS": 17,
+            "N_VENDAS": 10,
             "CEL": 10500.0,
-            "ACE": 250.0,
+            "ACE": 650.0,
             "SOM": 0.0,
             "PRT": 1132.0,
             "ID TIPO": 1,
@@ -5496,8 +6167,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 240000.0,
             "META_LOJA_ACE": 24000.0,
             "META_LOJA_PRT": 8400.0,
-            "TICKET": 1053.5555555555557,
-            "PA": 1.6666666666666667
+            "TICKET": 988.2,
+            "PA": 1.7
         },
         {
             "ID VENDEDOR": "V147",
@@ -5507,7 +6178,7 @@ const dadosDashboard = {
             "QTD_PEÇAS": 2,
             "N_VENDAS": 2,
             "CEL": 10500.0,
-            "ACE": 250.0,
+            "ACE": 650.0,
             "SOM": 0.0,
             "PRT": 1132.0,
             "ID TIPO": 3,
@@ -5525,11 +6196,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V148",
             "NOME VENDEDOR": "JOAOLIMA.PHONESTORE",
             "ID_LOJA": "18",
-            "REALIZADO": 30500.89998046875,
-            "QTD_PEÇAS": 30,
-            "N_VENDAS": 29,
-            "CEL": 29267.91998046875,
-            "ACE": 154.98000000000002,
+            "REALIZADO": 37724.87997238159,
+            "QTD_PEÇAS": 35,
+            "N_VENDAS": 34,
+            "CEL": 36451.90997070313,
+            "ACE": 194.97000167846682,
             "SOM": 0.0,
             "PRT": 1078.0,
             "ID TIPO": 4,
@@ -5540,18 +6211,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 145000.0,
             "META_LOJA_ACE": 7250.0,
             "META_LOJA_PRT": 5075.000000000001,
-            "TICKET": 1051.7551717403016,
-            "PA": 1.0344827586206897
+            "TICKET": 1109.555293305341,
+            "PA": 1.0294117647058822
         },
         {
             "ID VENDEDOR": "V154",
             "NOME VENDEDOR": "LEONE AZEVEDO",
             "ID_LOJA": "3",
-            "REALIZADO": 18288.979990234373,
-            "QTD_PEÇAS": 17,
-            "N_VENDAS": 16,
-            "CEL": 18119.979990234373,
-            "ACE": 169.0,
+            "REALIZADO": 19188.979990234373,
+            "QTD_PEÇAS": 19,
+            "N_VENDAS": 18,
+            "CEL": 18969.979990234373,
+            "ACE": 219.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 2,
@@ -5562,18 +6233,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 1143.0612493896483,
-            "PA": 1.0625
+            "TICKET": 1066.0544439019095,
+            "PA": 1.0555555555555556
         },
         {
             "ID VENDEDOR": "V155",
             "NOME VENDEDOR": "PATRICK GABRIEL DIAS DA SILVA",
             "ID_LOJA": "7",
-            "REALIZADO": 28537.48,
-            "QTD_PEÇAS": 33,
-            "N_VENDAS": 33,
+            "REALIZADO": 28627.48,
+            "QTD_PEÇAS": 34,
+            "N_VENDAS": 34,
             "CEL": 25239.98,
-            "ACE": 1342.5,
+            "ACE": 1432.5,
             "SOM": 1440.0,
             "PRT": 515.0,
             "ID TIPO": 1,
@@ -5584,18 +6255,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 864.7721212121212,
+            "TICKET": 841.984705882353,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V159",
             "NOME VENDEDOR": "THAMYLLES NAYARA MOREIRA RAIOL",
             "ID_LOJA": "8",
-            "REALIZADO": 18317.5,
-            "QTD_PEÇAS": 27,
-            "N_VENDAS": 25,
-            "CEL": 16640.0,
-            "ACE": 1435.5,
+            "REALIZADO": 20947.5,
+            "QTD_PEÇAS": 30,
+            "N_VENDAS": 28,
+            "CEL": 19240.0,
+            "ACE": 1465.5,
             "SOM": 0.0,
             "PRT": 242.0,
             "ID TIPO": 3,
@@ -5606,8 +6277,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 732.7,
-            "PA": 1.08
+            "TICKET": 748.125,
+            "PA": 1.0714285714285714
         },
         {
             "ID VENDEDOR": "V161",
@@ -5635,10 +6306,10 @@ const dadosDashboard = {
             "ID VENDEDOR": "V162",
             "NOME VENDEDOR": "VITÓRIA KAROLINA TAVARES",
             "ID_LOJA": "21",
-            "REALIZADO": 33599.969972703126,
-            "QTD_PEÇAS": 28,
-            "N_VENDAS": 25,
-            "CEL": 33399.95997070312,
+            "REALIZADO": 34899.9599629375,
+            "QTD_PEÇAS": 29,
+            "N_VENDAS": 26,
+            "CEL": 34699.9499609375,
             "ACE": 200.010002,
             "SOM": 0.0,
             "PRT": 0.0,
@@ -5650,18 +6321,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 180000.0,
             "META_LOJA_ACE": 18000.0,
             "META_LOJA_PRT": 6300.000000000001,
-            "TICKET": 1343.998798908125,
-            "PA": 1.12
+            "TICKET": 1342.306152420673,
+            "PA": 1.1153846153846154
         },
         {
             "ID VENDEDOR": "V165",
             "NOME VENDEDOR": "JHONSY PACHECO DOS SANTOS",
             "ID_LOJA": "16",
-            "REALIZADO": 14195.0,
-            "QTD_PEÇAS": 37,
-            "N_VENDAS": 32,
+            "REALIZADO": 14245.0,
+            "QTD_PEÇAS": 38,
+            "N_VENDAS": 33,
             "CEL": 11350.0,
-            "ACE": 2250.0,
+            "ACE": 2300.0,
             "SOM": 0.0,
             "PRT": 595.0,
             "ID TIPO": 3,
@@ -5672,8 +6343,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 135000.0,
             "META_LOJA_ACE": 13500.0,
             "META_LOJA_PRT": 4725.0,
-            "TICKET": 443.59375,
-            "PA": 1.15625
+            "TICKET": 431.6666666666667,
+            "PA": 1.1515151515151516
         },
         {
             "ID VENDEDOR": "V167",
@@ -5709,10 +6380,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
@@ -5745,23 +6416,23 @@ const dadosDashboard = {
             "ID VENDEDOR": "V170",
             "NOME VENDEDOR": "NATASHA DE LIMA PENEDO",
             "ID_LOJA": "12",
-            "REALIZADO": 1780.2,
-            "QTD_PEÇAS": 17,
-            "N_VENDAS": 16,
+            "REALIZADO": 2615.2,
+            "QTD_PEÇAS": 27,
+            "N_VENDAS": 24,
             "CEL": 0.0,
-            "ACE": 1755.0,
+            "ACE": 2515.0,
             "SOM": 0.0,
-            "PRT": 25.2,
+            "PRT": 100.2,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 111.2625,
-            "PA": 1.0625
+            "TICKET": 108.96666666666665,
+            "PA": 1.125
         },
         {
             "ID VENDEDOR": "V172",
@@ -5775,10 +6446,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -5833,13 +6504,13 @@ const dadosDashboard = {
             "ID VENDEDOR": "V180",
             "NOME VENDEDOR": "BRUNA ANDRADE DE OLIVEIRA",
             "ID_LOJA": "4",
-            "REALIZADO": 25731.980041503906,
-            "QTD_PEÇAS": 24,
-            "N_VENDAS": 22,
-            "CEL": 25133.560029296874,
-            "ACE": 230.0,
+            "REALIZADO": 31921.980041503906,
+            "QTD_PEÇAS": 30,
+            "N_VENDAS": 28,
+            "CEL": 30933.560029296874,
+            "ACE": 260.0,
             "SOM": 0.0,
-            "PRT": 368.42001220703116,
+            "PRT": 728.4200122070312,
             "ID TIPO": 2,
             "META_GERAL": 50000.0,
             "META_ACE": 5000.0,
@@ -5848,18 +6519,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 1169.6354564319956,
-            "PA": 1.0909090909090908
+            "TICKET": 1140.0707157679967,
+            "PA": 1.0714285714285714
         },
         {
             "ID VENDEDOR": "V184",
             "NOME VENDEDOR": "RAMIRES PEREIRA FRANCISCO GARCIA",
             "ID_LOJA": "1",
-            "REALIZADO": 25123.040001678466,
-            "QTD_PEÇAS": 61,
-            "N_VENDAS": 55,
-            "CEL": 22063.07,
-            "ACE": 2488.970001678467,
+            "REALIZADO": 28402.030003356933,
+            "QTD_PEÇAS": 68,
+            "N_VENDAS": 61,
+            "CEL": 25016.07,
+            "ACE": 2814.9600033569336,
             "SOM": 0.0,
             "PRT": 571.0,
             "ID TIPO": 1,
@@ -5870,8 +6541,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 100000.0,
             "META_LOJA_ACE": 10000.0,
             "META_LOJA_PRT": 3500.0000000000005,
-            "TICKET": 456.782545485063,
-            "PA": 1.1090909090909091
+            "TICKET": 465.60704923535957,
+            "PA": 1.1147540983606556
         },
         {
             "ID VENDEDOR": "V185",
@@ -5880,10 +6551,10 @@ const dadosDashboard = {
             "REALIZADO": 22132.0,
             "QTD_PEÇAS": 25,
             "N_VENDAS": 23,
-            "CEL": 20800.0,
-            "ACE": 1332.0,
+            "CEL": 33500.0,
+            "ACE": 1692.0,
             "SOM": 0.0,
-            "PRT": 0.0,
+            "PRT": 60.0,
             "ID TIPO": 1,
             "META_GERAL": 34285.71428571428,
             "META_ACE": 3428.5714285714284,
@@ -5896,36 +6567,58 @@ const dadosDashboard = {
             "PA": 1.0869565217391304
         },
         {
-            "ID VENDEDOR": "V186",
-            "NOME VENDEDOR": "PATRICK FARIAS ALHO",
+            "ID VENDEDOR": "V185",
+            "NOME VENDEDOR": "VITÓRIA LUIZA  DE OLIVEIRA MESSIAS",
             "ID_LOJA": "12",
-            "REALIZADO": 64980.88998474121,
-            "QTD_PEÇAS": 74,
-            "N_VENDAS": 70,
-            "CEL": 59245.0,
-            "ACE": 2368.99,
+            "REALIZADO": 13120.0,
+            "QTD_PEÇAS": 6,
+            "N_VENDAS": 6,
+            "CEL": 33500.0,
+            "ACE": 1692.0,
             "SOM": 0.0,
-            "PRT": 3366.899984741211,
+            "PRT": 60.0,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 928.2984283534458,
-            "PA": 1.0571428571428572
+            "TICKET": 2186.6666666666665,
+            "PA": 1.0
+        },
+        {
+            "ID VENDEDOR": "V186",
+            "NOME VENDEDOR": "PATRICK FARIAS ALHO",
+            "ID_LOJA": "12",
+            "REALIZADO": 73390.88998474121,
+            "QTD_PEÇAS": 80,
+            "N_VENDAS": 76,
+            "CEL": 67515.0,
+            "ACE": 2508.99,
+            "SOM": 0.0,
+            "PRT": 3366.899984741211,
+            "ID TIPO": 3,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
+            "META_LOJA_GERAL": 250000.0,
+            "META_LOJA_ACE": 12500.0,
+            "META_LOJA_PRT": 8750.0,
+            "TICKET": 965.6696050623843,
+            "PA": 1.0526315789473684
         },
         {
             "ID VENDEDOR": "V187",
             "NOME VENDEDOR": "WENDERSON EDUARDO CORREA",
             "ID_LOJA": "14",
-            "REALIZADO": 16415.0,
-            "QTD_PEÇAS": 27,
-            "N_VENDAS": 18,
-            "CEL": 14549.0,
-            "ACE": 1488.0,
+            "REALIZADO": 25664.000047683716,
+            "QTD_PEÇAS": 34,
+            "N_VENDAS": 23,
+            "CEL": 23528.99005126953,
+            "ACE": 1757.0099964141846,
             "SOM": 0.0,
             "PRT": 378.0,
             "ID TIPO": 1,
@@ -5936,18 +6629,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 911.9444444444445,
-            "PA": 1.5
+            "TICKET": 1115.8260890297267,
+            "PA": 1.4782608695652173
         },
         {
             "ID VENDEDOR": "V189",
             "NOME VENDEDOR": "GUILHERME ALEIXO MONTEIRO",
             "ID_LOJA": "4",
-            "REALIZADO": 48858.94999,
-            "QTD_PEÇAS": 47,
-            "N_VENDAS": 41,
-            "CEL": 47322.95,
-            "ACE": 1339.99999,
+            "REALIZADO": 51037.94999,
+            "QTD_PEÇAS": 50,
+            "N_VENDAS": 44,
+            "CEL": 49221.95,
+            "ACE": 1619.99999,
             "SOM": 0.0,
             "PRT": 196.0,
             "ID TIPO": 2,
@@ -5958,17 +6651,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 1191.6817070731709,
-            "PA": 1.146341463414634
+            "TICKET": 1159.9534088636365,
+            "PA": 1.1363636363636365
         },
         {
             "ID VENDEDOR": "V192",
             "NOME VENDEDOR": "LUCAS RIBEIRO DA SILVA",
             "ID_LOJA": "11",
-            "REALIZADO": 7244.5,
-            "QTD_PEÇAS": 23,
-            "N_VENDAS": 19,
-            "CEL": 4100.0,
+            "REALIZADO": 8444.5,
+            "QTD_PEÇAS": 24,
+            "N_VENDAS": 20,
+            "CEL": 5300.0,
             "ACE": 2397.5,
             "SOM": 0.0,
             "PRT": 747.0,
@@ -5980,17 +6673,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 240000.0,
             "META_LOJA_ACE": 24000.0,
             "META_LOJA_PRT": 8400.0,
-            "TICKET": 381.2894736842105,
-            "PA": 1.2105263157894737
+            "TICKET": 422.225,
+            "PA": 1.2
         },
         {
             "ID VENDEDOR": "V194",
             "NOME VENDEDOR": "VITORIA VALESKA",
             "ID_LOJA": "3",
-            "REALIZADO": 13796.969990234375,
-            "QTD_PEÇAS": 14,
-            "N_VENDAS": 14,
-            "CEL": 13646.979990234375,
+            "REALIZADO": 14596.969990234375,
+            "QTD_PEÇAS": 15,
+            "N_VENDAS": 15,
+            "CEL": 14446.979990234375,
             "ACE": 149.99,
             "SOM": 0.0,
             "PRT": 0.0,
@@ -6002,18 +6695,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 985.4978564453124,
+            "TICKET": 973.1313326822916,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V197",
             "NOME VENDEDOR": "MELISSA VITORIA SILVA FARIAS",
             "ID_LOJA": "10",
-            "REALIZADO": 18104.0,
-            "QTD_PEÇAS": 40,
-            "N_VENDAS": 34,
-            "CEL": 16500.0,
-            "ACE": 1450.0,
+            "REALIZADO": 19514.0,
+            "QTD_PEÇAS": 44,
+            "N_VENDAS": 38,
+            "CEL": 17800.0,
+            "ACE": 1560.0,
             "SOM": 0.0,
             "PRT": 154.0,
             "ID TIPO": 3,
@@ -6024,18 +6717,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 90000.0,
             "META_LOJA_ACE": 4500.0,
             "META_LOJA_PRT": 3150.0000000000005,
-            "TICKET": 532.4705882352941,
-            "PA": 1.1764705882352942
+            "TICKET": 513.5263157894736,
+            "PA": 1.1578947368421053
         },
         {
             "ID VENDEDOR": "V198",
             "NOME VENDEDOR": "JEANNNE CRISTINY MACIEL CAMPELO",
             "ID_LOJA": "11",
-            "REALIZADO": 5890.0,
-            "QTD_PEÇAS": 18,
-            "N_VENDAS": 14,
-            "CEL": 4800.0,
-            "ACE": 950.0,
+            "REALIZADO": 7300.0,
+            "QTD_PEÇAS": 21,
+            "N_VENDAS": 17,
+            "CEL": 6100.0,
+            "ACE": 1060.0,
             "SOM": 0.0,
             "PRT": 140.0,
             "ID TIPO": 1,
@@ -6046,18 +6739,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 240000.0,
             "META_LOJA_ACE": 24000.0,
             "META_LOJA_PRT": 8400.0,
-            "TICKET": 420.7142857142857,
-            "PA": 1.2857142857142858
+            "TICKET": 429.4117647058824,
+            "PA": 1.2352941176470589
         },
         {
             "ID VENDEDOR": "V199",
             "NOME VENDEDOR": "JAQUELINE.PHONESTORE",
             "ID_LOJA": "18",
-            "REALIZADO": 29410.860005493163,
-            "QTD_PEÇAS": 41,
-            "N_VENDAS": 37,
-            "CEL": 26960.93,
-            "ACE": 1259.9300054931641,
+            "REALIZADO": 36634.83999740601,
+            "QTD_PEÇAS": 49,
+            "N_VENDAS": 45,
+            "CEL": 33994.919990234375,
+            "ACE": 1449.920007171631,
             "SOM": 0.0,
             "PRT": 1190.0,
             "ID TIPO": 4,
@@ -6068,20 +6761,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 145000.0,
             "META_LOJA_ACE": 7250.0,
             "META_LOJA_PRT": 5075.000000000001,
-            "TICKET": 794.888108256572,
-            "PA": 1.1081081081081081
+            "TICKET": 814.1075554979113,
+            "PA": 1.0888888888888888
         },
         {
             "ID VENDEDOR": "V202",
             "NOME VENDEDOR": "DAVID KAUÃ PIRES DA SILVA",
             "ID_LOJA": "7",
-            "REALIZADO": 18221.58,
-            "QTD_PEÇAS": 36,
-            "N_VENDAS": 36,
-            "CEL": 10459.99,
-            "ACE": 2368.99,
+            "REALIZADO": 24413.58,
+            "QTD_PEÇAS": 46,
+            "N_VENDAS": 46,
+            "CEL": 15859.99,
+            "ACE": 2782.99,
             "SOM": 4330.0,
-            "PRT": 1062.6,
+            "PRT": 1440.6,
             "ID TIPO": 1,
             "META_GERAL": 41666.666666666664,
             "META_ACE": 4166.666666666667,
@@ -6090,20 +6783,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 506.15500000000003,
+            "TICKET": 530.73,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V205",
             "NOME VENDEDOR": "TIAGO WELLINGTON RODRIGUES VIANA",
             "ID_LOJA": "9",
-            "REALIZADO": 1250.0,
-            "QTD_PEÇAS": 13,
-            "N_VENDAS": 10,
+            "REALIZADO": 2161.0,
+            "QTD_PEÇAS": 21,
+            "N_VENDAS": 14,
             "CEL": 0.0,
-            "ACE": 1250.0,
+            "ACE": 1540.0,
             "SOM": 0.0,
-            "PRT": 0.0,
+            "PRT": 621.0,
             "ID TIPO": 1,
             "META_GERAL": 38333.333333333336,
             "META_ACE": 3833.3333333333335,
@@ -6112,18 +6805,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 125.0,
-            "PA": 1.3
+            "TICKET": 154.35714285714286,
+            "PA": 1.5
         },
         {
             "ID VENDEDOR": "V206",
             "NOME VENDEDOR": "LORRANE.PHONESTORE",
             "ID_LOJA": "18",
-            "REALIZADO": 14443.969991912842,
-            "QTD_PEÇAS": 25,
-            "N_VENDAS": 19,
+            "REALIZADO": 14573.969991912842,
+            "QTD_PEÇAS": 28,
+            "N_VENDAS": 21,
             "CEL": 12818.989990234375,
-            "ACE": 1024.9800016784668,
+            "ACE": 1154.9800016784668,
             "SOM": 0.0,
             "PRT": 600.0,
             "ID TIPO": 4,
@@ -6134,18 +6827,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 145000.0,
             "META_LOJA_ACE": 7250.0,
             "META_LOJA_PRT": 5075.000000000001,
-            "TICKET": 760.2089469427812,
-            "PA": 1.3157894736842106
+            "TICKET": 693.9985710434687,
+            "PA": 1.3333333333333333
         },
         {
             "ID VENDEDOR": "V207",
             "NOME VENDEDOR": "EDUARDO MONTEIRO DE SOUZA",
             "ID_LOJA": "4",
-            "REALIZADO": 32876.990061035154,
-            "QTD_PEÇAS": 36,
-            "N_VENDAS": 33,
-            "CEL": 29087.000061035156,
-            "ACE": 2349.99,
+            "REALIZADO": 37460.990061035154,
+            "QTD_PEÇAS": 41,
+            "N_VENDAS": 38,
+            "CEL": 33641.000061035156,
+            "ACE": 2379.99,
             "SOM": 0.0,
             "PRT": 1440.0,
             "ID TIPO": 2,
@@ -6156,18 +6849,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 996.2724260919744,
-            "PA": 1.0909090909090908
+            "TICKET": 985.8155279219777,
+            "PA": 1.0789473684210527
         },
         {
             "ID VENDEDOR": "V208",
             "NOME VENDEDOR": "JHONATA TAVARES DOS SANTOS",
             "ID_LOJA": "6",
-            "REALIZADO": 4845.0,
-            "QTD_PEÇAS": 18,
-            "N_VENDAS": 16,
+            "REALIZADO": 4905.0,
+            "QTD_PEÇAS": 20,
+            "N_VENDAS": 18,
             "CEL": 4280.0,
-            "ACE": 415.0,
+            "ACE": 475.0,
             "SOM": 0.0,
             "PRT": 150.0,
             "ID TIPO": 1,
@@ -6178,18 +6871,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 302.8125,
-            "PA": 1.125
+            "TICKET": 272.5,
+            "PA": 1.1111111111111112
         },
         {
             "ID VENDEDOR": "V209",
             "NOME VENDEDOR": "JOÃO GABRIEL DO NASCIMENTO VILA NOVA",
             "ID_LOJA": "5",
-            "REALIZADO": 532.0,
-            "QTD_PEÇAS": 4,
-            "N_VENDAS": 3,
+            "REALIZADO": 732.0,
+            "QTD_PEÇAS": 5,
+            "N_VENDAS": 4,
             "CEL": 0.0,
-            "ACE": 742.0,
+            "ACE": 942.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6200,8 +6893,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 6000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 177.33333333333334,
-            "PA": 1.3333333333333333
+            "TICKET": 183.0,
+            "PA": 1.25
         },
         {
             "ID VENDEDOR": "V209",
@@ -6211,7 +6904,7 @@ const dadosDashboard = {
             "QTD_PEÇAS": 6,
             "N_VENDAS": 5,
             "CEL": 0.0,
-            "ACE": 742.0,
+            "ACE": 942.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6259,10 +6952,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -6273,11 +6966,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V216",
             "NOME VENDEDOR": "FELIPE CAUÃ",
             "ID_LOJA": "17",
-            "REALIZADO": 47090.93999023437,
-            "QTD_PEÇAS": 39,
-            "N_VENDAS": 37,
-            "CEL": 46290.93999023437,
-            "ACE": 436.0,
+            "REALIZADO": 56834.92998046875,
+            "QTD_PEÇAS": 48,
+            "N_VENDAS": 46,
+            "CEL": 55834.92998046875,
+            "ACE": 636.0,
             "SOM": 0.0,
             "PRT": 364.0,
             "ID TIPO": 3,
@@ -6288,18 +6981,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 1272.7281078441722,
-            "PA": 1.054054054054054
+            "TICKET": 1235.5419560971466,
+            "PA": 1.0434782608695652
         },
         {
             "ID VENDEDOR": "V217",
             "NOME VENDEDOR": "JOAO GUSTAVO CARDOSO FERREIRA",
             "ID_LOJA": "8",
-            "REALIZADO": 1394.4899997711182,
-            "QTD_PEÇAS": 9,
-            "N_VENDAS": 9,
+            "REALIZADO": 1656.4799995422363,
+            "QTD_PEÇAS": 14,
+            "N_VENDAS": 14,
             "CEL": 0.0,
-            "ACE": 1326.9899997711182,
+            "ACE": 1588.9799995422363,
             "SOM": 0.0,
             "PRT": 67.5,
             "ID TIPO": 3,
@@ -6310,18 +7003,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 154.943333307902,
+            "TICKET": 118.31999996730259,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V218",
             "NOME VENDEDOR": "MATEUS GABRIEL DE SOUSA VERA CRUZ",
             "ID_LOJA": "8",
-            "REALIZADO": 1385.9899997711182,
-            "QTD_PEÇAS": 17,
-            "N_VENDAS": 14,
+            "REALIZADO": 1585.9899997711182,
+            "QTD_PEÇAS": 21,
+            "N_VENDAS": 16,
             "CEL": 0.0,
-            "ACE": 1385.9899997711182,
+            "ACE": 1585.9899997711182,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6332,18 +7025,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 98.99928569793701,
-            "PA": 1.2142857142857142
+            "TICKET": 99.12437498569489,
+            "PA": 1.3125
         },
         {
             "ID VENDEDOR": "V219",
             "NOME VENDEDOR": "HARRISSON DE JESUS CALANDRINI CABRAL",
             "ID_LOJA": "9",
-            "REALIZADO": 2626.0,
-            "QTD_PEÇAS": 22,
-            "N_VENDAS": 16,
+            "REALIZADO": 3165.9999957084656,
+            "QTD_PEÇAS": 32,
+            "N_VENDAS": 23,
             "CEL": 0.0,
-            "ACE": 1652.0,
+            "ACE": 2191.9999957084656,
             "SOM": 750.0,
             "PRT": 224.0,
             "ID TIPO": 1,
@@ -6354,18 +7047,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 164.125,
-            "PA": 1.375
+            "TICKET": 137.65217372645503,
+            "PA": 1.391304347826087
         },
         {
             "ID VENDEDOR": "V220",
             "NOME VENDEDOR": "JESSICA CRISTINA TORRES DOS SANTOS",
             "ID_LOJA": "9",
-            "REALIZADO": 750.0,
-            "QTD_PEÇAS": 14,
-            "N_VENDAS": 11,
+            "REALIZADO": 780.0,
+            "QTD_PEÇAS": 15,
+            "N_VENDAS": 12,
             "CEL": 0.0,
-            "ACE": 750.0,
+            "ACE": 780.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6376,18 +7069,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 230000.0,
             "META_LOJA_ACE": 23000.0,
             "META_LOJA_PRT": 8050.000000000001,
-            "TICKET": 68.18181818181819,
-            "PA": 1.2727272727272727
+            "TICKET": 65.0,
+            "PA": 1.25
         },
         {
             "ID VENDEDOR": "V221",
             "NOME VENDEDOR": "LEONEL DE OLIVEIRA BARROS",
             "ID_LOJA": "16",
-            "REALIZADO": 1150.0,
-            "QTD_PEÇAS": 16,
-            "N_VENDAS": 16,
+            "REALIZADO": 1300.0,
+            "QTD_PEÇAS": 19,
+            "N_VENDAS": 19,
             "CEL": 0.0,
-            "ACE": 1150.0,
+            "ACE": 1300.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6398,20 +7091,20 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 135000.0,
             "META_LOJA_ACE": 13500.0,
             "META_LOJA_PRT": 4725.0,
-            "TICKET": 71.875,
+            "TICKET": 68.42105263157895,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V222",
             "NOME VENDEDOR": "ALESSANDRO GUIMARÃES LAMEIRA",
             "ID_LOJA": "7",
-            "REALIZADO": 1405.6700024414063,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 14,
+            "REALIZADO": 1895.6600060272217,
+            "QTD_PEÇAS": 20,
+            "N_VENDAS": 19,
             "CEL": 0.0,
-            "ACE": 1218.98,
+            "ACE": 1408.9700035858154,
             "SOM": 0.0,
-            "PRT": 186.6900024414062,
+            "PRT": 486.6900024414062,
             "ID TIPO": 1,
             "META_GERAL": 41666.666666666664,
             "META_ACE": 4166.666666666667,
@@ -6420,40 +7113,40 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 25000.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 100.40500017438616,
-            "PA": 1.0714285714285714
+            "TICKET": 99.77157926459061,
+            "PA": 1.0526315789473684
         },
         {
             "ID VENDEDOR": "V223",
             "NOME VENDEDOR": "BARBARA KAMILA SOUSA",
             "ID_LOJA": "15",
-            "REALIZADO": 7380.0,
-            "QTD_PEÇAS": 8,
-            "N_VENDAS": 7,
-            "CEL": 24400.0,
-            "ACE": 1195.0,
+            "REALIZADO": 8880.0,
+            "QTD_PEÇAS": 9,
+            "N_VENDAS": 8,
+            "CEL": 27100.0,
+            "ACE": 1405.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 1054.2857142857142,
-            "PA": 1.1428571428571428
+            "TICKET": 1110.0,
+            "PA": 1.125
         },
         {
             "ID VENDEDOR": "V223",
             "NOME VENDEDOR": "BARBARA KAMILA SOUSA",
             "ID_LOJA": "2",
-            "REALIZADO": 18215.0,
-            "QTD_PEÇAS": 24,
-            "N_VENDAS": 22,
-            "CEL": 24400.0,
-            "ACE": 1195.0,
+            "REALIZADO": 19625.0,
+            "QTD_PEÇAS": 28,
+            "N_VENDAS": 24,
+            "CEL": 27100.0,
+            "ACE": 1405.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6464,18 +7157,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 827.9545454545455,
-            "PA": 1.0909090909090908
+            "TICKET": 817.7083333333334,
+            "PA": 1.1666666666666667
         },
         {
             "ID VENDEDOR": "V224",
             "NOME VENDEDOR": "MAYCON ROBERTH DE MELO BARROSO",
             "ID_LOJA": "2",
-            "REALIZADO": 6512.499969482422,
-            "QTD_PEÇAS": 14,
-            "N_VENDAS": 12,
-            "CEL": 6179.999969482422,
-            "ACE": 332.5,
+            "REALIZADO": 9730.499969482422,
+            "QTD_PEÇAS": 17,
+            "N_VENDAS": 15,
+            "CEL": 9379.999969482422,
+            "ACE": 350.5,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6486,19 +7179,19 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 12000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 542.7083307902018,
-            "PA": 1.1666666666666667
+            "TICKET": 648.6999979654948,
+            "PA": 1.1333333333333333
         },
         {
             "ID VENDEDOR": "V225",
             "NOME VENDEDOR": "THIAGO DOS SANTOS CHAVES",
             "ID_LOJA": "6",
-            "REALIZADO": 6903.98,
-            "QTD_PEÇAS": 24,
-            "N_VENDAS": 15,
-            "CEL": 5500.0,
-            "ACE": 1305.98,
-            "SOM": 0.0,
+            "REALIZADO": 11363.98,
+            "QTD_PEÇAS": 28,
+            "N_VENDAS": 19,
+            "CEL": 7100.0,
+            "ACE": 1365.98,
+            "SOM": 2800.0,
             "PRT": 98.0,
             "ID TIPO": 1,
             "META_GERAL": 28571.428571428572,
@@ -6508,8 +7201,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 460.26533333333333,
-            "PA": 1.6
+            "TICKET": 598.1042105263158,
+            "PA": 1.4736842105263157
         },
         {
             "ID VENDEDOR": "V226",
@@ -6523,10 +7216,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -6537,11 +7230,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V227",
             "NOME VENDEDOR": "LUCAS RAMON SOARES DO NASCIMENTO",
             "ID_LOJA": "14",
-            "REALIZADO": 34190.94,
-            "QTD_PEÇAS": 45,
-            "N_VENDAS": 40,
-            "CEL": 29505.949999999997,
-            "ACE": 2085.99,
+            "REALIZADO": 36800.88999313355,
+            "QTD_PEÇAS": 51,
+            "N_VENDAS": 46,
+            "CEL": 31905.939990234372,
+            "ACE": 2295.9500028991697,
             "SOM": 0.0,
             "PRT": 2599.0,
             "ID TIPO": 1,
@@ -6552,17 +7245,17 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 854.7735,
-            "PA": 1.125
+            "TICKET": 800.0193476768162,
+            "PA": 1.108695652173913
         },
         {
             "ID VENDEDOR": "V228",
             "NOME VENDEDOR": "ANDRIELY RAISSA DE CASTRO PALHETA",
             "ID_LOJA": "21",
-            "REALIZADO": 28369.98,
-            "QTD_PEÇAS": 20,
-            "N_VENDAS": 19,
-            "CEL": 27829.98,
+            "REALIZADO": 35179.979999999996,
+            "QTD_PEÇAS": 25,
+            "N_VENDAS": 24,
+            "CEL": 34639.979999999996,
             "ACE": 540.0,
             "SOM": 0.0,
             "PRT": 0.0,
@@ -6574,18 +7267,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 180000.0,
             "META_LOJA_ACE": 18000.0,
             "META_LOJA_PRT": 6300.000000000001,
-            "TICKET": 1493.1568421052632,
-            "PA": 1.0526315789473684
+            "TICKET": 1465.8324999999998,
+            "PA": 1.0416666666666667
         },
         {
             "ID VENDEDOR": "V229",
             "NOME VENDEDOR": "CLAUDIO RODRIGO COSTA SILVA",
             "ID_LOJA": "22",
-            "REALIZADO": 13049.959993591308,
-            "QTD_PEÇAS": 14,
-            "N_VENDAS": 12,
-            "CEL": 12699.979990234375,
-            "ACE": 349.9800033569336,
+            "REALIZADO": 15699.849977722168,
+            "QTD_PEÇAS": 17,
+            "N_VENDAS": 15,
+            "CEL": 15099.96998046875,
+            "ACE": 599.879997253418,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6596,8 +7289,30 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 1087.496666132609,
-            "PA": 1.1666666666666667
+            "TICKET": 1046.6566651814778,
+            "PA": 1.1333333333333333
+        },
+        {
+            "ID VENDEDOR": "V230",
+            "NOME VENDEDOR": "LUCAS TADEU OLIVEIRA DE AZEVEDO",
+            "ID_LOJA": "13",
+            "REALIZADO": 3000.0,
+            "QTD_PEÇAS": 1,
+            "N_VENDAS": 1,
+            "CEL": 0.0,
+            "ACE": 0.0,
+            "SOM": 3000.0,
+            "PRT": 0.0,
+            "ID TIPO": 1,
+            "META_GERAL": 65000.0,
+            "META_ACE": 6500.0,
+            "META_PRT": 2275.0,
+            "QTD_VEND_LOJA": 2,
+            "META_LOJA_GERAL": 130000.0,
+            "META_LOJA_ACE": 13000.0,
+            "META_LOJA_PRT": 4550.0,
+            "TICKET": 3000.0,
+            "PA": 1.0
         },
         {
             "ID VENDEDOR": "V231",
@@ -6647,33 +7362,33 @@ const dadosDashboard = {
             "ID VENDEDOR": "V232",
             "NOME VENDEDOR": "YAGGO ENRIC CORREA DA SILVA",
             "ID_LOJA": "13",
-            "REALIZADO": 15278.890000534058,
-            "QTD_PEÇAS": 51,
-            "N_VENDAS": 47,
+            "REALIZADO": 17168.870011520386,
+            "QTD_PEÇAS": 61,
+            "N_VENDAS": 56,
             "CEL": 4549.99,
-            "ACE": 5228.900000534058,
+            "ACE": 7118.880011520386,
             "SOM": 5500.0,
             "PRT": 0.0,
             "ID TIPO": 1,
-            "META_GERAL": 130000.0,
-            "META_ACE": 13000.0,
-            "META_PRT": 4550.0,
-            "QTD_VEND_LOJA": 1,
+            "META_GERAL": 65000.0,
+            "META_ACE": 6500.0,
+            "META_PRT": 2275.0,
+            "QTD_VEND_LOJA": 2,
             "META_LOJA_GERAL": 130000.0,
             "META_LOJA_ACE": 13000.0,
             "META_LOJA_PRT": 4550.0,
-            "TICKET": 325.0827659688097,
-            "PA": 1.0851063829787233
+            "TICKET": 306.5869644914355,
+            "PA": 1.0892857142857142
         },
         {
             "ID VENDEDOR": "V233",
             "NOME VENDEDOR": "FLAVIANO PESTANA MAIA",
             "ID_LOJA": "24",
-            "REALIZADO": 11739.750009155274,
-            "QTD_PEÇAS": 33,
-            "N_VENDAS": 32,
+            "REALIZADO": 12119.750009155274,
+            "QTD_PEÇAS": 38,
+            "N_VENDAS": 36,
             "CEL": 10249.99,
-            "ACE": 1489.7600091552733,
+            "ACE": 1869.7600091552733,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6684,18 +7399,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 130000.0,
             "META_LOJA_ACE": 6500.0,
             "META_LOJA_PRT": 4550.0,
-            "TICKET": 366.8671877861023,
-            "PA": 1.03125
+            "TICKET": 336.65972247653536,
+            "PA": 1.0555555555555556
         },
         {
             "ID VENDEDOR": "V234",
             "NOME VENDEDOR": "JOSE VITOR ROSARIO SOUZA",
             "ID_LOJA": "21",
-            "REALIZADO": 12907.959990005493,
-            "QTD_PEÇAS": 13,
-            "N_VENDAS": 11,
-            "CEL": 12775.969990234375,
-            "ACE": 131.98999977111816,
+            "REALIZADO": 15787.959990005493,
+            "QTD_PEÇAS": 18,
+            "N_VENDAS": 15,
+            "CEL": 15475.969990234375,
+            "ACE": 311.98999977111816,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 2,
@@ -6706,18 +7421,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 180000.0,
             "META_LOJA_ACE": 18000.0,
             "META_LOJA_PRT": 6300.000000000001,
-            "TICKET": 1173.4509081823176,
-            "PA": 1.1818181818181819
+            "TICKET": 1052.5306660003662,
+            "PA": 1.2
         },
         {
             "ID VENDEDOR": "V235",
             "NOME VENDEDOR": "DAIANE.PHONESTORE",
             "ID_LOJA": "18",
-            "REALIZADO": 21869.929990234374,
-            "QTD_PEÇAS": 32,
-            "N_VENDAS": 29,
-            "CEL": 20235.949990234374,
-            "ACE": 793.98,
+            "REALIZADO": 27891.90997833252,
+            "QTD_PEÇAS": 40,
+            "N_VENDAS": 37,
+            "CEL": 25927.93998046875,
+            "ACE": 1123.9699978637695,
             "SOM": 0.0,
             "PRT": 840.0,
             "ID TIPO": 4,
@@ -6728,8 +7443,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 145000.0,
             "META_LOJA_ACE": 7250.0,
             "META_LOJA_PRT": 5075.000000000001,
-            "TICKET": 754.1355169046336,
-            "PA": 1.103448275862069
+            "TICKET": 753.8354048197978,
+            "PA": 1.0810810810810811
         },
         {
             "ID VENDEDOR": "V237",
@@ -6757,11 +7472,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V238",
             "NOME VENDEDOR": "LUCCA RAFAEL MORAIS RABELO",
             "ID_LOJA": "22",
-            "REALIZADO": 5084.95,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 15,
-            "CEL": 4509.99,
-            "ACE": 574.96,
+            "REALIZADO": 7158.95,
+            "QTD_PEÇAS": 19,
+            "N_VENDAS": 19,
+            "CEL": 6508.99,
+            "ACE": 649.96,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
@@ -6772,7 +7487,7 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
-            "TICKET": 338.99666666666667,
+            "TICKET": 376.78684210526313,
             "PA": 1.0
         },
         {
@@ -6823,11 +7538,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V241",
             "NOME VENDEDOR": "KAREN RIBEIRO",
             "ID_LOJA": "23",
-            "REALIZADO": 33495.97,
-            "QTD_PEÇAS": 32,
-            "N_VENDAS": 29,
-            "CEL": 32249.97,
-            "ACE": 680.0,
+            "REALIZADO": 43305.95999786377,
+            "QTD_PEÇAS": 43,
+            "N_VENDAS": 39,
+            "CEL": 41589.97,
+            "ACE": 1149.9899978637695,
             "SOM": 0.0,
             "PRT": 566.0,
             "ID TIPO": 4,
@@ -6838,8 +7553,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 6000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 1155.0334482758622,
-            "PA": 1.103448275862069
+            "TICKET": 1110.4092307144556,
+            "PA": 1.1025641025641026
         },
         {
             "ID VENDEDOR": "V242",
@@ -6867,13 +7582,13 @@ const dadosDashboard = {
             "ID VENDEDOR": "V243",
             "NOME VENDEDOR": "NELSON FAVACHO",
             "ID_LOJA": "23",
-            "REALIZADO": 20791.98,
-            "QTD_PEÇAS": 15,
-            "N_VENDAS": 15,
-            "CEL": 20399.98,
+            "REALIZADO": 29012.48,
+            "QTD_PEÇAS": 22,
+            "N_VENDAS": 21,
+            "CEL": 27484.98,
             "ACE": 392.0,
             "SOM": 0.0,
-            "PRT": 0.0,
+            "PRT": 1135.5,
             "ID TIPO": 4,
             "META_GERAL": 24000.0,
             "META_ACE": 1200.0,
@@ -6882,18 +7597,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 6000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 1386.132,
-            "PA": 1.0
+            "TICKET": 1381.5466666666666,
+            "PA": 1.0476190476190477
         },
         {
             "ID VENDEDOR": "V244",
             "NOME VENDEDOR": "JAZIEL SIQUEIRA LIRA NETO",
             "ID_LOJA": "11",
-            "REALIZADO": 5099.99,
-            "QTD_PEÇAS": 9,
-            "N_VENDAS": 9,
+            "REALIZADO": 5659.99,
+            "QTD_PEÇAS": 12,
+            "N_VENDAS": 12,
             "CEL": 4500.0,
-            "ACE": 599.99,
+            "ACE": 1159.99,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6904,18 +7619,18 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 240000.0,
             "META_LOJA_ACE": 24000.0,
             "META_LOJA_PRT": 8400.0,
-            "TICKET": 566.6655555555556,
+            "TICKET": 471.6658333333333,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V245",
             "NOME VENDEDOR": "BRENDA  LEAL",
             "ID_LOJA": "14",
-            "REALIZADO": 879.9600054931641,
-            "QTD_PEÇAS": 8,
-            "N_VENDAS": 7,
+            "REALIZADO": 1359.960005493164,
+            "QTD_PEÇAS": 12,
+            "N_VENDAS": 11,
             "CEL": 0.0,
-            "ACE": 879.9600054931641,
+            "ACE": 1439.960005493164,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6926,18 +7641,40 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 125.70857221330915,
-            "PA": 1.1428571428571428
+            "TICKET": 123.63272777210582,
+            "PA": 1.0909090909090908
+        },
+        {
+            "ID VENDEDOR": "V245",
+            "NOME VENDEDOR": "BRENDA  LEAL",
+            "ID_LOJA": "15",
+            "REALIZADO": 80.0,
+            "QTD_PEÇAS": 1,
+            "N_VENDAS": 1,
+            "CEL": 0.0,
+            "ACE": 1439.960005493164,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 3,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
+            "META_LOJA_GERAL": 150000.0,
+            "META_LOJA_ACE": 7500.0,
+            "META_LOJA_PRT": 5250.000000000001,
+            "TICKET": 80.0,
+            "PA": 1.0
         },
         {
             "ID VENDEDOR": "V246",
             "NOME VENDEDOR": "RAFAELA SILVA",
             "ID_LOJA": "14",
-            "REALIZADO": 730.0,
-            "QTD_PEÇAS": 8,
-            "N_VENDAS": 7,
+            "REALIZADO": 1070.0,
+            "QTD_PEÇAS": 13,
+            "N_VENDAS": 10,
             "CEL": 0.0,
-            "ACE": 730.0,
+            "ACE": 1070.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -6948,8 +7685,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 104.28571428571429,
-            "PA": 1.1428571428571428
+            "TICKET": 107.0,
+            "PA": 1.3
         },
         {
             "ID VENDEDOR": "V247",
@@ -6963,10 +7700,10 @@ const dadosDashboard = {
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 18750.0,
-            "META_ACE": 937.5,
-            "META_PRT": 656.2500000000001,
-            "QTD_VEND_LOJA": 8,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
             "META_LOJA_GERAL": 150000.0,
             "META_LOJA_ACE": 7500.0,
             "META_LOJA_PRT": 5250.000000000001,
@@ -6999,11 +7736,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V249",
             "NOME VENDEDOR": "WESLLEY TIAGO",
             "ID_LOJA": "14",
-            "REALIZADO": 315.0,
-            "QTD_PEÇAS": 4,
-            "N_VENDAS": 4,
+            "REALIZADO": 515.0,
+            "QTD_PEÇAS": 7,
+            "N_VENDAS": 6,
             "CEL": 0.0,
-            "ACE": 315.0,
+            "ACE": 614.9899978637695,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 1,
@@ -7014,30 +7751,52 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 200000.0,
             "META_LOJA_ACE": 20000.0,
             "META_LOJA_PRT": 7000.000000000001,
-            "TICKET": 78.75,
+            "TICKET": 85.83333333333333,
+            "PA": 1.1666666666666667
+        },
+        {
+            "ID VENDEDOR": "V249",
+            "NOME VENDEDOR": "WESLLEY TIAGO",
+            "ID_LOJA": "15",
+            "REALIZADO": 99.98999786376953,
+            "QTD_PEÇAS": 1,
+            "N_VENDAS": 1,
+            "CEL": 0.0,
+            "ACE": 614.9899978637695,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 3,
+            "META_GERAL": 13636.363636363636,
+            "META_ACE": 681.8181818181819,
+            "META_PRT": 477.27272727272737,
+            "QTD_VEND_LOJA": 11,
+            "META_LOJA_GERAL": 150000.0,
+            "META_LOJA_ACE": 7500.0,
+            "META_LOJA_PRT": 5250.000000000001,
+            "TICKET": 99.98999786376953,
             "PA": 1.0
         },
         {
             "ID VENDEDOR": "V250",
             "NOME VENDEDOR": "MATHEUS MARINHO",
             "ID_LOJA": "12",
-            "REALIZADO": 900.0,
-            "QTD_PEÇAS": 12,
-            "N_VENDAS": 10,
+            "REALIZADO": 1036.0,
+            "QTD_PEÇAS": 16,
+            "N_VENDAS": 13,
             "CEL": 0.0,
-            "ACE": 900.0,
+            "ACE": 1036.0,
             "SOM": 0.0,
             "PRT": 0.0,
             "ID TIPO": 3,
-            "META_GERAL": 35714.28571428572,
-            "META_ACE": 1785.7142857142858,
-            "META_PRT": 1250.0,
-            "QTD_VEND_LOJA": 7,
+            "META_GERAL": 31250.0,
+            "META_ACE": 1562.5,
+            "META_PRT": 1093.75,
+            "QTD_VEND_LOJA": 8,
             "META_LOJA_GERAL": 250000.0,
             "META_LOJA_ACE": 12500.0,
             "META_LOJA_PRT": 8750.0,
-            "TICKET": 90.0,
-            "PA": 1.2
+            "TICKET": 79.6923076923077,
+            "PA": 1.2307692307692308
         },
         {
             "ID VENDEDOR": "V251",
@@ -7065,11 +7824,11 @@ const dadosDashboard = {
             "ID VENDEDOR": "V252",
             "NOME VENDEDOR": "SAMARA FERREIRA",
             "ID_LOJA": "5",
-            "REALIZADO": 3535.0,
-            "QTD_PEÇAS": 16,
-            "N_VENDAS": 15,
+            "REALIZADO": 3555.0,
+            "QTD_PEÇAS": 17,
+            "N_VENDAS": 16,
             "CEL": 2900.0,
-            "ACE": 411.0,
+            "ACE": 431.0,
             "SOM": 0.0,
             "PRT": 224.0,
             "ID TIPO": 3,
@@ -7080,8 +7839,8 @@ const dadosDashboard = {
             "META_LOJA_GERAL": 120000.0,
             "META_LOJA_ACE": 6000.0,
             "META_LOJA_PRT": 4200.0,
-            "TICKET": 235.66666666666666,
-            "PA": 1.0666666666666667
+            "TICKET": 222.1875,
+            "PA": 1.0625
         },
         {
             "ID VENDEDOR": "V253",
@@ -7104,6 +7863,94 @@ const dadosDashboard = {
             "META_LOJA_PRT": 4200.0,
             "TICKET": 0.010009666666666667,
             "PA": 1.0
+        },
+        {
+            "ID VENDEDOR": "V254",
+            "NOME VENDEDOR": "ÁDRYA TAINÁ DA SILVA CARDOSO",
+            "ID_LOJA": "16",
+            "REALIZADO": 199.9899997711182,
+            "QTD_PEÇAS": 5,
+            "N_VENDAS": 5,
+            "CEL": 0.0,
+            "ACE": 199.9899997711182,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 3,
+            "META_GERAL": 16875.0,
+            "META_ACE": 1687.5,
+            "META_PRT": 590.625,
+            "QTD_VEND_LOJA": 8,
+            "META_LOJA_GERAL": 135000.0,
+            "META_LOJA_ACE": 13500.0,
+            "META_LOJA_PRT": 4725.0,
+            "TICKET": 39.99799995422364,
+            "PA": 1.0
+        },
+        {
+            "ID VENDEDOR": "V255",
+            "NOME VENDEDOR": "JOSE HENRIQUE DE JESUS MAIA",
+            "ID_LOJA": "25",
+            "REALIZADO": 10983.99990439415,
+            "QTD_PEÇAS": 23,
+            "N_VENDAS": 16,
+            "CEL": 10484.979904174805,
+            "ACE": 499.0200002193451,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 4,
+            "META_GERAL": 0.0,
+            "META_ACE": 0.0,
+            "META_PRT": 0.0,
+            "QTD_VEND_LOJA": 4,
+            "META_LOJA_GERAL": 0.0,
+            "META_LOJA_ACE": 0.0,
+            "META_LOJA_PRT": 0.0,
+            "TICKET": 686.4999940246344,
+            "PA": 1.4375
+        },
+        {
+            "ID VENDEDOR": "V256",
+            "NOME VENDEDOR": "RONI LIMA MOITA",
+            "ID_LOJA": "25",
+            "REALIZADO": 4920.960111618042,
+            "QTD_PEÇAS": 9,
+            "N_VENDAS": 5,
+            "CEL": 4775.9901123046875,
+            "ACE": 144.9699993133545,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 4,
+            "META_GERAL": 0.0,
+            "META_ACE": 0.0,
+            "META_PRT": 0.0,
+            "QTD_VEND_LOJA": 4,
+            "META_LOJA_GERAL": 0.0,
+            "META_LOJA_ACE": 0.0,
+            "META_LOJA_PRT": 0.0,
+            "TICKET": 984.1920223236084,
+            "PA": 1.8
+        },
+        {
+            "ID VENDEDOR": "V257",
+            "NOME VENDEDOR": "IGOR MELO",
+            "ID_LOJA": "25",
+            "REALIZADO": 6937.9000034332275,
+            "QTD_PEÇAS": 6,
+            "N_VENDAS": 4,
+            "CEL": 6848.0,
+            "ACE": 89.90000343322754,
+            "SOM": 0.0,
+            "PRT": 0.0,
+            "ID TIPO": 4,
+            "META_GERAL": 0.0,
+            "META_ACE": 0.0,
+            "META_PRT": 0.0,
+            "QTD_VEND_LOJA": 4,
+            "META_LOJA_GERAL": 0.0,
+            "META_LOJA_ACE": 0.0,
+            "META_LOJA_PRT": 0.0,
+            "TICKET": 1734.4750008583069,
+            "PA": 1.5
         }
     ],
     "produtos": [
@@ -63630,6 +64477,141 @@ const dadosDashboard = {
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO BTE 48A 10.000MAH ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 330.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM DE HIDROGEL PRIVATIVA BRILHO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 59.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO TURBO 65W 1M 4EM1 PEI J80",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB KIMASTER CB732",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 7.0,
+            "REALIZADO": 40.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA PERSONALIZADA ANDROID",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 45.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA TRANSPARENTE COM COR E INDUÇÃO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ CLARO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 87.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ VIVO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 115.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "JBL TUNE 520BT ()",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 330.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "KIMASTER TWS200",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 250.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "KIMASTER TWS350",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "PELICULA EM 3D 5D",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 30.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH MINI W65MN",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 180.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
@@ -63644,6 +64626,15 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
             "REALIZADO": 1800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C71 NFC 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1599.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -63697,7 +64688,7 @@ const dadosDashboard = {
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
-            "REALIZADO": 744.94
+            "REALIZADO": 744.9400100708008
         },
         {
             "AnoMes": "2026-05-01",
@@ -63714,8 +64705,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 14.0,
-            "REALIZADO": 709.99
+            "QTD_FAT": 15.0,
+            "REALIZADO": 759.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -63778,7 +64769,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 10.0,
-            "REALIZADO": 280.0
+            "REALIZADO": 279.9999992847443
         },
         {
             "AnoMes": "2026-05-01",
@@ -63795,8 +64786,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 176.0
+            "QTD_FAT": 17.0,
+            "REALIZADO": 505.9999991059303
         },
         {
             "AnoMes": "2026-05-01",
@@ -63831,8 +64822,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 140.0
+            "QTD_FAT": 7.0,
+            "REALIZADO": 200.0000011324883
         },
         {
             "AnoMes": "2026-05-01",
@@ -63840,8 +64831,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "SMARTWATCH IMENSO 750",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 1560.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 1860.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -63860,6 +64851,15 @@ const dadosDashboard = {
             "TIER": "Low",
             "QTD_FAT": 1.0,
             "REALIZADO": 350.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "POSITIVO P41 DUAL CHIP 4G",
+            "TIER": "Low",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 315.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -63895,7 +64895,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1530.0
+            "REALIZADO": 1530.000061035156
         },
         {
             "AnoMes": "2026-05-01",
@@ -63922,7 +64922,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2159.99
+            "REALIZADO": 2159.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -63931,7 +64931,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2799.99
+            "REALIZADO": 2799.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -63948,8 +64948,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 8.0,
-            "REALIZADO": 8680.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 10959.99999237061
         },
         {
             "AnoMes": "2026-05-01",
@@ -63966,8 +64966,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2980.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 7779.989959716797
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64011,8 +65020,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 649.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 777.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64022,6 +65031,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 654.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA II (LOJA)",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM JBL BOOMBOX 4",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ABAETETUBA II (LOJA)",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM JBL BOOMBOX 4",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 5949.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64047,8 +65074,8 @@ const dadosDashboard = {
             "CATEGORIA": "SOM",
             "PRODUTO": "CAIXA DE SOM KIMASTER 40W K520",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 450.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 650.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64072,6 +65099,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - AÇAILÂNDIA",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CABO TIPO C P 39",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 81.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - AÇAILÂNDIA",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB TIPO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
@@ -64084,7 +65120,7 @@ const dadosDashboard = {
             "PRODUTO": "CAPA FASHION COM SUPORTE",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 79.99
+            "REALIZADO": 79.98999786376953
         },
         {
             "AnoMes": "2026-05-01",
@@ -64092,8 +65128,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAPA PERSONALIZADA ANDROID",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 249.0
+            "QTD_FAT": 7.0,
+            "REALIZADO": 279.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64101,8 +65137,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAPA PERSONALIZADA COM INDUÇÃO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 174.99
+            "QTD_FAT": 5.0,
+            "REALIZADO": 269.9700050354004
         },
         {
             "AnoMes": "2026-05-01",
@@ -64120,7 +65156,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 60.0
+            "REALIZADO": 60.00000047683716
         },
         {
             "AnoMes": "2026-05-01",
@@ -64146,8 +65182,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 55.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 80.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64155,8 +65191,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1199.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2152.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64207,10 +65243,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - AÇAILÂNDIA",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - AÇAILÂNDIA",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1319.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2617.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -64219,7 +65264,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3969.1
+            "REALIZADO": 3969.100006103516
         },
         {
             "AnoMes": "2026-05-01",
@@ -64238,6 +65283,15 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
             "REALIZADO": 3300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - AÇAILÂNDIA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "TECNO SPARK 30C 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64273,7 +65327,7 @@ const dadosDashboard = {
             "PRODUTO": "CABO USB TIPO C IMENSO IMS 131A",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 49.99
+            "REALIZADO": 49.9900016784668
         },
         {
             "AnoMes": "2026-05-01",
@@ -64300,7 +65354,16 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR VEICULAR USB",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 29.99
+            "REALIZADO": 29.9900016784668
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR KIMASTER 40W TIPO C T110CC",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64324,10 +65387,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CAPANEMA",
             "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
             "REALIZADO": 1000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64396,6 +65477,42 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CAPANEMA",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 70 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 70 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
@@ -64432,6 +65549,24 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CAPANEMA",
             "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A36 5G 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI PAD 2 128GB 4RAM GRAPHITE",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAPANEMA",
+            "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY TAB A9",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -64453,7 +65588,7 @@ const dadosDashboard = {
             "PRODUTO": "BLINDAGEM BÁSICA ( SMART SHIELD )",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 59.99999
+            "REALIZADO": 59.99999237060547
         },
         {
             "AnoMes": "2026-05-01",
@@ -64461,8 +65596,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM BÁSICA CC",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 200.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 379.9999961853027
         },
         {
             "AnoMes": "2026-05-01",
@@ -64470,8 +65605,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM PREMIUM FORTIS UV ( SMART SHIELD )",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 499.99
+            "QTD_FAT": 1.0,
+            "REALIZADO": 120.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64480,7 +65615,25 @@ const dadosDashboard = {
             "PRODUTO": "CABO 1M TIPOC+LIGHTING USAMS 30W SJ692",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 100.0
+            "REALIZADO": 99.99999618530273
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO C + 1M ORIGINAL APPLE MUQ93",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 250.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB + MICRO TURBO KIMASTER CB735",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64489,7 +65642,16 @@ const dadosDashboard = {
             "PRODUTO": "FONTE USB+C 40W ALFA CA42 4",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 100.0
+            "REALIZADO": 99.99999618530273
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR C+C TURBO DUO XIAOMI",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 150.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64507,7 +65669,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR USB+C+ KIMASTER POWER T110CL",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 190.0
+            "REALIZADO": 190.0000076293945
         },
         {
             "AnoMes": "2026-05-01",
@@ -64515,8 +65677,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELÍCULA 3D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 155.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 365.0000009536743
         },
         {
             "AnoMes": "2026-05-01",
@@ -64549,10 +65711,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL II",
             "CATEGORIA": "CEL",
+            "PRODUTO": "IPHONE 13 128GB",
+            "TIER": "Super High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 3600.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
             "PRODUTO": "MOTOROLA G05 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 829.99
+            "REALIZADO": 829.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64576,10 +65747,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL II",
             "CATEGORIA": "CEL",
+            "PRODUTO": "POCO C71 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
             "PRODUTO": "POCO C71 64GB 3RAM",
             "TIER": "Low",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3100.0
+            "REALIZADO": 2992.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64596,8 +65776,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "POCO C85 256GB 8RAM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2800.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3900.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64606,7 +65786,7 @@ const dadosDashboard = {
             "PRODUTO": "POCO X8 PRO.MAX 512GB 12RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 5015.0
+            "REALIZADO": 5014.999755859375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64615,7 +65795,16 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3080.0
+            "REALIZADO": 3080.000061035156
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3699.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64669,6 +65858,24 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15C 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
+            "REALIZADO": 1300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
             "REALIZADO": 1275.0
         },
         {
@@ -64695,8 +65902,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REDMI 15C 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 4899.99
+            "QTD_FAT": 5.0,
+            "REALIZADO": 7565.770034790039
         },
         {
             "AnoMes": "2026-05-01",
@@ -64705,7 +65912,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15C 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 6.0,
-            "REALIZADO": 8501.99
+            "REALIZADO": 8501.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64713,8 +65920,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REDMI 15C 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 3000.0
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 4500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64723,7 +65939,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI A7 PRO 128GB 4RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1134.99
+            "REALIZADO": 1134.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -64767,8 +65983,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2300.0
+            "QTD_FAT": 7.0,
+            "REALIZADO": 8800.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64776,8 +65992,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM –",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2264.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64795,7 +66011,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1549.99
+            "REALIZADO": 1549.990001678467
         },
         {
             "AnoMes": "2026-05-01",
@@ -64812,8 +66028,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 196.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 380.2000122070312
         },
         {
             "AnoMes": "2026-05-01",
@@ -64821,8 +66037,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT STORE",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 1440.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 1800.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64846,6 +66062,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL II",
             "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM GET CUBE COM 2 MICROFONES",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1090.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL II",
+            "CATEGORIA": "SOM",
             "PRODUTO": "CAIXA DE SOM GO4 JBL",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -64857,26 +66082,35 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA COM CABO BTE 48A 10.000MAH ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 150.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - CASTANHAL LOJA",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
-            "TIER": "Sem Categoria",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 477.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - CASTANHAL LOJA",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
-            "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 240.0
+            "REALIZADO": 300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 10.0,
+            "REALIZADO": 627.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 370.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 49.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64902,8 +66136,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAIXA BT JBL GO4 IPX7",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 333.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 1033.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64922,6 +66156,15 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 10.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA FASHION COM SUPORTE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 80.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64965,8 +66208,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR POR INDUÇÃO 3 EM 1 TURBO 42.4W",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 480.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 730.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64983,8 +66226,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C 65W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 320.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 450.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -64999,10 +66242,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL LOJA",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARTÃO DE MEMORIA 64GB SANDISK ULTRA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 54.94000244140625
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 119.99
+            "QTD_FAT": 6.0,
+            "REALIZADO": 157.9799995422363
         },
         {
             "AnoMes": "2026-05-01",
@@ -65017,6 +66269,51 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL LOJA",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ VIVO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 55.06000137329102
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "IMENSO IMS 816",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 225.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR CABO USB TIPO C 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 79.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR T110CL 40W USB KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 90.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
@@ -65026,10 +66323,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHAL LOJA",
             "CATEGORIA": "ACE",
+            "PRODUTO": "PEN DRIVE KINGSTON 64GBB",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
             "PRODUTO": "PROJETOR ALFA PGT HY320",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 280.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH IMENSO 750",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 250.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1800.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65047,7 +66371,16 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2179.99
+            "REALIZADO": 2279.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65056,7 +66389,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2199.99
+            "REALIZADO": 2199.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65064,8 +66397,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 256GB",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2799.99
+            "QTD_FAT": 7.0,
+            "REALIZADO": 7799.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65073,8 +66406,35 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "MOTOROLA MOTO G06 256GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 3360.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4440.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "MOTOROLA MOTO G06 256GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1080.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "MOTOROLA MOTO G35 5G 256GB",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHAL LOJA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "OUKITEL P1 PRO 512GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1863.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65092,7 +66452,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3060.0
+            "REALIZADO": 3060.000061035156
         },
         {
             "AnoMes": "2026-05-01",
@@ -65119,7 +66479,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C75 5G 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2249.99
+            "REALIZADO": 2249.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65146,7 +66506,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C75X NFC 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3779.99
+            "REALIZADO": 3779.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65154,8 +66514,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 4120.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 8260.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65164,7 +66524,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3749.99
+            "REALIZADO": 3749.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65172,8 +66532,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 4900.0
+            "QTD_FAT": 7.0,
+            "REALIZADO": 8179.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65182,7 +66542,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1079.99
+            "REALIZADO": 1079.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65190,7 +66550,7 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 6.0,
+            "QTD_FAT": 6.000000000000001,
             "REALIZADO": 11200.0
         },
         {
@@ -65209,7 +66569,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 5G 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2159.99
+            "REALIZADO": 2159.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65218,16 +66578,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A36 5G 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2429.99
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - CASTANHAL LOJA",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "REDMI PAD 2 128GB 4RAM",
-            "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1620.0
+            "REALIZADO": 2429.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65235,8 +66586,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REDMI PAD 2 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1300.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2470.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65244,8 +66595,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 1404.0
+            "QTD_FAT": 15.0,
+            "REALIZADO": 2508.690002441406
         },
         {
             "AnoMes": "2026-05-01",
@@ -65271,8 +66622,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT STORE",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 1044.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 1965.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65314,10 +66665,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO BTE 86 10.000MAH ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 162.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA MAGSAFE BTE 07 10.000MAH A'",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 415.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 525.0000019073486
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 135.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65332,7 +66710,7 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE ANDROID (SEM CODIGO)",
+            "PRODUTO": "CAPA CASE ANDROID",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 30.0
@@ -65343,17 +66721,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 29.98
+            "QTD_FAT": 6.0,
+            "REALIZADO": 49.96999931335449
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 70.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA PERSONALIZADA COM INDUÇÃO E SUPORTE",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 40.0
+            "REALIZADO": 70.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65395,10 +66782,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO USB 25W ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 80.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CARTÃO DE MEMORIA 64GB",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 70.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ CLARO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 45.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65415,8 +66820,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 25.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 55.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65440,10 +66845,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "FONTE 30W CA31 4",
+            "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "REALIZADO": 49.99999809265137
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONTE 30W CA31 4",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 152.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65469,8 +66883,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 122.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 146.9999990463257
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "PEN DRIVE KING DRIVE 64 GB",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 30.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65480,6 +66903,15 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 425.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH IMENSO 750",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 300.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65496,8 +66928,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1999.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4069.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -65505,8 +66937,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1140.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3320.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65523,8 +66955,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 3700.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "OUKITEL P1 PRO 512GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2480.000030517578
         },
         {
             "AnoMes": "2026-05-01",
@@ -65533,7 +66974,16 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1599.99
+            "REALIZADO": 1599.990127563477
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75X NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2070.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65541,17 +66991,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4600.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "PRODUTO": "REDMI A3 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2600.0
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1350.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65560,7 +67010,16 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3800.0
+            "REALIZADO": 3900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 5100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65586,8 +67045,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 3850.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 5750.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65595,17 +67054,17 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 309.5
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - CASTANHEIRA II (LOJA)",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
-            "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
-            "REALIZADO": 320.0
+            "REALIZADO": 369.5
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA I (QUIOSQUE)",
+            "CATEGORIA": "PRT",
+            "PRODUTO": "PROTECT STORE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 664.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65613,8 +67072,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 170.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 340.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65622,8 +67090,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO TIPO C TIPO C IMS 148A",
             "TIER": "Sem Categoria",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 140.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO UBS TIPO C IMENSO IMS 131A",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 50.0
+            "REALIZADO": 40.00000047683716
         },
         {
             "AnoMes": "2026-05-01",
@@ -65640,17 +67117,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB C 30W 2M",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 90.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 130.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA II (LOJA)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE ANDROID (SEM CODIGO)",
+            "PRODUTO": "CAPA CASE ANDROID",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 104.9999995231628
         },
         {
             "AnoMes": "2026-05-01",
@@ -65658,8 +67135,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 30.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 49.98999929428101
         },
         {
             "AnoMes": "2026-05-01",
@@ -65703,8 +67180,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 110.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 140.0000009536743
         },
         {
             "AnoMes": "2026-05-01",
@@ -65712,8 +67189,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 40.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 70.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65746,10 +67223,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA II (LOJA)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR CABO MICRO USB V8 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 70.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 95.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 340.0099964141846
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH GS11 MINI",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65759,15 +67254,6 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 315.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - CASTANHEIRA II (LOJA)",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "SMARTWATCH MINI W65MN",
-            "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65793,8 +67279,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2400.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 5000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65802,8 +67288,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 3600.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4799.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65818,19 +67304,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA II (LOJA)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
-            "TIER": "High",
+            "PRODUTO": "IPHONE 17 PRO MAX 256GB",
+            "TIER": "Super High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2530.0
+            "REALIZADO": 11000.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA II (LOJA)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
-            "TIER": "Mid-E",
+            "PRODUTO": "IPHONE 17 PRO MAX 256GB",
+            "TIER": "Super High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 10800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2070.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3750.0
+            "REALIZADO": 6849.999938964844
         },
         {
             "AnoMes": "2026-05-01",
@@ -65839,7 +67343,25 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2650.0
+            "REALIZADO": 2500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 6.000000000000001,
+            "REALIZADO": 7550.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3950.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65863,6 +67385,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CASTANHEIRA II (LOJA)",
             "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A36 5G 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REDMI PAD PRO 5G 128GB 6RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -65874,8 +67405,17 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 472.5
+            "QTD_FAT": 8.0,
+            "REALIZADO": 3706.500015258789
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CASTANHEIRA II (LOJA)",
+            "CATEGORIA": "PRT",
+            "PRODUTO": "PROTECT STORE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 621.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65902,7 +67442,7 @@ const dadosDashboard = {
             "PRODUTO": "BATERIA MAGSAFE BTE 07 10.000MAH A'",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 199.99
+            "REALIZADO": 199.9900207519531
         },
         {
             "AnoMes": "2026-05-01",
@@ -65910,8 +67450,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM DE HIDROGEL BRILHO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 200.02
+            "QTD_FAT": 6.0,
+            "REALIZADO": 236.0199956893921
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAUCAIA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65928,8 +67477,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 120.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 270.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -65956,7 +67505,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR VEICULAR USB KLGO (TC04)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 29.99
+            "REALIZADO": 29.98999977111816
         },
         {
             "AnoMes": "2026-05-01",
@@ -65965,7 +67514,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR 15W KIMASTER",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 59.99
+            "REALIZADO": 59.9900016784668
         },
         {
             "AnoMes": "2026-05-01",
@@ -65974,16 +67523,16 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 3.0,
-            "REALIZADO": 5443.9
+            "REALIZADO": 5349.989990234375
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CAUCAIA",
             "CATEGORIA": "CEL",
-            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
-            "TIER": "Mid-E",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 6483.98
+            "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 5443.900024414062
         },
         {
             "AnoMes": "2026-05-01",
@@ -65992,7 +67541,25 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 8.0,
-            "REALIZADO": 10235.96
+            "REALIZADO": 10263.97998046875
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAUCAIA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 9.999999999999998,
+            "REALIZADO": 12750.95994186401
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CAUCAIA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "POCO X7 PRO 5G 512GB 12RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66001,7 +67568,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME 14T 5G 256GB 8RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2429.99
+            "REALIZADO": 2429.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66009,8 +67576,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1549.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3244.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -66018,8 +67585,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1600.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 4994.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66036,8 +67603,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 4849.99
+            "QTD_FAT": 3.0,
+            "REALIZADO": 6949.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66045,8 +67612,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 9306.98
+            "QTD_FAT": 13.0,
+            "REALIZADO": 16892.96997070312
         },
         {
             "AnoMes": "2026-05-01",
@@ -66063,8 +67630,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1700.0
+            "QTD_FAT": 7.999999999999999,
+            "REALIZADO": 13309.96997070312
         },
         {
             "AnoMes": "2026-05-01",
@@ -66077,12 +67644,21 @@ const dadosDashboard = {
         },
         {
             "AnoMes": "2026-05-01",
+            "PDV": "PS - CAUCAIA",
+            "CATEGORIA": "PRT",
+            "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 364.0
+        },
+        {
+            "AnoMes": "2026-05-01",
             "PDV": "PS - CIDADE NOVA",
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 382.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 618.538459777832
         },
         {
             "AnoMes": "2026-05-01",
@@ -66097,16 +67673,43 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CIDADE NOVA",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
+            "PRODUTO": "CABO USB TIPO C IMENSO (IMS 147A)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 30.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - CIDADE NOVA",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CABO USB TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE ANDROID",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 25.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 40.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
             "REALIZADO": 98.0
@@ -66127,7 +67730,16 @@ const dadosDashboard = {
             "PRODUTO": "CAPA PERSONALIZADA ANDROID",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 50.0
+            "REALIZADO": 50.00000190734863
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 130.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66145,7 +67757,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
-            "REALIZADO": 120.0
+            "REALIZADO": 119.9999995231628
         },
         {
             "AnoMes": "2026-05-01",
@@ -66153,8 +67765,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 150.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 179.9999995827675
         },
         {
             "AnoMes": "2026-05-01",
@@ -66180,8 +67792,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 130.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66207,8 +67819,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 175.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 229.4899997711182
         },
         {
             "AnoMes": "2026-05-01",
@@ -66227,6 +67839,33 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
             "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1199.990000009537
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "MOTOROLA MOTO G06 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66253,7 +67892,25 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1500.0
+            "REALIZADO": 1500.000030517578
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - CIDADE NOVA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66262,7 +67919,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3400.0
+            "REALIZADO": 3399.999969482422
         },
         {
             "AnoMes": "2026-05-01",
@@ -66270,8 +67927,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66288,8 +67945,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
             "TIER": "Low",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1100.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2199.999946594238
         },
         {
             "AnoMes": "2026-05-01",
@@ -66297,8 +67954,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 154.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 294.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66331,6 +67988,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - COMERCIO",
             "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO BTE 86 10.000MAH ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 160.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM DE HIDROGEL PRIVATIVA BRILHO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -66349,7 +68015,25 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - COMERCIO",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CABO UBS IMENSO IMS 130A",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 31.5
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB C 30W (KIMASTER CB837L)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 39.9900016784668
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 40.0
@@ -66371,6 +68055,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 45.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA SABOR 17 PRO MAX",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 70.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA TRANSPARENTE COM COR E INDUÇÃO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66405,8 +68107,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 85.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 115.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66423,8 +68125,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
             "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 72.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "HEADPHONE SEM FIO FAM A067",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 36.0
+            "REALIZADO": 199.9900207519531
         },
         {
             "AnoMes": "2026-05-01",
@@ -66434,6 +68145,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 30.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66450,8 +68179,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "REALIZADO": 1300.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66460,7 +68198,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2580.0
+            "REALIZADO": 2579.999984741211
         },
         {
             "AnoMes": "2026-05-01",
@@ -66470,6 +68208,24 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
             "REALIZADO": 3150.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C73 NFC 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66513,8 +68269,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2400.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66522,8 +68278,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 8200.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 12100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66547,10 +68303,181 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - COMERCIO",
             "CATEGORIA": "PRT",
+            "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 182.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT STORE",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 330.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - COMERCIO",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM WE.GO SK885BT",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 150.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA TRANSPARENTE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 39.95999932289124
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "AGOLD FN BT33",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 169.5299987792969
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "AIRPODS PRO FN BA5",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 90.47000122070312
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONTE POWER ADAPTER 20W USB C A2327",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 0.009998321533203125
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO 6.1A 30W CA31 7 TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 49.90000534057617
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "PELICULA DE HIDROGEL MATTE FOSCA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 50.01000022888184
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "IPHONE 16 128GB",
+            "TIER": "Super High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 5219.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 5082.990112304688
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 60 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 1899.97998046875
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2122.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1222.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1662.999923706055
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - FRECHEIRINHA",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI PAD 2 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1756.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM PREMIUM FORTIS UV ( SMART SHIELD )",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66586,7 +68513,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR USB+C TURBO 25W ALFAGOLD CA45 3",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 129.99
+            "REALIZADO": 129.9900054931641
         },
         {
             "AnoMes": "2026-05-01",
@@ -66594,8 +68521,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 216.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66604,7 +68531,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1325.99
+            "REALIZADO": 1325.990051269531
         },
         {
             "AnoMes": "2026-05-01",
@@ -66628,6 +68555,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - ICOARACI 2",
             "CATEGORIA": "CEL",
+            "PRODUTO": "POSITIVO VISION TAB 7 SPIDEY 64GB 3RAM",
+            "TIER": "Low",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 750.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 256GB 8RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -66639,8 +68575,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1700.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3450.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66649,7 +68585,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3229.99
+            "REALIZADO": 3229.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66666,8 +68602,26 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 60X 128GB 4RAM",
+            "TIER": "Low",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2400.0
+            "REALIZADO": 1360.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 70 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66675,8 +68629,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REDMI 15C 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 4599.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 6099.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66685,7 +68639,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15C 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1699.99
+            "REALIZADO": 1699.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66703,7 +68657,16 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15C 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1449.99
+            "REALIZADO": 1499.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15C 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1449.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66718,10 +68681,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - ICOARACI 2",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI NOTE 15 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 5149.99
+            "QTD_FAT": 9.0,
+            "REALIZADO": 11849.96997070312
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 11.0,
+            "REALIZADO": 14799.98999023438
         },
         {
             "AnoMes": "2026-05-01",
@@ -66772,10 +68753,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - ICOARACI 2",
             "CATEGORIA": "CEL",
+            "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
+            "TIER": "Low",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
+            "TIER": "Low",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - ICOARACI 2",
+            "CATEGORIA": "CEL",
             "PRODUTO": "XIAOMI REDMI NOTE 15 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2149.99
+            "REALIZADO": 2149.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO E MAGSAFE KD 999 KAIDI",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 270.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66792,8 +68800,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM DE HIDROGEL BRILHO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 8.0,
-            "REALIZADO": 502.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 662.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66811,7 +68819,16 @@ const dadosDashboard = {
             "PRODUTO": "BLINDAGEM PREMIUM FORTIS UV ( SMART SHIELD )",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 79.99
+            "REALIZADO": 79.98999786376953
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB TIPO C YOUNNECT (1M)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 89.98999786376953
         },
         {
             "AnoMes": "2026-05-01",
@@ -66838,7 +68855,16 @@ const dadosDashboard = {
             "PRODUTO": "PELÍCULA 3D",
             "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
-            "REALIZADO": 119.99
+            "REALIZADO": 119.9900002479553
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "DOOGEE N55 PLUS 128GB 8RAM",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1350.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66889,10 +68915,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - IT CENTER",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C71 NFC 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1440.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME C75 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1900.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4085.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66901,7 +68936,16 @@ const dadosDashboard = {
             "PRODUTO": "REALME C85 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2400.0
+            "REALIZADO": 2350.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4700.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66910,7 +68954,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1549.99
+            "REALIZADO": 1549.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66919,7 +68963,16 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15 4G 256GB 8RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1449.99
+            "REALIZADO": 1700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI 15 4G 256GB 8RAM",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1449.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -66946,7 +68999,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI 15C 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3139.99
+            "REALIZADO": 3139.990142822266
         },
         {
             "AnoMes": "2026-05-01",
@@ -66979,10 +69032,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - IT CENTER",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI NOTE 15 PRO 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2400.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 3900.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 10200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66990,8 +69052,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM –",
             "TIER": "Mid-E",
+            "QTD_FAT": 7.0,
+            "REALIZADO": 8899.969940185547
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
+            "TIER": "Mid-S",
             "QTD_FAT": 5.0,
-            "REALIZADO": 6399.97
+            "REALIZADO": 7800.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -66999,17 +69070,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 6200.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - IT CENTER",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
-            "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1600.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 4500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67019,6 +69081,15 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
             "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "XIAOMI REDMI 15 128GB 6RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67041,6 +69112,15 @@ const dadosDashboard = {
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - IT CENTER",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "XIAOMI REDMI NOTE 15 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - IT CENTER",
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
@@ -67053,8 +69133,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT STORE",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 300.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 1435.5
         },
         {
             "AnoMes": "2026-05-01",
@@ -67072,7 +69152,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR 15W",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 69.99
+            "REALIZADO": 69.98999786376953
         },
         {
             "AnoMes": "2026-05-01",
@@ -67081,7 +69161,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1199.99
+            "REALIZADO": 1199.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67090,7 +69170,7 @@ const dadosDashboard = {
             "PRODUTO": "MOTOROLA MOTO G06 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1099.99
+            "REALIZADO": 1099.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67099,7 +69179,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1699.99
+            "REALIZADO": 1699.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67108,7 +69188,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 5G 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1699.99
+            "REALIZADO": 1699.989898681641
         },
         {
             "AnoMes": "2026-05-01",
@@ -67117,7 +69197,7 @@ const dadosDashboard = {
             "PRODUTO": "TECNO SPARK 30C 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1499.99
+            "REALIZADO": 1499.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67126,7 +69206,16 @@ const dadosDashboard = {
             "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1099.99
+            "REALIZADO": 1099.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM PRIVATIVA DE HIDROGEL",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67161,8 +69250,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "H´MASTON LY 11",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 59.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 109.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67189,7 +69278,25 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX HOT 50I 256GB 4+4RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1799.99
+            "REALIZADO": 1799.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1059.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "ITEL A90 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 850.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67198,7 +69305,16 @@ const dadosDashboard = {
             "PRODUTO": "ITEL A90 256 GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 799.99
+            "REALIZADO": 799.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "MOTOROLA MOTO G 06 4RAM 128 GB",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2098.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67207,7 +69323,7 @@ const dadosDashboard = {
             "PRODUTO": "MOTOROLA MOTO G15 128GB 4RAM ESCURO",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 0.01001
+            "REALIZADO": 0.010009765625
         },
         {
             "AnoMes": "2026-05-01",
@@ -67222,10 +69338,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - MACEIO 01",
             "CATEGORIA": "CEL",
+            "PRODUTO": "POCO C71 4G 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3249.99
+            "REALIZADO": 3249.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67234,7 +69359,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1724.99
+            "REALIZADO": 1724.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -67270,7 +69395,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 60X 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 2.0,
-            "REALIZADO": 1000.01
+            "REALIZADO": 1000.010009765625
         },
         {
             "AnoMes": "2026-05-01",
@@ -67296,8 +69421,26 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 9214.0
+            "QTD_FAT": 7.999999999999999,
+            "REALIZADO": 10556.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3242.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1480.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67330,10 +69473,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - MACEIO 01",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REDMI PAD SE 256GB 8GB",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - MACEIO 01",
+            "CATEGORIA": "CEL",
             "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 2.0,
-            "REALIZADO": 1099.01
+            "REALIZADO": 1099.010009765625
         },
         {
             "AnoMes": "2026-05-01",
@@ -67351,7 +69503,7 @@ const dadosDashboard = {
             "PRODUTO": "BATERIA COM CABO BTE 48A 10.000MAH ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
-            "REALIZADO": 522.0
+            "REALIZADO": 521.9999923706055
         },
         {
             "AnoMes": "2026-05-01",
@@ -67359,8 +69511,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA COM CABO BTE 86 10.000MAH ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 160.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 340.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67368,8 +69520,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 160.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67405,7 +69557,7 @@ const dadosDashboard = {
             "PRODUTO": "CABO USB TIPO C 22",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 49.99
+            "REALIZADO": 49.9900016784668
         },
         {
             "AnoMes": "2026-05-01",
@@ -67422,14 +69574,14 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB C 30W 2M",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 50.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE I (LOJA)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE ANDROID (SEM CODIGO)",
+            "PRODUTO": "CAPA CASE ANDROID",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 30.0
@@ -67447,7 +69599,7 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE I (LOJA)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 50.0
@@ -67459,7 +69611,7 @@ const dadosDashboard = {
             "PRODUTO": "CAPA COM GLITTER E SUPORTE",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 65.0
+            "REALIZADO": 64.99999952316284
         },
         {
             "AnoMes": "2026-05-01",
@@ -67467,8 +69619,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 390.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 520.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67476,8 +69628,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO USB 25W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 160.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67485,8 +69637,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 30.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 120.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67501,10 +69653,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE I (LOJA)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ VIVO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 30.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "JBL TUNE 520BT ()",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 700.0
+            "REALIZADO": 700.0000076293945
         },
         {
             "AnoMes": "2026-05-01",
@@ -67512,8 +69673,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "KIMASTER TWS350",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 180.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 580.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67521,8 +69682,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "TWS300",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 150.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 350.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67557,8 +69718,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 55.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 85.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67600,10 +69761,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE I (LOJA)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2100.0
+            "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67611,8 +69781,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1100.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67629,8 +69799,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2400.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67639,7 +69809,7 @@ const dadosDashboard = {
             "PRODUTO": "ITEL A80 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 2.0,
-            "REALIZADO": 1500.0
+            "REALIZADO": 1500.000007629395
         },
         {
             "AnoMes": "2026-05-01",
@@ -67648,7 +69818,7 @@ const dadosDashboard = {
             "PRODUTO": "ITEL A80 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 1.0,
-            "REALIZADO": 800.0
+            "REALIZADO": 800.0000076293945
         },
         {
             "AnoMes": "2026-05-01",
@@ -67675,7 +69845,7 @@ const dadosDashboard = {
             "PRODUTO": "OUKITEL P1 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 2.0,
-            "REALIZADO": 4122.0
+            "REALIZADO": 4121.999984741211
         },
         {
             "AnoMes": "2026-05-01",
@@ -67701,8 +69871,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2300.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4460.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67719,8 +69889,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1300.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 5.000000000000001,
+            "REALIZADO": 6200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67729,16 +69908,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3700.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - METROPOLE I (LOJA)",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
-            "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2300.0
+            "REALIZADO": 3500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67746,8 +69916,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 8400.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 10100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67755,8 +69925,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 6300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67774,7 +69953,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI PAD PRO 5G 128GB 6RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2200.0
+            "REALIZADO": 2199.999965667725
         },
         {
             "AnoMes": "2026-05-01",
@@ -67782,8 +69961,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 10.0,
-            "REALIZADO": 1433.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 1829.000003755093
         },
         {
             "AnoMes": "2026-05-01",
@@ -67805,12 +69984,39 @@ const dadosDashboard = {
         },
         {
             "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM BLUETOOTH FUN PROOF",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 250.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM IMENSO X38A 60W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE I (LOJA)",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM JBL GO4",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 360.0
+        },
+        {
+            "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE II (QUIOSQUE)",
             "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA COM CABO BTE 48A 10.000MAH ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 365.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 545.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67819,7 +70025,7 @@ const dadosDashboard = {
             "PRODUTO": "BATERIA MAGSAFE BTE 07 10.000MAH A'",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 249.99
+            "REALIZADO": 249.9900054931641
         },
         {
             "AnoMes": "2026-05-01",
@@ -67827,26 +70033,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA PORTATIL 30.000MAH BTE 46",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 250.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - METROPOLE II (QUIOSQUE)",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
-            "TIER": "Sem Categoria",
-            "QTD_FAT": 14.0,
-            "REALIZADO": 1010.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - METROPOLE II (QUIOSQUE)",
-            "CATEGORIA": "ACE",
-            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
-            "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 260.0
+            "REALIZADO": 500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 20.0,
+            "REALIZADO": 1500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 510.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67899,6 +70105,15 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB C 30W (KIMASTER CB837L)",
             "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB C 30W 2M",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 50.0
         },
@@ -67908,8 +70123,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CANETA PARA IOS ANDROID WINDOWS",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 160.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -67917,14 +70132,14 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 35.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 76.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE II (QUIOSQUE)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 6.0,
             "REALIZADO": 260.0
@@ -67951,6 +70166,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE II (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO GAN USB C 65W ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 130.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
@@ -67969,6 +70193,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE II (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO USB TIPO C 25W ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 72.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR VEICULAR TIPO C 40W",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -67981,7 +70214,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 6.0,
-            "REALIZADO": 169.0
+            "REALIZADO": 169.0000002384186
         },
         {
             "AnoMes": "2026-05-01",
@@ -67989,8 +70222,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 180.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 210.0000004768372
         },
         {
             "AnoMes": "2026-05-01",
@@ -67998,8 +70231,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 90.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 159.9999995231628
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "KIMASTER TWS350",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 380.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68009,6 +70251,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 380.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONE DE OUVIDO COM FIO KIMASTER K505L",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 45.99999952316284
         },
         {
             "AnoMes": "2026-05-01",
@@ -68025,8 +70285,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "PELICULA EM 3D 5D",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 12.0,
-            "REALIZADO": 370.0
+            "QTD_FAT": 17.0,
+            "REALIZADO": 532.5
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "PEN DRIVE KING DRIVE 64 GB",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH GS11 MINI",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 780.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68053,7 +70331,7 @@ const dadosDashboard = {
             "PRODUTO": "POSITIVO P41 DUAL CHIP 4G",
             "TIER": "Low",
             "QTD_FAT": 2.0,
-            "REALIZADO": 750.0
+            "REALIZADO": 749.9999923706055
         },
         {
             "AnoMes": "2026-05-01",
@@ -68061,8 +70339,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
             "TIER": "Mid-S",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "REALIZADO": 2070.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68072,6 +70359,15 @@ const dadosDashboard = {
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
             "REALIZADO": 1900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1755.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68088,8 +70384,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68097,8 +70393,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2300.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3499.999969482422
         },
         {
             "AnoMes": "2026-05-01",
@@ -68106,8 +70402,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 256GB",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 5599.99
+            "QTD_FAT": 6.0,
+            "REALIZADO": 7949.990055084229
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "IPHONE 17 PRO MAX 256GB",
+            "TIER": "Super High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 10500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68131,10 +70436,10 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - METROPOLE II (QUIOSQUE)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "OUKITEL P1 PRO 512GB 8RAM",
-            "TIER": "High",
+            "PRODUTO": "MOTOROLA MOTO G06 256GB 4RAM",
+            "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2160.0
+            "REALIZADO": 1350.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68144,6 +70449,15 @@ const dadosDashboard = {
             "TIER": "High",
             "QTD_FAT": 2.0,
             "REALIZADO": 4700.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME 14T 5G 256GB 8RAM",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2900.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68187,8 +70501,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 13210.0
+            "QTD_FAT": 8.0,
+            "REALIZADO": 17510.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4400.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68196,8 +70519,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 5000.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 6200.000061035156
         },
         {
             "AnoMes": "2026-05-01",
@@ -68205,8 +70528,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 4720.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 5820.000015258789
         },
         {
             "AnoMes": "2026-05-01",
@@ -68215,7 +70538,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2300.0
+            "REALIZADO": 2300.000038146973
         },
         {
             "AnoMes": "2026-05-01",
@@ -68223,8 +70546,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 9.0,
-            "REALIZADO": 14750.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 16550.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68233,7 +70556,16 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1800.0
+            "REALIZADO": 1799.999938964844
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - METROPOLE II (QUIOSQUE)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A36 5G 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 5100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68250,8 +70582,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REDMI PAD PRO 5G 128GB 6RAM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2300.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68259,8 +70591,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "TECNO SPARK 30 256GB 8RAM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3980.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68277,8 +70609,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 9.0,
-            "REALIZADO": 1944.6
+            "QTD_FAT": 15.0,
+            "REALIZADO": 3050.899982452393
         },
         {
             "AnoMes": "2026-05-01",
@@ -68286,8 +70618,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT STORE",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 1816.5
+            "QTD_FAT": 5.0,
+            "REALIZADO": 2476.500007629395
         },
         {
             "AnoMes": "2026-05-01",
@@ -68297,6 +70629,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 360.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO BTE 86 10.000MAH ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 179.9900054931641
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA MAGSAFE BTE 07 10.000MAH A'",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 120.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68313,8 +70663,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 230.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 310.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 240.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO TIPO C 60W 2M",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68323,13 +70691,13 @@ const dadosDashboard = {
             "PRODUTO": "CABO USB TIPO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 59.99
+            "REALIZADO": 59.98999977111816
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PARAUAPEBAS",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE ANDROID (SEM CODIGO)",
+            "PRODUTO": "CAPA CASE ANDROID",
             "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
             "REALIZADO": 150.0
@@ -68347,7 +70715,7 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PARAUAPEBAS",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
             "REALIZADO": 110.0
@@ -68365,6 +70733,33 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PARAUAPEBAS",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR POR INDUÇÃO 3 EM 1 TURBO 42.4W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 249.9900054931641
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO 40W USB T110CL",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 120.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO GAN USB C 65W ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 129.9900054931641
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO USB 25W ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -68377,7 +70772,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR TURBO USB TIPO C 25W ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 79.99
+            "REALIZADO": 79.98999786376953
         },
         {
             "AnoMes": "2026-05-01",
@@ -68386,7 +70781,16 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR VEICULAR KIMASTER 40W TIPO C",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 89.99
+            "REALIZADO": 89.98999786376953
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARTÃO DE MEMORIA 64GB SANDISK ULTRA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 80.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68403,8 +70807,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 25.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 95.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68421,8 +70825,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "IMENSO IMS 817",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 250.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 650.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68431,7 +70835,7 @@ const dadosDashboard = {
             "PRODUTO": "KIMASTER TWS350",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 399.99
+            "REALIZADO": 399.9900207519531
         },
         {
             "AnoMes": "2026-05-01",
@@ -68440,7 +70844,16 @@ const dadosDashboard = {
             "PRODUTO": "TWS300",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
-            "REALIZADO": 569.99
+            "REALIZADO": 569.9900207519531
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68450,6 +70863,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 900.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH U9 ( NFC )",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 299.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH MINI W65MN",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 249.9900054931641
         },
         {
             "AnoMes": "2026-05-01",
@@ -68464,6 +70895,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PARAUAPEBAS",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME NOTE 70 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1349.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
@@ -68473,10 +70913,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PARAUAPEBAS",
             "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM 20W SM 22",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM IMENSO X39",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 550.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "SOM",
             "PRODUTO": "CAIXA DE SOM JBL BOOMBOX 4",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
             "REALIZADO": 3500.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PARAUAPEBAS",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM JBL BOOMBOX 4",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 3000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68500,6 +70967,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PATIO I (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "BATERIA COM CABO BTE 86 10.000MAH ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 180.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA PORTATIL BTE 61A 50.000 MAH A'",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -68511,8 +70987,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 253.0
+            "QTD_FAT": 6.0,
+            "REALIZADO": 413.0000009536743
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO TIPO C IMS 149A",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68583,8 +71068,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO 40W TIPO C PARA TIPO C KIMASTER T160CC",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 70.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 169.9899978637695
         },
         {
             "AnoMes": "2026-05-01",
@@ -68601,8 +71086,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C 65W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 210.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68611,7 +71096,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 129.99
+            "REALIZADO": 129.9900054931641
         },
         {
             "AnoMes": "2026-05-01",
@@ -68620,7 +71105,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR TURBO USB TIPO C 25W ALFA",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 79.99
+            "REALIZADO": 79.98999786376953
         },
         {
             "AnoMes": "2026-05-01",
@@ -68653,6 +71138,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PATIO I (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "KAIDI KD 792",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 210.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "KIMASTER TWS350",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -68662,10 +71156,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PATIO I (QUIOSQUE)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "REALME BUDS T200 LITE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "FONE DE OUVIDO COM FIO TIPO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 200.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 250.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR CABO USB TIPO C 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 39.9900016784668
         },
         {
             "AnoMes": "2026-05-01",
@@ -68725,6 +71237,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PATIO I (QUIOSQUE)",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75X NFC 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 2000.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PATIO I (QUIOSQUE)",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 2.0,
@@ -68745,8 +71266,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2400.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68755,7 +71276,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2399.99
+            "REALIZADO": 2399.989974975586
         },
         {
             "AnoMes": "2026-05-01",
@@ -68763,8 +71284,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 3000.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 4500.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68833,6 +71354,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "ACE",
+            "PRODUTO": "BLINDAGEM PRIVATIVA DE HIDROGEL",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 70.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CABO APPLE 20W",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -68842,10 +71372,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CABO USB P TIPO C 60W",
+            "PRODUTO": "CABO UBS H MASTON 1M H146 2",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 25.0
+            "REALIZADO": 39.9900016784668
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB V8 1M USAMS SJ690",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 20.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB P TIPO C 60W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 50.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68854,7 +71402,7 @@ const dadosDashboard = {
             "PRODUTO": "CABO USB 200MM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
-            "REALIZADO": 119.97
+            "REALIZADO": 119.9700050354004
         },
         {
             "AnoMes": "2026-05-01",
@@ -68863,7 +71411,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR KIMASTER 15W",
             "TIER": "Sem Categoria",
             "QTD_FAT": 4.0,
-            "REALIZADO": 199.96
+            "REALIZADO": 199.9600067138672
         },
         {
             "AnoMes": "2026-05-01",
@@ -68880,8 +71428,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TIPO C INOVA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 7.0,
-            "REALIZADO": 210.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 300.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO TIPO 40W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 79.98999786376953
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CHIP PRÉ TIM",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 60.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -68889,8 +71455,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CLARO FLEX",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 129.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 174.9900007247925
         },
         {
             "AnoMes": "2026-05-01",
@@ -68923,10 +71489,37 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "ACE",
+            "PRODUTO": "FONE DE OUVIDO S FIO INOVA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 130.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONTE 40W USB TIPO C ALFA",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "FONTE USB C USB POWER ADAPTER 35W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR RAPIDO USB TIPO C 25W ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 199.96
+            "QTD_FAT": 6.0,
+            "REALIZADO": 299.950008392334
         },
         {
             "AnoMes": "2026-05-01",
@@ -68950,6 +71543,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "CEL",
+            "PRODUTO": "FONE KIMASTER TWS350 EARBUDS",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 310.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
             "PRODUTO": "FONTE KIMASTER T110 40W POWER DUO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -68962,7 +71564,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX HOT 50I 256GB 8+8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2824.99
+            "REALIZADO": 2824.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -68971,7 +71573,16 @@ const dadosDashboard = {
             "PRODUTO": "MOTOROLA G35 5G 128GB 4RAM",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 3020.93
+            "REALIZADO": 3020.929931640625
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C63 NFC 128GB 6RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1233.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -68997,8 +71608,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1500.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2900.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69013,10 +71624,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C75 5G 256GB 8RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1999.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME C75X NFC 256GB 8RAM",
             "TIER": "High",
+            "QTD_FAT": 5.0,
+            "REALIZADO": 9048.010009765625
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
             "QTD_FAT": 3.0,
-            "REALIZADO": 5199.0
+            "REALIZADO": 6039.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -69024,17 +71653,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2100.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - PORTO VELHO",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
-            "TIER": "High",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 7950.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69042,8 +71662,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME NOTE 60 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 3419.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4569.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69061,7 +71681,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3630.98
+            "REALIZADO": 3630.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -69078,8 +71698,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 9.0,
-            "REALIZADO": 10122.97
+            "QTD_FAT": 14.0,
+            "REALIZADO": 15769.94995117188
         },
         {
             "AnoMes": "2026-05-01",
@@ -69088,7 +71708,7 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 3.0,
-            "REALIZADO": 3402.98
+            "REALIZADO": 3402.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -69097,34 +71717,34 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2934.99
+            "REALIZADO": 2934.990127563477
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PORTO VELHO",
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 5.0,
+            "REALIZADO": 7590.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3120.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 3.0,
-            "REALIZADO": 4955.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - PORTO VELHO",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
-            "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 3120.99
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - PORTO VELHO",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
-            "TIER": "Mid-S",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2870.0
+            "REALIZADO": 4521.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69141,8 +71761,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A17 4G 256GB 8RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1769.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3619.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69168,8 +71788,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "XIAOMI POCO X8 PRO 5G 512GB 8RAM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 3400.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 6900.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69177,8 +71797,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "XIAOMI POCO X8 PRO 5G 512GB 8RAM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 3400.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 6900.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69186,8 +71806,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 11.0,
-            "REALIZADO": 2184.0
+            "QTD_FAT": 16.0,
+            "REALIZADO": 3108.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69200,12 +71820,21 @@ const dadosDashboard = {
         },
         {
             "AnoMes": "2026-05-01",
+            "PDV": "PS - PORTO VELHO",
+            "CATEGORIA": "SOM",
+            "PRODUTO": "CAIXA DE SOM IMENSO X05",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 249.9900054931641
+        },
+        {
+            "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "ACE",
             "PRODUTO": "BATERIA COM CABO BTE 48A 10.000MAH ALFA",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 180.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 519.9900054931641
         },
         {
             "AnoMes": "2026-05-01",
@@ -69213,8 +71842,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 13.0,
-            "REALIZADO": 1003.0
+            "QTD_FAT": 20.0,
+            "REALIZADO": 1467.009996891022
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB IMENSO (IMS 142A)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 149.9900016784668
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB TIPO C IMENSO (IMS 147A)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69224,6 +71871,15 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 80.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USB C 30W 2M",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 90.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69247,10 +71903,19 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE IPHONE",
+            "PRODUTO": "CAPA CASE IPHONE (SEM CODIGO)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 159.9700050354004
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA PERSONALIZADA COM INDUÇÃO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 79.99
+            "REALIZADO": 159.9899978637695
         },
         {
             "AnoMes": "2026-05-01",
@@ -69258,8 +71923,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO 40W TIPO C PARA TIPO C KIMASTER T160CC",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 190.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 289.9899978637695
         },
         {
             "AnoMes": "2026-05-01",
@@ -69268,7 +71933,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR TURBO 40W USB T110CL",
             "TIER": "Sem Categoria",
             "QTD_FAT": 5.0,
-            "REALIZADO": 499.97
+            "REALIZADO": 499.9700012207031
         },
         {
             "AnoMes": "2026-05-01",
@@ -69276,8 +71941,26 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO GAN USB C 65W ALFA",
             "TIER": "Sem Categoria",
+            "QTD_FAT": 7.0,
+            "REALIZADO": 870.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO GAN USB C C 65W ALFA",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 260.0
+            "REALIZADO": 240.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR VEICULAR TIPO C 40W",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 90.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69301,6 +71984,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "AIWA AWS 05",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 180.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "DF53",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -69319,6 +72011,24 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "ACE",
+            "PRODUTO": "JBL ENDURANCE RACE 2 ()",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 380.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "KIMASTER TWS350",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 180.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
             "PRODUTO": "FONE DE OUVIDO COM FIO KIMASTER K505L",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
@@ -69332,6 +72042,24 @@ const dadosDashboard = {
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
             "REALIZADO": 100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR CABO MICRO USB V8 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 61.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR CABO USB TIPO C 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 80.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69358,7 +72086,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1999.99
+            "REALIZADO": 1999.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69367,7 +72095,16 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1699.99
+            "REALIZADO": 1800.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 0.9999999999999999,
+            "REALIZADO": 1699.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69384,8 +72121,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1199.99
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2299.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69393,8 +72130,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2299.99
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3399.97998046875
         },
         {
             "AnoMes": "2026-05-01",
@@ -69402,8 +72139,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 256GB",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 4199.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 5499.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69418,6 +72155,15 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "CEL",
+            "PRODUTO": "POCO X7 PRO 5G 512GB 12RAM",
+            "TIER": "High",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 3600.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "CEL",
             "PRODUTO": "REALME 14 PRO + 5G 512GB 12RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
@@ -69427,10 +72173,10 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "REALME C71 NFC 128GB 4RAM",
-            "TIER": "Mid-S",
+            "PRODUTO": "REALME 14T 5G 256GB 8RAM",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1700.0
+            "REALIZADO": 2700.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69438,8 +72184,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1700.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3299.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "REALME C71 NFC 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3230.000061035156
         },
         {
             "AnoMes": "2026-05-01",
@@ -69456,17 +72211,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
-            "QTD_FAT": 4.0,
-            "REALIZADO": 9297.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 11547.0
         },
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - PÁTIO BELÉM III (LOJA)",
             "CATEGORIA": "CEL",
-            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
-            "TIER": "Mid-E",
+            "PRODUTO": "REALME C85 NFC 256GB 8RAM",
+            "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "REALIZADO": 2106.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69474,8 +72229,26 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 2180.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3580.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 4279.990020751953
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - PÁTIO BELÉM III (LOJA)",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A17 4G 128GB 4RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1499.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69493,7 +72266,7 @@ const dadosDashboard = {
             "PRODUTO": "XIAOMI REDMI NOTE 15 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2622.0
+            "REALIZADO": 2622.000061035156
         },
         {
             "AnoMes": "2026-05-01",
@@ -69501,8 +72274,8 @@ const dadosDashboard = {
             "CATEGORIA": "PRT",
             "PRODUTO": "PROTECT GARANTIA ESTENDIDA + 1 ANO (CARTA DE R$ 100)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 1008.0
+            "QTD_FAT": 5.0,
+            "REALIZADO": 1665.999996185303
         },
         {
             "AnoMes": "2026-05-01",
@@ -69519,8 +72292,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 9.0,
-            "REALIZADO": 460.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 650.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69528,8 +72301,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO 40W USB T110CL",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 190.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 289.9000091552734
         },
         {
             "AnoMes": "2026-05-01",
@@ -69538,7 +72311,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 29.99
+            "REALIZADO": 29.98999977111816
         },
         {
             "AnoMes": "2026-05-01",
@@ -69564,8 +72337,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR 15W KIMASTER",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 100.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 150.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69592,7 +72365,16 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 2.0,
-            "REALIZADO": 2299.99
+            "REALIZADO": 2299.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - SHOP DA ILHA SLZ",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
+            "TIER": "Low",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 1850.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69610,15 +72392,6 @@ const dadosDashboard = {
             "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
             "TIER": "Low",
             "QTD_FAT": 1.0,
-            "REALIZADO": 850.0
-        },
-        {
-            "AnoMes": "2026-05-01",
-            "PDV": "PS - SHOP DA ILHA SLZ",
-            "CATEGORIA": "CEL",
-            "PRODUTO": "TECNO SPARK GO 1 128GB 4RAM",
-            "TIER": "Low",
-            "QTD_FAT": 1.0,
             "REALIZADO": 800.0
         },
         {
@@ -69628,7 +72401,7 @@ const dadosDashboard = {
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
             "QTD_FAT": 15.0,
-            "REALIZADO": 789.97
+            "REALIZADO": 789.9700012207031
         },
         {
             "AnoMes": "2026-05-01",
@@ -69636,8 +72409,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB TIPO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 29.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 139.9799995422363
         },
         {
             "AnoMes": "2026-05-01",
@@ -69654,8 +72427,17 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CARREGADOR TURBO 40W TIPO C PARA TIPO C KIMASTER T160CC",
             "TIER": "Sem Categoria",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 169.9899978637695
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - SHOP RIO ANIL SLZ",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR TURBO 40W USB T110CL",
+            "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 80.0
+            "REALIZADO": 99.90000915527344
         },
         {
             "AnoMes": "2026-05-01",
@@ -69672,8 +72454,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 3.0,
-            "REALIZADO": 59.99
+            "QTD_FAT": 4.0,
+            "REALIZADO": 79.98999977111816
         },
         {
             "AnoMes": "2026-05-01",
@@ -69681,8 +72463,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 25.0
+            "QTD_FAT": 4.0,
+            "REALIZADO": 110.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69690,8 +72472,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "KIMASTER TWS350",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 2.0,
-            "REALIZADO": 330.0
+            "QTD_FAT": 3.0,
+            "REALIZADO": 529.8999938964844
         },
         {
             "AnoMes": "2026-05-01",
@@ -69705,11 +72487,29 @@ const dadosDashboard = {
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - SHOP RIO ANIL SLZ",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CARREGADOR 15W KIMASTER",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 50.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - SHOP RIO ANIL SLZ",
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX HOT 60I 256GB 4+4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1999.99
+            "REALIZADO": 1999.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - SHOP RIO ANIL SLZ",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX HOT 60I 256GB 8+8RAM",
+            "TIER": "Mid-S",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 1999.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69718,7 +72518,7 @@ const dadosDashboard = {
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1199.99
+            "REALIZADO": 1199.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69726,8 +72526,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1500.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 3000.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69736,7 +72536,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C71 NFC 128GB 4RAM",
             "TIER": "Mid-S",
             "QTD_FAT": 3.0,
-            "REALIZADO": 4299.99
+            "REALIZADO": 4299.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69744,8 +72544,17 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME C85 NFC 256GB 8RAM",
             "TIER": "High",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 4399.989990234375
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - SHOP RIO ANIL SLZ",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "REALIZADO": 1100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69763,7 +72572,7 @@ const dadosDashboard = {
             "PRODUTO": "REDMI PAD 2 128GB 4RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1899.99
+            "REALIZADO": 1899.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69790,7 +72599,7 @@ const dadosDashboard = {
             "PRODUTO": "BLINDAGEM HYDROGEL GOODLUCK HD",
             "TIER": "Sem Categoria",
             "QTD_FAT": 2.0,
-            "REALIZADO": 160.0
+            "REALIZADO": 159.9999990463257
         },
         {
             "AnoMes": "2026-05-01",
@@ -69814,10 +72623,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - TERMINAL",
             "CATEGORIA": "ACE",
+            "PRODUTO": "CABO TIPO C TIPO C IMS 148A",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 4.0,
+            "REALIZADO": 200.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "ACE",
             "PRODUTO": "CABO TIPO C 60W 2M",
             "TIER": "Sem Categoria",
             "QTD_FAT": 3.0,
             "REALIZADO": 150.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CABO USAMS SJ691",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 40.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69843,8 +72670,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CABO USB TIPO C YOUNNECT (1M)",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 50.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 100.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69859,10 +72686,28 @@ const dadosDashboard = {
             "AnoMes": "2026-05-01",
             "PDV": "PS - TERMINAL",
             "CATEGORIA": "ACE",
-            "PRODUTO": "CAPA CASE ANDROID (SEM CODIGO)",
+            "PRODUTO": "CAPA CASE ANDROID",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 6.0,
-            "REALIZADO": 135.0
+            "QTD_FAT": 7.0,
+            "REALIZADO": 150.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA CASE EM PROMOÇÃO (R$5 R$10)",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 9.989999771118164
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "CAPA PERSONALIZADA COM INDUÇÃO E SUPORTE",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 80.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69871,7 +72716,7 @@ const dadosDashboard = {
             "PRODUTO": "CARREGADOR PARA SMARTWATCH",
             "TIER": "Sem Categoria",
             "QTD_FAT": 1.0,
-            "REALIZADO": 79.98999
+            "REALIZADO": 79.989990234375
         },
         {
             "AnoMes": "2026-05-01",
@@ -69907,7 +72752,7 @@ const dadosDashboard = {
             "PRODUTO": "CHIP PRÉ CLARO",
             "TIER": "Sem Categoria",
             "QTD_FAT": 8.0,
-            "REALIZADO": 240.0
+            "REALIZADO": 240.0000004768372
         },
         {
             "AnoMes": "2026-05-01",
@@ -69915,8 +72760,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ TIM",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 5.0,
-            "REALIZADO": 150.0
+            "QTD_FAT": 10.0,
+            "REALIZADO": 300.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -69924,8 +72769,8 @@ const dadosDashboard = {
             "CATEGORIA": "ACE",
             "PRODUTO": "CHIP PRÉ VIVO",
             "TIER": "Sem Categoria",
-            "QTD_FAT": 9.0,
-            "REALIZADO": 270.0
+            "QTD_FAT": 12.0,
+            "REALIZADO": 359.9999990463257
         },
         {
             "AnoMes": "2026-05-01",
@@ -70011,11 +72856,29 @@ const dadosDashboard = {
         {
             "AnoMes": "2026-05-01",
             "PDV": "PS - TERMINAL",
+            "CATEGORIA": "ACE",
+            "PRODUTO": "SMARTWATCH DR40",
+            "TIER": "Sem Categoria",
+            "QTD_FAT": 1.0,
+            "REALIZADO": 450.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2399.989929199219
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
             "CATEGORIA": "CEL",
             "PRODUTO": "INFINIX SMART 10 128GB 4+4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1199.99
+            "REALIZADO": 1200.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -70042,7 +72905,7 @@ const dadosDashboard = {
             "PRODUTO": "REALME C75 NFC 256GB 8RAM",
             "TIER": "High",
             "QTD_FAT": 1.0,
-            "REALIZADO": 2000.0
+            "REALIZADO": 1999.999969482422
         },
         {
             "AnoMes": "2026-05-01",
@@ -70068,8 +72931,8 @@ const dadosDashboard = {
             "CATEGORIA": "CEL",
             "PRODUTO": "REALME NOTE 70 128GB 4RAM",
             "TIER": "Mid-E",
-            "QTD_FAT": 1.0,
-            "REALIZADO": 1400.0
+            "QTD_FAT": 2.0,
+            "REALIZADO": 2800.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -70096,7 +72959,16 @@ const dadosDashboard = {
             "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
             "TIER": "Mid-E",
             "QTD_FAT": 1.0,
-            "REALIZADO": 1200.0
+            "REALIZADO": 1100.0
+        },
+        {
+            "AnoMes": "2026-05-01",
+            "PDV": "PS - TERMINAL",
+            "CATEGORIA": "CEL",
+            "PRODUTO": "SAMSUNG GALAXY A07 128GB 4RAM",
+            "TIER": "Mid-E",
+            "QTD_FAT": 3.0,
+            "REALIZADO": 3600.0
         },
         {
             "AnoMes": "2026-05-01",
@@ -71039,8 +73911,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-12",
-            "ID_LOJA": "4",
-            "faturamento": 2254.990016937256
+            "ID_LOJA": "5",
+            "faturamento": 3059.989990234375
         },
         {
             "data": "2025-11-12",
@@ -71054,8 +73926,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-12",
-            "ID_LOJA": "5",
-            "faturamento": 3059.989990234375
+            "ID_LOJA": "4",
+            "faturamento": 2254.990016937256
         },
         {
             "data": "2025-11-12",
@@ -71084,8 +73956,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-12",
-            "ID_LOJA": "13",
-            "faturamento": 4432.0
+            "ID_LOJA": "17",
+            "faturamento": 3249.97998046875
         },
         {
             "data": "2025-11-12",
@@ -71099,8 +73971,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-12",
-            "ID_LOJA": "17",
-            "faturamento": 3249.97998046875
+            "ID_LOJA": "13",
+            "faturamento": 4432.0
         },
         {
             "data": "2025-11-13",
@@ -71969,11 +74841,6 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-23",
-            "ID_LOJA": "8",
-            "faturamento": 2550.0
-        },
-        {
-            "data": "2025-11-23",
             "ID_LOJA": "7",
             "faturamento": 100.0
         },
@@ -71989,8 +74856,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-23",
-            "ID_LOJA": "12",
-            "faturamento": 6340.0
+            "ID_LOJA": "8",
+            "faturamento": 2550.0
         },
         {
             "data": "2025-11-23",
@@ -72004,13 +74871,18 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-23",
-            "ID_LOJA": "15",
-            "faturamento": 2650.019999999553
+            "ID_LOJA": "12",
+            "faturamento": 6340.0
         },
         {
             "data": "2025-11-23",
             "ID_LOJA": "11",
             "faturamento": 1360.0
+        },
+        {
+            "data": "2025-11-23",
+            "ID_LOJA": "15",
+            "faturamento": 2650.019999999553
         },
         {
             "data": "2025-11-23",
@@ -72144,8 +75016,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-25",
-            "ID_LOJA": "10",
-            "faturamento": 2079.989990234375
+            "ID_LOJA": "1",
+            "faturamento": 7919.959957122803
         },
         {
             "data": "2025-11-25",
@@ -72179,8 +75051,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-25",
-            "ID_LOJA": "1",
-            "faturamento": 7919.959957122803
+            "ID_LOJA": "10",
+            "faturamento": 2079.989990234375
         },
         {
             "data": "2025-11-25",
@@ -72189,8 +75061,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-26",
-            "ID_LOJA": "20",
-            "faturamento": 159.98999786376953
+            "ID_LOJA": "21",
+            "faturamento": 2939.9899978637695
         },
         {
             "data": "2025-11-26",
@@ -72224,23 +75096,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-26",
-            "ID_LOJA": "2",
-            "faturamento": 3200.0
+            "ID_LOJA": "20",
+            "faturamento": 159.98999786376953
         },
         {
             "data": "2025-11-26",
-            "ID_LOJA": "21",
-            "faturamento": 2939.9899978637695
-        },
-        {
-            "data": "2025-11-26",
-            "ID_LOJA": "15",
-            "faturamento": 2050.0
+            "ID_LOJA": "1",
+            "faturamento": 4294.190040588379
         },
         {
             "data": "2025-11-26",
             "ID_LOJA": "16",
             "faturamento": 3360.0
+        },
+        {
+            "data": "2025-11-26",
+            "ID_LOJA": "15",
+            "faturamento": 2050.0
         },
         {
             "data": "2025-11-26",
@@ -72269,8 +75141,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-26",
-            "ID_LOJA": "1",
-            "faturamento": 4294.190040588379
+            "ID_LOJA": "2",
+            "faturamento": 3200.0
         },
         {
             "data": "2025-11-27",
@@ -72319,11 +75191,6 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-27",
-            "ID_LOJA": "17",
-            "faturamento": 910.0
-        },
-        {
-            "data": "2025-11-27",
             "ID_LOJA": "16",
             "faturamento": 2870.0
         },
@@ -72358,34 +75225,9 @@ const dadosDashboard = {
             "faturamento": 7442.969982147217
         },
         {
-            "data": "2025-11-28",
-            "ID_LOJA": "21",
-            "faturamento": 7499.989990234375
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "4",
-            "faturamento": 248.0099983215332
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "5",
-            "faturamento": 5064.989990234375
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "9",
-            "faturamento": 1730.0
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "7",
-            "faturamento": 17209.97998046875
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "8",
-            "faturamento": 5382.0
+            "data": "2025-11-27",
+            "ID_LOJA": "17",
+            "faturamento": 910.0
         },
         {
             "data": "2025-11-28",
@@ -72394,8 +75236,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-28",
+            "ID_LOJA": "8",
+            "faturamento": 5382.0
+        },
+        {
+            "data": "2025-11-28",
+            "ID_LOJA": "7",
+            "faturamento": 17209.97998046875
+        },
+        {
+            "data": "2025-11-28",
             "ID_LOJA": "6",
             "faturamento": 10834.989990234375
+        },
+        {
+            "data": "2025-11-28",
+            "ID_LOJA": "5",
+            "faturamento": 5064.989990234375
+        },
+        {
+            "data": "2025-11-28",
+            "ID_LOJA": "4",
+            "faturamento": 248.0099983215332
+        },
+        {
+            "data": "2025-11-28",
+            "ID_LOJA": "21",
+            "faturamento": 7499.989990234375
         },
         {
             "data": "2025-11-28",
@@ -72404,8 +75271,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-28",
-            "ID_LOJA": "1",
-            "faturamento": 5433.969993591309
+            "ID_LOJA": "9",
+            "faturamento": 1730.0
         },
         {
             "data": "2025-11-28",
@@ -72414,28 +75281,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-28",
-            "ID_LOJA": "15",
-            "faturamento": 14837.0
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "14",
-            "faturamento": 9830.0
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "13",
-            "faturamento": 10560.0
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "12",
-            "faturamento": 19570.0
-        },
-        {
-            "data": "2025-11-28",
-            "ID_LOJA": "11",
-            "faturamento": 4009.999877929688
+            "ID_LOJA": "1",
+            "faturamento": 5433.969993591309
         },
         {
             "data": "2025-11-28",
@@ -72444,23 +75291,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-28",
+            "ID_LOJA": "11",
+            "faturamento": 4009.999877929688
+        },
+        {
+            "data": "2025-11-28",
             "ID_LOJA": "17",
             "faturamento": 2320.0
         },
         {
-            "data": "2025-11-29",
-            "ID_LOJA": "21",
-            "faturamento": 3799.989990234375
+            "data": "2025-11-28",
+            "ID_LOJA": "13",
+            "faturamento": 10560.0
         },
         {
-            "data": "2025-11-29",
-            "ID_LOJA": "4",
-            "faturamento": 1639.9799880981445
+            "data": "2025-11-28",
+            "ID_LOJA": "14",
+            "faturamento": 9830.0
         },
         {
-            "data": "2025-11-29",
-            "ID_LOJA": "5",
-            "faturamento": 7825.0
+            "data": "2025-11-28",
+            "ID_LOJA": "15",
+            "faturamento": 14837.0
+        },
+        {
+            "data": "2025-11-28",
+            "ID_LOJA": "12",
+            "faturamento": 19570.0
         },
         {
             "data": "2025-11-29",
@@ -72474,8 +75331,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-29",
-            "ID_LOJA": "8",
-            "faturamento": 6700.0
+            "ID_LOJA": "6",
+            "faturamento": 6020.000030398369
+        },
+        {
+            "data": "2025-11-29",
+            "ID_LOJA": "5",
+            "faturamento": 7825.0
+        },
+        {
+            "data": "2025-11-29",
+            "ID_LOJA": "4",
+            "faturamento": 1639.9799880981445
+        },
+        {
+            "data": "2025-11-29",
+            "ID_LOJA": "21",
+            "faturamento": 3799.989990234375
         },
         {
             "data": "2025-11-29",
@@ -72484,18 +75356,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-29",
-            "ID_LOJA": "6",
-            "faturamento": 6020.000030398369
-        },
-        {
-            "data": "2025-11-29",
             "ID_LOJA": "2",
             "faturamento": 3340.0
         },
         {
             "data": "2025-11-29",
-            "ID_LOJA": "1",
-            "faturamento": 11410.979976654053
+            "ID_LOJA": "8",
+            "faturamento": 6700.0
         },
         {
             "data": "2025-11-29",
@@ -72531,6 +75398,11 @@ const dadosDashboard = {
             "data": "2025-11-29",
             "ID_LOJA": "10",
             "faturamento": 820.0
+        },
+        {
+            "data": "2025-11-29",
+            "ID_LOJA": "1",
+            "faturamento": 11410.979976654053
         },
         {
             "data": "2025-11-29",
@@ -72579,11 +75451,6 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-30",
-            "ID_LOJA": "16",
-            "faturamento": 460.0
-        },
-        {
-            "data": "2025-11-30",
             "ID_LOJA": "15",
             "faturamento": 6301.0
         },
@@ -72609,6 +75476,11 @@ const dadosDashboard = {
         },
         {
             "data": "2025-11-30",
+            "ID_LOJA": "16",
+            "faturamento": 460.0
+        },
+        {
+            "data": "2025-11-30",
             "ID_LOJA": "1",
             "faturamento": 3194.989990234375
         },
@@ -72616,6 +75488,11 @@ const dadosDashboard = {
             "data": "2025-12-01",
             "ID_LOJA": "9",
             "faturamento": 4736.000030398369
+        },
+        {
+            "data": "2025-12-01",
+            "ID_LOJA": "2",
+            "faturamento": 2110.0
         },
         {
             "data": "2025-12-01",
@@ -72654,18 +75531,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-01",
-            "ID_LOJA": "2",
-            "faturamento": 2110.0
-        },
-        {
-            "data": "2025-12-01",
-            "ID_LOJA": "10",
-            "faturamento": 1140.0
-        },
-        {
-            "data": "2025-12-01",
-            "ID_LOJA": "16",
-            "faturamento": 1200.0
+            "ID_LOJA": "17",
+            "faturamento": 5124.980041503906
         },
         {
             "data": "2025-12-01",
@@ -72694,18 +75561,18 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-01",
+            "ID_LOJA": "10",
+            "faturamento": 1140.0
+        },
+        {
+            "data": "2025-12-01",
             "ID_LOJA": "1",
             "faturamento": 1559.9800033569336
         },
         {
             "data": "2025-12-01",
-            "ID_LOJA": "17",
-            "faturamento": 5124.980041503906
-        },
-        {
-            "data": "2025-12-02",
-            "ID_LOJA": "21",
-            "faturamento": 6954.989990234375
+            "ID_LOJA": "16",
+            "faturamento": 1200.0
         },
         {
             "data": "2025-12-02",
@@ -72739,13 +75606,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-02",
-            "ID_LOJA": "2",
-            "faturamento": 2500.0
+            "ID_LOJA": "21",
+            "faturamento": 6954.989990234375
         },
         {
             "data": "2025-12-02",
-            "ID_LOJA": "1",
-            "faturamento": 2283.0
+            "ID_LOJA": "2",
+            "faturamento": 2500.0
         },
         {
             "data": "2025-12-02",
@@ -72779,43 +75646,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-02",
+            "ID_LOJA": "1",
+            "faturamento": 2283.0
+        },
+        {
+            "data": "2025-12-02",
             "ID_LOJA": "17",
             "faturamento": 6717.959861755372
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "9",
-            "faturamento": 4984.999954223633
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "8",
-            "faturamento": 5033.999988555908
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "7",
-            "faturamento": 4355.0
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "6",
-            "faturamento": 3739.989990234375
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "5",
-            "faturamento": 3899.9999961853027
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "4",
-            "faturamento": 1700.0
-        },
-        {
-            "data": "2025-12-03",
-            "ID_LOJA": "21",
-            "faturamento": 4899.989990234375
         },
         {
             "data": "2025-12-03",
@@ -72824,8 +75661,48 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-03",
+            "ID_LOJA": "21",
+            "faturamento": 4899.989990234375
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "4",
+            "faturamento": 1700.0
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "5",
+            "faturamento": 3899.9999961853027
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "9",
+            "faturamento": 4984.999954223633
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "7",
+            "faturamento": 4355.0
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "8",
+            "faturamento": 5033.999988555908
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "6",
+            "faturamento": 3739.989990234375
+        },
+        {
+            "data": "2025-12-03",
             "ID_LOJA": "2",
             "faturamento": 5730.0
+        },
+        {
+            "data": "2025-12-03",
+            "ID_LOJA": "1",
+            "faturamento": 2852.990001678467
         },
         {
             "data": "2025-12-03",
@@ -72864,33 +75741,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-03",
-            "ID_LOJA": "1",
-            "faturamento": 2852.990001678467
-        },
-        {
-            "data": "2025-12-03",
             "ID_LOJA": "17",
             "faturamento": 1199.989990234375
-        },
-        {
-            "data": "2025-12-04",
-            "ID_LOJA": "4",
-            "faturamento": 9922.459993591308
-        },
-        {
-            "data": "2025-12-04",
-            "ID_LOJA": "5",
-            "faturamento": 1060.0000007152557
-        },
-        {
-            "data": "2025-12-04",
-            "ID_LOJA": "6",
-            "faturamento": 6290.0
-        },
-        {
-            "data": "2025-12-04",
-            "ID_LOJA": "21",
-            "faturamento": 2599.989990234375
         },
         {
             "data": "2025-12-04",
@@ -72909,13 +75761,28 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-04",
+            "ID_LOJA": "6",
+            "faturamento": 6290.0
+        },
+        {
+            "data": "2025-12-04",
+            "ID_LOJA": "5",
+            "faturamento": 1060.0000007152557
+        },
+        {
+            "data": "2025-12-04",
+            "ID_LOJA": "4",
+            "faturamento": 9922.459993591308
+        },
+        {
+            "data": "2025-12-04",
             "ID_LOJA": "20",
             "faturamento": 1879.9800186157227
         },
         {
             "data": "2025-12-04",
-            "ID_LOJA": "11",
-            "faturamento": 4480.0
+            "ID_LOJA": "21",
+            "faturamento": 2599.989990234375
         },
         {
             "data": "2025-12-04",
@@ -72941,6 +75808,11 @@ const dadosDashboard = {
             "data": "2025-12-04",
             "ID_LOJA": "12",
             "faturamento": 7592.0
+        },
+        {
+            "data": "2025-12-04",
+            "ID_LOJA": "11",
+            "faturamento": 4480.0
         },
         {
             "data": "2025-12-04",
@@ -73144,13 +76016,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-07",
-            "ID_LOJA": "14",
-            "faturamento": 2590.0
+            "ID_LOJA": "15",
+            "faturamento": 6170.0
         },
         {
             "data": "2025-12-07",
-            "ID_LOJA": "15",
-            "faturamento": 6170.0
+            "ID_LOJA": "14",
+            "faturamento": 2590.0
         },
         {
             "data": "2025-12-07",
@@ -73189,8 +76061,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-08",
-            "ID_LOJA": "20",
-            "faturamento": 4500.0
+            "ID_LOJA": "21",
+            "faturamento": 4387.0
         },
         {
             "data": "2025-12-08",
@@ -73204,8 +76076,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-08",
-            "ID_LOJA": "21",
-            "faturamento": 4387.0
+            "ID_LOJA": "20",
+            "faturamento": 4500.0
         },
         {
             "data": "2025-12-08",
@@ -73264,8 +76136,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-09",
-            "ID_LOJA": "13",
-            "faturamento": 50.0
+            "ID_LOJA": "9",
+            "faturamento": 2225.0
         },
         {
             "data": "2025-12-09",
@@ -73276,11 +76148,6 @@ const dadosDashboard = {
             "data": "2025-12-09",
             "ID_LOJA": "8",
             "faturamento": 3260.0
-        },
-        {
-            "data": "2025-12-09",
-            "ID_LOJA": "9",
-            "faturamento": 2225.0
         },
         {
             "data": "2025-12-09",
@@ -73299,8 +76166,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-09",
-            "ID_LOJA": "10",
-            "faturamento": 2580.0
+            "ID_LOJA": "13",
+            "faturamento": 50.0
         },
         {
             "data": "2025-12-09",
@@ -73334,6 +76201,11 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-09",
+            "ID_LOJA": "10",
+            "faturamento": 2580.0
+        },
+        {
+            "data": "2025-12-09",
             "ID_LOJA": "1",
             "faturamento": 3336.0
         },
@@ -73344,8 +76216,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "4",
-            "faturamento": 9649.980010986334
+            "ID_LOJA": "9",
+            "faturamento": 950.0
         },
         {
             "data": "2025-12-10",
@@ -73359,18 +76231,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "5",
-            "faturamento": 1939.9899978637695
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "20",
-            "faturamento": 5590.990264892578
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "7",
-            "faturamento": 5434.990001678467
+            "ID_LOJA": "4",
+            "faturamento": 9649.980010986334
         },
         {
             "data": "2025-12-10",
@@ -73379,13 +76241,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "9",
-            "faturamento": 950.0
+            "ID_LOJA": "6",
+            "faturamento": 9232.809993743896
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "6",
-            "faturamento": 9232.809993743896
+            "ID_LOJA": "7",
+            "faturamento": 5434.990001678467
+        },
+        {
+            "data": "2025-12-10",
+            "ID_LOJA": "20",
+            "faturamento": 5590.990264892578
+        },
+        {
+            "data": "2025-12-10",
+            "ID_LOJA": "5",
+            "faturamento": 1939.9899978637695
         },
         {
             "data": "2025-12-10",
@@ -73394,8 +76266,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "1",
-            "faturamento": 2611.97998046875
+            "ID_LOJA": "16",
+            "faturamento": 3820.0
         },
         {
             "data": "2025-12-10",
@@ -73404,23 +76276,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "10",
-            "faturamento": 1769.9999908804896
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "11",
-            "faturamento": 2560.0
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "12",
-            "faturamento": 880.0
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "18",
-            "faturamento": 1929.9899997711182
+            "ID_LOJA": "15",
+            "faturamento": 2870.0299999993294
         },
         {
             "data": "2025-12-10",
@@ -73429,53 +76286,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-10",
-            "ID_LOJA": "15",
-            "faturamento": 2870.0299999993294
-        },
-        {
-            "data": "2025-12-10",
-            "ID_LOJA": "16",
-            "faturamento": 3820.0
-        },
-        {
-            "data": "2025-12-10",
             "ID_LOJA": "13",
             "faturamento": 2200.0
         },
         {
-            "data": "2025-12-11",
-            "ID_LOJA": "2",
-            "faturamento": 5050.0
+            "data": "2025-12-10",
+            "ID_LOJA": "12",
+            "faturamento": 880.0
         },
         {
-            "data": "2025-12-11",
-            "ID_LOJA": "8",
-            "faturamento": 1000.0
+            "data": "2025-12-10",
+            "ID_LOJA": "11",
+            "faturamento": 2560.0
         },
         {
-            "data": "2025-12-11",
-            "ID_LOJA": "7",
-            "faturamento": 5230.009984740987
+            "data": "2025-12-10",
+            "ID_LOJA": "10",
+            "faturamento": 1769.9999908804896
         },
         {
-            "data": "2025-12-11",
-            "ID_LOJA": "6",
-            "faturamento": 6080.000025860034
+            "data": "2025-12-10",
+            "ID_LOJA": "1",
+            "faturamento": 2611.97998046875
         },
         {
-            "data": "2025-12-11",
-            "ID_LOJA": "5",
-            "faturamento": 1419.9999902341515
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "4",
-            "faturamento": 5059.979991912842
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "21",
-            "faturamento": 4400.0
+            "data": "2025-12-10",
+            "ID_LOJA": "18",
+            "faturamento": 1929.9899997711182
         },
         {
             "data": "2025-12-11",
@@ -73484,8 +76321,43 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-11",
+            "ID_LOJA": "21",
+            "faturamento": 4400.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "4",
+            "faturamento": 5059.979991912842
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "5",
+            "faturamento": 1419.9999902341515
+        },
+        {
+            "data": "2025-12-11",
             "ID_LOJA": "9",
             "faturamento": 1330.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "7",
+            "faturamento": 5230.009984740987
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "8",
+            "faturamento": 1000.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "2",
+            "faturamento": 5050.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "6",
+            "faturamento": 6080.000025860034
         },
         {
             "data": "2025-12-11",
@@ -73494,38 +76366,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-11",
+            "ID_LOJA": "18",
+            "faturamento": 3749.989990234375
+        },
+        {
+            "data": "2025-12-11",
             "ID_LOJA": "17",
             "faturamento": 7809.989929199335
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "16",
-            "faturamento": 730.0
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "15",
-            "faturamento": 4930.0099999997765
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "14",
-            "faturamento": 5250.0
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "13",
-            "faturamento": 4839.979989776388
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "12",
-            "faturamento": 14129.0
-        },
-        {
-            "data": "2025-12-11",
-            "ID_LOJA": "11",
-            "faturamento": 1960.000015258789
         },
         {
             "data": "2025-12-11",
@@ -73534,13 +76381,38 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-11",
+            "ID_LOJA": "11",
+            "faturamento": 1960.000015258789
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "12",
+            "faturamento": 14129.0
+        },
+        {
+            "data": "2025-12-11",
             "ID_LOJA": "1",
             "faturamento": 2277.9899940490723
         },
         {
             "data": "2025-12-11",
-            "ID_LOJA": "18",
-            "faturamento": 3749.989990234375
+            "ID_LOJA": "14",
+            "faturamento": 5250.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "15",
+            "faturamento": 4930.0099999997765
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "16",
+            "faturamento": 730.0
+        },
+        {
+            "data": "2025-12-11",
+            "ID_LOJA": "13",
+            "faturamento": 4839.979989776388
         },
         {
             "data": "2025-12-12",
@@ -73549,28 +76421,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-12",
-            "ID_LOJA": "20",
-            "faturamento": 1499.989990234375
-        },
-        {
-            "data": "2025-12-12",
-            "ID_LOJA": "21",
-            "faturamento": 1100.0
-        },
-        {
-            "data": "2025-12-12",
-            "ID_LOJA": "4",
-            "faturamento": 2399.989990234375
-        },
-        {
-            "data": "2025-12-12",
-            "ID_LOJA": "9",
-            "faturamento": 4790.019938009791
-        },
-        {
-            "data": "2025-12-12",
-            "ID_LOJA": "6",
-            "faturamento": 6234.989980468759
+            "ID_LOJA": "8",
+            "faturamento": 1890.0
         },
         {
             "data": "2025-12-12",
@@ -73579,8 +76431,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-12",
-            "ID_LOJA": "8",
-            "faturamento": 1890.0
+            "ID_LOJA": "9",
+            "faturamento": 4790.019938009791
         },
         {
             "data": "2025-12-12",
@@ -73589,8 +76441,28 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-12",
+            "ID_LOJA": "4",
+            "faturamento": 2399.989990234375
+        },
+        {
+            "data": "2025-12-12",
+            "ID_LOJA": "21",
+            "faturamento": 1100.0
+        },
+        {
+            "data": "2025-12-12",
+            "ID_LOJA": "20",
+            "faturamento": 1499.989990234375
+        },
+        {
+            "data": "2025-12-12",
             "ID_LOJA": "19",
             "faturamento": 800.0
+        },
+        {
+            "data": "2025-12-12",
+            "ID_LOJA": "6",
+            "faturamento": 6234.989980468759
         },
         {
             "data": "2025-12-12",
@@ -73644,11 +76516,6 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-13",
-            "ID_LOJA": "2",
-            "faturamento": 4569.999996185303
-        },
-        {
-            "data": "2025-12-13",
             "ID_LOJA": "20",
             "faturamento": 3499.989990234375
         },
@@ -73664,13 +76531,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-13",
-            "ID_LOJA": "8",
-            "faturamento": 10144.0
-        },
-        {
-            "data": "2025-12-13",
-            "ID_LOJA": "6",
-            "faturamento": 2238.989949951414
+            "ID_LOJA": "9",
+            "faturamento": 1540.0
         },
         {
             "data": "2025-12-13",
@@ -73679,18 +76541,28 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-13",
-            "ID_LOJA": "9",
-            "faturamento": 1540.0
+            "ID_LOJA": "8",
+            "faturamento": 10144.0
         },
         {
             "data": "2025-12-13",
-            "ID_LOJA": "5",
-            "faturamento": 12079.969982147217
+            "ID_LOJA": "2",
+            "faturamento": 4569.999996185303
+        },
+        {
+            "data": "2025-12-13",
+            "ID_LOJA": "6",
+            "faturamento": 2238.989949951414
         },
         {
             "data": "2025-12-13",
             "ID_LOJA": "19",
             "faturamento": 59.9900016784668
+        },
+        {
+            "data": "2025-12-13",
+            "ID_LOJA": "5",
+            "faturamento": 12079.969982147217
         },
         {
             "data": "2025-12-13",
@@ -73744,11 +76616,6 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-14",
-            "ID_LOJA": "2",
-            "faturamento": 130.0
-        },
-        {
-            "data": "2025-12-14",
             "ID_LOJA": "9",
             "faturamento": 5260.0
         },
@@ -73766,6 +76633,11 @@ const dadosDashboard = {
             "data": "2025-12-14",
             "ID_LOJA": "4",
             "faturamento": 135.0
+        },
+        {
+            "data": "2025-12-14",
+            "ID_LOJA": "2",
+            "faturamento": 130.0
         },
         {
             "data": "2025-12-14",
@@ -73809,8 +76681,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-15",
-            "ID_LOJA": "20",
-            "faturamento": 2379.97998046875
+            "ID_LOJA": "21",
+            "faturamento": 2644.989990234375
         },
         {
             "data": "2025-12-15",
@@ -73849,13 +76721,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-15",
-            "ID_LOJA": "21",
-            "faturamento": 2644.989990234375
+            "ID_LOJA": "2",
+            "faturamento": 1735.0
         },
         {
             "data": "2025-12-15",
-            "ID_LOJA": "2",
-            "faturamento": 1735.0
+            "ID_LOJA": "20",
+            "faturamento": 2379.97998046875
         },
         {
             "data": "2025-12-15",
@@ -73864,28 +76736,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-15",
-            "ID_LOJA": "16",
-            "faturamento": 2660.0
-        },
-        {
-            "data": "2025-12-15",
-            "ID_LOJA": "15",
-            "faturamento": 6810.009999999544
-        },
-        {
-            "data": "2025-12-15",
-            "ID_LOJA": "14",
-            "faturamento": 1900.0
-        },
-        {
-            "data": "2025-12-15",
-            "ID_LOJA": "13",
-            "faturamento": 5859.999939918518
-        },
-        {
-            "data": "2025-12-15",
-            "ID_LOJA": "12",
-            "faturamento": 11540.0
+            "ID_LOJA": "10",
+            "faturamento": 60.0
         },
         {
             "data": "2025-12-15",
@@ -73894,8 +76746,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-15",
-            "ID_LOJA": "10",
-            "faturamento": 60.0
+            "ID_LOJA": "12",
+            "faturamento": 11540.0
+        },
+        {
+            "data": "2025-12-15",
+            "ID_LOJA": "13",
+            "faturamento": 5859.999939918518
         },
         {
             "data": "2025-12-15",
@@ -73904,13 +76761,53 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-15",
+            "ID_LOJA": "15",
+            "faturamento": 6810.009999999544
+        },
+        {
+            "data": "2025-12-15",
+            "ID_LOJA": "16",
+            "faturamento": 2660.0
+        },
+        {
+            "data": "2025-12-15",
             "ID_LOJA": "18",
             "faturamento": 899.9900512695312
         },
         {
+            "data": "2025-12-15",
+            "ID_LOJA": "14",
+            "faturamento": 1900.0
+        },
+        {
             "data": "2025-12-16",
-            "ID_LOJA": "21",
-            "faturamento": 6599.999938964844
+            "ID_LOJA": "20",
+            "faturamento": 12825.000240325928
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "9",
+            "faturamento": 6165.999939203262
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "8",
+            "faturamento": 5740.009998321533
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "7",
+            "faturamento": 11654.109963683177
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "6",
+            "faturamento": 4359.989940643311
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "5",
+            "faturamento": 6184.999980468303
         },
         {
             "data": "2025-12-16",
@@ -73924,33 +76821,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-16",
-            "ID_LOJA": "5",
-            "faturamento": 6184.999980468303
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "9",
-            "faturamento": 6165.999939203262
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "7",
-            "faturamento": 11654.109963683177
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "8",
-            "faturamento": 5740.009998321533
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "20",
-            "faturamento": 12825.000240325928
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "6",
-            "faturamento": 4359.989940643311
+            "ID_LOJA": "21",
+            "faturamento": 6599.999938964844
         },
         {
             "data": "2025-12-16",
@@ -73959,33 +76831,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-16",
-            "ID_LOJA": "19",
-            "faturamento": 3399.989990234375
-        },
-        {
-            "data": "2025-12-16",
             "ID_LOJA": "18",
             "faturamento": 2224.969982147217
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "1",
-            "faturamento": 2504.9799918681383
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "11",
-            "faturamento": 2510.0
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "12",
-            "faturamento": 4340.0
-        },
-        {
-            "data": "2025-12-16",
-            "ID_LOJA": "13",
-            "faturamento": 440.0
         },
         {
             "data": "2025-12-16",
@@ -73994,8 +76841,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-16",
-            "ID_LOJA": "15",
-            "faturamento": 5080.0
+            "ID_LOJA": "17",
+            "faturamento": 1700.0
         },
         {
             "data": "2025-12-16",
@@ -74004,13 +76851,38 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-16",
-            "ID_LOJA": "17",
-            "faturamento": 1700.0
+            "ID_LOJA": "15",
+            "faturamento": 5080.0
         },
         {
             "data": "2025-12-16",
             "ID_LOJA": "14",
             "faturamento": 2260.0
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "13",
+            "faturamento": 440.0
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "12",
+            "faturamento": 4340.0
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "11",
+            "faturamento": 2510.0
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "19",
+            "faturamento": 3399.989990234375
+        },
+        {
+            "data": "2025-12-16",
+            "ID_LOJA": "1",
+            "faturamento": 2504.9799918681383
         },
         {
             "data": "2025-12-17",
@@ -74019,23 +76891,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-17",
-            "ID_LOJA": "9",
-            "faturamento": 2960.0
-        },
-        {
-            "data": "2025-12-17",
-            "ID_LOJA": "7",
-            "faturamento": 5589.9899978637695
-        },
-        {
-            "data": "2025-12-17",
-            "ID_LOJA": "6",
-            "faturamento": 3115.96999835968
-        },
-        {
-            "data": "2025-12-17",
-            "ID_LOJA": "5",
-            "faturamento": 9000.119995117188
+            "ID_LOJA": "3",
+            "faturamento": 1119.9899985790257
         },
         {
             "data": "2025-12-17",
@@ -74044,18 +76901,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-17",
-            "ID_LOJA": "3",
-            "faturamento": 1119.9899985790257
-        },
-        {
-            "data": "2025-12-17",
             "ID_LOJA": "20",
             "faturamento": 2799.989990234375
         },
         {
             "data": "2025-12-17",
-            "ID_LOJA": "16",
-            "faturamento": 2530.0
+            "ID_LOJA": "6",
+            "faturamento": 3115.96999835968
+        },
+        {
+            "data": "2025-12-17",
+            "ID_LOJA": "7",
+            "faturamento": 5589.9899978637695
+        },
+        {
+            "data": "2025-12-17",
+            "ID_LOJA": "5",
+            "faturamento": 9000.119995117188
+        },
+        {
+            "data": "2025-12-17",
+            "ID_LOJA": "2",
+            "faturamento": 1070.0
+        },
+        {
+            "data": "2025-12-17",
+            "ID_LOJA": "9",
+            "faturamento": 2960.0
         },
         {
             "data": "2025-12-17",
@@ -74094,18 +76966,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-17",
-            "ID_LOJA": "2",
-            "faturamento": 1070.0
-        },
-        {
-            "data": "2025-12-18",
-            "ID_LOJA": "2",
-            "faturamento": 6305.0000076293945
-        },
-        {
-            "data": "2025-12-18",
-            "ID_LOJA": "20",
-            "faturamento": 3029.979995727539
+            "ID_LOJA": "16",
+            "faturamento": 2530.0
         },
         {
             "data": "2025-12-18",
@@ -74119,13 +76981,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-18",
-            "ID_LOJA": "8",
-            "faturamento": 1640.0
-        },
-        {
-            "data": "2025-12-18",
-            "ID_LOJA": "6",
-            "faturamento": 8230.019947299268
+            "ID_LOJA": "5",
+            "faturamento": 7765.0000076293945
         },
         {
             "data": "2025-12-18",
@@ -74134,8 +76991,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-18",
-            "ID_LOJA": "5",
-            "faturamento": 7765.0000076293945
+            "ID_LOJA": "7",
+            "faturamento": 7570.0
+        },
+        {
+            "data": "2025-12-18",
+            "ID_LOJA": "8",
+            "faturamento": 1640.0
+        },
+        {
+            "data": "2025-12-18",
+            "ID_LOJA": "20",
+            "faturamento": 3029.979995727539
+        },
+        {
+            "data": "2025-12-18",
+            "ID_LOJA": "6",
+            "faturamento": 8230.019947299268
         },
         {
             "data": "2025-12-18",
@@ -74144,8 +77016,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-18",
-            "ID_LOJA": "7",
-            "faturamento": 7570.0
+            "ID_LOJA": "2",
+            "faturamento": 6305.0000076293945
         },
         {
             "data": "2025-12-18",
@@ -74194,6 +77066,11 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-19",
+            "ID_LOJA": "20",
+            "faturamento": 3379.97998046875
+        },
+        {
+            "data": "2025-12-19",
             "ID_LOJA": "21",
             "faturamento": 7050.0
         },
@@ -74209,13 +77086,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-19",
-            "ID_LOJA": "5",
-            "faturamento": 5904.990010986105
+            "ID_LOJA": "9",
+            "faturamento": 11619.00993896462
         },
         {
             "data": "2025-12-19",
-            "ID_LOJA": "9",
-            "faturamento": 11619.00993896462
+            "ID_LOJA": "6",
+            "faturamento": 1206.990005493164
         },
         {
             "data": "2025-12-19",
@@ -74229,13 +77106,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-19",
-            "ID_LOJA": "20",
-            "faturamento": 3379.97998046875
-        },
-        {
-            "data": "2025-12-19",
-            "ID_LOJA": "6",
-            "faturamento": 1206.990005493164
+            "ID_LOJA": "5",
+            "faturamento": 5904.990010986105
         },
         {
             "data": "2025-12-19",
@@ -74254,28 +77126,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-19",
-            "ID_LOJA": "10",
-            "faturamento": 2340.0
-        },
-        {
-            "data": "2025-12-19",
-            "ID_LOJA": "11",
-            "faturamento": 4710.0
-        },
-        {
-            "data": "2025-12-19",
-            "ID_LOJA": "12",
-            "faturamento": 9299.0
-        },
-        {
-            "data": "2025-12-19",
-            "ID_LOJA": "19",
-            "faturamento": 4199.979957580566
-        },
-        {
-            "data": "2025-12-19",
-            "ID_LOJA": "14",
-            "faturamento": 10240.009938964853
+            "ID_LOJA": "16",
+            "faturamento": 360.0
         },
         {
             "data": "2025-12-19",
@@ -74284,8 +77136,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-19",
-            "ID_LOJA": "16",
-            "faturamento": 360.0
+            "ID_LOJA": "14",
+            "faturamento": 10240.009938964853
         },
         {
             "data": "2025-12-19",
@@ -74293,34 +77145,29 @@ const dadosDashboard = {
             "faturamento": 10659.990001678467
         },
         {
-            "data": "2025-12-20",
-            "ID_LOJA": "21",
-            "faturamento": 11700.0
+            "data": "2025-12-19",
+            "ID_LOJA": "12",
+            "faturamento": 9299.0
+        },
+        {
+            "data": "2025-12-19",
+            "ID_LOJA": "11",
+            "faturamento": 4710.0
+        },
+        {
+            "data": "2025-12-19",
+            "ID_LOJA": "10",
+            "faturamento": 2340.0
+        },
+        {
+            "data": "2025-12-19",
+            "ID_LOJA": "19",
+            "faturamento": 4199.979957580566
         },
         {
             "data": "2025-12-20",
-            "ID_LOJA": "9",
-            "faturamento": 12044.010030994192
-        },
-        {
-            "data": "2025-12-20",
-            "ID_LOJA": "8",
-            "faturamento": 9611.0
-        },
-        {
-            "data": "2025-12-20",
-            "ID_LOJA": "7",
-            "faturamento": 17954.99996139435
-        },
-        {
-            "data": "2025-12-20",
-            "ID_LOJA": "6",
-            "faturamento": 5350.030076980358
-        },
-        {
-            "data": "2025-12-20",
-            "ID_LOJA": "5",
-            "faturamento": 3690.010000228882
+            "ID_LOJA": "3",
+            "faturamento": 4369.969976365566
         },
         {
             "data": "2025-12-20",
@@ -74329,8 +77176,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-20",
-            "ID_LOJA": "3",
-            "faturamento": 4369.969976365566
+            "ID_LOJA": "5",
+            "faturamento": 3690.010000228882
+        },
+        {
+            "data": "2025-12-20",
+            "ID_LOJA": "21",
+            "faturamento": 11700.0
+        },
+        {
+            "data": "2025-12-20",
+            "ID_LOJA": "7",
+            "faturamento": 17954.99996139435
+        },
+        {
+            "data": "2025-12-20",
+            "ID_LOJA": "8",
+            "faturamento": 9611.0
+        },
+        {
+            "data": "2025-12-20",
+            "ID_LOJA": "9",
+            "faturamento": 12044.010030994192
+        },
+        {
+            "data": "2025-12-20",
+            "ID_LOJA": "6",
+            "faturamento": 5350.030076980358
         },
         {
             "data": "2025-12-20",
@@ -74389,6 +77261,26 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-21",
+            "ID_LOJA": "5",
+            "faturamento": 1700.0
+        },
+        {
+            "data": "2025-12-21",
+            "ID_LOJA": "6",
+            "faturamento": 1100.0099868778784
+        },
+        {
+            "data": "2025-12-21",
+            "ID_LOJA": "7",
+            "faturamento": 2790.0
+        },
+        {
+            "data": "2025-12-21",
+            "ID_LOJA": "2",
+            "faturamento": 2710.0
+        },
+        {
+            "data": "2025-12-21",
             "ID_LOJA": "9",
             "faturamento": 9460.0
         },
@@ -74399,8 +77291,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-21",
-            "ID_LOJA": "5",
-            "faturamento": 1700.0
+            "ID_LOJA": "8",
+            "faturamento": 3934.0
         },
         {
             "data": "2025-12-21",
@@ -74409,28 +77301,13 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-21",
-            "ID_LOJA": "7",
-            "faturamento": 2790.0
-        },
-        {
-            "data": "2025-12-21",
-            "ID_LOJA": "8",
-            "faturamento": 3934.0
-        },
-        {
-            "data": "2025-12-21",
-            "ID_LOJA": "6",
-            "faturamento": 1100.0099868778784
-        },
-        {
-            "data": "2025-12-21",
-            "ID_LOJA": "2",
-            "faturamento": 2710.0
-        },
-        {
-            "data": "2025-12-21",
             "ID_LOJA": "15",
             "faturamento": 9540.029923705617
+        },
+        {
+            "data": "2025-12-21",
+            "ID_LOJA": "17",
+            "faturamento": 1339.9999809266303
         },
         {
             "data": "2025-12-21",
@@ -74463,14 +77340,9 @@ const dadosDashboard = {
             "faturamento": 9985.079988718033
         },
         {
-            "data": "2025-12-21",
-            "ID_LOJA": "17",
-            "faturamento": 1339.9999809266303
-        },
-        {
             "data": "2025-12-22",
-            "ID_LOJA": "21",
-            "faturamento": 9374.969970703125
+            "ID_LOJA": "4",
+            "faturamento": 11949.989944458022
         },
         {
             "data": "2025-12-22",
@@ -74479,33 +77351,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-22",
-            "ID_LOJA": "4",
-            "faturamento": 11949.989944458022
-        },
-        {
-            "data": "2025-12-22",
-            "ID_LOJA": "7",
-            "faturamento": 5564.9999601934105
-        },
-        {
-            "data": "2025-12-22",
-            "ID_LOJA": "6",
-            "faturamento": 18070.010001181858
-        },
-        {
-            "data": "2025-12-22",
-            "ID_LOJA": "20",
-            "faturamento": 5464.969940185547
-        },
-        {
-            "data": "2025-12-22",
-            "ID_LOJA": "8",
-            "faturamento": 7673.999984741211
-        },
-        {
-            "data": "2025-12-22",
-            "ID_LOJA": "9",
-            "faturamento": 5130.0
+            "ID_LOJA": "21",
+            "faturamento": 9374.969970703125
         },
         {
             "data": "2025-12-22",
@@ -74514,18 +77361,48 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-22",
+            "ID_LOJA": "8",
+            "faturamento": 7673.999984741211
+        },
+        {
+            "data": "2025-12-22",
+            "ID_LOJA": "7",
+            "faturamento": 5564.9999601934105
+        },
+        {
+            "data": "2025-12-22",
+            "ID_LOJA": "9",
+            "faturamento": 5130.0
+        },
+        {
+            "data": "2025-12-22",
+            "ID_LOJA": "20",
+            "faturamento": 5464.969940185547
+        },
+        {
+            "data": "2025-12-22",
+            "ID_LOJA": "6",
+            "faturamento": 18070.010001181858
+        },
+        {
+            "data": "2025-12-22",
             "ID_LOJA": "2",
             "faturamento": 7749.999959716806
         },
         {
             "data": "2025-12-22",
-            "ID_LOJA": "16",
-            "faturamento": 600.0
+            "ID_LOJA": "11",
+            "faturamento": 6210.0
         },
         {
             "data": "2025-12-22",
             "ID_LOJA": "17",
             "faturamento": 8458.019989013788
+        },
+        {
+            "data": "2025-12-22",
+            "ID_LOJA": "16",
+            "faturamento": 600.0
         },
         {
             "data": "2025-12-22",
@@ -74549,23 +77426,18 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-22",
-            "ID_LOJA": "11",
-            "faturamento": 6210.0
-        },
-        {
-            "data": "2025-12-22",
             "ID_LOJA": "10",
             "faturamento": 8749.0
         },
         {
             "data": "2025-12-22",
-            "ID_LOJA": "1",
-            "faturamento": 3106.9800391197205
+            "ID_LOJA": "19",
+            "faturamento": 6369.9499588012695
         },
         {
             "data": "2025-12-22",
-            "ID_LOJA": "19",
-            "faturamento": 6369.9499588012695
+            "ID_LOJA": "1",
+            "faturamento": 3106.9800391197205
         },
         {
             "data": "2025-12-23",
@@ -74579,18 +77451,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-23",
+            "ID_LOJA": "4",
+            "faturamento": 12539.899995803838
+        },
+        {
+            "data": "2025-12-23",
             "ID_LOJA": "5",
             "faturamento": 10049.990001678467
         },
         {
             "data": "2025-12-23",
-            "ID_LOJA": "7",
-            "faturamento": 9290.00006198883
+            "ID_LOJA": "8",
+            "faturamento": 1200.0
         },
         {
             "data": "2025-12-23",
-            "ID_LOJA": "8",
-            "faturamento": 1200.0
+            "ID_LOJA": "7",
+            "faturamento": 9290.00006198883
         },
         {
             "data": "2025-12-23",
@@ -74614,8 +77491,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-23",
-            "ID_LOJA": "4",
-            "faturamento": 12539.899995803838
+            "ID_LOJA": "10",
+            "faturamento": 5318.989990234375
         },
         {
             "data": "2025-12-23",
@@ -74624,33 +77501,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-23",
-            "ID_LOJA": "10",
-            "faturamento": 5318.989990234375
-        },
-        {
-            "data": "2025-12-23",
-            "ID_LOJA": "19",
-            "faturamento": 4499.9600830078125
-        },
-        {
-            "data": "2025-12-23",
-            "ID_LOJA": "11",
-            "faturamento": 1640.0
-        },
-        {
-            "data": "2025-12-23",
-            "ID_LOJA": "12",
-            "faturamento": 6800.00993896462
-        },
-        {
-            "data": "2025-12-23",
-            "ID_LOJA": "1",
-            "faturamento": 12218.929985046387
-        },
-        {
-            "data": "2025-12-23",
-            "ID_LOJA": "14",
-            "faturamento": 4590.0
+            "ID_LOJA": "16",
+            "faturamento": 6369.990001678467
         },
         {
             "data": "2025-12-23",
@@ -74659,13 +77511,63 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-23",
-            "ID_LOJA": "16",
-            "faturamento": 6369.990001678467
+            "ID_LOJA": "14",
+            "faturamento": 4590.0
         },
         {
             "data": "2025-12-23",
             "ID_LOJA": "13",
             "faturamento": 620.0
+        },
+        {
+            "data": "2025-12-23",
+            "ID_LOJA": "12",
+            "faturamento": 6800.00993896462
+        },
+        {
+            "data": "2025-12-23",
+            "ID_LOJA": "11",
+            "faturamento": 1640.0
+        },
+        {
+            "data": "2025-12-23",
+            "ID_LOJA": "1",
+            "faturamento": 12218.929985046387
+        },
+        {
+            "data": "2025-12-23",
+            "ID_LOJA": "19",
+            "faturamento": 4499.9600830078125
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "21",
+            "faturamento": 2450.0
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "3",
+            "faturamento": 7500.000232696533
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "4",
+            "faturamento": 9834.989959716797
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "8",
+            "faturamento": 3639.9999961853027
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "6",
+            "faturamento": 5699.0
+        },
+        {
+            "data": "2025-12-24",
+            "ID_LOJA": "7",
+            "faturamento": 13509.97998046875
         },
         {
             "data": "2025-12-24",
@@ -74679,38 +77581,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-24",
-            "ID_LOJA": "8",
-            "faturamento": 3639.9999961853027
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "7",
-            "faturamento": 13509.97998046875
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "6",
-            "faturamento": 5699.0
-        },
-        {
-            "data": "2025-12-24",
             "ID_LOJA": "5",
             "faturamento": 14669.959951171651
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "4",
-            "faturamento": 9834.989959716797
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "3",
-            "faturamento": 7500.000232696533
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "21",
-            "faturamento": 2450.0
         },
         {
             "data": "2025-12-24",
@@ -74719,8 +77591,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-24",
-            "ID_LOJA": "19",
-            "faturamento": 1499.989959716797
+            "ID_LOJA": "15",
+            "faturamento": 9430.000030517578
         },
         {
             "data": "2025-12-24",
@@ -74729,23 +77601,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-24",
-            "ID_LOJA": "10",
-            "faturamento": 2379.0
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "11",
-            "faturamento": 2820.0
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "12",
-            "faturamento": 5650.0
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "1",
-            "faturamento": 7423.699905395508
+            "ID_LOJA": "16",
+            "faturamento": 220.0
         },
         {
             "data": "2025-12-24",
@@ -74754,48 +77611,33 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-24",
-            "ID_LOJA": "15",
-            "faturamento": 9430.000030517578
-        },
-        {
-            "data": "2025-12-24",
-            "ID_LOJA": "16",
-            "faturamento": 220.0
-        },
-        {
-            "data": "2025-12-24",
             "ID_LOJA": "13",
             "faturamento": 1190.0
         },
         {
-            "data": "2025-12-26",
-            "ID_LOJA": "2",
-            "faturamento": 4699.999929199694
+            "data": "2025-12-24",
+            "ID_LOJA": "12",
+            "faturamento": 5650.0
         },
         {
-            "data": "2025-12-26",
-            "ID_LOJA": "9",
-            "faturamento": 8259.990001678467
+            "data": "2025-12-24",
+            "ID_LOJA": "11",
+            "faturamento": 2820.0
         },
         {
-            "data": "2025-12-26",
-            "ID_LOJA": "8",
-            "faturamento": 3200.0
+            "data": "2025-12-24",
+            "ID_LOJA": "10",
+            "faturamento": 2379.0
         },
         {
-            "data": "2025-12-26",
-            "ID_LOJA": "7",
-            "faturamento": 9099.989990234375
+            "data": "2025-12-24",
+            "ID_LOJA": "1",
+            "faturamento": 7423.699905395508
         },
         {
-            "data": "2025-12-26",
-            "ID_LOJA": "6",
-            "faturamento": 7230.0099427793175
-        },
-        {
-            "data": "2025-12-26",
-            "ID_LOJA": "5",
-            "faturamento": 10059.97998046875
+            "data": "2025-12-24",
+            "ID_LOJA": "19",
+            "faturamento": 1499.989959716797
         },
         {
             "data": "2025-12-26",
@@ -74804,23 +77646,48 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-26",
-            "ID_LOJA": "20",
-            "faturamento": 1349.989990234375
-        },
-        {
-            "data": "2025-12-26",
-            "ID_LOJA": "19",
-            "faturamento": 6629.839946746826
-        },
-        {
-            "data": "2025-12-26",
             "ID_LOJA": "21",
             "faturamento": 6099.949951171875
         },
         {
             "data": "2025-12-26",
-            "ID_LOJA": "16",
-            "faturamento": 4750.0099999997765
+            "ID_LOJA": "5",
+            "faturamento": 10059.97998046875
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "20",
+            "faturamento": 1349.989990234375
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "7",
+            "faturamento": 9099.989990234375
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "8",
+            "faturamento": 3200.0
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "9",
+            "faturamento": 8259.990001678467
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "6",
+            "faturamento": 7230.0099427793175
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "2",
+            "faturamento": 4699.999929199694
+        },
+        {
+            "data": "2025-12-26",
+            "ID_LOJA": "12",
+            "faturamento": 8670.019989013672
         },
         {
             "data": "2025-12-26",
@@ -74839,8 +77706,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-26",
-            "ID_LOJA": "12",
-            "faturamento": 8670.019989013672
+            "ID_LOJA": "19",
+            "faturamento": 6629.839946746826
         },
         {
             "data": "2025-12-26",
@@ -74859,18 +77726,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-26",
+            "ID_LOJA": "16",
+            "faturamento": 4750.0099999997765
+        },
+        {
+            "data": "2025-12-26",
             "ID_LOJA": "13",
             "faturamento": 1340.0
         },
         {
             "data": "2025-12-27",
-            "ID_LOJA": "9",
-            "faturamento": 5349.990020751953
+            "ID_LOJA": "2",
+            "faturamento": 2524.9999291996937
         },
         {
             "data": "2025-12-27",
-            "ID_LOJA": "2",
-            "faturamento": 2524.9999291996937
+            "ID_LOJA": "9",
+            "faturamento": 5349.990020751953
         },
         {
             "data": "2025-12-27",
@@ -74889,6 +77761,11 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-27",
+            "ID_LOJA": "4",
+            "faturamento": 4604.989997863765
+        },
+        {
+            "data": "2025-12-27",
             "ID_LOJA": "21",
             "faturamento": 6899.989990234375
         },
@@ -74901,11 +77778,6 @@ const dadosDashboard = {
             "data": "2025-12-27",
             "ID_LOJA": "19",
             "faturamento": 4960.949981689453
-        },
-        {
-            "data": "2025-12-27",
-            "ID_LOJA": "4",
-            "faturamento": 4604.989997863765
         },
         {
             "data": "2025-12-27",
@@ -74954,8 +77826,8 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-28",
-            "ID_LOJA": "9",
-            "faturamento": 1640.0
+            "ID_LOJA": "21",
+            "faturamento": 1300.0
         },
         {
             "data": "2025-12-28",
@@ -74979,23 +77851,23 @@ const dadosDashboard = {
         },
         {
             "data": "2025-12-28",
-            "ID_LOJA": "21",
-            "faturamento": 1300.0
-        },
-        {
-            "data": "2025-12-28",
             "ID_LOJA": "2",
             "faturamento": 60.0
         },
         {
             "data": "2025-12-28",
-            "ID_LOJA": "15",
-            "faturamento": 7484.0
+            "ID_LOJA": "9",
+            "faturamento": 1640.0
         },
         {
             "data": "2025-12-28",
             "ID_LOJA": "16",
             "faturamento": 1160.0
+        },
+        {
+            "data": "2025-12-28",
+            "ID_LOJA": "15",
+            "faturamento": 7484.0
         },
         {
             "data": "2025-12-28",
@@ -75024,8 +77896,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-01",
-            "ID_LOJA": "17",
-            "faturamento": 1474.9900016784668
+            "ID_LOJA": "9",
+            "faturamento": 4119.989985436201
         },
         {
             "data": "2026-02-01",
@@ -75039,8 +77911,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-01",
-            "ID_LOJA": "9",
-            "faturamento": 4119.989985436201
+            "ID_LOJA": "18",
+            "faturamento": 2339.990001678467
         },
         {
             "data": "2026-02-01",
@@ -75049,8 +77921,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-01",
-            "ID_LOJA": "18",
-            "faturamento": 2339.990001678467
+            "ID_LOJA": "17",
+            "faturamento": 1474.9900016784668
         },
         {
             "data": "2026-02-01",
@@ -75079,8 +77951,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-02",
-            "ID_LOJA": "9",
-            "faturamento": 4003.9999666213994
+            "ID_LOJA": "20",
+            "faturamento": 5038.4799880981445
         },
         {
             "data": "2026-02-02",
@@ -75109,6 +77981,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-02",
+            "ID_LOJA": "9",
+            "faturamento": 4003.9999666213994
+        },
+        {
+            "data": "2026-02-02",
             "ID_LOJA": "3",
             "faturamento": 2089.980072021484
         },
@@ -75124,8 +78001,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-02",
-            "ID_LOJA": "20",
-            "faturamento": 5038.4799880981445
+            "ID_LOJA": "15",
+            "faturamento": 2000.0
         },
         {
             "data": "2026-02-02",
@@ -75134,33 +78011,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-02",
-            "ID_LOJA": "19",
-            "faturamento": 3954.959976196289
-        },
-        {
-            "data": "2026-02-02",
-            "ID_LOJA": "10",
-            "faturamento": 1660.0
-        },
-        {
-            "data": "2026-02-02",
-            "ID_LOJA": "11",
-            "faturamento": 1117.0
-        },
-        {
-            "data": "2026-02-02",
-            "ID_LOJA": "12",
-            "faturamento": 1830.0
-        },
-        {
-            "data": "2026-02-02",
-            "ID_LOJA": "1",
-            "faturamento": 3278.289978027344
-        },
-        {
-            "data": "2026-02-02",
-            "ID_LOJA": "15",
-            "faturamento": 2000.0
+            "ID_LOJA": "17",
+            "faturamento": 1489.9900016784668
         },
         {
             "data": "2026-02-02",
@@ -75169,13 +78021,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-02",
-            "ID_LOJA": "17",
-            "faturamento": 1489.9900016784668
+            "ID_LOJA": "14",
+            "faturamento": 11520.0
         },
         {
             "data": "2026-02-02",
-            "ID_LOJA": "14",
-            "faturamento": 11520.0
+            "ID_LOJA": "12",
+            "faturamento": 1830.0
+        },
+        {
+            "data": "2026-02-02",
+            "ID_LOJA": "11",
+            "faturamento": 1117.0
+        },
+        {
+            "data": "2026-02-02",
+            "ID_LOJA": "10",
+            "faturamento": 1660.0
+        },
+        {
+            "data": "2026-02-02",
+            "ID_LOJA": "1",
+            "faturamento": 3278.289978027344
+        },
+        {
+            "data": "2026-02-02",
+            "ID_LOJA": "19",
+            "faturamento": 3954.959976196289
         },
         {
             "data": "2026-02-03",
@@ -75184,28 +78056,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-03",
-            "ID_LOJA": "9",
-            "faturamento": 180.0
-        },
-        {
-            "data": "2026-02-03",
-            "ID_LOJA": "8",
-            "faturamento": 4480.0
-        },
-        {
-            "data": "2026-02-03",
-            "ID_LOJA": "7",
-            "faturamento": 3449.989990234375
-        },
-        {
-            "data": "2026-02-03",
-            "ID_LOJA": "6",
-            "faturamento": 7019.969970703125
-        },
-        {
-            "data": "2026-02-03",
-            "ID_LOJA": "5",
-            "faturamento": 3100.0
+            "ID_LOJA": "3",
+            "faturamento": 89.9900016784668
         },
         {
             "data": "2026-02-03",
@@ -75214,23 +78066,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-03",
-            "ID_LOJA": "3",
-            "faturamento": 89.9900016784668
-        },
-        {
-            "data": "2026-02-03",
             "ID_LOJA": "20",
             "faturamento": 2849.989990234375
         },
         {
             "data": "2026-02-03",
-            "ID_LOJA": "11",
-            "faturamento": 89.98999786376953
+            "ID_LOJA": "6",
+            "faturamento": 7019.969970703125
         },
         {
             "data": "2026-02-03",
-            "ID_LOJA": "19",
-            "faturamento": 6589.9599609375
+            "ID_LOJA": "7",
+            "faturamento": 3449.989990234375
+        },
+        {
+            "data": "2026-02-03",
+            "ID_LOJA": "9",
+            "faturamento": 180.0
+        },
+        {
+            "data": "2026-02-03",
+            "ID_LOJA": "5",
+            "faturamento": 3100.0
+        },
+        {
+            "data": "2026-02-03",
+            "ID_LOJA": "2",
+            "faturamento": 2719.999999523163
+        },
+        {
+            "data": "2026-02-03",
+            "ID_LOJA": "8",
+            "faturamento": 4480.0
         },
         {
             "data": "2026-02-03",
@@ -75264,13 +78131,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-03",
+            "ID_LOJA": "11",
+            "faturamento": 89.98999786376953
+        },
+        {
+            "data": "2026-02-03",
             "ID_LOJA": "1",
             "faturamento": 2319.459930419922
         },
         {
             "data": "2026-02-03",
-            "ID_LOJA": "2",
-            "faturamento": 2719.999999523163
+            "ID_LOJA": "19",
+            "faturamento": 6589.9599609375
         },
         {
             "data": "2026-02-04",
@@ -75324,8 +78196,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-04",
-            "ID_LOJA": "1",
-            "faturamento": 4080.2499771118164
+            "ID_LOJA": "19",
+            "faturamento": 2599.97998046875
         },
         {
             "data": "2026-02-04",
@@ -75334,33 +78206,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-04",
-            "ID_LOJA": "17",
-            "faturamento": 3579.989990234375
-        },
-        {
-            "data": "2026-02-04",
-            "ID_LOJA": "16",
-            "faturamento": 1934.0000619888303
-        },
-        {
-            "data": "2026-02-04",
-            "ID_LOJA": "15",
-            "faturamento": 1930.0
-        },
-        {
-            "data": "2026-02-04",
-            "ID_LOJA": "14",
-            "faturamento": 5549.0
-        },
-        {
-            "data": "2026-02-04",
-            "ID_LOJA": "13",
-            "faturamento": 170.0
-        },
-        {
-            "data": "2026-02-04",
-            "ID_LOJA": "12",
-            "faturamento": 2316.0000324249268
+            "ID_LOJA": "10",
+            "faturamento": 3934.99999332428
         },
         {
             "data": "2026-02-04",
@@ -75369,28 +78216,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-04",
-            "ID_LOJA": "10",
-            "faturamento": 3934.99999332428
+            "ID_LOJA": "12",
+            "faturamento": 2316.0000324249268
         },
         {
             "data": "2026-02-04",
-            "ID_LOJA": "19",
-            "faturamento": 2599.97998046875
+            "ID_LOJA": "13",
+            "faturamento": 170.0
+        },
+        {
+            "data": "2026-02-04",
+            "ID_LOJA": "1",
+            "faturamento": 4080.2499771118164
+        },
+        {
+            "data": "2026-02-04",
+            "ID_LOJA": "15",
+            "faturamento": 1930.0
+        },
+        {
+            "data": "2026-02-04",
+            "ID_LOJA": "16",
+            "faturamento": 1934.0000619888303
+        },
+        {
+            "data": "2026-02-04",
+            "ID_LOJA": "17",
+            "faturamento": 3579.989990234375
+        },
+        {
+            "data": "2026-02-04",
+            "ID_LOJA": "14",
+            "faturamento": 5549.0
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "21",
-            "faturamento": 2109.989999771118
+            "ID_LOJA": "2",
+            "faturamento": 3049.999939441681
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "3",
-            "faturamento": 1129.9899740219116
-        },
-        {
-            "data": "2026-02-05",
-            "ID_LOJA": "4",
-            "faturamento": 6818.880020141603
+            "ID_LOJA": "8",
+            "faturamento": 1836.0
         },
         {
             "data": "2026-02-05",
@@ -75404,13 +78271,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "7",
-            "faturamento": 1919.9900074005127
+            "ID_LOJA": "5",
+            "faturamento": 2500.0
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "8",
-            "faturamento": 1836.0
+            "ID_LOJA": "4",
+            "faturamento": 6818.880020141603
+        },
+        {
+            "data": "2026-02-05",
+            "ID_LOJA": "3",
+            "faturamento": 1129.9899740219116
+        },
+        {
+            "data": "2026-02-05",
+            "ID_LOJA": "21",
+            "faturamento": 2109.989999771118
         },
         {
             "data": "2026-02-05",
@@ -75419,28 +78296,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "5",
-            "faturamento": 2500.0
+            "ID_LOJA": "19",
+            "faturamento": 39.9900016784668
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "2",
-            "faturamento": 3049.999939441681
-        },
-        {
-            "data": "2026-02-05",
-            "ID_LOJA": "16",
-            "faturamento": 3120.0
-        },
-        {
-            "data": "2026-02-05",
-            "ID_LOJA": "18",
-            "faturamento": 5191.8900146484375
+            "ID_LOJA": "7",
+            "faturamento": 1919.9900074005127
         },
         {
             "data": "2026-02-05",
             "ID_LOJA": "17",
             "faturamento": 1339.9799995422363
+        },
+        {
+            "data": "2026-02-05",
+            "ID_LOJA": "16",
+            "faturamento": 3120.0
         },
         {
             "data": "2026-02-05",
@@ -75479,8 +78351,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-05",
-            "ID_LOJA": "19",
-            "faturamento": 39.9900016784668
+            "ID_LOJA": "18",
+            "faturamento": 5191.8900146484375
         },
         {
             "data": "2026-02-06",
@@ -75499,18 +78371,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-06",
-            "ID_LOJA": "5",
-            "faturamento": 2685.0
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "7",
-            "faturamento": 11499.949928283691
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "8",
-            "faturamento": 1639.9899978637695
+            "ID_LOJA": "4",
+            "faturamento": 9099.999984741211
         },
         {
             "data": "2026-02-06",
@@ -75519,13 +78381,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-06",
+            "ID_LOJA": "6",
+            "faturamento": 12228.009957351125
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "8",
+            "faturamento": 1639.9899978637695
+        },
+        {
+            "data": "2026-02-06",
             "ID_LOJA": "2",
             "faturamento": 119.9900016784668
         },
         {
             "data": "2026-02-06",
-            "ID_LOJA": "6",
-            "faturamento": 12228.009957351125
+            "ID_LOJA": "5",
+            "faturamento": 2685.0
         },
         {
             "data": "2026-02-06",
@@ -75534,8 +78406,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-06",
-            "ID_LOJA": "4",
-            "faturamento": 9099.999984741211
+            "ID_LOJA": "7",
+            "faturamento": 11499.949928283691
         },
         {
             "data": "2026-02-06",
@@ -75544,33 +78416,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-06",
-            "ID_LOJA": "10",
-            "faturamento": 1710.0
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "11",
-            "faturamento": 4060.0
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "12",
-            "faturamento": 12328.999938964844
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "13",
-            "faturamento": 305.0
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "1",
-            "faturamento": 5503.970019102097
-        },
-        {
-            "data": "2026-02-06",
-            "ID_LOJA": "14",
-            "faturamento": 2410.0
+            "ID_LOJA": "16",
+            "faturamento": 460.0
         },
         {
             "data": "2026-02-06",
@@ -75579,8 +78426,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-06",
-            "ID_LOJA": "16",
-            "faturamento": 460.0
+            "ID_LOJA": "14",
+            "faturamento": 2410.0
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "13",
+            "faturamento": 305.0
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "12",
+            "faturamento": 12328.999938964844
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "11",
+            "faturamento": 4060.0
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "10",
+            "faturamento": 1710.0
+        },
+        {
+            "data": "2026-02-06",
+            "ID_LOJA": "1",
+            "faturamento": 5503.970019102097
         },
         {
             "data": "2026-02-06",
@@ -75589,33 +78461,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-07",
-            "ID_LOJA": "2",
-            "faturamento": 5840.000045061111
-        },
-        {
-            "data": "2026-02-07",
-            "ID_LOJA": "9",
-            "faturamento": 1809.9899826049805
-        },
-        {
-            "data": "2026-02-07",
-            "ID_LOJA": "8",
-            "faturamento": 4815.0
-        },
-        {
-            "data": "2026-02-07",
-            "ID_LOJA": "7",
-            "faturamento": 18206.97999191285
-        },
-        {
-            "data": "2026-02-07",
-            "ID_LOJA": "6",
-            "faturamento": 3720.0
-        },
-        {
-            "data": "2026-02-07",
-            "ID_LOJA": "4",
-            "faturamento": 9759.98998260498
+            "ID_LOJA": "21",
+            "faturamento": 1204.0
         },
         {
             "data": "2026-02-07",
@@ -75624,13 +78471,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-07",
-            "ID_LOJA": "21",
-            "faturamento": 1204.0
+            "ID_LOJA": "4",
+            "faturamento": 9759.98998260498
         },
         {
             "data": "2026-02-07",
-            "ID_LOJA": "19",
-            "faturamento": 4714.969970703125
+            "ID_LOJA": "9",
+            "faturamento": 1809.9899826049805
+        },
+        {
+            "data": "2026-02-07",
+            "ID_LOJA": "6",
+            "faturamento": 3720.0
+        },
+        {
+            "data": "2026-02-07",
+            "ID_LOJA": "7",
+            "faturamento": 18206.97999191285
+        },
+        {
+            "data": "2026-02-07",
+            "ID_LOJA": "8",
+            "faturamento": 4815.0
+        },
+        {
+            "data": "2026-02-07",
+            "ID_LOJA": "2",
+            "faturamento": 5840.000045061111
         },
         {
             "data": "2026-02-07",
@@ -75639,13 +78506,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-07",
-            "ID_LOJA": "17",
-            "faturamento": 159.9799995422363
+            "ID_LOJA": "19",
+            "faturamento": 4714.969970703125
         },
         {
             "data": "2026-02-07",
             "ID_LOJA": "16",
             "faturamento": 2270.0
+        },
+        {
+            "data": "2026-02-07",
+            "ID_LOJA": "17",
+            "faturamento": 159.9799995422363
         },
         {
             "data": "2026-02-07",
@@ -75689,8 +78561,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-08",
-            "ID_LOJA": "9",
-            "faturamento": 170.0
+            "ID_LOJA": "5",
+            "faturamento": 2590.0
         },
         {
             "data": "2026-02-08",
@@ -75709,8 +78581,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-08",
-            "ID_LOJA": "5",
-            "faturamento": 2590.0
+            "ID_LOJA": "9",
+            "faturamento": 170.0
         },
         {
             "data": "2026-02-08",
@@ -75719,13 +78591,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-08",
-            "ID_LOJA": "16",
-            "faturamento": 30.0
+            "ID_LOJA": "14",
+            "faturamento": 6487.0
         },
         {
             "data": "2026-02-08",
-            "ID_LOJA": "14",
-            "faturamento": 6487.0
+            "ID_LOJA": "15",
+            "faturamento": 190.0
         },
         {
             "data": "2026-02-08",
@@ -75744,13 +78616,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-08",
-            "ID_LOJA": "15",
-            "faturamento": 190.0
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "21",
-            "faturamento": 9495.979982376099
+            "ID_LOJA": "16",
+            "faturamento": 30.0
         },
         {
             "data": "2026-02-09",
@@ -75794,38 +78661,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-09",
-            "ID_LOJA": "14",
-            "faturamento": 9150.010001907125
+            "ID_LOJA": "2",
+            "faturamento": 2480.0
         },
         {
             "data": "2026-02-09",
-            "ID_LOJA": "19",
-            "faturamento": 7399.950012207031
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "11",
-            "faturamento": 3456.0
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "12",
-            "faturamento": 680.0
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "15",
-            "faturamento": 1679.9900016784668
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "1",
-            "faturamento": 464.9900016784668
-        },
-        {
-            "data": "2026-02-09",
-            "ID_LOJA": "17",
-            "faturamento": 1299.9899978637695
+            "ID_LOJA": "21",
+            "faturamento": 9495.979982376099
         },
         {
             "data": "2026-02-09",
@@ -75834,53 +78676,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-09",
+            "ID_LOJA": "17",
+            "faturamento": 1299.9899978637695
+        },
+        {
+            "data": "2026-02-09",
             "ID_LOJA": "16",
             "faturamento": 810.0
         },
         {
             "data": "2026-02-09",
-            "ID_LOJA": "2",
-            "faturamento": 2480.0
+            "ID_LOJA": "15",
+            "faturamento": 1679.9900016784668
         },
         {
-            "data": "2026-02-10",
-            "ID_LOJA": "9",
-            "faturamento": 8420.0
+            "data": "2026-02-09",
+            "ID_LOJA": "14",
+            "faturamento": 9150.010001907125
         },
         {
-            "data": "2026-02-10",
-            "ID_LOJA": "20",
-            "faturamento": 1920.0
+            "data": "2026-02-09",
+            "ID_LOJA": "12",
+            "faturamento": 680.0
         },
         {
-            "data": "2026-02-10",
-            "ID_LOJA": "8",
-            "faturamento": 5315.0
+            "data": "2026-02-09",
+            "ID_LOJA": "11",
+            "faturamento": 3456.0
         },
         {
-            "data": "2026-02-10",
-            "ID_LOJA": "7",
-            "faturamento": 7548.0
+            "data": "2026-02-09",
+            "ID_LOJA": "1",
+            "faturamento": 464.9900016784668
         },
         {
-            "data": "2026-02-10",
-            "ID_LOJA": "6",
-            "faturamento": 3289.99993682839
-        },
-        {
-            "data": "2026-02-10",
-            "ID_LOJA": "5",
-            "faturamento": 1070.0
-        },
-        {
-            "data": "2026-02-10",
-            "ID_LOJA": "4",
-            "faturamento": 4609.999992370605
-        },
-        {
-            "data": "2026-02-10",
-            "ID_LOJA": "3",
-            "faturamento": 2709.0
+            "data": "2026-02-09",
+            "ID_LOJA": "19",
+            "faturamento": 7399.950012207031
         },
         {
             "data": "2026-02-10",
@@ -75889,8 +78721,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-10",
+            "ID_LOJA": "3",
+            "faturamento": 2709.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "4",
+            "faturamento": 4609.999992370605
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "5",
+            "faturamento": 1070.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "9",
+            "faturamento": 8420.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "7",
+            "faturamento": 7548.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "8",
+            "faturamento": 5315.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "20",
+            "faturamento": 1920.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "6",
+            "faturamento": 3289.99993682839
+        },
+        {
+            "data": "2026-02-10",
             "ID_LOJA": "2",
             "faturamento": 4210.0
+        },
+        {
+            "data": "2026-02-10",
+            "ID_LOJA": "11",
+            "faturamento": 462.0
         },
         {
             "data": "2026-02-10",
@@ -75921,11 +78798,6 @@ const dadosDashboard = {
             "data": "2026-02-10",
             "ID_LOJA": "12",
             "faturamento": 3532.0
-        },
-        {
-            "data": "2026-02-10",
-            "ID_LOJA": "11",
-            "faturamento": 462.0
         },
         {
             "data": "2026-02-10",
@@ -75964,8 +78836,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "20",
-            "faturamento": 4639.990009307861
+            "ID_LOJA": "8",
+            "faturamento": 7039.000045835972
         },
         {
             "data": "2026-02-11",
@@ -75974,13 +78846,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "8",
-            "faturamento": 7039.000045835972
+            "ID_LOJA": "9",
+            "faturamento": 2009.9999961853027
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "9",
-            "faturamento": 2009.9999961853027
+            "ID_LOJA": "20",
+            "faturamento": 4639.990009307861
         },
         {
             "data": "2026-02-11",
@@ -75994,8 +78866,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "17",
-            "faturamento": 4800.0
+            "ID_LOJA": "11",
+            "faturamento": 11558.0
         },
         {
             "data": "2026-02-11",
@@ -76004,8 +78876,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "11",
-            "faturamento": 11558.0
+            "ID_LOJA": "1",
+            "faturamento": 50.0
         },
         {
             "data": "2026-02-11",
@@ -76019,8 +78891,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "1",
-            "faturamento": 50.0
+            "ID_LOJA": "19",
+            "faturamento": 69.98999786376953
         },
         {
             "data": "2026-02-11",
@@ -76034,8 +78906,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-11",
-            "ID_LOJA": "19",
-            "faturamento": 69.98999786376953
+            "ID_LOJA": "17",
+            "faturamento": 4800.0
         },
         {
             "data": "2026-02-11",
@@ -76044,13 +78916,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-12",
-            "ID_LOJA": "21",
-            "faturamento": 5090.0
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "9",
-            "faturamento": 2300.0
+            "ID_LOJA": "2",
+            "faturamento": 389.98999786376953
         },
         {
             "data": "2026-02-12",
@@ -76084,8 +78951,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-12",
-            "ID_LOJA": "2",
-            "faturamento": 389.98999786376953
+            "ID_LOJA": "21",
+            "faturamento": 5090.0
+        },
+        {
+            "data": "2026-02-12",
+            "ID_LOJA": "9",
+            "faturamento": 2300.0
         },
         {
             "data": "2026-02-12",
@@ -76094,33 +78966,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-12",
-            "ID_LOJA": "18",
-            "faturamento": 1172.9799919128418
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "11",
-            "faturamento": 220.0
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "12",
-            "faturamento": 1530.0
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "13",
-            "faturamento": 2479.989990234375
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "1",
-            "faturamento": 463.99999618530273
-        },
-        {
-            "data": "2026-02-12",
-            "ID_LOJA": "15",
-            "faturamento": 4150.0
+            "ID_LOJA": "17",
+            "faturamento": 4429.979991912842
         },
         {
             "data": "2026-02-12",
@@ -76129,8 +78976,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-12",
-            "ID_LOJA": "17",
-            "faturamento": 4429.979991912842
+            "ID_LOJA": "15",
+            "faturamento": 4150.0
         },
         {
             "data": "2026-02-12",
@@ -76138,39 +78985,29 @@ const dadosDashboard = {
             "faturamento": 4671.0
         },
         {
-            "data": "2026-02-13",
-            "ID_LOJA": "2",
-            "faturamento": 2240.0100000000093
+            "data": "2026-02-12",
+            "ID_LOJA": "13",
+            "faturamento": 2479.989990234375
         },
         {
-            "data": "2026-02-13",
-            "ID_LOJA": "8",
-            "faturamento": 4649.999985218048
+            "data": "2026-02-12",
+            "ID_LOJA": "12",
+            "faturamento": 1530.0
         },
         {
-            "data": "2026-02-13",
-            "ID_LOJA": "7",
-            "faturamento": 10581.979990005493
+            "data": "2026-02-12",
+            "ID_LOJA": "11",
+            "faturamento": 220.0
         },
         {
-            "data": "2026-02-13",
-            "ID_LOJA": "6",
-            "faturamento": 2146.0
+            "data": "2026-02-12",
+            "ID_LOJA": "1",
+            "faturamento": 463.99999618530273
         },
         {
-            "data": "2026-02-13",
-            "ID_LOJA": "9",
-            "faturamento": 1430.0
-        },
-        {
-            "data": "2026-02-13",
-            "ID_LOJA": "3",
-            "faturamento": 4178.989991188049
-        },
-        {
-            "data": "2026-02-13",
-            "ID_LOJA": "21",
-            "faturamento": 4869.969980239868
+            "data": "2026-02-12",
+            "ID_LOJA": "18",
+            "faturamento": 1172.9799919128418
         },
         {
             "data": "2026-02-13",
@@ -76179,8 +79016,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-13",
-            "ID_LOJA": "18",
-            "faturamento": 7014.890024185181
+            "ID_LOJA": "21",
+            "faturamento": 4869.969980239868
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "3",
+            "faturamento": 4178.989991188049
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "9",
+            "faturamento": 1430.0
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "6",
+            "faturamento": 2146.0
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "7",
+            "faturamento": 10581.979990005493
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "8",
+            "faturamento": 4649.999985218048
         },
         {
             "data": "2026-02-13",
@@ -76189,8 +79051,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-13",
+            "ID_LOJA": "2",
+            "faturamento": 2240.0100000000093
+        },
+        {
+            "data": "2026-02-13",
             "ID_LOJA": "16",
             "faturamento": 540.0
+        },
+        {
+            "data": "2026-02-13",
+            "ID_LOJA": "17",
+            "faturamento": 2352.0
         },
         {
             "data": "2026-02-13",
@@ -76229,8 +79101,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-13",
-            "ID_LOJA": "17",
-            "faturamento": 2352.0
+            "ID_LOJA": "18",
+            "faturamento": 7014.890024185181
         },
         {
             "data": "2026-02-14",
@@ -76249,23 +79121,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-14",
-            "ID_LOJA": "8",
-            "faturamento": 3569.9900758564468
-        },
-        {
-            "data": "2026-02-14",
-            "ID_LOJA": "6",
-            "faturamento": 3668.0
-        },
-        {
-            "data": "2026-02-14",
-            "ID_LOJA": "7",
-            "faturamento": 9478.98999786377
-        },
-        {
-            "data": "2026-02-14",
-            "ID_LOJA": "2",
-            "faturamento": 25.0
+            "ID_LOJA": "5",
+            "faturamento": 1220.0
         },
         {
             "data": "2026-02-14",
@@ -76274,8 +79131,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-14",
-            "ID_LOJA": "5",
-            "faturamento": 1220.0
+            "ID_LOJA": "7",
+            "faturamento": 9478.98999786377
+        },
+        {
+            "data": "2026-02-14",
+            "ID_LOJA": "8",
+            "faturamento": 3569.9900758564468
+        },
+        {
+            "data": "2026-02-14",
+            "ID_LOJA": "2",
+            "faturamento": 25.0
+        },
+        {
+            "data": "2026-02-14",
+            "ID_LOJA": "6",
+            "faturamento": 3668.0
         },
         {
             "data": "2026-02-14",
@@ -76419,13 +79291,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-16",
+            "ID_LOJA": "4",
+            "faturamento": 4739.9799957275445
+        },
+        {
+            "data": "2026-02-16",
             "ID_LOJA": "2",
             "faturamento": 80.0
         },
         {
             "data": "2026-02-16",
-            "ID_LOJA": "4",
-            "faturamento": 4739.9799957275445
+            "ID_LOJA": "14",
+            "faturamento": 6755.010028907796
         },
         {
             "data": "2026-02-16",
@@ -76436,11 +79313,6 @@ const dadosDashboard = {
             "data": "2026-02-16",
             "ID_LOJA": "16",
             "faturamento": 2769.0
-        },
-        {
-            "data": "2026-02-16",
-            "ID_LOJA": "14",
-            "faturamento": 6755.010028907796
         },
         {
             "data": "2026-02-16",
@@ -76494,6 +79366,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-17",
+            "ID_LOJA": "18",
+            "faturamento": 1967.910034179688
+        },
+        {
+            "data": "2026-02-17",
             "ID_LOJA": "16",
             "faturamento": 1770.0
         },
@@ -76513,21 +79390,6 @@ const dadosDashboard = {
             "faturamento": 2350.0
         },
         {
-            "data": "2026-02-17",
-            "ID_LOJA": "18",
-            "faturamento": 1967.910034179688
-        },
-        {
-            "data": "2026-02-18",
-            "ID_LOJA": "20",
-            "faturamento": 65.98999786376953
-        },
-        {
-            "data": "2026-02-18",
-            "ID_LOJA": "9",
-            "faturamento": 1850.0
-        },
-        {
             "data": "2026-02-18",
             "ID_LOJA": "8",
             "faturamento": 5251.790004253387
@@ -76539,8 +79401,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-18",
+            "ID_LOJA": "9",
+            "faturamento": 1850.0
+        },
+        {
+            "data": "2026-02-18",
             "ID_LOJA": "3",
             "faturamento": 3070.989990234375
+        },
+        {
+            "data": "2026-02-18",
+            "ID_LOJA": "20",
+            "faturamento": 65.98999786376953
         },
         {
             "data": "2026-02-18",
@@ -76584,11 +79456,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "20",
-            "faturamento": 3090.0
-        },
-        {
-            "data": "2026-02-19",
             "ID_LOJA": "9",
             "faturamento": 7448.999988175929
         },
@@ -76629,8 +79496,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "2",
-            "faturamento": 7330.0
+            "ID_LOJA": "20",
+            "faturamento": 3090.0
         },
         {
             "data": "2026-02-19",
@@ -76639,8 +79506,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "18",
-            "faturamento": 229.9899997711182
+            "ID_LOJA": "2",
+            "faturamento": 7330.0
+        },
+        {
+            "data": "2026-02-19",
+            "ID_LOJA": "17",
+            "faturamento": 3989.989990234375
+        },
+        {
+            "data": "2026-02-19",
+            "ID_LOJA": "1",
+            "faturamento": 2125.009998321533
         },
         {
             "data": "2026-02-19",
@@ -76659,13 +79536,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "13",
-            "faturamento": 80.0
+            "ID_LOJA": "18",
+            "faturamento": 229.9899997711182
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "1",
-            "faturamento": 2125.009998321533
+            "ID_LOJA": "14",
+            "faturamento": 3731.7999647855754
         },
         {
             "data": "2026-02-19",
@@ -76679,18 +79556,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-19",
-            "ID_LOJA": "17",
-            "faturamento": 3989.989990234375
-        },
-        {
-            "data": "2026-02-19",
-            "ID_LOJA": "14",
-            "faturamento": 3731.7999647855754
-        },
-        {
-            "data": "2026-02-20",
-            "ID_LOJA": "20",
-            "faturamento": 1019.989990234375
+            "ID_LOJA": "13",
+            "faturamento": 80.0
         },
         {
             "data": "2026-02-20",
@@ -76744,6 +79611,16 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-20",
+            "ID_LOJA": "20",
+            "faturamento": 1019.989990234375
+        },
+        {
+            "data": "2026-02-20",
+            "ID_LOJA": "17",
+            "faturamento": 3008.989999771118
+        },
+        {
+            "data": "2026-02-20",
             "ID_LOJA": "18",
             "faturamento": 3554.959991455078
         },
@@ -76764,13 +79641,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-20",
-            "ID_LOJA": "13",
-            "faturamento": 1010.0
+            "ID_LOJA": "1",
+            "faturamento": 129.9900016784668
         },
         {
             "data": "2026-02-20",
-            "ID_LOJA": "1",
-            "faturamento": 129.9900016784668
+            "ID_LOJA": "14",
+            "faturamento": 2350.0
         },
         {
             "data": "2026-02-20",
@@ -76784,13 +79661,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-20",
-            "ID_LOJA": "17",
-            "faturamento": 3008.989999771118
-        },
-        {
-            "data": "2026-02-20",
-            "ID_LOJA": "14",
-            "faturamento": 2350.0
+            "ID_LOJA": "13",
+            "faturamento": 1010.0
         },
         {
             "data": "2026-02-21",
@@ -76804,13 +79676,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-21",
-            "ID_LOJA": "9",
-            "faturamento": 7559.999968737364
+            "ID_LOJA": "7",
+            "faturamento": 4117.979991912842
         },
         {
             "data": "2026-02-21",
-            "ID_LOJA": "6",
-            "faturamento": 9198.980005264282
+            "ID_LOJA": "9",
+            "faturamento": 7559.999968737364
         },
         {
             "data": "2026-02-21",
@@ -76821,11 +79693,6 @@ const dadosDashboard = {
             "data": "2026-02-21",
             "ID_LOJA": "4",
             "faturamento": 6239.990003585815
-        },
-        {
-            "data": "2026-02-21",
-            "ID_LOJA": "3",
-            "faturamento": 1287.0
         },
         {
             "data": "2026-02-21",
@@ -76844,13 +79711,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-21",
-            "ID_LOJA": "7",
-            "faturamento": 4117.979991912842
+            "ID_LOJA": "6",
+            "faturamento": 9198.980005264282
         },
         {
             "data": "2026-02-21",
             "ID_LOJA": "17",
             "faturamento": 120.0
+        },
+        {
+            "data": "2026-02-21",
+            "ID_LOJA": "18",
+            "faturamento": 3519.969997406006
         },
         {
             "data": "2026-02-21",
@@ -76874,8 +79746,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-21",
-            "ID_LOJA": "18",
-            "faturamento": 3519.969997406006
+            "ID_LOJA": "3",
+            "faturamento": 1287.0
+        },
+        {
+            "data": "2026-02-21",
+            "ID_LOJA": "16",
+            "faturamento": 340.0
         },
         {
             "data": "2026-02-21",
@@ -76886,11 +79763,6 @@ const dadosDashboard = {
             "data": "2026-02-21",
             "ID_LOJA": "15",
             "faturamento": 2980.0
-        },
-        {
-            "data": "2026-02-21",
-            "ID_LOJA": "16",
-            "faturamento": 340.0
         },
         {
             "data": "2026-02-21",
@@ -76959,38 +79831,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "20",
-            "faturamento": 59.98999786376953
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "8",
-            "faturamento": 1269.989960074425
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "7",
-            "faturamento": 4529.989990234375
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "6",
-            "faturamento": 6233.989998817444
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "4",
-            "faturamento": 6350.0
-        },
-        {
-            "data": "2026-02-23",
             "ID_LOJA": "3",
             "faturamento": 3739.0
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "9",
-            "faturamento": 6074.000061988831
         },
         {
             "data": "2026-02-23",
@@ -76999,8 +79841,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "2",
-            "faturamento": 50.0
+            "ID_LOJA": "4",
+            "faturamento": 6350.0
         },
         {
             "data": "2026-02-23",
@@ -77009,23 +79851,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "18",
-            "faturamento": 7467.97998046875
+            "ID_LOJA": "7",
+            "faturamento": 4529.989990234375
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "19",
-            "faturamento": 2599.97998046875
+            "ID_LOJA": "8",
+            "faturamento": 1269.989960074425
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "1",
-            "faturamento": 135.0
+            "ID_LOJA": "20",
+            "faturamento": 59.98999786376953
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "10",
-            "faturamento": 1529.9999940395355
+            "ID_LOJA": "9",
+            "faturamento": 6074.000061988831
+        },
+        {
+            "data": "2026-02-23",
+            "ID_LOJA": "6",
+            "faturamento": 6233.989998817444
+        },
+        {
+            "data": "2026-02-23",
+            "ID_LOJA": "2",
+            "faturamento": 50.0
         },
         {
             "data": "2026-02-23",
@@ -77034,13 +79886,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-23",
-            "ID_LOJA": "14",
-            "faturamento": 3560.000029325485
-        },
-        {
-            "data": "2026-02-23",
-            "ID_LOJA": "16",
-            "faturamento": 1810.0
+            "ID_LOJA": "18",
+            "faturamento": 7467.97998046875
         },
         {
             "data": "2026-02-23",
@@ -77049,43 +79896,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-23",
+            "ID_LOJA": "16",
+            "faturamento": 1810.0
+        },
+        {
+            "data": "2026-02-23",
+            "ID_LOJA": "14",
+            "faturamento": 3560.000029325485
+        },
+        {
+            "data": "2026-02-23",
             "ID_LOJA": "12",
             "faturamento": 5943.0
         },
         {
-            "data": "2026-02-24",
-            "ID_LOJA": "20",
-            "faturamento": 1500.0
+            "data": "2026-02-23",
+            "ID_LOJA": "10",
+            "faturamento": 1529.9999940395355
         },
         {
-            "data": "2026-02-24",
-            "ID_LOJA": "8",
-            "faturamento": 2700.0
+            "data": "2026-02-23",
+            "ID_LOJA": "1",
+            "faturamento": 135.0
         },
         {
-            "data": "2026-02-24",
-            "ID_LOJA": "7",
-            "faturamento": 109.9900016784668
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "6",
-            "faturamento": 3903.9899978637695
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "5",
-            "faturamento": 1170.0099999997765
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "4",
-            "faturamento": 6496.0
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "3",
-            "faturamento": 4243.0
+            "data": "2026-02-23",
+            "ID_LOJA": "19",
+            "faturamento": 2599.97998046875
         },
         {
             "data": "2026-02-24",
@@ -77094,8 +79931,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-24",
+            "ID_LOJA": "3",
+            "faturamento": 4243.0
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "4",
+            "faturamento": 6496.0
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "8",
+            "faturamento": 2700.0
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "6",
+            "faturamento": 3903.9899978637695
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "7",
+            "faturamento": 109.9900016784668
+        },
+        {
+            "data": "2026-02-24",
             "ID_LOJA": "9",
             "faturamento": 7842.000020861626
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "5",
+            "faturamento": 1170.0099999997765
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "20",
+            "faturamento": 1500.0
         },
         {
             "data": "2026-02-24",
@@ -77109,28 +79981,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-24",
-            "ID_LOJA": "17",
-            "faturamento": 8349.969982147217
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "16",
-            "faturamento": 4500.0
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "15",
-            "faturamento": 1410.0
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "14",
-            "faturamento": 1217.9899978637695
-        },
-        {
-            "data": "2026-02-24",
-            "ID_LOJA": "13",
-            "faturamento": 430.0
+            "ID_LOJA": "11",
+            "faturamento": 3120.0
         },
         {
             "data": "2026-02-24",
@@ -77139,8 +79991,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-24",
-            "ID_LOJA": "11",
-            "faturamento": 3120.0
+            "ID_LOJA": "13",
+            "faturamento": 430.0
         },
         {
             "data": "2026-02-24",
@@ -77148,19 +80000,29 @@ const dadosDashboard = {
             "faturamento": 1170.0
         },
         {
+            "data": "2026-02-24",
+            "ID_LOJA": "15",
+            "faturamento": 1410.0
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "16",
+            "faturamento": 4500.0
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "17",
+            "faturamento": 8349.969982147217
+        },
+        {
+            "data": "2026-02-24",
+            "ID_LOJA": "14",
+            "faturamento": 1217.9899978637695
+        },
+        {
             "data": "2026-02-25",
             "ID_LOJA": "21",
             "faturamento": 7189.980003356934
-        },
-        {
-            "data": "2026-02-25",
-            "ID_LOJA": "3",
-            "faturamento": 3276.990001678467
-        },
-        {
-            "data": "2026-02-25",
-            "ID_LOJA": "4",
-            "faturamento": 13976.800164222717
         },
         {
             "data": "2026-02-25",
@@ -77174,8 +80036,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-25",
-            "ID_LOJA": "20",
-            "faturamento": 2974.9900493621826
+            "ID_LOJA": "7",
+            "faturamento": 1260.000015258789
         },
         {
             "data": "2026-02-25",
@@ -77184,13 +80046,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-25",
+            "ID_LOJA": "4",
+            "faturamento": 13976.800164222717
+        },
+        {
+            "data": "2026-02-25",
+            "ID_LOJA": "3",
+            "faturamento": 3276.990001678467
+        },
+        {
+            "data": "2026-02-25",
+            "ID_LOJA": "20",
+            "faturamento": 2974.9900493621826
+        },
+        {
+            "data": "2026-02-25",
             "ID_LOJA": "19",
             "faturamento": 1234.989990234375
         },
         {
             "data": "2026-02-25",
-            "ID_LOJA": "7",
-            "faturamento": 1260.000015258789
+            "ID_LOJA": "18",
+            "faturamento": 3415.939987182617
         },
         {
             "data": "2026-02-25",
@@ -77228,11 +80105,6 @@ const dadosDashboard = {
             "faturamento": 15.0
         },
         {
-            "data": "2026-02-25",
-            "ID_LOJA": "18",
-            "faturamento": 3415.939987182617
-        },
-        {
             "data": "2026-02-26",
             "ID_LOJA": "20",
             "faturamento": 5169.9999923706055
@@ -77249,8 +80121,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-26",
-            "ID_LOJA": "7",
-            "faturamento": 1649.990020751953
+            "ID_LOJA": "9",
+            "faturamento": 3692.0
         },
         {
             "data": "2026-02-26",
@@ -77259,13 +80131,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-26",
-            "ID_LOJA": "2",
-            "faturamento": 5930.000030040741
+            "ID_LOJA": "7",
+            "faturamento": 1649.990020751953
         },
         {
             "data": "2026-02-26",
-            "ID_LOJA": "9",
-            "faturamento": 3692.0
+            "ID_LOJA": "2",
+            "faturamento": 5930.000030040741
         },
         {
             "data": "2026-02-26",
@@ -77279,8 +80151,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-26",
-            "ID_LOJA": "15",
-            "faturamento": 1330.0
+            "ID_LOJA": "10",
+            "faturamento": 7527.000040948391
         },
         {
             "data": "2026-02-26",
@@ -77291,6 +80163,11 @@ const dadosDashboard = {
             "data": "2026-02-26",
             "ID_LOJA": "16",
             "faturamento": 5903.999945938587
+        },
+        {
+            "data": "2026-02-26",
+            "ID_LOJA": "15",
+            "faturamento": 1330.0
         },
         {
             "data": "2026-02-26",
@@ -77314,11 +80191,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-26",
-            "ID_LOJA": "10",
-            "faturamento": 7527.000040948391
-        },
-        {
-            "data": "2026-02-26",
             "ID_LOJA": "1",
             "faturamento": 59.99999809265137
         },
@@ -77329,13 +80201,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "21",
-            "faturamento": 2800.0
+            "ID_LOJA": "20",
+            "faturamento": 70.0
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "20",
-            "faturamento": 70.0
+            "ID_LOJA": "21",
+            "faturamento": 2800.0
         },
         {
             "data": "2026-02-27",
@@ -77344,13 +80216,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "2",
-            "faturamento": 1100.0
+            "ID_LOJA": "4",
+            "faturamento": 4900.0
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "5",
-            "faturamento": 1431.0
+            "ID_LOJA": "9",
+            "faturamento": 1377.0
         },
         {
             "data": "2026-02-27",
@@ -77364,8 +80236,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "4",
-            "faturamento": 4900.0
+            "ID_LOJA": "2",
+            "faturamento": 1100.0
+        },
+        {
+            "data": "2026-02-27",
+            "ID_LOJA": "5",
+            "faturamento": 1431.0
         },
         {
             "data": "2026-02-27",
@@ -77374,8 +80251,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "9",
-            "faturamento": 1377.0
+            "ID_LOJA": "1",
+            "faturamento": 207.01000308990479
         },
         {
             "data": "2026-02-27",
@@ -77384,33 +80261,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "1",
-            "faturamento": 207.01000308990479
-        },
-        {
-            "data": "2026-02-27",
-            "ID_LOJA": "10",
-            "faturamento": 1270.0
-        },
-        {
-            "data": "2026-02-27",
-            "ID_LOJA": "11",
-            "faturamento": 6080.0
-        },
-        {
-            "data": "2026-02-27",
-            "ID_LOJA": "12",
-            "faturamento": 420.0
-        },
-        {
-            "data": "2026-02-27",
-            "ID_LOJA": "18",
-            "faturamento": 3500.989999771118
-        },
-        {
-            "data": "2026-02-27",
-            "ID_LOJA": "14",
-            "faturamento": 9590.009999999776
+            "ID_LOJA": "16",
+            "faturamento": 8668.989944458008
         },
         {
             "data": "2026-02-27",
@@ -77419,8 +80271,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-27",
-            "ID_LOJA": "16",
-            "faturamento": 8668.989944458008
+            "ID_LOJA": "14",
+            "faturamento": 9590.009999999776
         },
         {
             "data": "2026-02-27",
@@ -77428,44 +80280,24 @@ const dadosDashboard = {
             "faturamento": 2155.0
         },
         {
-            "data": "2026-02-28",
-            "ID_LOJA": "2",
-            "faturamento": 1230.0
+            "data": "2026-02-27",
+            "ID_LOJA": "12",
+            "faturamento": 420.0
         },
         {
-            "data": "2026-02-28",
-            "ID_LOJA": "9",
-            "faturamento": 9905.000061035156
+            "data": "2026-02-27",
+            "ID_LOJA": "11",
+            "faturamento": 6080.0
         },
         {
-            "data": "2026-02-28",
-            "ID_LOJA": "8",
-            "faturamento": 1910.0000171065333
+            "data": "2026-02-27",
+            "ID_LOJA": "10",
+            "faturamento": 1270.0
         },
         {
-            "data": "2026-02-28",
-            "ID_LOJA": "7",
-            "faturamento": 15948.909807205198
-        },
-        {
-            "data": "2026-02-28",
-            "ID_LOJA": "6",
-            "faturamento": 12029.989990234375
-        },
-        {
-            "data": "2026-02-28",
-            "ID_LOJA": "5",
-            "faturamento": 30.0
-        },
-        {
-            "data": "2026-02-28",
-            "ID_LOJA": "3",
-            "faturamento": 9203.989990234375
-        },
-        {
-            "data": "2026-02-28",
-            "ID_LOJA": "21",
-            "faturamento": 13169.989997863775
+            "data": "2026-02-27",
+            "ID_LOJA": "18",
+            "faturamento": 3500.989999771118
         },
         {
             "data": "2026-02-28",
@@ -77474,8 +80306,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-28",
-            "ID_LOJA": "19",
-            "faturamento": 5269.959957122803
+            "ID_LOJA": "21",
+            "faturamento": 13169.989997863775
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "3",
+            "faturamento": 9203.989990234375
         },
         {
             "data": "2026-02-28",
@@ -77484,8 +80321,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-28",
+            "ID_LOJA": "8",
+            "faturamento": 1910.0000171065333
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "6",
+            "faturamento": 12029.989990234375
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "7",
+            "faturamento": 15948.909807205198
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "9",
+            "faturamento": 9905.000061035156
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "5",
+            "faturamento": 30.0
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "2",
+            "faturamento": 1230.0
+        },
+        {
+            "data": "2026-02-28",
             "ID_LOJA": "17",
             "faturamento": 5759.959995269775
+        },
+        {
+            "data": "2026-02-28",
+            "ID_LOJA": "18",
+            "faturamento": 4799.990100860596
         },
         {
             "data": "2026-02-28",
@@ -77529,18 +80401,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-02-28",
-            "ID_LOJA": "18",
-            "faturamento": 4799.990100860596
+            "ID_LOJA": "19",
+            "faturamento": 5269.959957122803
+        },
+        {
+            "data": "2026-03-01",
+            "ID_LOJA": "17",
+            "faturamento": 1589.989990234375
         },
         {
             "data": "2026-03-01",
             "ID_LOJA": "9",
             "faturamento": 1969.9999376535418
-        },
-        {
-            "data": "2026-03-01",
-            "ID_LOJA": "8",
-            "faturamento": 10.0
         },
         {
             "data": "2026-03-01",
@@ -77554,18 +80426,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-01",
-            "ID_LOJA": "17",
-            "faturamento": 1589.989990234375
+            "ID_LOJA": "16",
+            "faturamento": 129.9900016784668
         },
         {
             "data": "2026-03-01",
-            "ID_LOJA": "15",
-            "faturamento": 2250.0
+            "ID_LOJA": "8",
+            "faturamento": 10.0
         },
         {
             "data": "2026-03-01",
             "ID_LOJA": "14",
             "faturamento": 2389.9999828338623
+        },
+        {
+            "data": "2026-03-01",
+            "ID_LOJA": "11",
+            "faturamento": 1370.0
+        },
+        {
+            "data": "2026-03-01",
+            "ID_LOJA": "15",
+            "faturamento": 2250.0
         },
         {
             "data": "2026-03-01",
@@ -77578,19 +80460,9 @@ const dadosDashboard = {
             "faturamento": 97.0
         },
         {
-            "data": "2026-03-01",
-            "ID_LOJA": "11",
-            "faturamento": 1370.0
-        },
-        {
-            "data": "2026-03-01",
-            "ID_LOJA": "16",
-            "faturamento": 129.9900016784668
-        },
-        {
             "data": "2026-03-02",
-            "ID_LOJA": "2",
-            "faturamento": 2200.0
+            "ID_LOJA": "3",
+            "faturamento": 6088.979948997498
         },
         {
             "data": "2026-03-02",
@@ -77619,13 +80491,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-02",
-            "ID_LOJA": "3",
-            "faturamento": 6088.979948997498
+            "ID_LOJA": "21",
+            "faturamento": 4549.97998046875
         },
         {
             "data": "2026-03-02",
-            "ID_LOJA": "21",
-            "faturamento": 4549.97998046875
+            "ID_LOJA": "2",
+            "faturamento": 2200.0
         },
         {
             "data": "2026-03-02",
@@ -77634,38 +80506,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-02",
-            "ID_LOJA": "12",
-            "faturamento": 5792.0
-        },
-        {
-            "data": "2026-03-02",
             "ID_LOJA": "17",
             "faturamento": 7459.959854125977
-        },
-        {
-            "data": "2026-03-02",
-            "ID_LOJA": "10",
-            "faturamento": 2320.0
-        },
-        {
-            "data": "2026-03-02",
-            "ID_LOJA": "11",
-            "faturamento": 1400.0
-        },
-        {
-            "data": "2026-03-02",
-            "ID_LOJA": "13",
-            "faturamento": 180.0
-        },
-        {
-            "data": "2026-03-02",
-            "ID_LOJA": "18",
-            "faturamento": 3159.990005493164
-        },
-        {
-            "data": "2026-03-02",
-            "ID_LOJA": "15",
-            "faturamento": 1762.0
         },
         {
             "data": "2026-03-02",
@@ -77674,28 +80516,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-02",
+            "ID_LOJA": "15",
+            "faturamento": 1762.0
+        },
+        {
+            "data": "2026-03-02",
             "ID_LOJA": "14",
             "faturamento": 11469.000091582537
         },
         {
-            "data": "2026-03-03",
-            "ID_LOJA": "9",
-            "faturamento": 9699.899963378906
+            "data": "2026-03-02",
+            "ID_LOJA": "13",
+            "faturamento": 180.0
         },
         {
-            "data": "2026-03-03",
-            "ID_LOJA": "2",
-            "faturamento": 1380.0
+            "data": "2026-03-02",
+            "ID_LOJA": "12",
+            "faturamento": 5792.0
         },
         {
-            "data": "2026-03-03",
-            "ID_LOJA": "7",
-            "faturamento": 3264.999969482422
+            "data": "2026-03-02",
+            "ID_LOJA": "11",
+            "faturamento": 1400.0
         },
         {
-            "data": "2026-03-03",
-            "ID_LOJA": "6",
-            "faturamento": 1250.0
+            "data": "2026-03-02",
+            "ID_LOJA": "10",
+            "faturamento": 2320.0
+        },
+        {
+            "data": "2026-03-02",
+            "ID_LOJA": "18",
+            "faturamento": 3159.990005493164
         },
         {
             "data": "2026-03-03",
@@ -77704,18 +80556,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "4",
-            "faturamento": 9214.279907226562
-        },
-        {
-            "data": "2026-03-03",
             "ID_LOJA": "3",
             "faturamento": 1199.989990234375
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "21",
-            "faturamento": 3549.989990234375
+            "ID_LOJA": "4",
+            "faturamento": 9214.279907226562
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "6",
+            "faturamento": 1250.0
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "13",
+            "faturamento": 1340.0
         },
         {
             "data": "2026-03-03",
@@ -77724,8 +80581,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "19",
-            "faturamento": 8899.9599609375
+            "ID_LOJA": "9",
+            "faturamento": 9699.899963378906
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "21",
+            "faturamento": 3549.989990234375
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "7",
+            "faturamento": 3264.999969482422
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "2",
+            "faturamento": 1380.0
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "10",
+            "faturamento": 2643.0000066384673
+        },
+        {
+            "data": "2026-03-03",
+            "ID_LOJA": "18",
+            "faturamento": 3900.0000038146973
         },
         {
             "data": "2026-03-03",
@@ -77749,11 +80631,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "13",
-            "faturamento": 1340.0
-        },
-        {
-            "data": "2026-03-03",
             "ID_LOJA": "12",
             "faturamento": 6409.9799880981445
         },
@@ -77764,18 +80641,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "10",
-            "faturamento": 2643.0000066384673
-        },
-        {
-            "data": "2026-03-03",
             "ID_LOJA": "1",
             "faturamento": 5090.9599609375
         },
         {
             "data": "2026-03-03",
-            "ID_LOJA": "18",
-            "faturamento": 3900.0000038146973
+            "ID_LOJA": "19",
+            "faturamento": 8899.9599609375
         },
         {
             "data": "2026-03-04",
@@ -77784,23 +80656,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "3",
-            "faturamento": 3249.9900226593018
-        },
-        {
-            "data": "2026-03-04",
             "ID_LOJA": "4",
             "faturamento": 2950.0
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "2",
-            "faturamento": 3050.0099694817327
+            "ID_LOJA": "3",
+            "faturamento": 3249.9900226593018
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "7",
-            "faturamento": 1736.0
+            "ID_LOJA": "5",
+            "faturamento": 10.0
+        },
+        {
+            "data": "2026-03-04",
+            "ID_LOJA": "13",
+            "faturamento": 2200.0
         },
         {
             "data": "2026-03-04",
@@ -77814,23 +80686,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "5",
-            "faturamento": 10.0
-        },
-        {
-            "data": "2026-03-04",
-            "ID_LOJA": "19",
-            "faturamento": 1199.989990234375
-        },
-        {
-            "data": "2026-03-04",
             "ID_LOJA": "20",
             "faturamento": 60.0
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "17",
-            "faturamento": 6480.009998321533
+            "ID_LOJA": "7",
+            "faturamento": 1736.0
+        },
+        {
+            "data": "2026-03-04",
+            "ID_LOJA": "2",
+            "faturamento": 3050.0099694817327
         },
         {
             "data": "2026-03-04",
@@ -77839,33 +80706,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-04",
-            "ID_LOJA": "11",
-            "faturamento": 2000.0
-        },
-        {
-            "data": "2026-03-04",
-            "ID_LOJA": "12",
-            "faturamento": 6711.009999046102
-        },
-        {
-            "data": "2026-03-04",
-            "ID_LOJA": "13",
-            "faturamento": 2200.0
-        },
-        {
-            "data": "2026-03-04",
-            "ID_LOJA": "1",
-            "faturamento": 1100.0
-        },
-        {
-            "data": "2026-03-04",
-            "ID_LOJA": "15",
-            "faturamento": 3390.0
-        },
-        {
-            "data": "2026-03-04",
             "ID_LOJA": "18",
             "faturamento": 3135.010005492717
+        },
+        {
+            "data": "2026-03-04",
+            "ID_LOJA": "17",
+            "faturamento": 6480.009998321533
         },
         {
             "data": "2026-03-04",
@@ -77874,43 +80721,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-04",
+            "ID_LOJA": "15",
+            "faturamento": 3390.0
+        },
+        {
+            "data": "2026-03-04",
             "ID_LOJA": "14",
             "faturamento": 7991.0
         },
         {
-            "data": "2026-03-05",
-            "ID_LOJA": "21",
-            "faturamento": 3599.97998046875
+            "data": "2026-03-04",
+            "ID_LOJA": "1",
+            "faturamento": 1100.0
         },
         {
-            "data": "2026-03-05",
-            "ID_LOJA": "9",
-            "faturamento": 6329.660033226014
+            "data": "2026-03-04",
+            "ID_LOJA": "12",
+            "faturamento": 6711.009999046102
         },
         {
-            "data": "2026-03-05",
-            "ID_LOJA": "8",
-            "faturamento": 30.0
+            "data": "2026-03-04",
+            "ID_LOJA": "11",
+            "faturamento": 2000.0
         },
         {
-            "data": "2026-03-05",
-            "ID_LOJA": "7",
-            "faturamento": 4160.0
-        },
-        {
-            "data": "2026-03-05",
-            "ID_LOJA": "6",
-            "faturamento": 1622.0
-        },
-        {
-            "data": "2026-03-05",
-            "ID_LOJA": "5",
-            "faturamento": 2629.989999771118
-        },
-        {
-            "data": "2026-03-05",
-            "ID_LOJA": "4",
-            "faturamento": 5400.0
+            "data": "2026-03-04",
+            "ID_LOJA": "19",
+            "faturamento": 1199.989990234375
         },
         {
             "data": "2026-03-05",
@@ -77919,13 +80756,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-05",
+            "ID_LOJA": "4",
+            "faturamento": 5400.0
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "5",
+            "faturamento": 2629.989999771118
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "9",
+            "faturamento": 6329.660033226014
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "7",
+            "faturamento": 4160.0
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "8",
+            "faturamento": 30.0
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "21",
+            "faturamento": 3599.97998046875
+        },
+        {
+            "data": "2026-03-05",
+            "ID_LOJA": "6",
+            "faturamento": 1622.0
+        },
+        {
+            "data": "2026-03-05",
             "ID_LOJA": "2",
             "faturamento": 3158.9999692535494
         },
         {
             "data": "2026-03-05",
-            "ID_LOJA": "19",
-            "faturamento": 1599.989990234375
+            "ID_LOJA": "16",
+            "faturamento": 1742.0
         },
         {
             "data": "2026-03-05",
@@ -77936,11 +80808,6 @@ const dadosDashboard = {
             "data": "2026-03-05",
             "ID_LOJA": "17",
             "faturamento": 4499.990005493397
-        },
-        {
-            "data": "2026-03-05",
-            "ID_LOJA": "16",
-            "faturamento": 1742.0
         },
         {
             "data": "2026-03-05",
@@ -77973,14 +80840,14 @@ const dadosDashboard = {
             "faturamento": 3232.989990234375
         },
         {
-            "data": "2026-03-06",
-            "ID_LOJA": "20",
-            "faturamento": 49.99999618530273
+            "data": "2026-03-05",
+            "ID_LOJA": "19",
+            "faturamento": 1599.989990234375
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "21",
-            "faturamento": 8699.97998046875
+            "ID_LOJA": "5",
+            "faturamento": 3709.9799880981445
         },
         {
             "data": "2026-03-06",
@@ -77994,13 +80861,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "8",
-            "faturamento": 90.0
+            "ID_LOJA": "6",
+            "faturamento": 7120.0
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "6",
-            "faturamento": 7120.0
+            "ID_LOJA": "21",
+            "faturamento": 8699.97998046875
+        },
+        {
+            "data": "2026-03-06",
+            "ID_LOJA": "8",
+            "faturamento": 90.0
         },
         {
             "data": "2026-03-06",
@@ -78009,18 +80881,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "2",
-            "faturamento": 2009.999969482422
-        },
-        {
-            "data": "2026-03-06",
-            "ID_LOJA": "5",
-            "faturamento": 3709.9799880981445
-        },
-        {
-            "data": "2026-03-06",
-            "ID_LOJA": "19",
-            "faturamento": 1999.989990234375
+            "ID_LOJA": "20",
+            "faturamento": 49.99999618530273
         },
         {
             "data": "2026-03-06",
@@ -78029,33 +80891,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "17",
-            "faturamento": 7417.160003662109
+            "ID_LOJA": "2",
+            "faturamento": 2009.999969482422
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "16",
-            "faturamento": 10688.00993896497
+            "ID_LOJA": "19",
+            "faturamento": 1999.989990234375
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "15",
-            "faturamento": 3765.000002384186
-        },
-        {
-            "data": "2026-03-06",
-            "ID_LOJA": "14",
-            "faturamento": 7338.3001136779785
-        },
-        {
-            "data": "2026-03-06",
-            "ID_LOJA": "13",
-            "faturamento": 310.0
-        },
-        {
-            "data": "2026-03-06",
-            "ID_LOJA": "12",
-            "faturamento": 11900.980019785464
+            "ID_LOJA": "18",
+            "faturamento": 4644.969997406006
         },
         {
             "data": "2026-03-06",
@@ -78064,8 +80911,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-06",
+            "ID_LOJA": "12",
+            "faturamento": 11900.980019785464
+        },
+        {
+            "data": "2026-03-06",
+            "ID_LOJA": "13",
+            "faturamento": 310.0
+        },
+        {
+            "data": "2026-03-06",
+            "ID_LOJA": "14",
+            "faturamento": 7338.3001136779785
+        },
+        {
+            "data": "2026-03-06",
             "ID_LOJA": "10",
             "faturamento": 2469.989990234375
+        },
+        {
+            "data": "2026-03-06",
+            "ID_LOJA": "16",
+            "faturamento": 10688.00993896497
         },
         {
             "data": "2026-03-06",
@@ -78074,38 +80941,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-06",
-            "ID_LOJA": "18",
-            "faturamento": 4644.969997406006
+            "ID_LOJA": "17",
+            "faturamento": 7417.160003662109
         },
         {
-            "data": "2026-03-07",
-            "ID_LOJA": "21",
-            "faturamento": 14029.979997634888
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "3",
-            "faturamento": 3081.0
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "4",
-            "faturamento": 13819.999992370605
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "9",
-            "faturamento": 7129.989990234375
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "6",
-            "faturamento": 11306.5
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "8",
-            "faturamento": 8941.990027189255
+            "data": "2026-03-06",
+            "ID_LOJA": "15",
+            "faturamento": 3765.000002384186
         },
         {
             "data": "2026-03-07",
@@ -78114,13 +80956,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-07",
-            "ID_LOJA": "5",
-            "faturamento": 5775.859994888306
+            "ID_LOJA": "9",
+            "faturamento": 7129.989990234375
         },
         {
             "data": "2026-03-07",
-            "ID_LOJA": "2",
-            "faturamento": 1780.0
+            "ID_LOJA": "8",
+            "faturamento": 8941.990027189255
         },
         {
             "data": "2026-03-07",
@@ -78129,38 +80971,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-07",
+            "ID_LOJA": "6",
+            "faturamento": 11306.5
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "5",
+            "faturamento": 5775.859994888306
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "4",
+            "faturamento": 13819.999992370605
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "3",
+            "faturamento": 3081.0
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "21",
+            "faturamento": 14029.979997634888
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "2",
+            "faturamento": 1780.0
+        },
+        {
+            "data": "2026-03-07",
             "ID_LOJA": "18",
             "faturamento": 6211.959983825684
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "11",
-            "faturamento": 13831.990291833876
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "12",
-            "faturamento": 8917.990020751953
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "13",
-            "faturamento": 2385.0
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "10",
-            "faturamento": 3185.000030517578
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "15",
-            "faturamento": 5870.6000020504
-        },
-        {
-            "data": "2026-03-07",
-            "ID_LOJA": "16",
-            "faturamento": 5474.0
         },
         {
             "data": "2026-03-07",
@@ -78169,8 +81011,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-07",
+            "ID_LOJA": "16",
+            "faturamento": 5474.0
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "15",
+            "faturamento": 5870.6000020504
+        },
+        {
+            "data": "2026-03-07",
             "ID_LOJA": "14",
             "faturamento": 6909.200025558472
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "13",
+            "faturamento": 2385.0
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "12",
+            "faturamento": 8917.990020751953
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "11",
+            "faturamento": 13831.990291833876
+        },
+        {
+            "data": "2026-03-07",
+            "ID_LOJA": "10",
+            "faturamento": 3185.000030517578
         },
         {
             "data": "2026-03-07",
@@ -78181,11 +81053,6 @@ const dadosDashboard = {
             "data": "2026-03-08",
             "ID_LOJA": "21",
             "faturamento": 3600.0
-        },
-        {
-            "data": "2026-03-08",
-            "ID_LOJA": "9",
-            "faturamento": 1949.9999370574953
         },
         {
             "data": "2026-03-08",
@@ -78219,28 +81086,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-08",
+            "ID_LOJA": "9",
+            "faturamento": 1949.9999370574953
+        },
+        {
+            "data": "2026-03-08",
             "ID_LOJA": "16",
             "faturamento": 210.0
-        },
-        {
-            "data": "2026-03-08",
-            "ID_LOJA": "15",
-            "faturamento": 4108.000000953674
-        },
-        {
-            "data": "2026-03-08",
-            "ID_LOJA": "14",
-            "faturamento": 7489.989894628525
-        },
-        {
-            "data": "2026-03-08",
-            "ID_LOJA": "13",
-            "faturamento": 5935.0
-        },
-        {
-            "data": "2026-03-08",
-            "ID_LOJA": "12",
-            "faturamento": 5185.0
         },
         {
             "data": "2026-03-08",
@@ -78249,38 +81101,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-08",
+            "ID_LOJA": "12",
+            "faturamento": 5185.0
+        },
+        {
+            "data": "2026-03-08",
             "ID_LOJA": "17",
             "faturamento": 1355.0
         },
         {
-            "data": "2026-03-09",
-            "ID_LOJA": "21",
-            "faturamento": 13764.979999542236
+            "data": "2026-03-08",
+            "ID_LOJA": "14",
+            "faturamento": 7489.989894628525
         },
         {
-            "data": "2026-03-09",
-            "ID_LOJA": "3",
-            "faturamento": 150.0
+            "data": "2026-03-08",
+            "ID_LOJA": "15",
+            "faturamento": 4108.000000953674
         },
         {
-            "data": "2026-03-09",
-            "ID_LOJA": "4",
-            "faturamento": 8035.9999923706055
-        },
-        {
-            "data": "2026-03-09",
-            "ID_LOJA": "5",
-            "faturamento": 3876.0
-        },
-        {
-            "data": "2026-03-09",
-            "ID_LOJA": "8",
-            "faturamento": 2330.0
-        },
-        {
-            "data": "2026-03-09",
-            "ID_LOJA": "7",
-            "faturamento": 11048.990036010742
+            "data": "2026-03-08",
+            "ID_LOJA": "13",
+            "faturamento": 5935.0
         },
         {
             "data": "2026-03-09",
@@ -78289,18 +81131,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "20",
-            "faturamento": 6400.000045776367
-        },
-        {
-            "data": "2026-03-09",
-            "ID_LOJA": "6",
-            "faturamento": 3894.0
-        },
-        {
-            "data": "2026-03-09",
-            "ID_LOJA": "19",
-            "faturamento": 7094.949951171875
+            "ID_LOJA": "8",
+            "faturamento": 2330.0
         },
         {
             "data": "2026-03-09",
@@ -78309,43 +81141,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "18",
-            "faturamento": 1899.989990234375
+            "ID_LOJA": "6",
+            "faturamento": 3894.0
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "10",
-            "faturamento": 2300.0
+            "ID_LOJA": "5",
+            "faturamento": 3876.0
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "11",
-            "faturamento": 20518.97999572754
+            "ID_LOJA": "4",
+            "faturamento": 8035.9999923706055
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "12",
-            "faturamento": 625.0
+            "ID_LOJA": "3",
+            "faturamento": 150.0
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "13",
-            "faturamento": 400.0
+            "ID_LOJA": "21",
+            "faturamento": 13764.979999542236
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "1",
-            "faturamento": 1600.0
+            "ID_LOJA": "20",
+            "faturamento": 6400.000045776367
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "15",
-            "faturamento": 5960.000060558319
+            "ID_LOJA": "19",
+            "faturamento": 7094.949951171875
         },
         {
             "data": "2026-03-09",
-            "ID_LOJA": "16",
-            "faturamento": 6370.0
+            "ID_LOJA": "7",
+            "faturamento": 11048.990036010742
         },
         {
             "data": "2026-03-09",
@@ -78354,48 +81186,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-09",
+            "ID_LOJA": "16",
+            "faturamento": 6370.0
+        },
+        {
+            "data": "2026-03-09",
+            "ID_LOJA": "15",
+            "faturamento": 5960.000060558319
+        },
+        {
+            "data": "2026-03-09",
             "ID_LOJA": "14",
             "faturamento": 7510.0
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "20",
-            "faturamento": 2250.0000610351562
+            "data": "2026-03-09",
+            "ID_LOJA": "13",
+            "faturamento": 400.0
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "9",
-            "faturamento": 4049.000002145767
+            "data": "2026-03-09",
+            "ID_LOJA": "12",
+            "faturamento": 625.0
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "8",
-            "faturamento": 3483.989999771118
+            "data": "2026-03-09",
+            "ID_LOJA": "11",
+            "faturamento": 20518.97999572754
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "7",
-            "faturamento": 2595.9899978637695
+            "data": "2026-03-09",
+            "ID_LOJA": "10",
+            "faturamento": 2300.0
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "6",
-            "faturamento": 50.0
+            "data": "2026-03-09",
+            "ID_LOJA": "1",
+            "faturamento": 1600.0
         },
         {
-            "data": "2026-03-10",
-            "ID_LOJA": "5",
-            "faturamento": 30.0
-        },
-        {
-            "data": "2026-03-10",
-            "ID_LOJA": "4",
-            "faturamento": 6245.999984741211
-        },
-        {
-            "data": "2026-03-10",
-            "ID_LOJA": "3",
-            "faturamento": 7032.010005950928
+            "data": "2026-03-09",
+            "ID_LOJA": "18",
+            "faturamento": 1899.989990234375
         },
         {
             "data": "2026-03-10",
@@ -78404,13 +81236,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-10",
+            "ID_LOJA": "3",
+            "faturamento": 7032.010005950928
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "4",
+            "faturamento": 6245.999984741211
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "9",
+            "faturamento": 4049.000002145767
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "6",
+            "faturamento": 50.0
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "7",
+            "faturamento": 2595.9899978637695
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "8",
+            "faturamento": 3483.989999771118
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "20",
+            "faturamento": 2250.0000610351562
+        },
+        {
+            "data": "2026-03-10",
+            "ID_LOJA": "5",
+            "faturamento": 30.0
+        },
+        {
+            "data": "2026-03-10",
             "ID_LOJA": "2",
             "faturamento": 4548.999985218048
         },
         {
             "data": "2026-03-10",
-            "ID_LOJA": "18",
-            "faturamento": 2859.989990234375
+            "ID_LOJA": "15",
+            "faturamento": 2500.0
         },
         {
             "data": "2026-03-10",
@@ -78454,43 +81326,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-10",
-            "ID_LOJA": "15",
-            "faturamento": 2500.0
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "4",
-            "faturamento": 4169.999984741211
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "3",
-            "faturamento": 1328.0
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "21",
-            "faturamento": 9889.969970703125
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "9",
-            "faturamento": 3240.080040309578
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "7",
-            "faturamento": 6262.989938735962
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "8",
-            "faturamento": 10781.99994879961
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "2",
-            "faturamento": 4820.0
+            "ID_LOJA": "18",
+            "faturamento": 2859.989990234375
         },
         {
             "data": "2026-03-11",
@@ -78499,8 +81336,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-11",
-            "ID_LOJA": "19",
-            "faturamento": 79.98999786376953
+            "ID_LOJA": "3",
+            "faturamento": 1328.0
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "4",
+            "faturamento": 4169.999984741211
         },
         {
             "data": "2026-03-11",
@@ -78509,13 +81351,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-11",
-            "ID_LOJA": "17",
-            "faturamento": 950.0
+            "ID_LOJA": "19",
+            "faturamento": 79.98999786376953
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "8",
+            "faturamento": 10781.99994879961
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "9",
+            "faturamento": 3240.080040309578
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "21",
+            "faturamento": 9889.969970703125
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "7",
+            "faturamento": 6262.989938735962
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "2",
+            "faturamento": 4820.0
         },
         {
             "data": "2026-03-11",
             "ID_LOJA": "16",
             "faturamento": 3428.0
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "18",
+            "faturamento": 1514.0
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "17",
+            "faturamento": 950.0
+        },
+        {
+            "data": "2026-03-11",
+            "ID_LOJA": "10",
+            "faturamento": 1339.9999699592593
         },
         {
             "data": "2026-03-11",
@@ -78543,21 +81425,6 @@ const dadosDashboard = {
             "faturamento": 4405.0
         },
         {
-            "data": "2026-03-11",
-            "ID_LOJA": "10",
-            "faturamento": 1339.9999699592593
-        },
-        {
-            "data": "2026-03-11",
-            "ID_LOJA": "18",
-            "faturamento": 1514.0
-        },
-        {
-            "data": "2026-03-12",
-            "ID_LOJA": "2",
-            "faturamento": 340.0
-        },
-        {
             "data": "2026-03-12",
             "ID_LOJA": "20",
             "faturamento": 5750.0
@@ -78569,33 +81436,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "9",
-            "faturamento": 1260.0
-        },
-        {
-            "data": "2026-03-12",
-            "ID_LOJA": "6",
-            "faturamento": 8817.0
-        },
-        {
-            "data": "2026-03-12",
-            "ID_LOJA": "8",
-            "faturamento": 2910.000030517578
-        },
-        {
-            "data": "2026-03-12",
-            "ID_LOJA": "19",
-            "faturamento": 5018.969970703125
-        },
-        {
-            "data": "2026-03-12",
             "ID_LOJA": "4",
             "faturamento": 6945.000009536743
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "18",
-            "faturamento": 1379.9799900054932
+            "ID_LOJA": "9",
+            "faturamento": 1260.0
         },
         {
             "data": "2026-03-12",
@@ -78604,33 +81451,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "16",
-            "faturamento": 2179.990001678467
+            "ID_LOJA": "8",
+            "faturamento": 2910.000030517578
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "15",
-            "faturamento": 4281.990021824837
+            "ID_LOJA": "2",
+            "faturamento": 340.0
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "14",
-            "faturamento": 4100.0
+            "ID_LOJA": "6",
+            "faturamento": 8817.0
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "13",
-            "faturamento": 170.0
+            "ID_LOJA": "19",
+            "faturamento": 5018.969970703125
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "12",
-            "faturamento": 4310.0
+            "ID_LOJA": "18",
+            "faturamento": 1379.9799900054932
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "11",
-            "faturamento": 1208.0
+            "ID_LOJA": "17",
+            "faturamento": 1499.9900207519531
         },
         {
             "data": "2026-03-12",
@@ -78639,43 +81486,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-12",
+            "ID_LOJA": "11",
+            "faturamento": 1208.0
+        },
+        {
+            "data": "2026-03-12",
+            "ID_LOJA": "12",
+            "faturamento": 4310.0
+        },
+        {
+            "data": "2026-03-12",
             "ID_LOJA": "1",
             "faturamento": 1750.0
         },
         {
             "data": "2026-03-12",
-            "ID_LOJA": "17",
-            "faturamento": 1499.9900207519531
+            "ID_LOJA": "14",
+            "faturamento": 4100.0
         },
         {
-            "data": "2026-03-13",
-            "ID_LOJA": "21",
-            "faturamento": 1500.0
+            "data": "2026-03-12",
+            "ID_LOJA": "15",
+            "faturamento": 4281.990021824837
         },
         {
-            "data": "2026-03-13",
-            "ID_LOJA": "3",
-            "faturamento": 5072.999938964844
+            "data": "2026-03-12",
+            "ID_LOJA": "16",
+            "faturamento": 2179.990001678467
         },
         {
-            "data": "2026-03-13",
-            "ID_LOJA": "4",
-            "faturamento": 6822.4000244140625
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "8",
-            "faturamento": 1319.9899997711182
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "6",
-            "faturamento": 3060.0
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "7",
-            "faturamento": 5805.96987915039
+            "data": "2026-03-12",
+            "ID_LOJA": "13",
+            "faturamento": 170.0
         },
         {
             "data": "2026-03-13",
@@ -78689,8 +81531,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-13",
+            "ID_LOJA": "8",
+            "faturamento": 1319.9899997711182
+        },
+        {
+            "data": "2026-03-13",
+            "ID_LOJA": "7",
+            "faturamento": 5805.96987915039
+        },
+        {
+            "data": "2026-03-13",
             "ID_LOJA": "5",
             "faturamento": 1075.0
+        },
+        {
+            "data": "2026-03-13",
+            "ID_LOJA": "4",
+            "faturamento": 6822.4000244140625
+        },
+        {
+            "data": "2026-03-13",
+            "ID_LOJA": "3",
+            "faturamento": 5072.999938964844
+        },
+        {
+            "data": "2026-03-13",
+            "ID_LOJA": "21",
+            "faturamento": 1500.0
         },
         {
             "data": "2026-03-13",
@@ -78699,8 +81566,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-13",
-            "ID_LOJA": "16",
-            "faturamento": 3340.0
+            "ID_LOJA": "6",
+            "faturamento": 3060.0
         },
         {
             "data": "2026-03-13",
@@ -78709,28 +81576,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-13",
-            "ID_LOJA": "17",
-            "faturamento": 3209.989990234375
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "15",
-            "faturamento": 522.9899978637695
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "14",
-            "faturamento": 6640.000068664551
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "13",
-            "faturamento": 4610.0
-        },
-        {
-            "data": "2026-03-13",
-            "ID_LOJA": "12",
-            "faturamento": 4749.9899978637695
+            "ID_LOJA": "19",
+            "faturamento": 2384.969982147217
         },
         {
             "data": "2026-03-13",
@@ -78739,43 +81586,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-13",
+            "ID_LOJA": "12",
+            "faturamento": 4749.9899978637695
+        },
+        {
+            "data": "2026-03-13",
+            "ID_LOJA": "13",
+            "faturamento": 4610.0
+        },
+        {
+            "data": "2026-03-13",
             "ID_LOJA": "10",
             "faturamento": 6465.0
         },
         {
             "data": "2026-03-13",
-            "ID_LOJA": "19",
-            "faturamento": 2384.969982147217
+            "ID_LOJA": "15",
+            "faturamento": 522.9899978637695
         },
         {
-            "data": "2026-03-14",
-            "ID_LOJA": "3",
-            "faturamento": 50.0
+            "data": "2026-03-13",
+            "ID_LOJA": "16",
+            "faturamento": 3340.0
         },
         {
-            "data": "2026-03-14",
-            "ID_LOJA": "4",
-            "faturamento": 2879.9999923706055
+            "data": "2026-03-13",
+            "ID_LOJA": "17",
+            "faturamento": 3209.989990234375
         },
         {
-            "data": "2026-03-14",
-            "ID_LOJA": "5",
-            "faturamento": 2760.0
-        },
-        {
-            "data": "2026-03-14",
+            "data": "2026-03-13",
             "ID_LOJA": "14",
-            "faturamento": 4640.000030040741
-        },
-        {
-            "data": "2026-03-14",
-            "ID_LOJA": "7",
-            "faturamento": 4759.9799880981445
-        },
-        {
-            "data": "2026-03-14",
-            "ID_LOJA": "8",
-            "faturamento": 4789.990005493164
+            "faturamento": 6640.000068664551
         },
         {
             "data": "2026-03-14",
@@ -78784,8 +81626,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-14",
-            "ID_LOJA": "21",
-            "faturamento": 1589.990005493164
+            "ID_LOJA": "20",
+            "faturamento": 2899.989990234375
+        },
+        {
+            "data": "2026-03-14",
+            "ID_LOJA": "8",
+            "faturamento": 4789.990005493164
+        },
+        {
+            "data": "2026-03-14",
+            "ID_LOJA": "7",
+            "faturamento": 4759.9799880981445
         },
         {
             "data": "2026-03-14",
@@ -78794,18 +81646,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-14",
-            "ID_LOJA": "20",
-            "faturamento": 2899.989990234375
+            "ID_LOJA": "4",
+            "faturamento": 2879.9999923706055
         },
         {
             "data": "2026-03-14",
-            "ID_LOJA": "11",
-            "faturamento": 2480.0
+            "ID_LOJA": "3",
+            "faturamento": 50.0
         },
         {
             "data": "2026-03-14",
-            "ID_LOJA": "18",
-            "faturamento": 7262.0
+            "ID_LOJA": "21",
+            "faturamento": 1589.990005493164
+        },
+        {
+            "data": "2026-03-14",
+            "ID_LOJA": "2",
+            "faturamento": 1780.0
+        },
+        {
+            "data": "2026-03-14",
+            "ID_LOJA": "5",
+            "faturamento": 2760.0
         },
         {
             "data": "2026-03-14",
@@ -78824,6 +81686,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-14",
+            "ID_LOJA": "14",
+            "faturamento": 4640.000030040741
+        },
+        {
+            "data": "2026-03-14",
             "ID_LOJA": "13",
             "faturamento": 130.0
         },
@@ -78834,8 +81701,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-14",
-            "ID_LOJA": "2",
-            "faturamento": 1780.0
+            "ID_LOJA": "11",
+            "faturamento": 2480.0
         },
         {
             "data": "2026-03-14",
@@ -78846,6 +81713,11 @@ const dadosDashboard = {
             "data": "2026-03-14",
             "ID_LOJA": "1",
             "faturamento": 340.0
+        },
+        {
+            "data": "2026-03-14",
+            "ID_LOJA": "18",
+            "faturamento": 7262.0
         },
         {
             "data": "2026-03-15",
@@ -78879,11 +81751,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-15",
-            "ID_LOJA": "15",
-            "faturamento": 160.0
-        },
-        {
-            "data": "2026-03-15",
             "ID_LOJA": "14",
             "faturamento": 1530.0
         },
@@ -78901,6 +81768,21 @@ const dadosDashboard = {
             "data": "2026-03-15",
             "ID_LOJA": "11",
             "faturamento": 2512.3999443054204
+        },
+        {
+            "data": "2026-03-15",
+            "ID_LOJA": "15",
+            "faturamento": 160.0
+        },
+        {
+            "data": "2026-03-16",
+            "ID_LOJA": "20",
+            "faturamento": 13460.0
+        },
+        {
+            "data": "2026-03-16",
+            "ID_LOJA": "9",
+            "faturamento": 21427.00024604797
         },
         {
             "data": "2026-03-16",
@@ -78939,11 +81821,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-16",
-            "ID_LOJA": "20",
-            "faturamento": 13460.0
-        },
-        {
-            "data": "2026-03-16",
             "ID_LOJA": "2",
             "faturamento": 0.0
         },
@@ -78951,16 +81828,6 @@ const dadosDashboard = {
             "data": "2026-03-16",
             "ID_LOJA": "19",
             "faturamento": 1199.989990234375
-        },
-        {
-            "data": "2026-03-16",
-            "ID_LOJA": "9",
-            "faturamento": 21427.00024604797
-        },
-        {
-            "data": "2026-03-16",
-            "ID_LOJA": "17",
-            "faturamento": 4529.960000991821
         },
         {
             "data": "2026-03-16",
@@ -78984,13 +81851,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-16",
-            "ID_LOJA": "1",
-            "faturamento": 2309.9899978637695
+            "ID_LOJA": "13",
+            "faturamento": 9230.0
         },
         {
             "data": "2026-03-16",
-            "ID_LOJA": "14",
-            "faturamento": 4280.000005016104
+            "ID_LOJA": "1",
+            "faturamento": 2309.9899978637695
         },
         {
             "data": "2026-03-16",
@@ -79004,8 +81871,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-16",
-            "ID_LOJA": "13",
-            "faturamento": 9230.0
+            "ID_LOJA": "17",
+            "faturamento": 4529.960000991821
+        },
+        {
+            "data": "2026-03-16",
+            "ID_LOJA": "14",
+            "faturamento": 4280.000005016104
         },
         {
             "data": "2026-03-17",
@@ -79021,6 +81893,11 @@ const dadosDashboard = {
             "data": "2026-03-17",
             "ID_LOJA": "8",
             "faturamento": 1406.9800317287443
+        },
+        {
+            "data": "2026-03-17",
+            "ID_LOJA": "7",
+            "faturamento": 2414.990005493164
         },
         {
             "data": "2026-03-17",
@@ -79049,8 +81926,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-17",
-            "ID_LOJA": "7",
-            "faturamento": 2414.990005493164
+            "ID_LOJA": "17",
+            "faturamento": 5471.989990234375
         },
         {
             "data": "2026-03-17",
@@ -79093,9 +81970,9 @@ const dadosDashboard = {
             "faturamento": 1824.9699783325195
         },
         {
-            "data": "2026-03-17",
-            "ID_LOJA": "17",
-            "faturamento": 5471.989990234375
+            "data": "2026-03-18",
+            "ID_LOJA": "20",
+            "faturamento": 3500.0
         },
         {
             "data": "2026-03-18",
@@ -79109,28 +81986,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-18",
-            "ID_LOJA": "4",
-            "faturamento": 5750.0
-        },
-        {
-            "data": "2026-03-18",
             "ID_LOJA": "9",
             "faturamento": 2919.9999537467957
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "7",
-            "faturamento": 4902.669990539551
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "8",
-            "faturamento": 4619.979984134436
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "20",
-            "faturamento": 3500.0
         },
         {
             "data": "2026-03-18",
@@ -79139,18 +81996,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-18",
+            "ID_LOJA": "8",
+            "faturamento": 4619.979984134436
+        },
+        {
+            "data": "2026-03-18",
             "ID_LOJA": "2",
             "faturamento": 3855.0
         },
         {
             "data": "2026-03-18",
-            "ID_LOJA": "15",
-            "faturamento": 5699.989990234375
+            "ID_LOJA": "4",
+            "faturamento": 5750.0
         },
         {
             "data": "2026-03-18",
-            "ID_LOJA": "17",
-            "faturamento": 7611.989980697632
+            "ID_LOJA": "18",
+            "faturamento": 1671.9800071716309
+        },
+        {
+            "data": "2026-03-18",
+            "ID_LOJA": "7",
+            "faturamento": 4902.669990539551
         },
         {
             "data": "2026-03-18",
@@ -79159,23 +82026,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-18",
-            "ID_LOJA": "14",
-            "faturamento": 1250.0
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "13",
-            "faturamento": 2260.009954223642
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "12",
-            "faturamento": 4770.0
-        },
-        {
-            "data": "2026-03-18",
-            "ID_LOJA": "11",
-            "faturamento": 4889.989990234375
+            "ID_LOJA": "17",
+            "faturamento": 7611.989980697632
         },
         {
             "data": "2026-03-18",
@@ -79184,48 +82036,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-18",
+            "ID_LOJA": "11",
+            "faturamento": 4889.989990234375
+        },
+        {
+            "data": "2026-03-18",
             "ID_LOJA": "1",
             "faturamento": 668.9899940490723
         },
         {
             "data": "2026-03-18",
-            "ID_LOJA": "18",
-            "faturamento": 1671.9800071716309
+            "ID_LOJA": "13",
+            "faturamento": 2260.009954223642
         },
         {
-            "data": "2026-03-19",
-            "ID_LOJA": "3",
-            "faturamento": 4492.009966373094
+            "data": "2026-03-18",
+            "ID_LOJA": "14",
+            "faturamento": 1250.0
         },
         {
-            "data": "2026-03-19",
-            "ID_LOJA": "20",
-            "faturamento": 1000.0
+            "data": "2026-03-18",
+            "ID_LOJA": "15",
+            "faturamento": 5699.989990234375
         },
         {
-            "data": "2026-03-19",
-            "ID_LOJA": "21",
-            "faturamento": 4499.989990234375
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "5",
-            "faturamento": 100.0
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "2",
-            "faturamento": 5290.0
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "7",
-            "faturamento": 4464.97998046875
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "8",
-            "faturamento": 5924.990035533905
+            "data": "2026-03-18",
+            "ID_LOJA": "12",
+            "faturamento": 4770.0
         },
         {
             "data": "2026-03-19",
@@ -79234,8 +82071,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-19",
-            "ID_LOJA": "6",
-            "faturamento": 4602.5
+            "ID_LOJA": "2",
+            "faturamento": 5290.0
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "8",
+            "faturamento": 5924.990035533905
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "7",
+            "faturamento": 4464.97998046875
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "5",
+            "faturamento": 100.0
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "3",
+            "faturamento": 4492.009966373094
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "21",
+            "faturamento": 4499.989990234375
+        },
+        {
+            "data": "2026-03-19",
+            "ID_LOJA": "20",
+            "faturamento": 1000.0
         },
         {
             "data": "2026-03-19",
@@ -79244,8 +82111,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-19",
-            "ID_LOJA": "15",
-            "faturamento": 100.0
+            "ID_LOJA": "6",
+            "faturamento": 4602.5
         },
         {
             "data": "2026-03-19",
@@ -79254,23 +82121,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-19",
-            "ID_LOJA": "10",
-            "faturamento": 1700.0
+            "ID_LOJA": "16",
+            "faturamento": 1590.0
         },
         {
             "data": "2026-03-19",
-            "ID_LOJA": "11",
-            "faturamento": 3924.0
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "12",
-            "faturamento": 8736.000030755997
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "1",
-            "faturamento": 1194.9900016784668
+            "ID_LOJA": "15",
+            "faturamento": 100.0
         },
         {
             "data": "2026-03-19",
@@ -79279,53 +82136,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-19",
-            "ID_LOJA": "18",
-            "faturamento": 1435.9799919128418
-        },
-        {
-            "data": "2026-03-19",
-            "ID_LOJA": "16",
-            "faturamento": 1590.0
-        },
-        {
-            "data": "2026-03-19",
             "ID_LOJA": "13",
             "faturamento": 5705.0
         },
         {
-            "data": "2026-03-20",
-            "ID_LOJA": "21",
-            "faturamento": 6149.989990234375
+            "data": "2026-03-19",
+            "ID_LOJA": "12",
+            "faturamento": 8736.000030755997
         },
         {
-            "data": "2026-03-20",
-            "ID_LOJA": "9",
-            "faturamento": 2509.9899978637695
+            "data": "2026-03-19",
+            "ID_LOJA": "11",
+            "faturamento": 3924.0
         },
         {
-            "data": "2026-03-20",
-            "ID_LOJA": "8",
-            "faturamento": 1700.0000843405726
+            "data": "2026-03-19",
+            "ID_LOJA": "10",
+            "faturamento": 1700.0
         },
         {
-            "data": "2026-03-20",
-            "ID_LOJA": "7",
-            "faturamento": 6769.960012435913
+            "data": "2026-03-19",
+            "ID_LOJA": "1",
+            "faturamento": 1194.9900016784668
         },
         {
-            "data": "2026-03-20",
-            "ID_LOJA": "6",
-            "faturamento": 10257.0
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "5",
-            "faturamento": 3380.0
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "4",
-            "faturamento": 8928.989980697632
+            "data": "2026-03-19",
+            "ID_LOJA": "18",
+            "faturamento": 1435.9799919128418
         },
         {
             "data": "2026-03-20",
@@ -79334,38 +82171,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-20",
+            "ID_LOJA": "4",
+            "faturamento": 8928.989980697632
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "5",
+            "faturamento": 3380.0
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "9",
+            "faturamento": 2509.9899978637695
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "7",
+            "faturamento": 6769.960012435913
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "8",
+            "faturamento": 1700.0000843405726
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "21",
+            "faturamento": 6149.989990234375
+        },
+        {
+            "data": "2026-03-20",
+            "ID_LOJA": "6",
+            "faturamento": 10257.0
+        },
+        {
+            "data": "2026-03-20",
             "ID_LOJA": "20",
             "faturamento": 1269.989990234375
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "2",
-            "faturamento": 5460.0
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "18",
-            "faturamento": 3749.990001678467
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "10",
-            "faturamento": 1839.9999997615814
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "11",
-            "faturamento": 6120.0
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "12",
-            "faturamento": 1550.0
-        },
-        {
-            "data": "2026-03-20",
-            "ID_LOJA": "1",
-            "faturamento": 50.0
         },
         {
             "data": "2026-03-20",
@@ -79374,8 +82216,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-20",
-            "ID_LOJA": "15",
-            "faturamento": 5028.600006103516
+            "ID_LOJA": "18",
+            "faturamento": 3749.990001678467
         },
         {
             "data": "2026-03-20",
@@ -79384,38 +82226,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-20",
+            "ID_LOJA": "15",
+            "faturamento": 5028.600006103516
+        },
+        {
+            "data": "2026-03-20",
             "ID_LOJA": "13",
             "faturamento": 2820.0
         },
         {
-            "data": "2026-03-21",
-            "ID_LOJA": "20",
-            "faturamento": 1279.989990234375
+            "data": "2026-03-20",
+            "ID_LOJA": "12",
+            "faturamento": 1550.0
         },
         {
-            "data": "2026-03-21",
-            "ID_LOJA": "9",
-            "faturamento": 12573.199966430664
+            "data": "2026-03-20",
+            "ID_LOJA": "11",
+            "faturamento": 6120.0
         },
         {
-            "data": "2026-03-21",
-            "ID_LOJA": "8",
-            "faturamento": 2360.0
+            "data": "2026-03-20",
+            "ID_LOJA": "10",
+            "faturamento": 1839.9999997615814
         },
         {
-            "data": "2026-03-21",
-            "ID_LOJA": "6",
-            "faturamento": 6670.0
+            "data": "2026-03-20",
+            "ID_LOJA": "1",
+            "faturamento": 50.0
         },
         {
-            "data": "2026-03-21",
-            "ID_LOJA": "5",
-            "faturamento": 10300.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "4",
-            "faturamento": 15155.0
+            "data": "2026-03-20",
+            "ID_LOJA": "2",
+            "faturamento": 5460.0
         },
         {
             "data": "2026-03-21",
@@ -79424,53 +82266,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-21",
-            "ID_LOJA": "21",
-            "faturamento": 2069.9899978637695
+            "ID_LOJA": "4",
+            "faturamento": 15155.0
         },
         {
             "data": "2026-03-21",
-            "ID_LOJA": "2",
-            "faturamento": 169.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "7",
-            "faturamento": 5214.999970912933
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "18",
-            "faturamento": 110.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "10",
-            "faturamento": 306.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "19",
-            "faturamento": 3614.97998046875
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "12",
-            "faturamento": 6700.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "13",
-            "faturamento": 7325.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "11",
-            "faturamento": 4980.0
-        },
-        {
-            "data": "2026-03-21",
-            "ID_LOJA": "15",
-            "faturamento": 514.0
+            "ID_LOJA": "5",
+            "faturamento": 10300.0
         },
         {
             "data": "2026-03-21",
@@ -79479,8 +82281,58 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-21",
+            "ID_LOJA": "7",
+            "faturamento": 5214.999970912933
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "8",
+            "faturamento": 2360.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "9",
+            "faturamento": 12573.199966430664
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "21",
+            "faturamento": 2069.9899978637695
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "6",
+            "faturamento": 6670.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "20",
+            "faturamento": 1279.989990234375
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "15",
+            "faturamento": 514.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "19",
+            "faturamento": 3614.97998046875
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "18",
+            "faturamento": 110.0
+        },
+        {
+            "data": "2026-03-21",
             "ID_LOJA": "17",
             "faturamento": 5640.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "2",
+            "faturamento": 169.0
         },
         {
             "data": "2026-03-21",
@@ -79488,9 +82340,24 @@ const dadosDashboard = {
             "faturamento": 4460.0
         },
         {
-            "data": "2026-03-22",
-            "ID_LOJA": "17",
-            "faturamento": 1159.9900016784668
+            "data": "2026-03-21",
+            "ID_LOJA": "13",
+            "faturamento": 7325.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "12",
+            "faturamento": 6700.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "11",
+            "faturamento": 4980.0
+        },
+        {
+            "data": "2026-03-21",
+            "ID_LOJA": "10",
+            "faturamento": 306.0
         },
         {
             "data": "2026-03-22",
@@ -79519,13 +82386,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-22",
-            "ID_LOJA": "16",
-            "faturamento": 210.0
+            "ID_LOJA": "17",
+            "faturamento": 1159.9900016784668
         },
         {
             "data": "2026-03-22",
-            "ID_LOJA": "15",
-            "faturamento": 2635.0
+            "ID_LOJA": "16",
+            "faturamento": 210.0
         },
         {
             "data": "2026-03-22",
@@ -79558,9 +82425,39 @@ const dadosDashboard = {
             "faturamento": 1053.0
         },
         {
+            "data": "2026-03-22",
+            "ID_LOJA": "15",
+            "faturamento": 2635.0
+        },
+        {
+            "data": "2026-03-23",
+            "ID_LOJA": "20",
+            "faturamento": 2429.989990234375
+        },
+        {
+            "data": "2026-03-23",
+            "ID_LOJA": "21",
+            "faturamento": 5599.98
+        },
+        {
+            "data": "2026-03-23",
+            "ID_LOJA": "3",
+            "faturamento": 1370.0
+        },
+        {
+            "data": "2026-03-23",
+            "ID_LOJA": "4",
+            "faturamento": 4569.9999923706055
+        },
+        {
             "data": "2026-03-23",
             "ID_LOJA": "8",
             "faturamento": 5945.000019490719
+        },
+        {
+            "data": "2026-03-23",
+            "ID_LOJA": "6",
+            "faturamento": 4755.009938964387
         },
         {
             "data": "2026-03-23",
@@ -79574,33 +82471,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-23",
-            "ID_LOJA": "6",
-            "faturamento": 4755.009938964387
-        },
-        {
-            "data": "2026-03-23",
             "ID_LOJA": "5",
             "faturamento": 3029.989990234375
-        },
-        {
-            "data": "2026-03-23",
-            "ID_LOJA": "4",
-            "faturamento": 4569.9999923706055
-        },
-        {
-            "data": "2026-03-23",
-            "ID_LOJA": "3",
-            "faturamento": 1370.0
-        },
-        {
-            "data": "2026-03-23",
-            "ID_LOJA": "21",
-            "faturamento": 5599.98
-        },
-        {
-            "data": "2026-03-23",
-            "ID_LOJA": "20",
-            "faturamento": 2429.989990234375
         },
         {
             "data": "2026-03-23",
@@ -79609,8 +82481,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-23",
-            "ID_LOJA": "11",
-            "faturamento": 1037.0
+            "ID_LOJA": "12",
+            "faturamento": 13609.999778136613
         },
         {
             "data": "2026-03-23",
@@ -79639,8 +82511,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-23",
-            "ID_LOJA": "12",
-            "faturamento": 13609.999778136613
+            "ID_LOJA": "11",
+            "faturamento": 1037.0
         },
         {
             "data": "2026-03-23",
@@ -79719,11 +82591,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-24",
-            "ID_LOJA": "1",
-            "faturamento": 1135.0
-        },
-        {
-            "data": "2026-03-24",
             "ID_LOJA": "10",
             "faturamento": 1455.0
         },
@@ -79739,13 +82606,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-24",
-            "ID_LOJA": "19",
-            "faturamento": 4499.969970703125
-        },
-        {
-            "data": "2026-03-24",
-            "ID_LOJA": "14",
-            "faturamento": 6001.000029563904
+            "ID_LOJA": "1",
+            "faturamento": 1135.0
         },
         {
             "data": "2026-03-24",
@@ -79763,9 +82625,24 @@ const dadosDashboard = {
             "faturamento": 5259.990001678467
         },
         {
+            "data": "2026-03-24",
+            "ID_LOJA": "14",
+            "faturamento": 6001.000029563904
+        },
+        {
+            "data": "2026-03-24",
+            "ID_LOJA": "19",
+            "faturamento": 4499.969970703125
+        },
+        {
             "data": "2026-03-25",
             "ID_LOJA": "9",
             "faturamento": 4533.9799909591675
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "2",
+            "faturamento": 7030.0
         },
         {
             "data": "2026-03-25",
@@ -79799,18 +82676,58 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-25",
+            "ID_LOJA": "21",
+            "faturamento": 14949.949768066406
+        },
+        {
+            "data": "2026-03-25",
             "ID_LOJA": "20",
             "faturamento": 5500.0
         },
         {
             "data": "2026-03-25",
-            "ID_LOJA": "2",
-            "faturamento": 7030.0
+            "ID_LOJA": "19",
+            "faturamento": 2304.97998046875
         },
         {
             "data": "2026-03-25",
-            "ID_LOJA": "21",
-            "faturamento": 14949.949768066406
+            "ID_LOJA": "17",
+            "faturamento": 1645.0
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "16",
+            "faturamento": 4375.000030517578
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "15",
+            "faturamento": 2058.9999923706055
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "14",
+            "faturamento": 710.0
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "13",
+            "faturamento": 1230.0
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "12",
+            "faturamento": 4340.0
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "11",
+            "faturamento": 40.0
+        },
+        {
+            "data": "2026-03-25",
+            "ID_LOJA": "10",
+            "faturamento": 1400.0
         },
         {
             "data": "2026-03-25",
@@ -79823,49 +82740,9 @@ const dadosDashboard = {
             "faturamento": 2129.990005493164
         },
         {
-            "data": "2026-03-25",
-            "ID_LOJA": "10",
-            "faturamento": 1400.0
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "11",
-            "faturamento": 40.0
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "12",
-            "faturamento": 4340.0
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "13",
-            "faturamento": 1230.0
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "19",
-            "faturamento": 2304.97998046875
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "15",
-            "faturamento": 2058.9999923706055
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "16",
-            "faturamento": 4375.000030517578
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "17",
-            "faturamento": 1645.0
-        },
-        {
-            "data": "2026-03-25",
-            "ID_LOJA": "14",
-            "faturamento": 710.0
+            "data": "2026-03-26",
+            "ID_LOJA": "21",
+            "faturamento": 11500.0
         },
         {
             "data": "2026-03-26",
@@ -79874,23 +82751,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "8",
-            "faturamento": 1184.9899944067001
-        },
-        {
-            "data": "2026-03-26",
-            "ID_LOJA": "7",
-            "faturamento": 12780.969970703125
-        },
-        {
-            "data": "2026-03-26",
-            "ID_LOJA": "6",
-            "faturamento": 17519.0
-        },
-        {
-            "data": "2026-03-26",
-            "ID_LOJA": "5",
-            "faturamento": 2000.0
+            "ID_LOJA": "3",
+            "faturamento": 1220.0
         },
         {
             "data": "2026-03-26",
@@ -79899,18 +82761,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "3",
-            "faturamento": 1220.0
-        },
-        {
-            "data": "2026-03-26",
-            "ID_LOJA": "21",
-            "faturamento": 11500.0
-        },
-        {
-            "data": "2026-03-26",
             "ID_LOJA": "20",
             "faturamento": 4450.0
+        },
+        {
+            "data": "2026-03-26",
+            "ID_LOJA": "6",
+            "faturamento": 17519.0
+        },
+        {
+            "data": "2026-03-26",
+            "ID_LOJA": "7",
+            "faturamento": 12780.969970703125
+        },
+        {
+            "data": "2026-03-26",
+            "ID_LOJA": "8",
+            "faturamento": 1184.9899944067001
+        },
+        {
+            "data": "2026-03-26",
+            "ID_LOJA": "5",
+            "faturamento": 2000.0
         },
         {
             "data": "2026-03-26",
@@ -79919,13 +82791,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "18",
-            "faturamento": 1119.989990234375
+            "ID_LOJA": "15",
+            "faturamento": 3561.9999675750732
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "17",
-            "faturamento": 1389.9800033569336
+            "ID_LOJA": "18",
+            "faturamento": 1119.989990234375
         },
         {
             "data": "2026-03-26",
@@ -79959,13 +82831,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "15",
-            "faturamento": 3561.9999675750732
+            "ID_LOJA": "16",
+            "faturamento": 5210.0
         },
         {
             "data": "2026-03-26",
-            "ID_LOJA": "16",
-            "faturamento": 5210.0
+            "ID_LOJA": "17",
+            "faturamento": 1389.9800033569336
         },
         {
             "data": "2026-03-26",
@@ -79974,8 +82846,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-27",
-            "ID_LOJA": "19",
-            "faturamento": 1199.989990234375
+            "ID_LOJA": "2",
+            "faturamento": 5130.0
+        },
+        {
+            "data": "2026-03-27",
+            "ID_LOJA": "9",
+            "faturamento": 4600.000020205975
         },
         {
             "data": "2026-03-27",
@@ -80014,13 +82891,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-27",
-            "ID_LOJA": "2",
-            "faturamento": 5130.0
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "9",
-            "faturamento": 4600.000020205975
+            "ID_LOJA": "19",
+            "faturamento": 1199.989990234375
         },
         {
             "data": "2026-03-27",
@@ -80029,33 +82901,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-27",
-            "ID_LOJA": "16",
-            "faturamento": 3020.0
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "15",
-            "faturamento": 340.00000190734863
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "14",
-            "faturamento": 8951.990021348
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "13",
-            "faturamento": 495.0
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "12",
-            "faturamento": 2985.0
-        },
-        {
-            "data": "2026-03-27",
-            "ID_LOJA": "11",
-            "faturamento": 6699.989990234375
+            "ID_LOJA": "17",
+            "faturamento": 1909.990005493164
         },
         {
             "data": "2026-03-27",
@@ -80064,28 +82911,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-27",
+            "ID_LOJA": "11",
+            "faturamento": 6699.989990234375
+        },
+        {
+            "data": "2026-03-27",
+            "ID_LOJA": "12",
+            "faturamento": 2985.0
+        },
+        {
+            "data": "2026-03-27",
             "ID_LOJA": "1",
             "faturamento": 1290.0
         },
         {
             "data": "2026-03-27",
-            "ID_LOJA": "17",
-            "faturamento": 1909.990005493164
+            "ID_LOJA": "14",
+            "faturamento": 8951.990021348
         },
         {
-            "data": "2026-03-28",
-            "ID_LOJA": "21",
-            "faturamento": 5499.989898681641
+            "data": "2026-03-27",
+            "ID_LOJA": "15",
+            "faturamento": 340.00000190734863
         },
         {
-            "data": "2026-03-28",
-            "ID_LOJA": "3",
-            "faturamento": 1849.989990234375
+            "data": "2026-03-27",
+            "ID_LOJA": "16",
+            "faturamento": 3020.0
         },
         {
-            "data": "2026-03-28",
-            "ID_LOJA": "4",
-            "faturamento": 16269.999977111816
+            "data": "2026-03-27",
+            "ID_LOJA": "13",
+            "faturamento": 495.0
         },
         {
             "data": "2026-03-28",
@@ -80094,18 +82951,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-28",
-            "ID_LOJA": "6",
-            "faturamento": 7824.800033569336
-        },
-        {
-            "data": "2026-03-28",
-            "ID_LOJA": "9",
-            "faturamento": 5664.999967068434
-        },
-        {
-            "data": "2026-03-28",
             "ID_LOJA": "8",
             "faturamento": 2626.0
+        },
+        {
+            "data": "2026-03-28",
+            "ID_LOJA": "7",
+            "faturamento": 11429.839965820312
+        },
+        {
+            "data": "2026-03-28",
+            "ID_LOJA": "6",
+            "faturamento": 7824.800033569336
         },
         {
             "data": "2026-03-28",
@@ -80114,13 +82971,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-28",
+            "ID_LOJA": "4",
+            "faturamento": 16269.999977111816
+        },
+        {
+            "data": "2026-03-28",
+            "ID_LOJA": "9",
+            "faturamento": 5664.999967068434
+        },
+        {
+            "data": "2026-03-28",
+            "ID_LOJA": "21",
+            "faturamento": 5499.989898681641
+        },
+        {
+            "data": "2026-03-28",
             "ID_LOJA": "19",
             "faturamento": 1209.989990234375
         },
         {
             "data": "2026-03-28",
-            "ID_LOJA": "7",
-            "faturamento": 11429.839965820312
+            "ID_LOJA": "3",
+            "faturamento": 1849.989990234375
         },
         {
             "data": "2026-03-28",
@@ -80224,11 +83096,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-30",
-            "ID_LOJA": "9",
-            "faturamento": 4516.000031471252
-        },
-        {
-            "data": "2026-03-30",
             "ID_LOJA": "8",
             "faturamento": 6711.199980020523
         },
@@ -80246,6 +83113,11 @@ const dadosDashboard = {
             "data": "2026-03-30",
             "ID_LOJA": "5",
             "faturamento": 180.0
+        },
+        {
+            "data": "2026-03-30",
+            "ID_LOJA": "9",
+            "faturamento": 4516.000031471252
         },
         {
             "data": "2026-03-30",
@@ -80314,6 +83186,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-31",
+            "ID_LOJA": "2",
+            "faturamento": 9610.0
+        },
+        {
+            "data": "2026-03-31",
             "ID_LOJA": "21",
             "faturamento": 6404.97998046875
         },
@@ -80329,28 +83206,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-31",
-            "ID_LOJA": "5",
-            "faturamento": 4429.980018615723
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "9",
-            "faturamento": 24980.0
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "7",
-            "faturamento": 5911.9899978637695
-        },
-        {
-            "data": "2026-03-31",
             "ID_LOJA": "8",
             "faturamento": 6866.000030040741
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "2",
-            "faturamento": 9610.0
         },
         {
             "data": "2026-03-31",
@@ -80359,13 +83216,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-31",
-            "ID_LOJA": "19",
-            "faturamento": 2339.97998046875
+            "ID_LOJA": "7",
+            "faturamento": 5911.9899978637695
         },
         {
             "data": "2026-03-31",
-            "ID_LOJA": "14",
-            "faturamento": 6290.0
+            "ID_LOJA": "9",
+            "faturamento": 24980.0
+        },
+        {
+            "data": "2026-03-31",
+            "ID_LOJA": "5",
+            "faturamento": 4429.980018615723
+        },
+        {
+            "data": "2026-03-31",
+            "ID_LOJA": "19",
+            "faturamento": 2339.97998046875
         },
         {
             "data": "2026-03-31",
@@ -80374,28 +83241,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-31",
-            "ID_LOJA": "1",
-            "faturamento": 175.0
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "10",
-            "faturamento": 2160.0
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "11",
-            "faturamento": 7964.989990234375
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "12",
-            "faturamento": 4320.0
-        },
-        {
-            "data": "2026-03-31",
-            "ID_LOJA": "18",
-            "faturamento": 4364.979995727539
+            "ID_LOJA": "16",
+            "faturamento": 5110.0
         },
         {
             "data": "2026-03-31",
@@ -80404,8 +83251,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-03-31",
-            "ID_LOJA": "16",
-            "faturamento": 5110.0
+            "ID_LOJA": "14",
+            "faturamento": 6290.0
         },
         {
             "data": "2026-03-31",
@@ -80413,39 +83260,29 @@ const dadosDashboard = {
             "faturamento": 429.98999786376953
         },
         {
-            "data": "2026-04-01",
-            "ID_LOJA": "9",
-            "faturamento": 2040.0
+            "data": "2026-03-31",
+            "ID_LOJA": "12",
+            "faturamento": 4320.0
         },
         {
-            "data": "2026-04-01",
-            "ID_LOJA": "19",
-            "faturamento": 1199.990081787109
+            "data": "2026-03-31",
+            "ID_LOJA": "11",
+            "faturamento": 7964.989990234375
         },
         {
-            "data": "2026-04-01",
-            "ID_LOJA": "7",
-            "faturamento": 6347.3699951171875
+            "data": "2026-03-31",
+            "ID_LOJA": "10",
+            "faturamento": 2160.0
         },
         {
-            "data": "2026-04-01",
-            "ID_LOJA": "6",
-            "faturamento": 4271.9899978637695
+            "data": "2026-03-31",
+            "ID_LOJA": "1",
+            "faturamento": 175.0
         },
         {
-            "data": "2026-04-01",
-            "ID_LOJA": "4",
-            "faturamento": 4599.9999923706055
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "3",
-            "faturamento": 2340.0
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "21",
-            "faturamento": 8499.979888916016
+            "data": "2026-03-31",
+            "ID_LOJA": "18",
+            "faturamento": 4364.979995727539
         },
         {
             "data": "2026-04-01",
@@ -80454,8 +83291,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-01",
-            "ID_LOJA": "2",
-            "faturamento": 450.0
+            "ID_LOJA": "21",
+            "faturamento": 8499.979888916016
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "3",
+            "faturamento": 2340.0
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "4",
+            "faturamento": 4599.9999923706055
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "9",
+            "faturamento": 2040.0
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "7",
+            "faturamento": 6347.3699951171875
         },
         {
             "data": "2026-04-01",
@@ -80464,38 +83321,28 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-01",
+            "ID_LOJA": "2",
+            "faturamento": 450.0
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "6",
+            "faturamento": 4271.9899978637695
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "19",
+            "faturamento": 1199.990081787109
+        },
+        {
+            "data": "2026-04-01",
             "ID_LOJA": "18",
             "faturamento": 319.96001052856445
         },
         {
             "data": "2026-04-01",
-            "ID_LOJA": "16",
-            "faturamento": 4465.000001907349
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "15",
-            "faturamento": 4474.999984741211
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "14",
-            "faturamento": 330.0
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "13",
-            "faturamento": 2380.0
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "12",
-            "faturamento": 7616.999961853027
-        },
-        {
-            "data": "2026-04-01",
-            "ID_LOJA": "11",
-            "faturamento": 8187.989990234375
+            "ID_LOJA": "17",
+            "faturamento": 2539.99
         },
         {
             "data": "2026-04-01",
@@ -80504,28 +83351,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-01",
+            "ID_LOJA": "11",
+            "faturamento": 8187.989990234375
+        },
+        {
+            "data": "2026-04-01",
+            "ID_LOJA": "12",
+            "faturamento": 7616.999961853027
+        },
+        {
+            "data": "2026-04-01",
             "ID_LOJA": "1",
             "faturamento": 2556.0
         },
         {
             "data": "2026-04-01",
-            "ID_LOJA": "17",
-            "faturamento": 2539.99
+            "ID_LOJA": "14",
+            "faturamento": 330.0
         },
         {
-            "data": "2026-04-02",
-            "ID_LOJA": "21",
-            "faturamento": 9349.97998046875
+            "data": "2026-04-01",
+            "ID_LOJA": "15",
+            "faturamento": 4474.999984741211
         },
         {
-            "data": "2026-04-02",
-            "ID_LOJA": "3",
-            "faturamento": 5365.0
+            "data": "2026-04-01",
+            "ID_LOJA": "16",
+            "faturamento": 4465.000001907349
         },
         {
-            "data": "2026-04-02",
-            "ID_LOJA": "4",
-            "faturamento": 9047.499977111816
+            "data": "2026-04-01",
+            "ID_LOJA": "13",
+            "faturamento": 2380.0
         },
         {
             "data": "2026-04-02",
@@ -80539,13 +83396,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-02",
+            "ID_LOJA": "8",
+            "faturamento": 3320.0
+        },
+        {
+            "data": "2026-04-02",
             "ID_LOJA": "7",
             "faturamento": 7469.969995498657
         },
         {
             "data": "2026-04-02",
-            "ID_LOJA": "8",
-            "faturamento": 3320.0
+            "ID_LOJA": "6",
+            "faturamento": 2889.989990234375
         },
         {
             "data": "2026-04-02",
@@ -80554,13 +83416,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-02",
+            "ID_LOJA": "4",
+            "faturamento": 9047.499977111816
+        },
+        {
+            "data": "2026-04-02",
+            "ID_LOJA": "3",
+            "faturamento": 5365.0
+        },
+        {
+            "data": "2026-04-02",
             "ID_LOJA": "2",
             "faturamento": 5216.0
         },
         {
             "data": "2026-04-02",
-            "ID_LOJA": "6",
-            "faturamento": 2889.989990234375
+            "ID_LOJA": "21",
+            "faturamento": 9349.97998046875
         },
         {
             "data": "2026-04-02",
@@ -80571,6 +83443,11 @@ const dadosDashboard = {
             "data": "2026-04-02",
             "ID_LOJA": "16",
             "faturamento": 330.0
+        },
+        {
+            "data": "2026-04-02",
+            "ID_LOJA": "18",
+            "faturamento": 4782.979991912842
         },
         {
             "data": "2026-04-02",
@@ -80606,11 +83483,6 @@ const dadosDashboard = {
             "data": "2026-04-02",
             "ID_LOJA": "1",
             "faturamento": 1252.0
-        },
-        {
-            "data": "2026-04-02",
-            "ID_LOJA": "18",
-            "faturamento": 4782.979991912842
         },
         {
             "data": "2026-04-03",
@@ -80664,11 +83536,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-04",
-            "ID_LOJA": "9",
-            "faturamento": 10964.989998817444
-        },
-        {
-            "data": "2026-04-04",
             "ID_LOJA": "8",
             "faturamento": 6190.000061988831
         },
@@ -80676,6 +83543,11 @@ const dadosDashboard = {
             "data": "2026-04-04",
             "ID_LOJA": "7",
             "faturamento": 8333.979986190796
+        },
+        {
+            "data": "2026-04-04",
+            "ID_LOJA": "9",
+            "faturamento": 10964.989998817444
         },
         {
             "data": "2026-04-04",
@@ -80929,13 +83801,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-07",
-            "ID_LOJA": "8",
-            "faturamento": 9823.999999761581
+            "ID_LOJA": "9",
+            "faturamento": 8004.999977231026
         },
         {
             "data": "2026-04-07",
-            "ID_LOJA": "9",
-            "faturamento": 8004.999977231026
+            "ID_LOJA": "8",
+            "faturamento": 9823.999999761581
         },
         {
             "data": "2026-04-07",
@@ -81044,8 +83916,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-08",
-            "ID_LOJA": "8",
-            "faturamento": 4759.989993095398
+            "ID_LOJA": "9",
+            "faturamento": 4040.0
         },
         {
             "data": "2026-04-08",
@@ -81054,8 +83926,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-08",
-            "ID_LOJA": "9",
-            "faturamento": 4040.0
+            "ID_LOJA": "8",
+            "faturamento": 4759.989993095398
         },
         {
             "data": "2026-04-08",
@@ -81074,8 +83946,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-08",
-            "ID_LOJA": "10",
-            "faturamento": 1230.0
+            "ID_LOJA": "1",
+            "faturamento": 255.0
         },
         {
             "data": "2026-04-08",
@@ -81084,8 +83956,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-08",
-            "ID_LOJA": "1",
-            "faturamento": 255.0
+            "ID_LOJA": "10",
+            "faturamento": 1230.0
         },
         {
             "data": "2026-04-08",
@@ -81129,13 +84001,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-09",
-            "ID_LOJA": "21",
-            "faturamento": 8999.979888916016
-        },
-        {
-            "data": "2026-04-09",
-            "ID_LOJA": "9",
-            "faturamento": 11141.000000476837
+            "ID_LOJA": "20",
+            "faturamento": 1460.0
         },
         {
             "data": "2026-04-09",
@@ -81169,18 +84036,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-09",
-            "ID_LOJA": "20",
-            "faturamento": 1460.0
+            "ID_LOJA": "21",
+            "faturamento": 8999.979888916016
+        },
+        {
+            "data": "2026-04-09",
+            "ID_LOJA": "9",
+            "faturamento": 11141.000000476837
         },
         {
             "data": "2026-04-09",
             "ID_LOJA": "18",
             "faturamento": 5641.97998046875
-        },
-        {
-            "data": "2026-04-09",
-            "ID_LOJA": "1",
-            "faturamento": 195.0
         },
         {
             "data": "2026-04-09",
@@ -81219,6 +84086,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-09",
+            "ID_LOJA": "1",
+            "faturamento": 195.0
+        },
+        {
+            "data": "2026-04-09",
             "ID_LOJA": "2",
             "faturamento": 2460.0
         },
@@ -81244,6 +84116,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-10",
+            "ID_LOJA": "6",
+            "faturamento": 3275.0
+        },
+        {
+            "data": "2026-04-10",
             "ID_LOJA": "7",
             "faturamento": 2408.3900032043457
         },
@@ -81254,13 +84131,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-10",
-            "ID_LOJA": "9",
-            "faturamento": 8628.989990234375
+            "ID_LOJA": "5",
+            "faturamento": 2424.0
         },
         {
             "data": "2026-04-10",
-            "ID_LOJA": "5",
-            "faturamento": 2424.0
+            "ID_LOJA": "9",
+            "faturamento": 8628.989990234375
         },
         {
             "data": "2026-04-10",
@@ -81269,18 +84146,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-10",
-            "ID_LOJA": "6",
-            "faturamento": 3275.0
-        },
-        {
-            "data": "2026-04-10",
             "ID_LOJA": "17",
             "faturamento": 2899.989990234375
         },
         {
             "data": "2026-04-10",
-            "ID_LOJA": "18",
-            "faturamento": 1729.979995727539
+            "ID_LOJA": "1",
+            "faturamento": 135.0
         },
         {
             "data": "2026-04-10",
@@ -81299,18 +84171,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-10",
-            "ID_LOJA": "1",
-            "faturamento": 135.0
+            "ID_LOJA": "18",
+            "faturamento": 1729.979995727539
         },
         {
             "data": "2026-04-10",
             "ID_LOJA": "14",
             "faturamento": 260.0
-        },
-        {
-            "data": "2026-04-10",
-            "ID_LOJA": "15",
-            "faturamento": 2799.9999980926514
         },
         {
             "data": "2026-04-10",
@@ -81323,14 +84190,9 @@ const dadosDashboard = {
             "faturamento": 950.0
         },
         {
-            "data": "2026-04-11",
-            "ID_LOJA": "9",
-            "faturamento": 755.0
-        },
-        {
-            "data": "2026-04-11",
-            "ID_LOJA": "2",
-            "faturamento": 3764.0
+            "data": "2026-04-10",
+            "ID_LOJA": "15",
+            "faturamento": 2799.9999980926514
         },
         {
             "data": "2026-04-11",
@@ -81354,6 +84216,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-11",
+            "ID_LOJA": "4",
+            "faturamento": 6640.0
+        },
+        {
+            "data": "2026-04-11",
             "ID_LOJA": "3",
             "faturamento": 3124.999990463257
         },
@@ -81369,13 +84236,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-11",
+            "ID_LOJA": "2",
+            "faturamento": 3764.0
+        },
+        {
+            "data": "2026-04-11",
             "ID_LOJA": "19",
             "faturamento": 1089.989990234375
         },
         {
             "data": "2026-04-11",
-            "ID_LOJA": "4",
-            "faturamento": 6640.0
+            "ID_LOJA": "9",
+            "faturamento": 755.0
         },
         {
             "data": "2026-04-11",
@@ -81534,43 +84406,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-13",
-            "ID_LOJA": "14",
-            "faturamento": 1274.990005493164
-        },
-        {
-            "data": "2026-04-13",
             "ID_LOJA": "17",
             "faturamento": 7234.949970703125
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "10",
-            "faturamento": 3090.0200100973198
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "11",
-            "faturamento": 5719.989974021912
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "12",
-            "faturamento": 1804.9999995231628
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "1",
-            "faturamento": 1240.0000009536743
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "15",
-            "faturamento": 1303.9899978637695
-        },
-        {
-            "data": "2026-04-13",
-            "ID_LOJA": "16",
-            "faturamento": 3680.0
         },
         {
             "data": "2026-04-13",
@@ -81579,48 +84416,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-13",
+            "ID_LOJA": "16",
+            "faturamento": 3680.0
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "15",
+            "faturamento": 1303.9899978637695
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "14",
+            "faturamento": 1274.990005493164
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "12",
+            "faturamento": 1804.9999995231628
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "11",
+            "faturamento": 5719.989974021912
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "10",
+            "faturamento": 3090.0200100973198
+        },
+        {
+            "data": "2026-04-13",
+            "ID_LOJA": "1",
+            "faturamento": 1240.0000009536743
+        },
+        {
+            "data": "2026-04-13",
             "ID_LOJA": "18",
             "faturamento": 2448.9800033569336
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "9",
-            "faturamento": 1400.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "20",
-            "faturamento": 1000.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "8",
-            "faturamento": 1366.999984741211
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "7",
-            "faturamento": 1170.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "6",
-            "faturamento": 2235.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "5",
-            "faturamento": 3394.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "4",
-            "faturamento": 10310.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "22",
-            "faturamento": 1000.0
         },
         {
             "data": "2026-04-14",
@@ -81629,8 +84461,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-14",
+            "ID_LOJA": "22",
+            "faturamento": 1000.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "4",
+            "faturamento": 10310.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "8",
+            "faturamento": 1366.999984741211
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "6",
+            "faturamento": 2235.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "7",
+            "faturamento": 1170.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "20",
+            "faturamento": 1000.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "9",
+            "faturamento": 1400.0
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "5",
+            "faturamento": 3394.0
+        },
+        {
+            "data": "2026-04-14",
             "ID_LOJA": "2",
             "faturamento": 4159.980005264282
+        },
+        {
+            "data": "2026-04-14",
+            "ID_LOJA": "15",
+            "faturamento": 4589.9899978637695
         },
         {
             "data": "2026-04-14",
@@ -81641,11 +84518,6 @@ const dadosDashboard = {
             "data": "2026-04-14",
             "ID_LOJA": "16",
             "faturamento": 1905.0
-        },
-        {
-            "data": "2026-04-14",
-            "ID_LOJA": "15",
-            "faturamento": 4589.9899978637695
         },
         {
             "data": "2026-04-14",
@@ -81684,8 +84556,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "21",
-            "faturamento": 5759.970001220703
+            "ID_LOJA": "4",
+            "faturamento": 3720.0
         },
         {
             "data": "2026-04-15",
@@ -81694,23 +84566,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "3",
-            "faturamento": 7769.0
+            "ID_LOJA": "21",
+            "faturamento": 5759.970001220703
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "4",
-            "faturamento": 3720.0
-        },
-        {
-            "data": "2026-04-15",
-            "ID_LOJA": "9",
-            "faturamento": 7672.0
-        },
-        {
-            "data": "2026-04-15",
-            "ID_LOJA": "6",
-            "faturamento": 2305.0
+            "ID_LOJA": "5",
+            "faturamento": 100.0
         },
         {
             "data": "2026-04-15",
@@ -81724,13 +84586,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "5",
-            "faturamento": 100.0
-        },
-        {
-            "data": "2026-04-15",
-            "ID_LOJA": "2",
-            "faturamento": 2415.0
+            "ID_LOJA": "9",
+            "faturamento": 7672.0
         },
         {
             "data": "2026-04-15",
@@ -81739,13 +84596,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "17",
-            "faturamento": 2549.97998046875
+            "ID_LOJA": "6",
+            "faturamento": 2305.0
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "1",
-            "faturamento": 139.9900016784668
+            "ID_LOJA": "2",
+            "faturamento": 2415.0
+        },
+        {
+            "data": "2026-04-15",
+            "ID_LOJA": "3",
+            "faturamento": 7769.0
+        },
+        {
+            "data": "2026-04-15",
+            "ID_LOJA": "17",
+            "faturamento": 2549.97998046875
         },
         {
             "data": "2026-04-15",
@@ -81764,13 +84631,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "18",
-            "faturamento": 154.99000549316412
+            "ID_LOJA": "13",
+            "faturamento": 1075.0
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "14",
-            "faturamento": 2065.0
+            "ID_LOJA": "1",
+            "faturamento": 139.9900016784668
+        },
+        {
+            "data": "2026-04-15",
+            "ID_LOJA": "18",
+            "faturamento": 154.99000549316412
         },
         {
             "data": "2026-04-15",
@@ -81784,13 +84656,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-15",
-            "ID_LOJA": "13",
-            "faturamento": 1075.0
+            "ID_LOJA": "14",
+            "faturamento": 2065.0
         },
         {
             "data": "2026-04-16",
-            "ID_LOJA": "2",
-            "faturamento": 4000.0
+            "ID_LOJA": "20",
+            "faturamento": 5500.0
+        },
+        {
+            "data": "2026-04-16",
+            "ID_LOJA": "9",
+            "faturamento": 3390.0
         },
         {
             "data": "2026-04-16",
@@ -81829,13 +84706,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-16",
-            "ID_LOJA": "20",
-            "faturamento": 5500.0
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "9",
-            "faturamento": 3390.0
+            "ID_LOJA": "2",
+            "faturamento": 4000.0
         },
         {
             "data": "2026-04-16",
@@ -81844,38 +84716,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-16",
-            "ID_LOJA": "17",
-            "faturamento": 2349.97998046875
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "16",
-            "faturamento": 7610.0
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "15",
-            "faturamento": 2729.9999685287476
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "14",
-            "faturamento": 977.0
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "13",
-            "faturamento": 1590.0
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "12",
-            "faturamento": 4060.990005493164
-        },
-        {
-            "data": "2026-04-16",
-            "ID_LOJA": "11",
-            "faturamento": 6930.0
+            "ID_LOJA": "18",
+            "faturamento": 5564.9699783325195
         },
         {
             "data": "2026-04-16",
@@ -81884,33 +84726,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-16",
+            "ID_LOJA": "11",
+            "faturamento": 6930.0
+        },
+        {
+            "data": "2026-04-16",
+            "ID_LOJA": "12",
+            "faturamento": 4060.990005493164
+        },
+        {
+            "data": "2026-04-16",
+            "ID_LOJA": "13",
+            "faturamento": 1590.0
+        },
+        {
+            "data": "2026-04-16",
             "ID_LOJA": "1",
             "faturamento": 145.0
         },
         {
             "data": "2026-04-16",
-            "ID_LOJA": "18",
-            "faturamento": 5564.9699783325195
+            "ID_LOJA": "15",
+            "faturamento": 2729.9999685287476
         },
         {
-            "data": "2026-04-17",
-            "ID_LOJA": "21",
-            "faturamento": 8649.969970703125
+            "data": "2026-04-16",
+            "ID_LOJA": "16",
+            "faturamento": 7610.0
         },
         {
-            "data": "2026-04-17",
-            "ID_LOJA": "23",
-            "faturamento": 1499.989990234375
+            "data": "2026-04-16",
+            "ID_LOJA": "17",
+            "faturamento": 2349.97998046875
         },
         {
-            "data": "2026-04-17",
-            "ID_LOJA": "3",
-            "faturamento": 2054.0
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "4",
-            "faturamento": 3400.0
+            "data": "2026-04-16",
+            "ID_LOJA": "14",
+            "faturamento": 977.0
         },
         {
             "data": "2026-04-17",
@@ -81919,8 +84771,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-17",
-            "ID_LOJA": "6",
-            "faturamento": 10196.999985694885
+            "ID_LOJA": "8",
+            "faturamento": 2359.990001678467
         },
         {
             "data": "2026-04-17",
@@ -81929,13 +84781,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-17",
+            "ID_LOJA": "6",
+            "faturamento": 10196.999985694885
+        },
+        {
+            "data": "2026-04-17",
             "ID_LOJA": "9",
             "faturamento": 3250.0
         },
         {
             "data": "2026-04-17",
-            "ID_LOJA": "5",
-            "faturamento": 5910.0
+            "ID_LOJA": "4",
+            "faturamento": 3400.0
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "3",
+            "faturamento": 2054.0
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "23",
+            "faturamento": 1499.989990234375
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "21",
+            "faturamento": 8649.969970703125
         },
         {
             "data": "2026-04-17",
@@ -81944,8 +84816,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-17",
-            "ID_LOJA": "8",
-            "faturamento": 2359.990001678467
+            "ID_LOJA": "5",
+            "faturamento": 5910.0
         },
         {
             "data": "2026-04-17",
@@ -81954,33 +84826,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-17",
-            "ID_LOJA": "18",
-            "faturamento": 10310.949974060059
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "10",
-            "faturamento": 1875.0
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "11",
-            "faturamento": 13824.0
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "12",
-            "faturamento": 2495.0
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "1",
-            "faturamento": 1431.9799995422363
-        },
-        {
-            "data": "2026-04-17",
-            "ID_LOJA": "14",
-            "faturamento": 459.0
+            "ID_LOJA": "16",
+            "faturamento": 2810.0
         },
         {
             "data": "2026-04-17",
@@ -81989,8 +84836,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-17",
-            "ID_LOJA": "16",
-            "faturamento": 2810.0
+            "ID_LOJA": "14",
+            "faturamento": 459.0
         },
         {
             "data": "2026-04-17",
@@ -81998,39 +84845,34 @@ const dadosDashboard = {
             "faturamento": 2600.0
         },
         {
-            "data": "2026-04-18",
-            "ID_LOJA": "20",
-            "faturamento": 1400.0
+            "data": "2026-04-17",
+            "ID_LOJA": "12",
+            "faturamento": 2495.0
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "11",
+            "faturamento": 13824.0
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "10",
+            "faturamento": 1875.0
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "1",
+            "faturamento": 1431.9799995422363
+        },
+        {
+            "data": "2026-04-17",
+            "ID_LOJA": "18",
+            "faturamento": 10310.949974060059
         },
         {
             "data": "2026-04-18",
-            "ID_LOJA": "9",
-            "faturamento": 6482.999988555908
-        },
-        {
-            "data": "2026-04-18",
-            "ID_LOJA": "8",
-            "faturamento": 1279.9900226593015
-        },
-        {
-            "data": "2026-04-18",
-            "ID_LOJA": "7",
-            "faturamento": 5763.9899978637695
-        },
-        {
-            "data": "2026-04-18",
-            "ID_LOJA": "6",
-            "faturamento": 4919.989990234375
-        },
-        {
-            "data": "2026-04-18",
-            "ID_LOJA": "4",
-            "faturamento": 9700.0
-        },
-        {
-            "data": "2026-04-18",
-            "ID_LOJA": "3",
-            "faturamento": 1342.0
+            "ID_LOJA": "21",
+            "faturamento": 3850.0
         },
         {
             "data": "2026-04-18",
@@ -82039,8 +84881,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-18",
-            "ID_LOJA": "21",
-            "faturamento": 3850.0
+            "ID_LOJA": "3",
+            "faturamento": 1342.0
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "4",
+            "faturamento": 9700.0
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "9",
+            "faturamento": 6482.999988555908
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "7",
+            "faturamento": 5763.9899978637695
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "8",
+            "faturamento": 1279.9900226593015
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "20",
+            "faturamento": 1400.0
+        },
+        {
+            "data": "2026-04-18",
+            "ID_LOJA": "6",
+            "faturamento": 4919.989990234375
         },
         {
             "data": "2026-04-18",
@@ -82159,13 +85031,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "21",
-            "faturamento": 16229.989990234375
-        },
-        {
-            "data": "2026-04-20",
-            "ID_LOJA": "9",
-            "faturamento": 10440.000030040741
+            "ID_LOJA": "20",
+            "faturamento": 1080.010009765625
         },
         {
             "data": "2026-04-20",
@@ -82209,13 +85076,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "20",
-            "faturamento": 1080.010009765625
+            "ID_LOJA": "21",
+            "faturamento": 16229.989990234375
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "11",
-            "faturamento": 6630.0
+            "ID_LOJA": "9",
+            "faturamento": 10440.000030040741
+        },
+        {
+            "data": "2026-04-20",
+            "ID_LOJA": "2",
+            "faturamento": 3730.0
+        },
+        {
+            "data": "2026-04-20",
+            "ID_LOJA": "17",
+            "faturamento": 1359.9799919128418
         },
         {
             "data": "2026-04-20",
@@ -82229,23 +85106,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "12",
-            "faturamento": 5850.0
-        },
-        {
-            "data": "2026-04-20",
-            "ID_LOJA": "13",
-            "faturamento": 730.0
-        },
-        {
-            "data": "2026-04-20",
             "ID_LOJA": "10",
             "faturamento": 4170.0
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "15",
-            "faturamento": 220.0
+            "ID_LOJA": "11",
+            "faturamento": 6630.0
         },
         {
             "data": "2026-04-20",
@@ -82254,8 +85121,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "17",
-            "faturamento": 1359.9799919128418
+            "ID_LOJA": "13",
+            "faturamento": 730.0
         },
         {
             "data": "2026-04-20",
@@ -82264,18 +85131,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-20",
-            "ID_LOJA": "2",
-            "faturamento": 3730.0
+            "ID_LOJA": "15",
+            "faturamento": 220.0
+        },
+        {
+            "data": "2026-04-20",
+            "ID_LOJA": "12",
+            "faturamento": 5850.0
         },
         {
             "data": "2026-04-21",
             "ID_LOJA": "9",
             "faturamento": 5950.0
-        },
-        {
-            "data": "2026-04-21",
-            "ID_LOJA": "18",
-            "faturamento": 13083.979995727539
         },
         {
             "data": "2026-04-21",
@@ -82294,11 +85161,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-21",
-            "ID_LOJA": "22",
-            "faturamento": 1428.9900016784668
-        },
-        {
-            "data": "2026-04-21",
             "ID_LOJA": "21",
             "faturamento": 1349.989990234375
         },
@@ -82309,8 +85171,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-21",
-            "ID_LOJA": "17",
-            "faturamento": 3744.0
+            "ID_LOJA": "18",
+            "faturamento": 13083.979995727539
+        },
+        {
+            "data": "2026-04-21",
+            "ID_LOJA": "22",
+            "faturamento": 1428.9900016784668
+        },
+        {
+            "data": "2026-04-21",
+            "ID_LOJA": "16",
+            "faturamento": 60.0
         },
         {
             "data": "2026-04-21",
@@ -82344,8 +85216,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-21",
-            "ID_LOJA": "16",
-            "faturamento": 60.0
+            "ID_LOJA": "17",
+            "faturamento": 3744.0
         },
         {
             "data": "2026-04-22",
@@ -82359,8 +85231,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "9",
-            "faturamento": 16240.0
+            "ID_LOJA": "3",
+            "faturamento": 7164.979991912842
         },
         {
             "data": "2026-04-22",
@@ -82369,8 +85241,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "7",
-            "faturamento": 6238.0
+            "ID_LOJA": "8",
+            "faturamento": 3865.980019569397
         },
         {
             "data": "2026-04-22",
@@ -82379,8 +85251,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "8",
-            "faturamento": 3865.980019569397
+            "ID_LOJA": "7",
+            "faturamento": 6238.0
+        },
+        {
+            "data": "2026-04-22",
+            "ID_LOJA": "9",
+            "faturamento": 16240.0
         },
         {
             "data": "2026-04-22",
@@ -82399,8 +85276,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "3",
-            "faturamento": 7164.979991912842
+            "ID_LOJA": "15",
+            "faturamento": 6810.000018596649
         },
         {
             "data": "2026-04-22",
@@ -82409,38 +85286,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "1",
-            "faturamento": 1659.989990234375
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "10",
-            "faturamento": 3200.0
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "11",
-            "faturamento": 2260.0
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "12",
-            "faturamento": 1704.0
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "19",
-            "faturamento": 79.9900016784668
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "14",
-            "faturamento": 7740.0
-        },
-        {
-            "data": "2026-04-22",
-            "ID_LOJA": "15",
-            "faturamento": 6810.000018596649
+            "ID_LOJA": "17",
+            "faturamento": 9899.95987701416
         },
         {
             "data": "2026-04-22",
@@ -82449,8 +85296,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-22",
-            "ID_LOJA": "17",
-            "faturamento": 9899.95987701416
+            "ID_LOJA": "14",
+            "faturamento": 7740.0
         },
         {
             "data": "2026-04-22",
@@ -82458,49 +85305,29 @@ const dadosDashboard = {
             "faturamento": 1650.0
         },
         {
-            "data": "2026-04-23",
-            "ID_LOJA": "21",
-            "faturamento": 2480.0
+            "data": "2026-04-22",
+            "ID_LOJA": "12",
+            "faturamento": 1704.0
         },
         {
-            "data": "2026-04-23",
-            "ID_LOJA": "9",
-            "faturamento": 11396.0
+            "data": "2026-04-22",
+            "ID_LOJA": "11",
+            "faturamento": 2260.0
         },
         {
-            "data": "2026-04-23",
-            "ID_LOJA": "8",
-            "faturamento": 3820.0
+            "data": "2026-04-22",
+            "ID_LOJA": "10",
+            "faturamento": 3200.0
         },
         {
-            "data": "2026-04-23",
-            "ID_LOJA": "7",
-            "faturamento": 7303.0
+            "data": "2026-04-22",
+            "ID_LOJA": "1",
+            "faturamento": 1659.989990234375
         },
         {
-            "data": "2026-04-23",
-            "ID_LOJA": "6",
-            "faturamento": 6439.97998046875
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "5",
-            "faturamento": 8814.380126953125
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "4",
-            "faturamento": 6330.0
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "3",
-            "faturamento": 2889.9900007247925
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "23",
-            "faturamento": 1300.0
+            "data": "2026-04-22",
+            "ID_LOJA": "19",
+            "faturamento": 79.9900016784668
         },
         {
             "data": "2026-04-23",
@@ -82509,38 +85336,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-23",
+            "ID_LOJA": "23",
+            "faturamento": 1300.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "3",
+            "faturamento": 2889.9900007247925
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "4",
+            "faturamento": 6330.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "9",
+            "faturamento": 11396.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "6",
+            "faturamento": 6439.97998046875
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "7",
+            "faturamento": 7303.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "8",
+            "faturamento": 3820.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "21",
+            "faturamento": 2480.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "5",
+            "faturamento": 8814.380126953125
+        },
+        {
+            "data": "2026-04-23",
             "ID_LOJA": "20",
             "faturamento": 4750.719970703125
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "18",
-            "faturamento": 1272.9799919128418
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "1",
-            "faturamento": 324.9800224304199
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "17",
-            "faturamento": 2829.989990234375
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "16",
-            "faturamento": 4590.0
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "15",
-            "faturamento": 770.0
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "14",
-            "faturamento": 290.0
         },
         {
             "data": "2026-04-23",
@@ -82549,13 +85391,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-23",
-            "ID_LOJA": "12",
-            "faturamento": 1800.0
-        },
-        {
-            "data": "2026-04-23",
-            "ID_LOJA": "11",
-            "faturamento": 1550.0
+            "ID_LOJA": "18",
+            "faturamento": 1272.9799919128418
         },
         {
             "data": "2026-04-23",
@@ -82564,33 +85401,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-23",
+            "ID_LOJA": "11",
+            "faturamento": 1550.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "12",
+            "faturamento": 1800.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "1",
+            "faturamento": 324.9800224304199
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "15",
+            "faturamento": 770.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "16",
+            "faturamento": 4590.0
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "17",
+            "faturamento": 2829.989990234375
+        },
+        {
+            "data": "2026-04-23",
+            "ID_LOJA": "14",
+            "faturamento": 290.0
+        },
+        {
+            "data": "2026-04-23",
             "ID_LOJA": "2",
             "faturamento": 2090.0
-        },
-        {
-            "data": "2026-04-24",
-            "ID_LOJA": "2",
-            "faturamento": 5630.0
-        },
-        {
-            "data": "2026-04-24",
-            "ID_LOJA": "21",
-            "faturamento": 7259.97998046875
-        },
-        {
-            "data": "2026-04-24",
-            "ID_LOJA": "3",
-            "faturamento": 11080.989990234375
-        },
-        {
-            "data": "2026-04-24",
-            "ID_LOJA": "19",
-            "faturamento": 1179.989990234375
-        },
-        {
-            "data": "2026-04-24",
-            "ID_LOJA": "5",
-            "faturamento": 10.0
         },
         {
             "data": "2026-04-24",
@@ -82599,8 +85446,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-24",
+            "ID_LOJA": "19",
+            "faturamento": 1179.989990234375
+        },
+        {
+            "data": "2026-04-24",
             "ID_LOJA": "7",
             "faturamento": 5219.989990234375
+        },
+        {
+            "data": "2026-04-24",
+            "ID_LOJA": "6",
+            "faturamento": 594.0
+        },
+        {
+            "data": "2026-04-24",
+            "ID_LOJA": "5",
+            "faturamento": 10.0
         },
         {
             "data": "2026-04-24",
@@ -82609,13 +85471,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-24",
-            "ID_LOJA": "18",
-            "faturamento": 6162.989990234375
+            "ID_LOJA": "3",
+            "faturamento": 11080.989990234375
         },
         {
             "data": "2026-04-24",
-            "ID_LOJA": "6",
-            "faturamento": 594.0
+            "ID_LOJA": "21",
+            "faturamento": 7259.97998046875
+        },
+        {
+            "data": "2026-04-24",
+            "ID_LOJA": "2",
+            "faturamento": 5630.0
+        },
+        {
+            "data": "2026-04-24",
+            "ID_LOJA": "18",
+            "faturamento": 6162.989990234375
         },
         {
             "data": "2026-04-24",
@@ -82664,11 +85536,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
-            "ID_LOJA": "21",
-            "faturamento": 700.0
-        },
-        {
-            "data": "2026-04-25",
             "ID_LOJA": "22",
             "faturamento": 109.98999977111816
         },
@@ -82684,6 +85551,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
+            "ID_LOJA": "4",
+            "faturamento": 13311.0
+        },
+        {
+            "data": "2026-04-25",
             "ID_LOJA": "8",
             "faturamento": 1553.99
         },
@@ -82694,13 +85566,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
+            "ID_LOJA": "6",
+            "faturamento": 5611.199996948242
+        },
+        {
+            "data": "2026-04-25",
             "ID_LOJA": "7",
             "faturamento": 16352.469833374023
         },
         {
             "data": "2026-04-25",
-            "ID_LOJA": "20",
-            "faturamento": 7360.0
+            "ID_LOJA": "21",
+            "faturamento": 700.0
         },
         {
             "data": "2026-04-25",
@@ -82709,23 +85586,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
-            "ID_LOJA": "4",
-            "faturamento": 13311.0
+            "ID_LOJA": "20",
+            "faturamento": 7360.0
+        },
+        {
+            "data": "2026-04-25",
+            "ID_LOJA": "13",
+            "faturamento": 1700.0
+        },
+        {
+            "data": "2026-04-25",
+            "ID_LOJA": "19",
+            "faturamento": 2849.97998046875
         },
         {
             "data": "2026-04-25",
             "ID_LOJA": "2",
             "faturamento": 1530.0
-        },
-        {
-            "data": "2026-04-25",
-            "ID_LOJA": "6",
-            "faturamento": 5611.199996948242
-        },
-        {
-            "data": "2026-04-25",
-            "ID_LOJA": "18",
-            "faturamento": 5718.990009307861
         },
         {
             "data": "2026-04-25",
@@ -82744,11 +85621,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
-            "ID_LOJA": "13",
-            "faturamento": 1700.0
-        },
-        {
-            "data": "2026-04-25",
             "ID_LOJA": "10",
             "faturamento": 30.0
         },
@@ -82764,6 +85636,11 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-25",
+            "ID_LOJA": "18",
+            "faturamento": 5718.990009307861
+        },
+        {
+            "data": "2026-04-25",
             "ID_LOJA": "17",
             "faturamento": 13023.949993133545
         },
@@ -82771,16 +85648,6 @@ const dadosDashboard = {
             "data": "2026-04-25",
             "ID_LOJA": "14",
             "faturamento": 6131.000060558319
-        },
-        {
-            "data": "2026-04-25",
-            "ID_LOJA": "19",
-            "faturamento": 2849.97998046875
-        },
-        {
-            "data": "2026-04-26",
-            "ID_LOJA": "18",
-            "faturamento": 1825.0
         },
         {
             "data": "2026-04-26",
@@ -82804,18 +85671,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-26",
-            "ID_LOJA": "23",
-            "faturamento": 900.0
-        },
-        {
-            "data": "2026-04-26",
             "ID_LOJA": "22",
             "faturamento": 229.9899978637695
         },
         {
             "data": "2026-04-26",
-            "ID_LOJA": "17",
-            "faturamento": 79.9900016784668
+            "ID_LOJA": "18",
+            "faturamento": 1825.0
+        },
+        {
+            "data": "2026-04-26",
+            "ID_LOJA": "23",
+            "faturamento": 900.0
+        },
+        {
+            "data": "2026-04-26",
+            "ID_LOJA": "16",
+            "faturamento": 50.0
         },
         {
             "data": "2026-04-26",
@@ -82844,18 +85716,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-26",
-            "ID_LOJA": "16",
-            "faturamento": 50.0
+            "ID_LOJA": "17",
+            "faturamento": 79.9900016784668
+        },
+        {
+            "data": "2026-04-27",
+            "ID_LOJA": "21",
+            "faturamento": 1600.0
         },
         {
             "data": "2026-04-27",
             "ID_LOJA": "22",
             "faturamento": 1799.969985961914
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "23",
-            "faturamento": 3999.989990234375
         },
         {
             "data": "2026-04-27",
@@ -82874,8 +85746,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "5",
-            "faturamento": 1210.0
+            "ID_LOJA": "8",
+            "faturamento": 6388.97998046875
         },
         {
             "data": "2026-04-27",
@@ -82884,13 +85756,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "8",
-            "faturamento": 6388.97998046875
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "21",
-            "faturamento": 1600.0
+            "ID_LOJA": "20",
+            "faturamento": 1530.0
         },
         {
             "data": "2026-04-27",
@@ -82899,18 +85766,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "20",
-            "faturamento": 1530.0
+            "ID_LOJA": "19",
+            "faturamento": 1999.989990234375
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "15",
-            "faturamento": 1580.0
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "18",
-            "faturamento": 4225.97998046875
+            "ID_LOJA": "5",
+            "faturamento": 1210.0
         },
         {
             "data": "2026-04-27",
@@ -82919,33 +85781,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "16",
-            "faturamento": 260.0
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "14",
-            "faturamento": 3829.0000145435333
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "13",
-            "faturamento": 1589.9799900054932
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "12",
-            "faturamento": 1390.0
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "11",
-            "faturamento": 7450.0
-        },
-        {
-            "data": "2026-04-27",
-            "ID_LOJA": "10",
-            "faturamento": 100.0
+            "ID_LOJA": "18",
+            "faturamento": 4225.97998046875
         },
         {
             "data": "2026-04-27",
@@ -82954,28 +85791,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-27",
-            "ID_LOJA": "19",
-            "faturamento": 1999.989990234375
+            "ID_LOJA": "10",
+            "faturamento": 100.0
         },
         {
-            "data": "2026-04-28",
-            "ID_LOJA": "22",
-            "faturamento": 1150.0
+            "data": "2026-04-27",
+            "ID_LOJA": "11",
+            "faturamento": 7450.0
         },
         {
-            "data": "2026-04-28",
+            "data": "2026-04-27",
             "ID_LOJA": "23",
-            "faturamento": 13539.909965515137
+            "faturamento": 3999.989990234375
         },
         {
-            "data": "2026-04-28",
-            "ID_LOJA": "3",
-            "faturamento": 13123.989990234375
+            "data": "2026-04-27",
+            "ID_LOJA": "13",
+            "faturamento": 1589.9799900054932
         },
         {
-            "data": "2026-04-28",
-            "ID_LOJA": "4",
-            "faturamento": 6130.0
+            "data": "2026-04-27",
+            "ID_LOJA": "14",
+            "faturamento": 3829.0000145435333
+        },
+        {
+            "data": "2026-04-27",
+            "ID_LOJA": "15",
+            "faturamento": 1580.0
+        },
+        {
+            "data": "2026-04-27",
+            "ID_LOJA": "12",
+            "faturamento": 1390.0
+        },
+        {
+            "data": "2026-04-27",
+            "ID_LOJA": "16",
+            "faturamento": 260.0
         },
         {
             "data": "2026-04-28",
@@ -82984,8 +85836,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-28",
-            "ID_LOJA": "6",
-            "faturamento": 3222.0
+            "ID_LOJA": "8",
+            "faturamento": 2980.000061035156
         },
         {
             "data": "2026-04-28",
@@ -82994,18 +85846,33 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-28",
-            "ID_LOJA": "8",
-            "faturamento": 2980.000061035156
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "21",
-            "faturamento": 4280.010009765625
+            "ID_LOJA": "6",
+            "faturamento": 3222.0
         },
         {
             "data": "2026-04-28",
             "ID_LOJA": "5",
             "faturamento": 3400.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "4",
+            "faturamento": 6130.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "3",
+            "faturamento": 13123.989990234375
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "23",
+            "faturamento": 13539.909965515137
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "22",
+            "faturamento": 1150.0
         },
         {
             "data": "2026-04-28",
@@ -83019,43 +85886,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-28",
-            "ID_LOJA": "19",
-            "faturamento": 1899.989990234375
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "10",
-            "faturamento": 3990.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "11",
-            "faturamento": 3700.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "12",
-            "faturamento": 6090.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "13",
-            "faturamento": 170.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "1",
-            "faturamento": 20.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "15",
-            "faturamento": 2450.0
-        },
-        {
-            "data": "2026-04-28",
-            "ID_LOJA": "16",
-            "faturamento": 3053.0
+            "ID_LOJA": "21",
+            "faturamento": 4280.010009765625
         },
         {
             "data": "2026-04-28",
@@ -83069,18 +85901,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-28",
+            "ID_LOJA": "1",
+            "faturamento": 20.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "10",
+            "faturamento": 3990.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "11",
+            "faturamento": 3700.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "19",
+            "faturamento": 1899.989990234375
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "13",
+            "faturamento": 170.0
+        },
+        {
+            "data": "2026-04-28",
             "ID_LOJA": "14",
             "faturamento": 4340.0
         },
         {
-            "data": "2026-04-29",
-            "ID_LOJA": "21",
-            "faturamento": 11689.96997070312
+            "data": "2026-04-28",
+            "ID_LOJA": "15",
+            "faturamento": 2450.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "16",
+            "faturamento": 3053.0
+        },
+        {
+            "data": "2026-04-28",
+            "ID_LOJA": "12",
+            "faturamento": 6090.0
         },
         {
             "data": "2026-04-29",
-            "ID_LOJA": "9",
-            "faturamento": 7150.899993896484
+            "ID_LOJA": "20",
+            "faturamento": 5300.000016212463
         },
         {
             "data": "2026-04-29",
@@ -83119,13 +85986,23 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-29",
-            "ID_LOJA": "20",
-            "faturamento": 5300.000016212463
+            "ID_LOJA": "21",
+            "faturamento": 11689.96997070312
+        },
+        {
+            "data": "2026-04-29",
+            "ID_LOJA": "9",
+            "faturamento": 7150.899993896484
         },
         {
             "data": "2026-04-29",
             "ID_LOJA": "2",
             "faturamento": 2630.0
+        },
+        {
+            "data": "2026-04-29",
+            "ID_LOJA": "18",
+            "faturamento": 9933.969970703125
         },
         {
             "data": "2026-04-29",
@@ -83149,13 +86026,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-29",
-            "ID_LOJA": "13",
-            "faturamento": 230.0
+            "ID_LOJA": "19",
+            "faturamento": 4169.959972381592
         },
         {
             "data": "2026-04-29",
-            "ID_LOJA": "19",
-            "faturamento": 4169.959972381592
+            "ID_LOJA": "14",
+            "faturamento": 6190.989990234375
         },
         {
             "data": "2026-04-29",
@@ -83174,13 +86051,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-29",
-            "ID_LOJA": "18",
-            "faturamento": 9933.969970703125
-        },
-        {
-            "data": "2026-04-29",
-            "ID_LOJA": "14",
-            "faturamento": 6190.989990234375
+            "ID_LOJA": "13",
+            "faturamento": 230.0
         },
         {
             "data": "2026-04-30",
@@ -83239,8 +86111,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-04-30",
-            "ID_LOJA": "16",
-            "faturamento": 5461.0
+            "ID_LOJA": "2",
+            "faturamento": 8210.0
         },
         {
             "data": "2026-04-30",
@@ -83251,6 +86123,11 @@ const dadosDashboard = {
             "data": "2026-04-30",
             "ID_LOJA": "17",
             "faturamento": 6921.989929199219
+        },
+        {
+            "data": "2026-04-30",
+            "ID_LOJA": "16",
+            "faturamento": 5461.0
         },
         {
             "data": "2026-04-30",
@@ -83288,16 +86165,6 @@ const dadosDashboard = {
             "faturamento": 1810.0
         },
         {
-            "data": "2026-04-30",
-            "ID_LOJA": "2",
-            "faturamento": 8210.0
-        },
-        {
-            "data": "2026-05-02",
-            "ID_LOJA": "3",
-            "faturamento": 3821.97998046875
-        },
-        {
             "data": "2026-05-02",
             "ID_LOJA": "22",
             "faturamento": 1739.9699935913086
@@ -83319,8 +86186,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "21",
-            "faturamento": 9759.959970474243
+            "ID_LOJA": "9",
+            "faturamento": 1850.0
         },
         {
             "data": "2026-05-02",
@@ -83339,8 +86206,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "9",
-            "faturamento": 1850.0
+            "ID_LOJA": "21",
+            "faturamento": 9759.959970474243
         },
         {
             "data": "2026-05-02",
@@ -83354,8 +86221,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "15",
-            "faturamento": 3780.0
+            "ID_LOJA": "3",
+            "faturamento": 3821.97998046875
         },
         {
             "data": "2026-05-02",
@@ -83374,8 +86241,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "12",
-            "faturamento": 14567.0
+            "ID_LOJA": "11",
+            "faturamento": 7960.0
         },
         {
             "data": "2026-05-02",
@@ -83384,13 +86251,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "11",
-            "faturamento": 7960.0
+            "ID_LOJA": "14",
+            "faturamento": 5370.0
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "2",
-            "faturamento": 8380.999969482422
+            "ID_LOJA": "12",
+            "faturamento": 14567.0
+        },
+        {
+            "data": "2026-05-02",
+            "ID_LOJA": "15",
+            "faturamento": 3780.0
         },
         {
             "data": "2026-05-02",
@@ -83409,8 +86281,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-02",
-            "ID_LOJA": "14",
-            "faturamento": 5370.0
+            "ID_LOJA": "2",
+            "faturamento": 8380.999969482422
         },
         {
             "data": "2026-05-03",
@@ -83444,11 +86316,6 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-03",
-            "ID_LOJA": "16",
-            "faturamento": 2700.0
-        },
-        {
-            "data": "2026-05-03",
             "ID_LOJA": "15",
             "faturamento": 1745.0
         },
@@ -83473,6 +86340,16 @@ const dadosDashboard = {
             "faturamento": 5860.0
         },
         {
+            "data": "2026-05-03",
+            "ID_LOJA": "16",
+            "faturamento": 2700.0
+        },
+        {
+            "data": "2026-05-04",
+            "ID_LOJA": "21",
+            "faturamento": 12319.98
+        },
+        {
             "data": "2026-05-04",
             "ID_LOJA": "8",
             "faturamento": 1100.0
@@ -83489,13 +86366,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-04",
+            "ID_LOJA": "9",
+            "faturamento": 1277.0
+        },
+        {
+            "data": "2026-05-04",
             "ID_LOJA": "5",
             "faturamento": 2800.0
         },
         {
             "data": "2026-05-04",
-            "ID_LOJA": "9",
-            "faturamento": 1277.0
+            "ID_LOJA": "4",
+            "faturamento": 10302.99
         },
         {
             "data": "2026-05-04",
@@ -83509,43 +86391,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-04",
-            "ID_LOJA": "21",
-            "faturamento": 12319.98
-        },
-        {
-            "data": "2026-05-04",
             "ID_LOJA": "2",
             "faturamento": 3100.0
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "19",
-            "faturamento": 3309.97
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "4",
-            "faturamento": 10302.99
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "17",
-            "faturamento": 3679.98
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "1",
-            "faturamento": 1349.99
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "10",
-            "faturamento": 3750.0
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "11",
-            "faturamento": 4780.0
         },
         {
             "data": "2026-05-04",
@@ -83559,13 +86406,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-04",
-            "ID_LOJA": "14",
-            "faturamento": 5049.0
-        },
-        {
-            "data": "2026-05-04",
-            "ID_LOJA": "15",
-            "faturamento": 281.99
+            "ID_LOJA": "17",
+            "faturamento": 3679.98
         },
         {
             "data": "2026-05-04",
@@ -83574,48 +86416,38 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-04",
+            "ID_LOJA": "15",
+            "faturamento": 281.99
+        },
+        {
+            "data": "2026-05-04",
+            "ID_LOJA": "14",
+            "faturamento": 5049.0
+        },
+        {
+            "data": "2026-05-04",
             "ID_LOJA": "13",
             "faturamento": 90.0
         },
         {
-            "data": "2026-05-05",
-            "ID_LOJA": "22",
-            "faturamento": 1399.99
+            "data": "2026-05-04",
+            "ID_LOJA": "11",
+            "faturamento": 4780.0
         },
         {
-            "data": "2026-05-05",
-            "ID_LOJA": "8",
-            "faturamento": 4019.99
+            "data": "2026-05-04",
+            "ID_LOJA": "10",
+            "faturamento": 3750.0
         },
         {
-            "data": "2026-05-05",
-            "ID_LOJA": "7",
-            "faturamento": 9623.99
+            "data": "2026-05-04",
+            "ID_LOJA": "1",
+            "faturamento": 1349.99
         },
         {
-            "data": "2026-05-05",
-            "ID_LOJA": "6",
-            "faturamento": 110.0
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "5",
-            "faturamento": 3599.6
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "4",
-            "faturamento": 14214.98
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "3",
-            "faturamento": 4305.0
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "24",
-            "faturamento": 119.98
+            "data": "2026-05-04",
+            "ID_LOJA": "19",
+            "faturamento": 3309.97
         },
         {
             "data": "2026-05-05",
@@ -83624,8 +86456,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-05",
+            "ID_LOJA": "24",
+            "faturamento": 119.98
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "3",
+            "faturamento": 4305.0
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "4",
+            "faturamento": 14214.98
+        },
+        {
+            "data": "2026-05-05",
             "ID_LOJA": "9",
             "faturamento": 2095.0
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "6",
+            "faturamento": 110.0
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "7",
+            "faturamento": 9623.99
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "8",
+            "faturamento": 4019.99
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "22",
+            "faturamento": 1399.99
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "5",
+            "faturamento": 3599.6
         },
         {
             "data": "2026-05-05",
@@ -83634,48 +86506,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-05",
-            "ID_LOJA": "18",
-            "faturamento": 19235.989999999998
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "17",
-            "faturamento": 12943.880000000001
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "16",
-            "faturamento": 4940.0
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "15",
-            "faturamento": 1612.99
-        },
-        {
-            "data": "2026-05-05",
             "ID_LOJA": "14",
             "faturamento": 6400.0
         },
         {
             "data": "2026-05-05",
-            "ID_LOJA": "13",
-            "faturamento": 140.0
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "12",
-            "faturamento": 7885.0
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "11",
-            "faturamento": 1567.5
-        },
-        {
-            "data": "2026-05-05",
-            "ID_LOJA": "10",
-            "faturamento": 1580.0
+            "ID_LOJA": "18",
+            "faturamento": 19235.989999999998
         },
         {
             "data": "2026-05-05",
@@ -83684,13 +86521,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-05",
+            "ID_LOJA": "10",
+            "faturamento": 1580.0
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "11",
+            "faturamento": 1567.5
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "12",
+            "faturamento": 7885.0
+        },
+        {
+            "data": "2026-05-05",
             "ID_LOJA": "2",
             "faturamento": 1500.0
         },
         {
-            "data": "2026-05-06",
-            "ID_LOJA": "22",
-            "faturamento": 190.0
+            "data": "2026-05-05",
+            "ID_LOJA": "15",
+            "faturamento": 1612.99
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "16",
+            "faturamento": 4940.0
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "17",
+            "faturamento": 12943.880000000001
+        },
+        {
+            "data": "2026-05-05",
+            "ID_LOJA": "13",
+            "faturamento": 140.0
         },
         {
             "data": "2026-05-06",
@@ -83699,48 +86566,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "24",
-            "faturamento": 2249.99
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "3",
-            "faturamento": 4397.0
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "21",
-            "faturamento": 6530.0
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "5",
-            "faturamento": 4292.34
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "6",
-            "faturamento": 10157.99
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "7",
-            "faturamento": 9428.98
-        },
-        {
-            "data": "2026-05-06",
             "ID_LOJA": "9",
             "faturamento": 2680.0
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "4",
-            "faturamento": 13759.98999
-        },
-        {
-            "data": "2026-05-06",
-            "ID_LOJA": "20",
-            "faturamento": 6300.0
         },
         {
             "data": "2026-05-06",
@@ -83749,13 +86576,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "18",
-            "faturamento": 6885.99
+            "ID_LOJA": "7",
+            "faturamento": 9428.98
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "1",
-            "faturamento": 2185.0
+            "ID_LOJA": "6",
+            "faturamento": 10157.99
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "5",
+            "faturamento": 4292.34
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "4",
+            "faturamento": 13759.98999
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "3",
+            "faturamento": 4397.0
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "24",
+            "faturamento": 2249.99
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "22",
+            "faturamento": 190.0
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "21",
+            "faturamento": 6530.0
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "20",
+            "faturamento": 6300.0
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "2",
+            "faturamento": 3300.0
         },
         {
             "data": "2026-05-06",
@@ -83774,13 +86641,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "2",
-            "faturamento": 3300.0
+            "ID_LOJA": "13",
+            "faturamento": 2139.99
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "14",
-            "faturamento": 11320.99
+            "ID_LOJA": "1",
+            "faturamento": 2185.0
         },
         {
             "data": "2026-05-06",
@@ -83799,18 +86666,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-06",
-            "ID_LOJA": "13",
-            "faturamento": 2139.99
+            "ID_LOJA": "18",
+            "faturamento": 6885.99
+        },
+        {
+            "data": "2026-05-06",
+            "ID_LOJA": "14",
+            "faturamento": 11320.99
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "22",
-            "faturamento": 3280.0
-        },
-        {
-            "data": "2026-05-07",
-            "ID_LOJA": "9",
-            "faturamento": 469.5
+            "ID_LOJA": "21",
+            "faturamento": 6729.99
         },
         {
             "data": "2026-05-07",
@@ -83854,8 +86721,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "21",
-            "faturamento": 6729.99
+            "ID_LOJA": "22",
+            "faturamento": 3280.0
+        },
+        {
+            "data": "2026-05-07",
+            "ID_LOJA": "9",
+            "faturamento": 469.5
         },
         {
             "data": "2026-05-07",
@@ -83864,8 +86736,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "2",
-            "faturamento": 4780.0
+            "ID_LOJA": "18",
+            "faturamento": 9860.949999999999
+        },
+        {
+            "data": "2026-05-07",
+            "ID_LOJA": "1",
+            "faturamento": 7644.99
         },
         {
             "data": "2026-05-07",
@@ -83884,13 +86761,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "13",
-            "faturamento": 139.98
+            "ID_LOJA": "2",
+            "faturamento": 4780.0
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "1",
-            "faturamento": 7644.99
+            "ID_LOJA": "14",
+            "faturamento": 2569.99
         },
         {
             "data": "2026-05-07",
@@ -83909,23 +86786,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-07",
-            "ID_LOJA": "18",
-            "faturamento": 9860.949999999999
-        },
-        {
-            "data": "2026-05-07",
-            "ID_LOJA": "14",
-            "faturamento": 2569.99
+            "ID_LOJA": "13",
+            "faturamento": 139.98
         },
         {
             "data": "2026-05-08",
-            "ID_LOJA": "22",
-            "faturamento": 2159.96
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "9",
-            "faturamento": 10734.0
+            "ID_LOJA": "21",
+            "faturamento": 6325.98
         },
         {
             "data": "2026-05-08",
@@ -83969,18 +86836,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-08",
-            "ID_LOJA": "21",
-            "faturamento": 6325.98
+            "ID_LOJA": "22",
+            "faturamento": 2159.96
         },
         {
             "data": "2026-05-08",
-            "ID_LOJA": "18",
-            "faturamento": 13842.96
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "2",
-            "faturamento": 4201.5
+            "ID_LOJA": "9",
+            "faturamento": 10734.0
         },
         {
             "data": "2026-05-08",
@@ -83989,38 +86851,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-08",
-            "ID_LOJA": "10",
-            "faturamento": 2130.0
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "11",
-            "faturamento": 3992.0
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "12",
-            "faturamento": 7608.5
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "13",
-            "faturamento": 329.99
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "1",
-            "faturamento": 1400.0
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "15",
-            "faturamento": 60.0
-        },
-        {
-            "data": "2026-05-08",
-            "ID_LOJA": "16",
-            "faturamento": 2599.98999
+            "ID_LOJA": "18",
+            "faturamento": 13842.96
         },
         {
             "data": "2026-05-08",
@@ -84029,48 +86861,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-08",
+            "ID_LOJA": "16",
+            "faturamento": 2599.98999
+        },
+        {
+            "data": "2026-05-08",
+            "ID_LOJA": "15",
+            "faturamento": 60.0
+        },
+        {
+            "data": "2026-05-08",
             "ID_LOJA": "14",
             "faturamento": 4379.94
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "9",
-            "faturamento": 9300.0
+            "data": "2026-05-08",
+            "ID_LOJA": "13",
+            "faturamento": 329.99
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "8",
-            "faturamento": 7109.99
+            "data": "2026-05-08",
+            "ID_LOJA": "12",
+            "faturamento": 7608.5
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "7",
-            "faturamento": 15383.46
+            "data": "2026-05-08",
+            "ID_LOJA": "11",
+            "faturamento": 3992.0
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "6",
-            "faturamento": 20533.989999999998
+            "data": "2026-05-08",
+            "ID_LOJA": "10",
+            "faturamento": 2130.0
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "5",
-            "faturamento": 322.0
+            "data": "2026-05-08",
+            "ID_LOJA": "1",
+            "faturamento": 1400.0
         },
         {
-            "data": "2026-05-09",
-            "ID_LOJA": "4",
-            "faturamento": 21425.989999999998
-        },
-        {
-            "data": "2026-05-09",
-            "ID_LOJA": "3",
-            "faturamento": 2508.99
-        },
-        {
-            "data": "2026-05-09",
-            "ID_LOJA": "24",
-            "faturamento": 2209.9
+            "data": "2026-05-08",
+            "ID_LOJA": "2",
+            "faturamento": 4201.5
         },
         {
             "data": "2026-05-09",
@@ -84079,8 +86911,48 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-09",
+            "ID_LOJA": "24",
+            "faturamento": 2209.9
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "3",
+            "faturamento": 2508.99
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "4",
+            "faturamento": 21425.989999999998
+        },
+        {
+            "data": "2026-05-09",
             "ID_LOJA": "22",
             "faturamento": 5559.99
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "5",
+            "faturamento": 322.0
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "6",
+            "faturamento": 20533.989999999998
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "7",
+            "faturamento": 15383.46
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "8",
+            "faturamento": 7109.99
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "9",
+            "faturamento": 9300.0
         },
         {
             "data": "2026-05-09",
@@ -84089,8 +86961,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-09",
-            "ID_LOJA": "18",
-            "faturamento": 12176.869999999999
+            "ID_LOJA": "13",
+            "faturamento": 4500.0
         },
         {
             "data": "2026-05-09",
@@ -84099,13 +86971,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-09",
-            "ID_LOJA": "1",
-            "faturamento": 2888.1
+            "ID_LOJA": "20",
+            "faturamento": 2500.0
         },
         {
             "data": "2026-05-09",
-            "ID_LOJA": "20",
-            "faturamento": 2500.0
+            "ID_LOJA": "10",
+            "faturamento": 585.0
         },
         {
             "data": "2026-05-09",
@@ -84119,13 +86991,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-09",
-            "ID_LOJA": "10",
-            "faturamento": 585.0
-        },
-        {
-            "data": "2026-05-09",
-            "ID_LOJA": "14",
-            "faturamento": 9704.99
+            "ID_LOJA": "1",
+            "faturamento": 2888.1
         },
         {
             "data": "2026-05-09",
@@ -84144,8 +87011,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-09",
-            "ID_LOJA": "13",
-            "faturamento": 4500.0
+            "ID_LOJA": "18",
+            "faturamento": 12176.869999999999
+        },
+        {
+            "data": "2026-05-09",
+            "ID_LOJA": "14",
+            "faturamento": 9704.99
         },
         {
             "data": "2026-05-10",
@@ -84154,13 +87026,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-10",
+            "ID_LOJA": "9",
+            "faturamento": 1670.0
+        },
+        {
+            "data": "2026-05-10",
             "ID_LOJA": "8",
             "faturamento": 1950.0
         },
         {
             "data": "2026-05-10",
-            "ID_LOJA": "9",
-            "faturamento": 1670.0
+            "ID_LOJA": "6",
+            "faturamento": 63.0
         },
         {
             "data": "2026-05-10",
@@ -84184,8 +87061,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-10",
-            "ID_LOJA": "6",
-            "faturamento": 63.0
+            "ID_LOJA": "17",
+            "faturamento": 1344.0
         },
         {
             "data": "2026-05-10",
@@ -84221,11 +87098,6 @@ const dadosDashboard = {
             "data": "2026-05-10",
             "ID_LOJA": "1",
             "faturamento": 1229.99
-        },
-        {
-            "data": "2026-05-10",
-            "ID_LOJA": "17",
-            "faturamento": 1344.0
         },
         {
             "data": "2026-05-11",
@@ -84264,8 +87136,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-11",
-            "ID_LOJA": "22",
-            "faturamento": 3655.0
+            "ID_LOJA": "21",
+            "faturamento": 3299.99
         },
         {
             "data": "2026-05-11",
@@ -84279,18 +87151,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-11",
-            "ID_LOJA": "21",
-            "faturamento": 3299.99
-        },
-        {
-            "data": "2026-05-11",
             "ID_LOJA": "20",
             "faturamento": 4854.99
         },
         {
             "data": "2026-05-11",
-            "ID_LOJA": "10",
-            "faturamento": 4465.0
+            "ID_LOJA": "22",
+            "faturamento": 3655.0
         },
         {
             "data": "2026-05-11",
@@ -84299,38 +87166,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-11",
-            "ID_LOJA": "18",
-            "faturamento": 5234.99
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "17",
-            "faturamento": 8408.98
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "16",
-            "faturamento": 1670.0
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "15",
-            "faturamento": 10652.0
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "14",
-            "faturamento": 4305.0
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "13",
-            "faturamento": 1620.0
-        },
-        {
-            "data": "2026-05-11",
-            "ID_LOJA": "12",
-            "faturamento": 3117.0
+            "ID_LOJA": "10",
+            "faturamento": 4465.0
         },
         {
             "data": "2026-05-11",
@@ -84339,8 +87176,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-11",
-            "ID_LOJA": "2",
-            "faturamento": 170.0
+            "ID_LOJA": "12",
+            "faturamento": 3117.0
+        },
+        {
+            "data": "2026-05-11",
+            "ID_LOJA": "13",
+            "faturamento": 1620.0
+        },
+        {
+            "data": "2026-05-11",
+            "ID_LOJA": "14",
+            "faturamento": 4305.0
         },
         {
             "data": "2026-05-11",
@@ -84348,44 +87195,29 @@ const dadosDashboard = {
             "faturamento": 359.99
         },
         {
-            "data": "2026-05-12",
-            "ID_LOJA": "22",
-            "faturamento": 1579.99
+            "data": "2026-05-11",
+            "ID_LOJA": "16",
+            "faturamento": 1670.0
         },
         {
-            "data": "2026-05-12",
-            "ID_LOJA": "23",
-            "faturamento": 5230.0
+            "data": "2026-05-11",
+            "ID_LOJA": "17",
+            "faturamento": 8408.98
         },
         {
-            "data": "2026-05-12",
-            "ID_LOJA": "3",
-            "faturamento": 2058.99
+            "data": "2026-05-11",
+            "ID_LOJA": "18",
+            "faturamento": 5234.99
         },
         {
-            "data": "2026-05-12",
-            "ID_LOJA": "4",
-            "faturamento": 6710.0
+            "data": "2026-05-11",
+            "ID_LOJA": "15",
+            "faturamento": 10652.0
         },
         {
-            "data": "2026-05-12",
-            "ID_LOJA": "21",
-            "faturamento": 11821.98
-        },
-        {
-            "data": "2026-05-12",
-            "ID_LOJA": "6",
-            "faturamento": 2705.0
-        },
-        {
-            "data": "2026-05-12",
-            "ID_LOJA": "7",
-            "faturamento": 9329.8
-        },
-        {
-            "data": "2026-05-12",
-            "ID_LOJA": "8",
-            "faturamento": 5482.0
+            "data": "2026-05-11",
+            "ID_LOJA": "2",
+            "faturamento": 170.0
         },
         {
             "data": "2026-05-12",
@@ -84399,13 +87231,53 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-12",
+            "ID_LOJA": "8",
+            "faturamento": 5482.0
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "7",
+            "faturamento": 9329.8
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "6",
+            "faturamento": 2705.0
+        },
+        {
+            "data": "2026-05-12",
             "ID_LOJA": "5",
             "faturamento": 20.0
         },
         {
             "data": "2026-05-12",
-            "ID_LOJA": "18",
-            "faturamento": 6240.0
+            "ID_LOJA": "4",
+            "faturamento": 6710.0
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "3",
+            "faturamento": 2058.99
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "23",
+            "faturamento": 5230.0
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "22",
+            "faturamento": 1579.99
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "21",
+            "faturamento": 11821.98
+        },
+        {
+            "data": "2026-05-12",
+            "ID_LOJA": "2",
+            "faturamento": 196.0
         },
         {
             "data": "2026-05-12",
@@ -84454,8 +87326,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-12",
-            "ID_LOJA": "2",
-            "faturamento": 196.0
+            "ID_LOJA": "18",
+            "faturamento": 6240.0
         },
         {
             "data": "2026-05-13",
@@ -84474,13 +87346,18 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "4",
-            "faturamento": 6781.980041503906
+            "ID_LOJA": "9",
+            "faturamento": 1390.0
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "9",
-            "faturamento": 1390.0
+            "ID_LOJA": "8",
+            "faturamento": 1754.0
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "5",
+            "faturamento": 59.0
         },
         {
             "data": "2026-05-13",
@@ -84494,18 +87371,13 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "8",
-            "faturamento": 1754.0
-        },
-        {
-            "data": "2026-05-13",
             "ID_LOJA": "21",
             "faturamento": 4219.989990234375
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "5",
-            "faturamento": 59.0
+            "ID_LOJA": "4",
+            "faturamento": 6781.980041503906
         },
         {
             "data": "2026-05-13",
@@ -84524,38 +87396,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "17",
-            "faturamento": 13189.9599609375
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "16",
-            "faturamento": 1545.0
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "15",
-            "faturamento": 2039.9900016784668
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "14",
-            "faturamento": 7185.990005493164
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "13",
-            "faturamento": 218.9900054931641
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "12",
-            "faturamento": 13894.999984741211
-        },
-        {
-            "data": "2026-05-13",
-            "ID_LOJA": "11",
-            "faturamento": 3440.0
+            "ID_LOJA": "1",
+            "faturamento": 129.9900016784668
         },
         {
             "data": "2026-05-13",
@@ -84564,13 +87406,43 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-13",
-            "ID_LOJA": "1",
-            "faturamento": 129.9900016784668
+            "ID_LOJA": "11",
+            "faturamento": 3440.0
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "12",
+            "faturamento": 13894.999984741211
         },
         {
             "data": "2026-05-13",
             "ID_LOJA": "2",
             "faturamento": 3300.0
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "14",
+            "faturamento": 7185.990005493164
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "15",
+            "faturamento": 2039.9900016784668
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "16",
+            "faturamento": 1545.0
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "17",
+            "faturamento": 13189.9599609375
+        },
+        {
+            "data": "2026-05-13",
+            "ID_LOJA": "13",
+            "faturamento": 218.9900054931641
         },
         {
             "data": "2026-05-14",
@@ -84579,93 +87451,8 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-14",
-            "ID_LOJA": "23",
-            "faturamento": 4400.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "24",
-            "faturamento": 1159.9000091552734
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "7",
-            "faturamento": 1530.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "4",
-            "faturamento": 3940.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "5",
-            "faturamento": 1165.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "6",
-            "faturamento": 1629.989990234375
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "21",
-            "faturamento": 7100.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "3",
-            "faturamento": 5414.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "20",
-            "faturamento": 1100.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "15",
-            "faturamento": 130.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "18",
-            "faturamento": 8720.990005493164
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "17",
-            "faturamento": 3455.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "16",
-            "faturamento": 6160.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "14",
-            "faturamento": 1745.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "13",
-            "faturamento": 789.9799957275391
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "12",
-            "faturamento": 3886.5
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "11",
-            "faturamento": 4016.0
-        },
-        {
-            "data": "2026-05-14",
-            "ID_LOJA": "10",
-            "faturamento": 1734.4800074100497
+            "ID_LOJA": "9",
+            "faturamento": 17679.0
         },
         {
             "data": "2026-05-14",
@@ -84674,13 +87461,403 @@ const dadosDashboard = {
         },
         {
             "data": "2026-05-14",
+            "ID_LOJA": "7",
+            "faturamento": 1530.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "6",
+            "faturamento": 1629.989990234375
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "5",
+            "faturamento": 1165.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "4",
+            "faturamento": 3940.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "3",
+            "faturamento": 5414.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "24",
+            "faturamento": 1159.9000091552734
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "23",
+            "faturamento": 4400.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "21",
+            "faturamento": 7100.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "20",
+            "faturamento": 1100.0
+        },
+        {
+            "data": "2026-05-14",
             "ID_LOJA": "2",
             "faturamento": 4781.5
         },
         {
             "data": "2026-05-14",
+            "ID_LOJA": "11",
+            "faturamento": 4016.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "12",
+            "faturamento": 3886.5
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "13",
+            "faturamento": 789.9799957275391
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "14",
+            "faturamento": 1745.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "10",
+            "faturamento": 1734.4800074100497
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "16",
+            "faturamento": 6160.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "17",
+            "faturamento": 3455.0
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "18",
+            "faturamento": 8720.990005493164
+        },
+        {
+            "data": "2026-05-14",
+            "ID_LOJA": "15",
+            "faturamento": 130.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "23",
+            "faturamento": 6080.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "8",
+            "faturamento": 2444.989996910095
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "7",
+            "faturamento": 7914.97999382019
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "6",
+            "faturamento": 6107.989990234375
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "5",
+            "faturamento": 1619.989990234375
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "4",
+            "faturamento": 2600.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "3",
+            "faturamento": 900.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "25",
+            "faturamento": 7194.97998046875
+        },
+        {
+            "data": "2026-05-15",
             "ID_LOJA": "9",
-            "faturamento": 17679.0
+            "faturamento": 6912.000015258789
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "22",
+            "faturamento": 55.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "24",
+            "faturamento": 200.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "2",
+            "faturamento": 3410.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "18",
+            "faturamento": 9073.959968566895
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "17",
+            "faturamento": 6284.989990234375
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "16",
+            "faturamento": 319.98999977111816
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "15",
+            "faturamento": 1500.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "14",
+            "faturamento": 5339.9899978637695
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "12",
+            "faturamento": 7000.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "11",
+            "faturamento": 6680.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "10",
+            "faturamento": 1360.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "1",
+            "faturamento": 3023.0
+        },
+        {
+            "data": "2026-05-15",
+            "ID_LOJA": "21",
+            "faturamento": 8139.989990234375
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "23",
+            "faturamento": 11950.48999786377
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "24",
+            "faturamento": 120.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "25",
+            "faturamento": 17503.870040655136
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "3",
+            "faturamento": 800.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "9",
+            "faturamento": 6461.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "5",
+            "faturamento": 200.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "6",
+            "faturamento": 7290.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "7",
+            "faturamento": 6710.489990234375
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "8",
+            "faturamento": 7515.000032424927
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "4",
+            "faturamento": 8693.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "21",
+            "faturamento": 5950.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "22",
+            "faturamento": 2469.989990234375
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "2",
+            "faturamento": 4957.98002243042
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "20",
+            "faturamento": 4800.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "1",
+            "faturamento": 255.9900016784668
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "10",
+            "faturamento": 240.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "12",
+            "faturamento": 19245.999969005585
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "13",
+            "faturamento": 1439.980010986328
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "11",
+            "faturamento": 2080.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "15",
+            "faturamento": 1319.9899978637695
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "16",
+            "faturamento": 30.0
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "17",
+            "faturamento": 12613.989990234375
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "18",
+            "faturamento": 7874.969993591309
+        },
+        {
+            "data": "2026-05-16",
+            "ID_LOJA": "14",
+            "faturamento": 6059.000047683716
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "20",
+            "faturamento": 1500.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "7",
+            "faturamento": 90.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "4",
+            "faturamento": 1660.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "24",
+            "faturamento": 60.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "22",
+            "faturamento": 2198.8999938964844
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "18",
+            "faturamento": 3651.010009765625
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "12",
+            "faturamento": 5227.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "16",
+            "faturamento": 70.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "15",
+            "faturamento": 130.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "14",
+            "faturamento": 1479.9599952697754
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "13",
+            "faturamento": 3450.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "11",
+            "faturamento": 2970.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "8",
+            "faturamento": 2197.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "17",
+            "faturamento": 3010.0
+        },
+        {
+            "data": "2026-05-17",
+            "ID_LOJA": "9",
+            "faturamento": 1229.9999957084656
         }
     ]
 };

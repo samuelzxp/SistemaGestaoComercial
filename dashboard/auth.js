@@ -326,31 +326,29 @@ async function carregarPainelMaster() {
                 if (novaLoja === '' || novaLoja === 'ALL') { alert("Digite os IDs das lojas do Supervisor separados por vírgula (Ex: 1, 4, 9)."); return; }
             }
 
-            // --- INÍCIO DA VARREDURA DE SEGURANÇA (DEMANDA T) ---
+            // --- INÍCIO DA VARREDURA DE SEGURANÇA (DEMANDA T AJUSTADA) ---
             if (novaRole === 'SUPERVISOR' || novaRole === 'LIDER') {
-                // Transforma o input da loja em um array para checar (mesmo se for só uma loja)
+                // Transforma o input da loja em um array para checar
                 const lojasNesteUsuario = novaLoja.split(',').map(s => s.trim()).filter(s => s);
                 let temConflito = false;
                 
-                // Pega os dados mais recentes do banco para não haver erro
                 const snapBanco = await get(ref(database, 'usuarios'));
                 if (snapBanco.exists()) {
                     const todosUsers = snapBanco.val();
                     
                     for (const outroUid in todosUsers) {
-                        // Ignora o próprio usuário que estamos editando
-                        if (outroUid === uid) continue;
+                        if (outroUid === uid) continue; // Pula a si mesmo
                         
                         const outroUser = todosUsers[outroUid];
                         
-                        // Checa apenas contra outros Supervisores ou Líderes aprovados
-                        if ((outroUser.role === 'SUPERVISOR' || outroUser.role === 'LIDER') && outroUser.status !== 'pendente') {
+                        // REGRAS A, B e C: O conflito só existe se for a MESMA hierarquia
+                        // Supervisor bate com Supervisor / Líder bate com Líder
+                        if (outroUser.role === novaRole && outroUser.status !== 'pendente') {
                             const lojasDoOutro = String(outroUser.loja_id || '').split(',').map(s => s.trim()).filter(s => s);
                             
-                            // Compara a lista que estamos tentando salvar com as lojas que o outro já tem
                             for (const lojaValidando of lojasNesteUsuario) {
                                 if (lojasDoOutro.includes(lojaValidando)) {
-                                    alert(`⚠️ TRAVA DE SEGURANÇA:\n\nO PDV ${lojaValidando} já pertence ao ${outroUser.role} ${outroUser.nome}.\n\nAção bloqueada para evitar conflito de gestão.`);
+                                    alert(`⚠️ TRAVA DE HIERARQUIA:\n\nO PDV ${lojaValidando} já está sob a gestão do ${outroUser.role} ${outroUser.nome}.\n\nNão é possível atribuir dois ${novaRole}S para o mesmo PDV.`);
                                     temConflito = true;
                                     break;
                                 }
@@ -360,7 +358,7 @@ async function carregarPainelMaster() {
                     }
                 }
                 
-                // Se achou conflito, aborta o salvamento imediatamente
+                // Se achou conflito na mesma patente, aborta o salvamento
                 if (temConflito) return; 
             }
             // --- FIM DA VARREDURA DE SEGURANÇA ---
