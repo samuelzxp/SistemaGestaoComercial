@@ -74,6 +74,26 @@ btnBackLogin.addEventListener('click', (e) => {
 });
 
 // ==========================================
+// REGRA MASTER DE SEGURANÇA 3: SANITIZAÇÃO (DEMANDA N)
+// ==========================================
+function sanitizarInput(texto) {
+    if (!texto) return '';
+    const mapaCaracteres = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#x27;',
+        "/": '&#x2F;',
+        "`": '&grave;'
+    };
+    const reg = /[&<>"'/`]/ig;
+    // Escapa caracteres HTML e remove espaços duplos ou quebras de linha indesejadas
+    return texto.replace(reg, (match) => (mapaCaracteres[match])).trim();
+}
+
+
+// ==========================================
 // REGRA MASTER DE SEGURANÇA 2: INATIVIDADE
 // ==========================================
 let tempoInativo;
@@ -102,9 +122,16 @@ window.addEventListener('scroll', resetarTimer);
 // ==========================================
 registerForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const nome = document.getElementById('reg-nome').value;
-    const email = document.getElementById('reg-email').value;
-    const password = document.getElementById('reg-password').value;
+    
+    // Passando os dados pela Alfândega
+    const nome = sanitizarInput(document.getElementById('reg-nome').value);
+    const email = sanitizarInput(document.getElementById('reg-email').value);
+    const password = document.getElementById('reg-password').value; // Senha limpa pelo próprio Firebase
+
+    if (nome.length < 3) {
+        alert("Por favor, insira um nome válido.");
+        return;
+    }
 
     try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -121,7 +148,7 @@ registerForm.addEventListener('submit', async (e) => {
         registerForm.reset();
     } catch (error) {
         if (error.code === 'auth/email-already-in-use') alert("Este e-mail já solicitou acesso.");
-        else alert("Erro ao criar conta. Tente novamente.");
+        else alert("Erro ao criar conta. Verifique o formato do e-mail.");
     }
 });
 

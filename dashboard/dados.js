@@ -1,5 +1,5 @@
 const dadosDashboard = {
-    "ultima_atualizacao": "18/05/2026 11:46",
+    "ultima_atualizacao": "18/05/2026 15:46",
     "tempo": {
         "dia": 18,
         "total": 31,
