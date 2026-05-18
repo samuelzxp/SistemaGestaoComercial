@@ -1,7 +1,7 @@
 // Importações da versão mais moderna do Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, inMemoryPersistence, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-import { getDatabase, ref, set, get, child, update, remove } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+import { getDatabase, ref, set, get, child, update, remove, push } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 
 // Suas Chaves do Cofre (Realtime Database)
 const firebaseConfig = {
@@ -17,6 +17,24 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const database = getDatabase(app);
+
+// ==========================================
+// REGRA MASTER DE SEGURANÇA 5: AUDITORIA TOTAL (DEMANDA P)
+// ==========================================
+window.registrarLog = async (acao, detalhes, ator = "Sistema") => {
+    try {
+        const novoLog = {
+            data_hora: new Date().toISOString(),
+            acao: acao,
+            detalhes: detalhes,
+            ator: ator // Pode ser o e-mail de quem fez a ação
+        };
+        // O "push" cria um ID único impossível de sobrescrever
+        await push(ref(database, 'logs'), novoLog);
+    } catch (e) {
+        console.error("Erro na caixa-preta:", e);
+    }
+};
 
 // ==========================================
 // REGRA MASTER DE SEGURANÇA 1: LOGOUT NO F5
@@ -92,6 +110,22 @@ function sanitizarInput(texto) {
     return texto.replace(reg, (match) => (mapaCaracteres[match])).trim();
 }
 
+// ==========================================
+// REGRA MASTER DE SEGURANÇA 4: MASCARAMENTO (DEMANDA M)
+// ==========================================
+function mascararEmail(email) {
+    if (!email) return '--';
+    const partes = email.split('@');
+    if (partes.length !== 2) return email; // Retorna normal se não for um formato de e-mail padrão
+    
+    const nome = partes[0];
+    const dominio = partes[1];
+    
+    // Pega os 3 primeiros caracteres do nome, ou apenas o 1º se o nome for muito curto
+    const visivel = nome.length > 3 ? nome.substring(0, 3) : nome.charAt(0);
+    return `${visivel}***@${dominio}`;
+}
+
 
 // ==========================================
 // REGRA MASTER DE SEGURANÇA 2: INATIVIDADE
@@ -105,6 +139,7 @@ function resetarTimer() {
     tempoInativo = setTimeout(() => {
         // A MÁGICA ACONTECE AQUI: Só desloga se houver usuário E o Modo TV estiver DESLIGADO
         if (window.usuarioLogado && !window.isModoTV) {
+            registrarLog('LOGOUT_INATIVIDADE', 'Sessão derrubada por 1m30s de inatividade', window.usuarioLogado.email);
             alert("🔒 Sessão encerrada por inatividade de 1m 30s.");
             fazerLogout();
         }
@@ -143,6 +178,8 @@ registerForm.addEventListener('submit', async (e) => {
         });
 
         alert("Solicitação enviada com sucesso! Aguarde a aprovação do Master.");
+        registrarLog('CADASTRO_SOLICITADO', `Nova conta solicitada para ${nome}`, email);
+        
         await signOut(auth); 
         btnShowLogin.click();
         registerForm.reset();
@@ -162,7 +199,9 @@ loginForm.addEventListener('submit', async (e) => {
 
     try {
         await signInWithEmailAndPassword(auth, email, password);
+        registrarLog('LOGIN_SUCESSO', 'Usuário entrou no sistema', email);
     } catch (error) {
+        registrarLog('LOGIN_FALHA', 'Tentativa de login com erro/senha incorreta', email);
         alert("E-mail ou senha incorretos.");
     }
 });
@@ -176,6 +215,7 @@ forgotForm.addEventListener('submit', async (e) => {
 
     try {
         await sendPasswordResetEmail(auth, email);
+        registrarLog('SENHA_RESET', 'Link de recuperação enviado', email);
         alert("E-mail de recuperação enviado! Verifique sua caixa de entrada (e a pasta de Spam).");
         btnBackLogin.click(); // Volta para a tela de login
         forgotForm.reset();
@@ -203,7 +243,7 @@ onAuthStateChanged(auth, async (user) => {
                 const userData = snapshot.val();
 
                 if (userData.status === 'aprovado' || userData.status === 'master') {
-                    window.usuarioLogado = { uid: user.uid, nome: userData.nome, role: userData.role, loja_id: userData.loja_id };
+                    window.usuarioLogado = { uid: user.uid, nome: userData.nome, role: userData.role, loja_id: userData.loja_id, email: userData.email };
 
                     const nomePartes = userData.nome.trim().split(' ');
                     const primeiroNome = nomePartes[0];
@@ -282,6 +322,11 @@ async function carregarPainelMaster() {
         const u = usuarios[uid];
         const dataFormatada = u.data_criacao ? new Date(u.data_criacao).toLocaleDateString('pt-BR') : '--/--/----';
         
+        // --- APLICAÇÃO DO MASCARAMENTO (DEMANDA M) ---
+        // Checa se quem está olhando a tela é um Master. Se for, vê tudo. Se não for (ex: Admin), vê mascarado.
+        const usuarioAtualMaster = window.usuarioLogado && (window.usuarioLogado.role === 'MASTER' || window.usuarioLogado.status === 'master');
+        const emailExibicao = usuarioAtualMaster ? u.email : mascararEmail(u.email);
+        
         let corStatus = '#888';
         if (u.status === 'master') corStatus = '#f8b518';
         else if (u.status === 'aprovado') corStatus = '#2d5128';
@@ -293,10 +338,11 @@ async function carregarPainelMaster() {
         const isLider = u.role === 'LIDER';
         const isSupervisor = u.role === 'SUPERVISOR';
         
+        // No tr.innerHTML, note que a linha do e-mail agora usa a variável emailExibicao
         tr.innerHTML = `
             <td style="color: ${corStatus}; font-weight: 800; text-transform: uppercase;">${u.status}</td>
             <td style="font-weight: 700;">${u.nome}</td>
-            <td style="color: var(--text-dim);">${u.email}</td>
+            <td style="color: var(--text-dim);">${emailExibicao}</td>
             <td style="color: var(--text-dim);">${dataFormatada}</td>
             <td>
                 <select id="role-${uid}" class="select-dark" style="padding: 4px; border-radius: 4px; ${u.status === 'master' ? 'pointer-events: none; opacity: 0.5;' : ''}">
@@ -330,7 +376,6 @@ async function carregarPainelMaster() {
         tbody.appendChild(tr);
     }
 
-    // Evento de Salvar as Alterações
     // Evento de Salvar as Alterações com TRAVA DE SEGURANÇA
     document.querySelectorAll('.btn-salvar-rh').forEach(btn => {
         btn.addEventListener('click', async (e) => {
@@ -397,6 +442,10 @@ async function carregarPainelMaster() {
                     role: novaRole, 
                     loja_id: novaLoja
                 });
+                
+                const executor = window.usuarioLogado ? window.usuarioLogado.email : 'Master';
+                registrarLog('EDICAO_RH', `Cargo ${novaRole} e PDV ${novaLoja} salvos para o UID: ${uid}`, executor);
+                
                 alert("Usuário atualizado e validado com sucesso!");
                 carregarPainelMaster();
             } catch (err) { alert("Erro ao atualizar o banco de dados."); }
@@ -410,6 +459,10 @@ async function carregarPainelMaster() {
             if(confirm("Tem certeza que deseja DELETAR a ficha desse usuário?")) {
                 try { 
                     await remove(ref(database, `usuarios/${uid}`)); 
+                    
+                    const executor = window.usuarioLogado ? window.usuarioLogado.email : 'Master';
+                    registrarLog('DELECAO_RH', `Ficha do UID ${uid} foi DELETADA`, executor);
+                    
                     alert("Ficha deletada com sucesso!"); 
                     carregarPainelMaster(); 
                 } catch (err) { alert("Erro ao deletar."); }
