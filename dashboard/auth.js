@@ -243,8 +243,29 @@ onAuthStateChanged(auth, async (user) => {
                 const userData = snapshot.val();
 
                 if (userData.status === 'aprovado' || userData.status === 'master') {
+                    // 1. Salva os dados do usuário na sessão
                     window.usuarioLogado = { uid: user.uid, nome: userData.nome, role: userData.role, loja_id: userData.loja_id, email: userData.email };
 
+                    // 2. BAIXA OS DADOS DO FIREBASE ANTES DE ABRIR A TELA
+                    // Muda o texto do botão para dar feedback visual de que está carregando 88k linhas
+                    const btnSubmitLogin = document.querySelector('#login-form button[type="submit"]');
+                    if (btnSubmitLogin) btnSubmitLogin.innerText = "Sincronizando Banco de Dados...";
+
+                    try {
+                        const snapshotDados = await get(child(dbRef, 'dashboard_data'));
+                        if (snapshotDados.exists()) {
+                            // A MÁGICA: Cria a variável global que o script_engine.js precisa!
+                            window.dadosDashboard = snapshotDados.val();
+                        } else {
+                            alert("⚠️ Banco de dados em branco na nuvem. Aguardando sincronização do Python.");
+                            window.dadosDashboard = {};
+                        }
+                    } catch (erroDB) {
+                        console.error("Erro ao baixar dados do Firebase:", erroDB);
+                        alert("Falha de conexão com a base de dados.");
+                    }
+
+                    // 3. CONTINUA O FLUXO NORMAL DA INTERFACE
                     const nomePartes = userData.nome.trim().split(' ');
                     const primeiroNome = nomePartes[0];
                     const ultimoNome = nomePartes.length > 1 ? nomePartes[nomePartes.length - 1] : '';
@@ -263,12 +284,15 @@ onAuthStateChanged(auth, async (user) => {
                     const btnAcessos = document.getElementById('nav-acessos');
                     if (userData.status === 'master' || userData.role === 'MASTER') {
                         if (btnAcessos) btnAcessos.style.display = 'flex';
+                        // Como os dados já foram baixados, o painel master consegue montar o dropdown de Lojas
                         carregarPainelMaster();
                     } else {
                         if (btnAcessos) btnAcessos.style.display = 'none';
                     }
 
+                    // 4. ESCONDE O LOGIN E RODA O MOTOR DE GRÁFICOS
                     loginOverlay.style.display = 'none';
+                    if (btnSubmitLogin) btnSubmitLogin.innerText = "Entrar"; // Reseta o botão
                     resetarTimer(); // Inicia o timer de segurança ao logar
 
                     if (typeof processarEDataRender === 'function') processarEDataRender();
@@ -277,6 +301,7 @@ onAuthStateChanged(auth, async (user) => {
                     alert(`Olá ${userData.nome}, sua conta ainda está aguardando aprovação do Master.`);
                     await signOut(auth);
                 }
+                
             } else {
                 alert("Erro: Ficha de usuário não encontrada.");
                 await signOut(auth);

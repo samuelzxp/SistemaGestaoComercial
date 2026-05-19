@@ -1,9 +1,34 @@
 import pandas as pd
 from datetime import datetime
 import os
+import firebase_admin
+from firebase_admin import credentials, db
 
 #* CONFIGURAÇÃO DE CAMINHOS
 CAMINHO_DB = r"C:\Users\PHONE STORE\Documents\Análise de Dados PHONE STORE\Dados Phone Store Base.xlsx"
+URL_BANCO = "https://phonestore-dashboard-default-rtdb.firebaseio.com/"
+
+#TODO ==> 0. PROTOCOLO DE ENVIO PARA O FIREBASE
+def subir_para_firebase(dados_completos):
+    print("☁️ Iniciando protocolo de upload para o Firebase...")
+    try:
+        # 1. Autenticação Segura (Evita logar duas vezes se o script rodar em loop)
+        if not firebase_admin._apps:
+            cred = credentials.Certificate("firebase-key.json")
+            firebase_admin.initialize_app(cred, {
+                'databaseURL': URL_BANCO
+            })
+        
+        # 2. Aponta o laser para a pasta principal e injeta a carga
+        ref = db.reference('dashboard_data')
+        print("🚀 Enviando pacote de dados... (Isso pode levar de 2 a 5 segundos)")
+        
+        # O comando .set() sobrescreve a pasta antiga pela nova instantaneamente
+        ref.set(dados_completos)
+        
+        print("✅ ALVO ATINGIDO! Nuvem atualizada com sucesso!")
+    except Exception as e:
+        print(f"❌ Falha crítica no envio: {e}")
 
 #TODO ==> 1. TRATAMENTO DE DADOS BÁSICOS
 #? Função auxiliar para limpeza de dados monetários (R$ -> Float)
@@ -60,6 +85,7 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         for df in [df_planos, df_plano]: 
             if 'ID PLANO' in df.columns:
                 df['ID PLANO'] = limpar_id(df['ID PLANO'])
+
         #* 4. Tratamento e Padronização de Datas
         df_cat['Date'] = pd.to_datetime(df_cat['Date'], dayfirst=True, errors='coerce')
         df_plano['Date'] = pd.to_datetime(df_plano['Date'], dayfirst=True, errors='coerce')
@@ -81,7 +107,7 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         metas_vend = carregar_metas_vendedor(mes, ano)
 
         #* 8. Empacotamento de todas as bases para o motor de cálculos
-        db = {
+        db_data = {
             'vendas_snapshot': df_snapshot,
             'vendas_plano': df_plano,
             'vendas_prod': df_prod,
@@ -94,7 +120,7 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         }
 
         print(f"✅ Sucesso: {len(df_snapshot)} linhas processadas no snapshot do mês.")
-        return db, metas_pdv, metas_vend
+        return db_data, metas_pdv, metas_vend
 
     except Exception as e:
         print(f"❌ Erro no Database Engine: {e}")
@@ -105,7 +131,9 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
 def carregar_metas_pdv(mes, ano):
     df = pd.read_excel(CAMINHO_DB, sheet_name='F_MetasPDV')
     df.columns = ['Date', 'ID_LOJA', 'META_GERAL', 'META_CEL', 'META_ACE', 'META_SOM', 'META_PRT']
-    df['ID_LOJA'] = df['ID_LOJA'].astype(str)
+    
+    # AJUSTE: Limpeza de ID para evitar falha no cruzamento
+    df['ID_LOJA'] = df['ID_LOJA'].astype(str).str.replace(r'\.0$', '', regex=True).str.strip()
     
     #* Aplica limpeza de moeda apenas nas colunas financeiras (da 3ª em diante)
     for col in df.columns[2:]: df[col] = df[col].apply(limpar_moedas)
@@ -120,7 +148,9 @@ def carregar_metas_pdv(mes, ano):
 def carregar_metas_vendedor(mes, ano):
     df = pd.read_excel(CAMINHO_DB, sheet_name='F_MetasVendedor')
     df.columns = ['Date', 'ID_LOJA2', 'ID_VENDEDOR', 'CARGO', 'VENDEDOR', 'PESO_REL', 'META_GERAL', 'META_ACE', 'META_PRT']
-    df['ID_VENDEDOR'] = df['ID_VENDEDOR'].astype(str)
+    
+    # AJUSTE: Limpeza de ID para evitar falha no cruzamento
+    df['ID_VENDEDOR'] = df['ID_VENDEDOR'].astype(str).str.replace(r'\.0$', '', regex=True).str.strip()
     
     #* Aplica limpeza de moeda nas colunas de meta
     for col in ['META_GERAL', 'META_ACE', 'META_PRT']: df[col] = df[col].apply(limpar_moedas)

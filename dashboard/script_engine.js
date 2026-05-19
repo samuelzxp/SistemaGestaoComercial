@@ -32,22 +32,16 @@ const PALETAS_MIX = {
 // INICIALIZAÇÃO
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    if (typeof dadosDashboard === 'undefined') {
-        console.error("❌ Erro: dados.js não encontrado.");
-        return;
-    }
-    
+    // 1. Configura a inteligência visual (Botões, Filtros e Menus)
+    // Isso tem que rodar mesmo sem os dados, para os botões ganharem vida!
     configurarEventosFiltro();
     configurarEventosTabela();
     configurarEventosRanking(); 
+    iniciarRoteamento(); // Dá vida ao menu lateral das abas
     
+    // 2. Relógio
     atualizarRelogio();
     setInterval(atualizarRelogio, 1000);
-    
-    // Timeout para aguardar o auth.js validar a sessão do Firebase
-    setTimeout(() => { if (window.usuarioLogado) processarEDataRender(); }, 500);
-    
-    iniciarRoteamento();
 });
 
 // Só re-renderiza se houver um usuário logado validado
@@ -1085,15 +1079,6 @@ function renderGauge(id, valor, labelId, atingIdeal) {
 }
 
 function configurarEventosFiltro() {
-    const selLoja = document.getElementById('filter-loja');
-    if (selLoja && dadosDashboard.unidades) {
-        dadosDashboard.unidades.forEach(l => {
-            const opt = document.createElement('option');
-            opt.value = l['ID_LOJA']; opt.innerText = l['NOME PDV'];
-            selLoja.appendChild(opt);
-        });
-    }
-
     const ids = ['filter-loja', 'filter-modelo', 'filter-gestao', 'filter-date-start', 'filter-date-end'];
     ids.forEach(id => {
         const el = document.getElementById(id);
@@ -1163,6 +1148,11 @@ function iniciarRoteamento() {
             }
 
             aplicarRegraDeFiltros(targetId);
+
+            // CORREÇÃO: Quando trocar de aba, força o Chart.js a desenhar os gráficos na tela visível
+            if (window.usuarioLogado && typeof dadosDashboard !== 'undefined') {
+                setTimeout(() => processarEDataRender(), 50);
+            }
         });
     });
 
