@@ -9,3 +9,6 @@ dashboard/dados.js
 __pycache__/
 *.pyc
 .vscode/
+
+# Ignorar as chaves de acesso do banco de dados
+firebase-key.json
