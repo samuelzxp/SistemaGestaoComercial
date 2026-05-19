@@ -38,10 +38,28 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         df_prod = pd.read_excel(CAMINHO_DB, sheet_name='F_Vendas_Prod')
 
         #* 3. Padronização Rigorosa de IDs para cruzamento (Merge)
-        for df in [df_lojas, df_cat]: df['ID LOJA'] = df['ID LOJA'].astype(str)
-        for df in [df_vendedores, df_cat, df_plano]: df['ID VENDEDOR'] = df['ID VENDEDOR'].astype(str)
-        for df in [df_planos, df_plano]: df['ID PLANO'] = df['ID PLANO'].astype(str)
+        def limpar_id(serie):
+            # Transforma em string, arranca o ".0" (se houver) e corta espaços em branco
+            return serie.astype(str).str.replace(r'\.0$', '', regex=True).str.strip()
 
+        # Aplica a limpeza nas colunas de Lojas (agora cobrindo todas as Fatos)
+        for df in [df_lojas, df_cat]: 
+            df['ID LOJA'] = limpar_id(df['ID LOJA'])
+            
+        if 'ID LOJA' in df_prod.columns: 
+            df_prod['ID LOJA'] = limpar_id(df_prod['ID LOJA'])
+            
+        if 'ID LOJA' in df_plano.columns: 
+            df_plano['ID LOJA'] = limpar_id(df_plano['ID LOJA'])
+
+        # Aplica a limpeza nas colunas de Vendedores e Planos
+        for df in [df_vendedores, df_cat, df_plano]: 
+            if 'ID VENDEDOR' in df.columns:
+                df['ID VENDEDOR'] = limpar_id(df['ID VENDEDOR'])
+                
+        for df in [df_planos, df_plano]: 
+            if 'ID PLANO' in df.columns:
+                df['ID PLANO'] = limpar_id(df['ID PLANO'])
         #* 4. Tratamento e Padronização de Datas
         df_cat['Date'] = pd.to_datetime(df_cat['Date'], dayfirst=True, errors='coerce')
         df_plano['Date'] = pd.to_datetime(df_plano['Date'], dayfirst=True, errors='coerce')
