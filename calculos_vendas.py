@@ -386,15 +386,18 @@ def preparar_tendencia_temporal(df_fatos_cat):
     
     return agrupado.to_dict(orient='records')
 
-#TODO ==> 5. EXPORTADOR DE DADOS (DADOS.JS)
-#? Compila todas as métricas em um JSON estruturado para o Frontend
-def exportar_dados_dashboard(db, df_metas_pdv, df_metas_vend, caminho_destino='dashboard/dados.js'):
+#TODO ==> 5. EXPORTADOR DE DADOS (INTEGRAÇÃO FIREBASE)
+#? Compila todas as métricas em um JSON estruturado e envia diretamente para o Realtime Database
+def exportar_dados_dashboard(db_data, df_metas_pdv, df_metas_vend, caminho_destino=None):
     try:
+        #* Importa o motor de envio do database_engine dinamicamente
+        from database_engine import subir_para_firebase
+
         #* Garantia de datas formatadas no Snapshot
-        db['vendas_snapshot']['Date'] = pd.to_datetime(db['vendas_snapshot']['Date'], dayfirst=True, errors='coerce')
+        db_data['vendas_snapshot']['Date'] = pd.to_datetime(db_data['vendas_snapshot']['Date'], dayfirst=True, errors='coerce')
         
         #* Prepara a dimensão Regiões para o JSON (Quadrante 4)
-        df_regioes = db.get('dim_regioes', pd.DataFrame()).copy()
+        df_regioes = db_data.get('dim_regioes', pd.DataFrame()).copy()
         if not df_regioes.empty and 'ID LOJA' in df_regioes.columns:
             df_regioes.rename(columns={'ID LOJA': 'ID_LOJA', 'LOCALIZAÇÃO': 'LOCALIZACAO'}, inplace=True)
             df_regioes['ID_LOJA'] = df_regioes['ID_LOJA'].astype(str)
@@ -402,27 +405,27 @@ def exportar_dados_dashboard(db, df_metas_pdv, df_metas_vend, caminho_destino='d
         else:
             regioes_export = []
         
-        #* Construção do Dicionário Final
+        #* Construção do Dicionário Final (Payload que o Front-End espera)
         payload = {
             "ultima_atualizacao": datetime.now().strftime("%d/%m/%Y %H:%M"),
             "tempo": obter_metricas_tempo(),
-            "geral": calcular_kpis_topo(db, df_metas_pdv),
-            "unidades": preparar_base_unidades_completa(db, df_metas_pdv),
-            "analise_geral": preparar_analise_geral_completa(db),
+            "geral": calcular_kpis_topo(db_data, df_metas_pdv),
+            "unidades": preparar_base_unidades_completa(db_data, df_metas_pdv),
+            "analise_geral": preparar_analise_geral_completa(db_data),
             "regioes": regioes_export,
-            "vendedores": preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend),
+            "vendedores": preparar_base_vendedores_completa(db_data, df_metas_pdv, df_metas_vend),
             
             #* Adição da visão de Performance e Tempo ao Payload
-            "produtos": preparar_base_produtos(db.get('dim_produtos', pd.DataFrame()), db.get('vendas_prod', pd.DataFrame())),
-            "historico_dias": preparar_tendencia_temporal(db.get('vendas_cat_historico', pd.DataFrame()))
+            "produtos": preparar_base_produtos(db_data.get('dim_produtos', pd.DataFrame()), db_data.get('vendas_prod', pd.DataFrame())),
+            "historico_dias": preparar_tendencia_temporal(db_data.get('vendas_cat_historico', pd.DataFrame()))
         }
         
-        #* Escrita física do arquivo JS (Blindado contra Timestamp)
-        with open(caminho_destino, 'w', encoding='utf-8') as f:
-            f.write(f"const dadosDashboard = {json.dumps(payload, indent=4, ensure_ascii=False, default=str)};")
+        #* Converte o dicionário para o formato JSON nativo antes do upload
+        dados_json_puros = json.loads(json.dumps(payload, default=str))
+        subir_para_firebase(dados_json_puros)
         
-        print(f"✅ Sucesso: Métricas processadas e exportadas para {caminho_destino}")
+        print("✅ Sucesso: Métricas processadas e transmitidas com segurança para a Nuvem!")
         return True
     except Exception as e:
-        print(f"❌ Erro Crítico no Processamento: {e}")
+        print(f"❌ Erro Crítico no Processamento/Envio: {e}")
         return False
