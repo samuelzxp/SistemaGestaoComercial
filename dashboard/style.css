@@ -25,6 +25,21 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; outline: none; }
 
+/* TRAVA ABSOLUTA DOS GRÁFICOS */
+.canvas-wrapper, .canvas-wrapper-ranking {
+    position: relative;
+    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0 !important;
+    min-height: 0 !important;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
 /* ========================================= */
 /* BASE DESKTOP (NOTEBOOK) - TELA FIXA       */
 /* ========================================= */
@@ -226,21 +241,37 @@ h1, h2, h3, .logo, .gauge-center .percent, .kpi-data b {
 }
 
 .top-header {
-    height: 60px;
-    flex-shrink: 0;
-    padding: 0 30px;
+    min-height: 60px; /* Mudou de height fixo para min-height */
+    padding: 10px 20px;
     display: flex;
+    flex-wrap: wrap; /* Permite que o Header quebre a linha se precisar */
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     border-bottom: 1px solid var(--border);
     background: #000;
 }
 
-.header-left { display: flex; align-items: center; gap: 25px; }
-.header-left h1 { font-size: 1.4rem; font-weight: 800; }
+.header-left { 
+    display: flex; 
+    align-items: center; 
+    flex: 1 1 auto; /* Permite encolher/crescer */
+}
+
+.view-info h1 { 
+    font-size: clamp(1.1rem, 3vw, 1.4rem); /* Texto responsivo mágico */
+    font-weight: 800; 
+}
 #last-update{ color: #fff; font-family: var(--font-heading); }
-.header-left .sub-info { display: flex; align-items: center; gap: 10px; font-size: 0.75rem; color: var(--primary); }
-.divider { color: var(--primary); }
+.sub-info { display: flex; align-items: center; gap: 10px; font-size: 0.75rem; color: var(--primary); flex-wrap: wrap; }
+
+.header-right {
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+    flex-wrap: wrap; /* Ícone da TV e Filtros nunca se sobrepõem */
+    justify-content: flex-end;
+}
 
 /* ========================================= */
 /* MODO TV (DEMANDA B)                       */

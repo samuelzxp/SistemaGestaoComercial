@@ -102,24 +102,34 @@ def carregar_banco_dados(mes_referencia=None, ano_referencia=None):
         #* 6. Filtro de Mês Vigente (Recorte do Snapshot)
         df_snapshot = df_cat[(df_cat['Date'].dt.month == mes) & (df_cat['Date'].dt.year == ano)].copy()
         
+        #* 6.1 LÓGICA DE FALLBACK D+1 (Proteção contra virada de mês sem vendas)
+        if df_snapshot.empty or df_snapshot['REALIZADO'].sum() == 0:
+            print(f"⚠️ Sem vendas registradas para {mes:02d}/{ano}. Acionando Fallback Automático D+1...")
+            mes = mes - 1 if mes > 1 else 12
+            ano = ano if mes != 12 else ano - 1
+            df_snapshot = df_cat[(df_cat['Date'].dt.month == mes) & (df_cat['Date'].dt.year == ano)].copy()
+            print(f"🔄 Painel redirecionado para os dados consolidados do mês {mes:02d}/{ano}.")
+
         #* 7. Carga das Metas do mês correspondente
         metas_pdv = carregar_metas_pdv(mes, ano)
         metas_vend = carregar_metas_vendedor(mes, ano)
 
         #* 8. Empacotamento de todas as bases para o motor de cálculos
         db_data = {
+            'mes_vigente': mes,  # <- CHAVE MESTRA DO FALLBACK
+            'ano_vigente': ano,  # <- CHAVE MESTRA DO FALLBACK
             'vendas_snapshot': df_snapshot,
             'vendas_plano': df_plano,
             'vendas_prod': df_prod,
-            'vendas_cat_historico': df_cat, #* Adicionado para Análise Quadrimestral
+            'vendas_cat_historico': df_cat, 
             'dim_lojas': df_lojas,
             'dim_vendedores': df_vendedores,
             'dim_planos': df_planos,
             'dim_regioes': df_regioes,
-            'dim_produtos': df_produtos     #* Adicionado para Tiers de Produtos
+            'dim_produtos': df_produtos
         }
 
-        print(f"✅ Sucesso: {len(df_snapshot)} linhas processadas no snapshot do mês.")
+        print(f"✅ Sucesso: {len(df_snapshot)} linhas processadas no snapshot do mês {mes:02d}/{ano}.")
         return db_data, metas_pdv, metas_vend
 
     except Exception as e:

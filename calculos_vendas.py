@@ -6,15 +6,28 @@ import json
 import re  
 
 #TODO ==> 1. SISTEMA DE TEMPO E MÉTRICAS DE CALENDÁRIO
-#? Função central para controle de períodos e cálculos de projeção (Mês Vigente)
-def obter_metricas_tempo():
+#? Função central para controle de períodos e cálculos de projeção (Mês Vigente ou Fallback)
+def obter_metricas_tempo(db=None):
     hoje = datetime.now()
-    mes_atual = hoje.month
-    ano_atual = hoje.year
-    dia_atual = hoje.day
     
+    #* Se o motor passou pelo fallback, lê o mês ajustado. Caso contrário, usa o mês atual.
+    if db and 'mes_vigente' in db and 'ano_vigente' in db:
+        mes_atual = db['mes_vigente']
+        ano_atual = db['ano_vigente']
+    else:
+        mes_atual = hoje.month
+        ano_atual = hoje.year
+        
     #* Cálculo de dias para Projeção e Atingimento Ideal
     _, total_dias = monthrange(ano_atual, mes_atual)
+    
+    #* Inteligência D+1: Se o mês consultado for o real, usa o dia atual.
+    #* Se for de fallback (mês passado fechado), a projeção trava no dia final do mês (100%).
+    if mes_atual == hoje.month and ano_atual == hoje.year:
+        dia_atual = hoje.day
+    else:
+        dia_atual = total_dias
+        
     atg_ideal = (dia_atual / total_dias) * 100
     
     return {
@@ -40,7 +53,7 @@ def limpar_moeda(valor):
 #TODO ==> 2. KPIs GERAIS (VISÃO 1 - SNAPSHOT REDE)
 #? Consolida os grandes números para os 5 cards do topo
 def calcular_kpis_topo(db, df_meta):
-    tempo = obter_metricas_tempo()
+    tempo = obter_metricas_tempo(db)
     df_snap = db['vendas_snapshot'].copy()
     
     #* Agregação de Realizados
@@ -64,7 +77,7 @@ def calcular_kpis_topo(db, df_meta):
 #TODO ==> 3. ESTRUTURA TABULAR DE UNIDADES (BASE PARA TODAS AS VISÕES)
 #? Cruza Fato e Dimensão para gerar performance por PDV
 def preparar_base_unidades_completa(db, df_meta):
-    tempo = obter_metricas_tempo()
+    tempo = obter_metricas_tempo(db)
     df_snap = db['vendas_snapshot'].copy()
     df_lojas = db['dim_lojas'].copy()
     
@@ -165,7 +178,7 @@ def preparar_base_unidades_completa(db, df_meta):
 #TODO ==> 4. ANÁLISE OPERACIONAL (SAZONALIDADE E MIXES)
 #? Gera os dados para gráficos da Visão Geral
 def preparar_analise_geral_completa(db):
-    tempo = obter_metricas_tempo()
+    tempo = obter_metricas_tempo(db)
     df_snap = db['vendas_snapshot'].copy()
     
     #* 4.1 Sazonalidade
@@ -408,7 +421,7 @@ def exportar_dados_dashboard(db_data, df_metas_pdv, df_metas_vend, caminho_desti
         #* Construção do Dicionário Final (Payload que o Front-End espera)
         payload = {
             "ultima_atualizacao": datetime.now().strftime("%d/%m/%Y %H:%M"),
-            "tempo": obter_metricas_tempo(),
+            "tempo": obter_metricas_tempo(db_data), # <-- Aqui ativamos a leitura do Fallback no JSON Final
             "geral": calcular_kpis_topo(db_data, df_metas_pdv),
             "unidades": preparar_base_unidades_completa(db_data, df_metas_pdv),
             "analise_geral": preparar_analise_geral_completa(db_data),
