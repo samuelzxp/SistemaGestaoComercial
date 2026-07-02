@@ -32,25 +32,20 @@ const PALETAS_MIX = {
 // INICIALIZAÇÃO
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Configura a inteligência visual (Botões, Filtros e Menus)
-    // Isso tem que rodar mesmo sem os dados, para os botões ganharem vida!
     configurarEventosFiltro();
     configurarEventosTabela();
     configurarEventosRanking(); 
-    iniciarRoteamento(); // Dá vida ao menu lateral das abas
+    iniciarRoteamento(); 
     
-    // 2. Relógio
     atualizarRelogio();
     setInterval(atualizarRelogio, 1000);
 });
 
-// Só re-renderiza se houver um usuário logado validado
 window.addEventListener('resize', () => { if (window.usuarioLogado) processarEDataRender(); });
 
 // ==========================================
 // MOTOR DE FILTRAGEM GLOBAL (MACRO)
 // ==========================================
-// Adicionado o parâmetro 'ignoreStoreFilter' para a visão da Rede
 function filtrarBase(base, ignoreStoreFilter = false) {
     if (!base) return [];
 
@@ -67,12 +62,10 @@ function filtrarBase(base, ignoreStoreFilter = false) {
         if (!ignoreStoreFilter) {
             const idLoja = String(item['ID_LOJA']);
             
-            // 1. Trava do Perfil (Líder ou Supervisor vê apenas as dele)
             if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
                 matchLoja = lojasPermitidasIDs.includes(idLoja);
             }
             
-            // 2. Trava do filtro no cabeçalho (Para Master ou Supervisor analisando uma loja específica)
             if (matchLoja && AppState.filtro.loja !== 'ALL') {
                 matchLoja = idLoja === String(AppState.filtro.loja);
             }
@@ -89,7 +82,6 @@ function filtrarBase(base, ignoreStoreFilter = false) {
 // ORQUESTRADOR DE RENDERIZAÇÃO
 // ==========================================
 function processarEDataRender() {
-    // 1. TRAVA DE SEGURANÇA: Só renderiza se estiver logado
     if (!window.usuarioLogado) return;
 
     const role = window.usuarioLogado.role;
@@ -99,18 +91,14 @@ function processarEDataRender() {
 
     const d = dadosDashboard;
 
-    // 2. APLICAÇÃO DA VISÃO TÚNEL E DROPDOWNS (RBAC)
     const elFiltroLoja = document.getElementById('container-filtro-loja');
     const selLoja = document.getElementById('filter-loja');
 
     if (isRestrito) {
-        // Se tiver só 1 loja (Líder), trava tudo e esconde dropdown
         if (lojasPermitidasIDs.length === 1 && !lojasPermitidasIDs.includes('ALL')) {
             AppState.filtro.loja = lojasPermitidasIDs[0];
             if (elFiltroLoja) elFiltroLoja.style.display = 'none';
-        } 
-        // Se for Supervisor (várias lojas), mostra dropdown apenas com as lojas dele
-        else {
+        } else {
             if (elFiltroLoja && document.getElementById('visao-geral').classList.contains('active')) {
                 elFiltroLoja.style.display = 'flex';
             }
@@ -127,7 +115,6 @@ function processarEDataRender() {
             }
         }
     } else {
-        // Master e Diretor
         if (elFiltroLoja && document.getElementById('visao-geral').classList.contains('active')) {
             elFiltroLoja.style.display = 'flex';
         }
@@ -144,11 +131,9 @@ function processarEDataRender() {
 
     const atingIdeal = d.tempo?.ideal ?? 0;
     
-    // 3. CRIAÇÃO DAS DUAS REALIDADES (baseLocal agora é filtrada pelo filtrarBase corretamente)
     const baseLocal = filtrarBase(d.unidades, false);
     const baseRede = filtrarBase(d.unidades, true);
 
-    // --- VISÃO GERAL (TÚNEL) ---
     const stats = baseLocal.reduce((acc, curr) => {
         acc.faturamento += curr.REALIZADO || 0;
         acc.vendas += curr.N_VENDAS || 0;
@@ -192,7 +177,6 @@ function processarEDataRender() {
     renderMixDonut('chart-mix-cat', dynCat, PALETAS_MIX.categorias);
     renderMixDonut('chart-mix-planos', planosFinal, PALETAS_MIX.planos);
 
-    // --- VISÃO UNIDADES (REDE TODA) ---
     const metasRede = baseRede.reduce((acc, curr) => {
         acc.real_g += curr.REALIZADO || 0; acc.meta_g += curr.META_GERAL || 0;
         return acc;
@@ -202,7 +186,6 @@ function processarEDataRender() {
     renderGraficosHibridos(baseRede); 
     renderTabelaUnidades(baseRede, d.tempo);
 
-    // --- VISÃO VENDEDORES E PERFORMANCE ---
     renderVisaoVendedores(baseLocal);
 
     if (typeof renderVisaoPerformance === 'function') {
@@ -225,7 +208,6 @@ function configurarEventosRanking() {
     }));
 
     document.querySelectorAll('.btn-ranking-metric').forEach(btn => btn.addEventListener('click', (e) => {
-        // Trava: Ignora botões da aba de performance para evitar conflito
         if (e.currentTarget.hasAttribute('data-target-chart')) return;
         
         document.querySelectorAll('.btn-ranking-metric:not([data-target-chart])').forEach(b => b.classList.remove('active'));
@@ -278,7 +260,6 @@ function inicializarFiltroLojas(lojasUnicas, d) {
     const lista = document.getElementById('list-drop-lojas');
     const cbs = document.querySelectorAll('.cb-filtro-loja');
 
-    // Se for Líder, esconde o botão de filtro, pois ele já tem visão túnel
     if (window.usuarioLogado && window.usuarioLogado.role === 'LIDER') {
         btn.style.display = 'none';
     }
@@ -301,9 +282,6 @@ function inicializarFiltroLojas(lojasUnicas, d) {
     });
 }
 
-// ==========================================
-// MOTOR DE DEDUPLICAÇÃO E LIMPEZA
-// ==========================================
 function unificarBase(base, ref) {
     const mapaMesmaLoja = {};
     base.forEach(v => {
@@ -405,10 +383,45 @@ function renderVisaoVendedores(baseUnidadesLocal) {
     let baseRawRanking = ref === 'pdv' ? [...baseUnidadesLocal] : (d.vendedores ? [...d.vendedores] : []);
     let baseRawConsultores = d.vendedores ? [...d.vendedores] : [];
 
+    // --- LÓGICA DO FILTRO DE PERÍODO (Recálculo pelo histórico diário) ---
+    const { dataInicio, dataFim } = AppState.filtro;
+    if (dataInicio !== '' || dataFim !== '') {
+        const start = dataInicio || '2000-01-01';
+        const end = dataFim || '2100-12-31';
+
+        const aplicarDataVendedores = (lista) => lista.map(vend => {
+            const v = { ...vend };
+            if (v.historico_diario && v.historico_diario.length > 0) {
+                let fatPeriodo = 0, vendasPeriodo = 0, pecasPeriodo = 0;
+                v.historico_diario.forEach(dia => {
+                    if (dia.Date >= start && dia.Date <= end) {
+                        fatPeriodo += (dia.REALIZADO || 0);
+                        vendasPeriodo += (dia.N_VENDAS || 0);
+                        pecasPeriodo += (dia.QTD_PEÇAS || 0);
+                    }
+                });
+                
+                const razao = v.REALIZADO > 0 ? (fatPeriodo / v.REALIZADO) : 0;
+                
+                v.REALIZADO = fatPeriodo;
+                v.N_VENDAS = vendasPeriodo;
+                v.QTD_PEÇAS = pecasPeriodo;
+                v.CEL = (v.CEL || 0) * razao;
+                v.ACE = (v.ACE || 0) * razao;
+                v.SOM = (v.SOM || 0) * razao;
+                v.PRT = (v.PRT || 0) * razao;
+            }
+            return v;
+        });
+
+        if (ref !== 'pdv') baseRawRanking = aplicarDataVendedores(baseRawRanking);
+        baseRawConsultores = aplicarDataVendedores(baseRawConsultores);
+    }
+    // --- FIM DA LÓGICA DO FILTRO ---
+
     baseRawRanking = aplicarFiltroTopo(baseRawRanking);
     baseRawConsultores = aplicarFiltroTopo(baseRawConsultores);
 
-    // O Supervisor / Líder tem visão túnel dos seus vendedores e rankings
     if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
         if (ref !== 'pdv') {
             baseRawRanking = baseRawRanking.filter(v => lojasPermitidasIDs.includes(String(v['ID_LOJA'])));
@@ -437,7 +450,6 @@ function renderVisaoVendedores(baseUnidadesLocal) {
 
         let baseMetas;
         
-        // Se tem só 1 loja (Líder ou Sup com 1 loja), pega tudo direto (não tem checkbox de filtro interno)
         if (isRestrito && lojasPermitidasIDs.length === 1) {
             baseMetas = baseConsultores; 
         } else {
@@ -456,7 +468,6 @@ function renderVisaoVendedores(baseUnidadesLocal) {
         renderPodioMetas(baseMetas);
         renderHeatmapScore(baseConsultores);
         
-        // MAPA DE REGIÕES: Rede toda (Exceção da regra para efeito de comparação)
         let baseRegioesRaw = d.vendedores ? [...d.vendedores] : [];
         baseRegioesRaw = aplicarFiltroTopo(baseRegioesRaw);
         const baseConsultoresRedeCompleta = unificarBase(baseRegioesRaw, 'vendedor');
@@ -582,6 +593,26 @@ function renderHeatmapScore(base) {
     container.innerHTML = html;
 }
 
+function displayNameRegiao(v, d) {
+    let regiaoStr = 'Sem Região';
+    const idLojaStr = String(v['ID_LOJA']);
+
+    if (d.regioes) {
+        const r = d.regioes.find(loc => String(loc['ID_LOJA']) === idLojaStr);
+        if (r && (r.LOCALIZACAO || r['cidade - estado'] || r.REGIAO)) {
+            regiaoStr = r.LOCALIZACAO || r['cidade - estado'] || r.REGIAO;
+        }
+    }
+    
+    if (regiaoStr === 'Sem Região' && d.unidades) {
+        const u = d.unidades.find(loc => String(loc['ID_LOJA']) === idLojaStr);
+        if (u) {
+            regiaoStr = u.REGIAO || u.LOCALIZACAO || u['cidade - estado'] || u['NOME PDV'] || 'Sem Região';
+        }
+    }
+    return regiaoStr.toUpperCase();
+}
+
 function desenharMelhoresRegioes(id, baseConsultores, d) {
     const ctx = document.getElementById(id);
     if (!ctx) return;
@@ -592,25 +623,7 @@ function desenharMelhoresRegioes(id, baseConsultores, d) {
 
     baseConsultores.forEach(v => {
         if (v.SCORE_FINAL > 0) {
-            let regiaoStr = 'Sem Região';
-            const idLojaStr = String(v['ID_LOJA']);
-
-            if (d.regioes) {
-                const r = d.regioes.find(loc => String(loc['ID_LOJA']) === idLojaStr);
-                if (r && (r.LOCALIZACAO || r['cidade - estado'] || r.REGIAO)) {
-                    regiaoStr = r.LOCALIZACAO || r['cidade - estado'] || r.REGIAO;
-                }
-            }
-            
-            if (regiaoStr === 'Sem Região' && d.unidades) {
-                const u = d.unidades.find(loc => String(loc['ID_LOJA']) === idLojaStr);
-                if (u) {
-                    regiaoStr = u.REGIAO || u.LOCALIZACAO || u['cidade - estado'] || u['NOME PDV'] || 'Sem Região';
-                }
-            }
-
-            regiaoStr = regiaoStr.toUpperCase();
-
+            let regiaoStr = displayNameRegiao(v, d);
             scoreRegiao[regiaoStr] = (scoreRegiao[regiaoStr] || 0) + v.SCORE_FINAL;
             countRegiao[regiaoStr] = (countRegiao[regiaoStr] || 0) + 1;
         }
@@ -703,8 +716,8 @@ function renderCardsUnidades(baseRede, metasRede, tempo) {
     if (elCresc) {
         if (datasOrdenadas.length > 1) {
             const icone = crescimento >= 0 ? '▲' : '▼';
-            const cor = crescimento >= 0 ? CORES.ace : CORES.prt;
-            elCresc.innerHTML = `<span style="color: ${cor}">${icone} ${Math.abs(crescimento).toFixed(1)}%</span>`;
+            const colText = crescimento >= 0 ? CORES.ace : CORES.prt;
+            elCresc.innerHTML = `<span style="color: ${colText}">${icone} ${Math.abs(crescimento).toFixed(1)}%</span>`;
         } else {
             elCresc.innerHTML = `<span style="color: var(--text-dim)">--</span>`;
         }
@@ -816,6 +829,65 @@ function renderComboModelo(id, labels, dataFat, dataAting) {
     });
 }
 
+function iniciarRoteamento() {
+    const botoesMenu = document.querySelectorAll('.nav-item[data-target]');
+    const secoes = document.querySelectorAll('.view-section');
+    const tituloPagina = document.getElementById('current-view-title');
+    
+    const filtroLoja = document.getElementById('container-filtro-loja');
+    const filtroData = document.getElementById('container-filtro-data');
+
+    function aplicarRegraDeFiltros(targetId) {
+        const role = window.usuarioLogado ? window.usuarioLogado.role : '';
+        const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
+        const lojasPermitidasIDs = window.usuarioLogado?.loja_id ? String(window.usuarioLogado.loja_id).split(',').map(s=>s.trim()) : [];
+        
+        const exibeDropdownLoja = (!isRestrito) || (isRestrito && lojasPermitidasIDs.length > 1);
+
+        if (targetId === 'visao-geral') {
+            if (filtroLoja) filtroLoja.style.display = exibeDropdownLoja ? 'flex' : 'none';
+            if (filtroData) filtroData.style.display = 'none';
+        } else if (targetId === 'visao-unidades') {
+            if (filtroLoja) filtroLoja.style.display = 'none';
+            if (filtroData) filtroData.style.display = 'flex';
+        } else if (targetId === 'visao-vendedores') {
+            if (filtroLoja) filtroLoja.style.display = exibeDropdownLoja ? 'flex' : 'none';
+            if (filtroData) filtroData.style.display = 'flex'; // FILTRO DATA ATIVO
+        } else {
+            if (filtroLoja) filtroLoja.style.display = 'none';
+            if (filtroData) filtroData.style.display = 'none';
+        }
+    }
+
+    botoesMenu.forEach(botao => {
+        botao.addEventListener('click', () => {
+            botoesMenu.forEach(b => b.classList.remove('active'));
+            secoes.forEach(s => s.classList.remove('active'));
+
+            botao.classList.add('active');
+
+            const targetId = botao.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            const textoBotao = botao.querySelector('.nav-text');
+            if (textoBotao) {
+                tituloPagina.innerText = textoBotao.innerText;
+            }
+
+            aplicarRegraDeFiltros(targetId);
+
+            if (window.usuarioLogado && typeof dadosDashboard !== 'undefined') {
+                setTimeout(() => processarEDataRender(), 50);
+            }
+        });
+    });
+
+    aplicarRegraDeFiltros('visao-geral');
+}
+
 function renderLinhasGestao(id, labels, dataPropria, dataFranquia) {
     const ctx = document.getElementById(id);
     if (!ctx) return;
@@ -844,9 +916,6 @@ function renderLinhasGestao(id, labels, dataPropria, dataFranquia) {
     });
 }
 
-// ==========================================
-// TABELA DINÂMICA
-// ==========================================
 function configurarEventosTabela() {
     const headers = document.querySelectorAll('th[data-sort]');
     headers.forEach(th => {
@@ -942,7 +1011,6 @@ function renderTabelaUnidades(baseFiltrada, tempo) {
 
     const diasRestantesMes = Math.max((tempo?.total ?? 30) - (tempo?.dia ?? 1), 1);
 
-    // Variáveis para destacar a loja do Líder
     const isLider = window.usuarioLogado && window.usuarioLogado.role === 'LIDER';
     const userLoja = window.usuarioLogado ? String(window.usuarioLogado.loja_id) : '';
 
@@ -997,10 +1065,6 @@ function renderTabelaUnidades(baseFiltrada, tempo) {
         tbody.appendChild(tr);
     });
 }
-
-// ==========================================
-// FUNÇÕES AUXILIARES GERAIS
-// ==========================================
 
 function renderKpiCards(stats) {
     document.querySelector('#kpi-fat b').innerText = fmt(stats.faturamento);
@@ -1096,255 +1160,8 @@ function fmt(v) { return new Intl.NumberFormat('pt-BR', { style: 'currency', cur
 function atualizarRelogio() { const el = document.getElementById('relogio'); if (el) el.innerText = new Date().toLocaleTimeString(); }
 
 // ==========================================
-// ROTEAMENTO SPA (CONTROLE DAS ABAS)
-// ==========================================
-function iniciarRoteamento() {
-    const botoesMenu = document.querySelectorAll('.nav-item[data-target]');
-    const secoes = document.querySelectorAll('.view-section');
-    const tituloPagina = document.getElementById('current-view-title');
-    
-    const filtroLoja = document.getElementById('container-filtro-loja');
-    const filtroData = document.getElementById('container-filtro-data');
-
-    function aplicarRegraDeFiltros(targetId) {
-        const role = window.usuarioLogado ? window.usuarioLogado.role : '';
-        const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
-        const lojasPermitidasIDs = window.usuarioLogado?.loja_id ? String(window.usuarioLogado.loja_id).split(',').map(s=>s.trim()) : [];
-        
-        // Mostra dropdown global apenas se for Master/Admin/Diretor OU se for Supervisor com mais de 1 loja
-        const exibeDropdownLoja = (!isRestrito) || (isRestrito && lojasPermitidasIDs.length > 1);
-
-        if (targetId === 'visao-geral') {
-            if (filtroLoja) filtroLoja.style.display = exibeDropdownLoja ? 'flex' : 'none';
-            if (filtroData) filtroData.style.display = 'none';
-        } else if (targetId === 'visao-unidades') {
-            if (filtroLoja) filtroLoja.style.display = 'none';
-            if (filtroData) filtroData.style.display = 'flex';
-        } else if (targetId === 'visao-vendedores') {
-            if (filtroLoja) filtroLoja.style.display = 'none';
-            if (filtroData) filtroData.style.display = 'none';
-        } else {
-            if (filtroLoja) filtroLoja.style.display = 'none';
-            if (filtroData) filtroData.style.display = 'none';
-        }
-    }
-
-    botoesMenu.forEach(botao => {
-        botao.addEventListener('click', () => {
-            botoesMenu.forEach(b => b.classList.remove('active'));
-            secoes.forEach(s => s.classList.remove('active'));
-
-            botao.classList.add('active');
-
-            const targetId = botao.getAttribute('data-target');
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.classList.add('active');
-            }
-
-            const textoBotao = botao.querySelector('.nav-text');
-            if (textoBotao) {
-                tituloPagina.innerText = textoBotao.innerText;
-            }
-
-            aplicarRegraDeFiltros(targetId);
-
-            // CORREÇÃO: Quando trocar de aba, força o Chart.js a desenhar os gráficos na tela visível
-            if (window.usuarioLogado && typeof dadosDashboard !== 'undefined') {
-                setTimeout(() => processarEDataRender(), 50);
-            }
-        });
-    });
-
-    aplicarRegraDeFiltros('visao-geral');
-}
-
-// ==========================================
 // [PERF] MÓDULOS DA VISÃO PERFORMANCE (PRODUTOS)
 // ==========================================
-
-let chartTop10 = null;
-let chartBottom10 = null;
-let chartTier = null;
-let chartTempo = null;
-let agrupamentoTempoAtual = 'mes'; 
-let filtrosPerfInicializados = false; 
-
-function renderVisaoPerformance() {
-    const d = dadosDashboard;
-    if (!d.produtos || !d.historico_dias) return; 
-
-    let baseProdutos = d.produtos;
-    let baseTempo = d.historico_dias; // Agora já possui a coluna ID_LOJA vinda do Python
-
-    // --- INÍCIO DO FILTRO TÚNEL (DEMANDA G e H) ---
-    const role = window.usuarioLogado ? window.usuarioLogado.role : '';
-    const isRestrito = (role === 'LIDER' || role === 'SUPERVISOR');
-    
-    // Pega array de IDs permitidos. Ex: ['1'] ou ['1', '4', '9']
-    const lojasPermitidasIDs = window.usuarioLogado?.loja_id 
-        ? String(window.usuarioLogado.loja_id).split(',').map(s => s.trim()) 
-        : ['ALL'];
-    
-    let nomesPDVsPermitidos = [];
-
-    if (isRestrito && !lojasPermitidasIDs.includes('ALL')) {
-        // 1. Descobre os nomes dos PDVs permitidos cruzando o ID com a base de Unidades
-        const unidadesPermitidas = d.unidades.filter(u => lojasPermitidasIDs.includes(String(u['ID_LOJA'])));
-        nomesPDVsPermitidos = unidadesPermitidas.map(u => String(u['NOME PDV']).trim().toUpperCase());
-
-        // Filtra a aba de Produtos (Isso blinda os Tiers e Top/Bottom 10)
-        baseProdutos = d.produtos.filter(p => {
-            const nomeNoProduto = String(p.PDV || '').trim().toUpperCase();
-            return nomesPDVsPermitidos.includes(nomeNoProduto);
-        });
-
-        // 2. Filtra a Evolução Quadrimestral (Tempo) pelo ID_LOJA recém-adicionado no Python
-        baseTempo = d.historico_dias.filter(dia => {
-            // Cobre as possíveis nomenclaturas que o Python pode exportar
-            const idDia = String(dia.ID_LOJA || dia['ID LOJA'] || dia.id_loja || '').trim();
-            // Se por acaso a linha não tiver ID (falha no Excel), ignora o filtro para não travar a tela
-            if (!idDia) return true; 
-            return lojasPermitidasIDs.includes(idDia);
-        });
-    }
-    // --- FIM DO FILTRO TÚNEL ---
-
-    inicializarFiltrosPerformance(baseProdutos, d.tempo, nomesPDVsPermitidos, isRestrito);
-
-    desenharTop10(baseProdutos);
-    desenharBottom10(baseProdutos);
-    desenharTiers(baseProdutos);
-    
-    document.querySelectorAll('.btn-time').forEach(btn => {
-        btn.onclick = null; 
-        btn.onclick = (e) => {
-            document.querySelectorAll('.btn-time').forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
-            agrupamentoTempoAtual = e.target.getAttribute('data-agrupamento');
-            desenharTendenciaTemporal(baseTempo);
-        };
-    });
-    desenharTendenciaTemporal(baseTempo);
-}
-
-function inicializarFiltrosPerformance(base, tempoObj, pdvsPermitidosNomes = [], isRestrito = false) {
-    if (filtrosPerfInicializados) return;
-    
-    // Calcula o Mês Vigente Dinamicamente
-    const mesesDisponiveis = [...new Set(base.map(i => i.AnoMes))].filter(Boolean).sort();
-    let mesAtualStr = tempoObj ? String(tempoObj.mes).padStart(2, '0') + '/' + String(tempoObj.ano).slice(-2) : '';
-    if (!mesesDisponiveis.includes(mesAtualStr) && mesesDisponiveis.length > 0) {
-        mesAtualStr = mesesDisponiveis[mesesDisponiveis.length - 1]; 
-    }
-
-    // Se for Líder (1 loja só), o dropdown já trava nela. Se for Supervisor ou Master, começa em 'ALL'
-    let lojaInicial = 'ALL';
-    if (isRestrito && pdvsPermitidosNomes.length === 1) {
-        lojaInicial = pdvsPermitidosNomes[0];
-    }
-
-    AppState.perf = { 
-        top10: { pdv: lojaInicial, metrica: 'ALL' }, 
-        bottom10: { pdv: lojaInicial, metrica: 'ALL' }, 
-        mesVigente: mesAtualStr, 
-        meses: [mesAtualStr] 
-    };
-    
-    const pdvs = [...new Set(base.map(i => i.PDV))].filter(Boolean).sort();
-    
-    // Filtros de PDV (Exclusivos)
-    ['top10', 'bottom10'].forEach(id => {
-        const sel = document.getElementById(`filtro-pdv-${id}`);
-        if(sel) {
-            sel.innerHTML = ''; // Limpa opções antigas vazias
-            
-            // Texto adaptado para Supervisor (que vê as lojas dele juntas) vs Master (que vê tudo)
-            const txtAll = (isRestrito && pdvsPermitidosNomes.length > 1) ? "Todas as minhas Lojas" : "Escolha o PDV";
-            sel.add(new Option(txtAll, 'ALL'));
-
-            pdvs.forEach(p => sel.add(new Option(p, p)));
-            
-            sel.value = lojaInicial;
-            
-            // Trava o dropdown se for apenas 1 loja permitida
-            if (isRestrito && pdvsPermitidosNomes.length === 1) {
-                sel.disabled = true;
-                sel.style.opacity = '0.5';
-            }
-
-            sel.addEventListener('change', (e) => {
-                AppState.perf[id].pdv = e.target.value;
-                if(id === 'top10') desenharTop10(base);
-                else desenharBottom10(base);
-            });
-        }
-    });
-
-    // Filtros de Métrica/Categoria (Exclusivos)
-    document.querySelectorAll('.btn-perf-metric').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const targetChart = e.target.getAttribute('data-target-chart'); 
-            const val = e.target.getAttribute('data-metric');
-            
-            AppState.perf[targetChart].metrica = val;
-            
-            document.querySelectorAll(`.btn-perf-metric[data-target-chart="${targetChart}"]`).forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
-            
-            if(targetChart === 'top10') desenharTop10(base);
-            else desenharBottom10(base);
-        });
-    });
-
-    // Menu Dropdown Customizado de Meses (Tiers)
-    const containerMes = document.getElementById('container-filtro-mes-tier');
-    if (containerMes) {
-        let optionsHtml = '';
-        mesesDisponiveis.forEach(m => {
-            const checked = m === mesAtualStr ? 'checked' : '';
-            optionsHtml += `<label style="display: flex; gap: 8px; padding: 6px; cursor: pointer; color: #fff; font-size: 0.75rem;"><input type="checkbox" value="${m}" class="cb-filtro-mes-tier" ${checked}> ${m}</label>`;
-        });
-
-        containerMes.innerHTML = `
-            <div id="btn-drop-mes-tier" style="background: #1a1a1a; border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; cursor: pointer; color: var(--text-main); font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-weight: 600; min-width: 100px;">
-                <span id="lbl-drop-mes-tier">Mês: ${mesAtualStr}</span>
-                <span class="material-symbols-outlined" style="font-size: 16px;">expand_more</span>
-            </div>
-            <div id="list-drop-mes-tier" style="display: none; position: absolute; top: 100%; right: 0; width: 140px; background: #121212; border: 1px solid var(--border); border-radius: 6px; margin-top: 5px; max-height: 200px; overflow-y: auto; padding: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.8);">
-                ${optionsHtml}
-            </div>
-        `;
-
-        const btnDrop = document.getElementById('btn-drop-mes-tier');
-        const listDrop = document.getElementById('list-drop-mes-tier');
-        const cbs = document.querySelectorAll('.cb-filtro-mes-tier');
-        const lbl = document.getElementById('lbl-drop-mes-tier');
-
-        btnDrop.addEventListener('click', () => {
-            listDrop.style.display = listDrop.style.display === 'none' ? 'block' : 'none';
-        });
-
-        cbs.forEach(cb => cb.addEventListener('change', () => {
-            const selecionados = Array.from(cbs).filter(c => c.checked).map(c => c.value);
-            
-            if (selecionados.length === 0) {
-                cb.checked = true;
-                return;
-            }
-            
-            AppState.perf.meses = selecionados;
-            lbl.innerText = selecionados.length > 1 ? `Meses (${selecionados.length})` : `Mês: ${selecionados[0]}`;
-            desenharTiers(base);
-        }));
-
-        document.addEventListener('click', (e) => {
-            if(!containerMes.contains(e.target)) listDrop.style.display = 'none';
-        });
-    }
-
-    filtrosPerfInicializados = true;
-}
 
 function desenharTop10(base) {
     let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
@@ -1485,7 +1302,7 @@ function desenharTiers(base) {
         options: {
             responsive: true, maintainAspectRatio: false,
             plugins: { 
-                legend: { display: true, position: 'bottom', labels: { color: '#888', font: { size: 10 }, boxWidth: 12 } },
+                legend: { position: 'bottom', labels: { color: '#888', font: { size: 10 }, boxWidth: 12 } },
                 datalabels: {
                     color: '#fff', font: { size: 10, weight: 'bold' },
                     formatter: (v, ctx) => {
@@ -1508,13 +1325,10 @@ function desenharTiers(base) {
 function desenharTendenciaTemporal(baseTempo) {
     if (!baseTempo || baseTempo.length === 0) return;
 
-    // Ordena do mais antigo para o mais novo para garantir que o corte da linha do tempo funcione
     const baseOrdenada = [...baseTempo].sort((a,b) => new Date(a.data) - new Date(b.data));
-
     const agrupado = {};
     
     baseOrdenada.forEach(dia => {
-        // 'T12:00:00' evita bug de fuso horário voltar 1 dia para trás
         const dataOriginal = new Date(dia.data + 'T12:00:00'); 
         let chaveLabel = '';
 
@@ -1530,18 +1344,15 @@ function desenharTendenciaTemporal(baseTempo) {
         agrupado[chaveLabel] = (agrupado[chaveLabel] || 0) + (dia.faturamento || 0);
     });
 
-    // --- CORTE ESTUDADO: 6 MESES OU 10 QUINZENAS ---
     let chaves = Object.keys(agrupado);
     const limite = agrupamentoTempoAtual === 'mes' ? 6 : 10;
     
-    // Se passar do limite, fatia pegando apenas os últimos valores do array
     if (chaves.length > limite) {
         chaves = chaves.slice(-limite);
     }
 
     const labelsFinais = chaves;
     const valoresFinais = chaves.map(c => agrupado[c]);
-    // --- FIM DO CORTE ---
 
     const ctx = document.getElementById('chart-tendencia-tempo');
     if (!ctx) return;
@@ -1586,7 +1397,6 @@ function desenharTendenciaTemporal(baseTempo) {
 window.isModoTV = false;
 let loopTVInterval = null;
 let currentViewIndex = 0;
-// Lista exata com o data-target de cada botão do menu lateral
 const viewsTv = ['visao-geral', 'visao-unidades', 'visao-vendedores', 'visao-performance'];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -1597,33 +1407,27 @@ document.addEventListener('DOMContentLoaded', () => {
             window.isModoTV = !window.isModoTV;
 
             if (window.isModoTV) {
-                // LIGA MODO TV
                 btnModoTV.classList.add('ativo');
-                document.body.classList.add('tv-mode'); // CSS esconde a sidebar
+                document.body.classList.add('tv-mode'); 
                 
-                // Força Tela Cheia (Fullscreen API)
                 if (document.documentElement.requestFullscreen) {
-                    document.documentElement.requestFullscreen().catch(e => console.log("Fullscreen bloqueado pelo navegador.", e));
+                    document.documentElement.requestFullscreen().catch(e => console.log("Fullscreen bloqueado.", e));
                 }
 
-                // Inicia o Loop a cada 30 segundos (30000 milissegundos)
                 loopTVInterval = setInterval(() => {
                     currentViewIndex = (currentViewIndex + 1) % viewsTv.length;
                     const nextTarget = viewsTv[currentViewIndex];
                     
-                    // Simula o clique no botão do menu para disparar os eventos corretamente (títulos, refilters)
                     const btnNav = document.querySelector(`.nav-item[data-target="${nextTarget}"]`);
                     if (btnNav) btnNav.click();
                     
                 }, 30000); 
 
             } else {
-                // DESLIGA MODO TV
                 btnModoTV.classList.remove('ativo');
                 document.body.classList.remove('tv-mode');
                 clearInterval(loopTVInterval);
                 
-                // Sai da Tela Cheia
                 if (document.fullscreenElement) {
                     document.exitFullscreen().catch(e => console.log("Erro ao sair do fullscreen.", e));
                 }

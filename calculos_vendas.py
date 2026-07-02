@@ -213,24 +213,32 @@ def preparar_analise_geral_completa(db):
 #? Cruza Fato, Dimensão e aplica rateio de metas proporcionais
 def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
     df_snap = db['vendas_snapshot'].copy()
-    df_lojas = db['dim_lojas'].copy()
+    
+    #* BLINDAGEM 1: Evita que o cadastro da loja duplique as vendas
+    df_lojas = db['dim_lojas'].copy().drop_duplicates(subset=['ID LOJA'])
 
-    #* TRATAMENTO: LIMPEZA DE DADOS (DEDUPLICAÇÃO)
+    #* TRATAMENTO: LIMPEZA DE DADOS
     df_snap['VENDEDOR'] = df_snap['VENDEDOR'].astype(str).str.replace(r'\s*\(\s*\d+\s*\)$', '', regex=True).str.strip().str.upper()
+    df_snap['Date_Str'] = df_snap['Date'].dt.strftime('%Y-%m-%d')
 
-    #* 1. Agrupamento Básico do Vendedor
+    #* Extrato diário por vendedor para alimentar o Filtro de Período da página
+    df_vend_daily = df_snap.groupby(['ID VENDEDOR', 'Date_Str']).agg({
+        'REALIZADO': 'sum', 'N_VENDAS': 'sum', 'QTD_PEÇAS': 'sum'
+    }).reset_index()
+
+    #* 1. Agrupamento Básico do Vendedor (Somatório limpo na origem)
     base_vend = df_snap.groupby(['ID VENDEDOR', 'VENDEDOR', 'ID LOJA']).agg({
         'REALIZADO': 'sum',
         'QTD_PEÇAS': 'sum',
         'N_VENDAS': 'sum'
     }).reset_index()
 
-    #* 2. Pivot de Categorias (Gera colunas: CEL, ACE, SOM, PRT)
-    cat_vend = df_snap.groupby(['ID VENDEDOR', 'CATEGORIA'])['REALIZADO'].sum().unstack(fill_value=0).reset_index()
+    #* 2. Pivot de Categorias (BLINDAGEM 2: Agrupa por Vendedor E Loja juntos para evitar Produto Cartesiano)
+    cat_vend = df_snap.groupby(['ID VENDEDOR', 'ID LOJA', 'CATEGORIA'])['REALIZADO'].sum().unstack(fill_value=0).reset_index()
     for c in ['CEL', 'ACE', 'SOM', 'PRT']:
         if c not in cat_vend: cat_vend[c] = 0
 
-    base_vend = base_vend.merge(cat_vend[['ID VENDEDOR', 'CEL', 'ACE', 'SOM', 'PRT']], on='ID VENDEDOR', how='left').fillna(0)
+    base_vend = base_vend.merge(cat_vend[['ID VENDEDOR', 'ID LOJA', 'CEL', 'ACE', 'SOM', 'PRT']], on=['ID VENDEDOR', 'ID LOJA'], how='left').fillna(0)
 
     #* 3. Merge com Lojas para puxar Atributos (ID TIPO)
     base_vend = base_vend.merge(df_lojas[['ID LOJA', 'ID TIPO']], on='ID LOJA', how='left')
@@ -239,6 +247,7 @@ def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
     if not df_metas_vend.empty:
         metas = df_metas_vend[['ID_VENDEDOR', 'META_GERAL', 'META_ACE', 'META_PRT']].copy()
         metas['ID_VENDEDOR'] = metas['ID_VENDEDOR'].astype(str)
+        metas = metas.drop_duplicates(subset=['ID_VENDEDOR'], keep='last')
         base_vend = base_vend.merge(metas, left_on='ID VENDEDOR', right_on='ID_VENDEDOR', how='left')
     else:
         base_vend['META_GERAL'] = np.nan
@@ -255,6 +264,7 @@ def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
         metas_loja = df_metas_pdv[['ID_LOJA', 'META_GERAL', 'META_ACE', 'META_PRT']].copy()
         metas_loja.columns = ['ID LOJA', 'META_LOJA_GERAL', 'META_LOJA_ACE', 'META_LOJA_PRT']
         metas_loja['ID LOJA'] = metas_loja['ID LOJA'].astype(str)
+        metas_loja = metas_loja.drop_duplicates(subset=['ID LOJA'], keep='last')
         base_vend = base_vend.merge(metas_loja, on='ID LOJA', how='left')
     else:
         base_vend['META_LOJA_GERAL'] = 0
@@ -277,7 +287,15 @@ def preparar_base_vendedores_completa(db, df_metas_pdv, df_metas_vend):
         'ID LOJA': 'ID_LOJA'
     }, inplace=True)
 
-    return base_vend.to_dict(orient='records')
+    dict_vend = base_vend.to_dict(orient='records')
+    
+    #* 7. Acoplamento do extrato diário em cada registro de vendedor para o filtro de datas
+    for v in dict_vend:
+        id_v = v['ID VENDEDOR']
+        hist = df_vend_daily[df_vend_daily['ID VENDEDOR'] == id_v]
+        v['historico_diario'] = hist.rename(columns={'Date_Str': 'Date'}).to_dict(orient='records')
+
+    return dict_vend
 
 #TODO ==> 4.6 PERFORMANCE DE PRODUTOS E TEMPO (NOVO MOTOR DE LIMPEZA INTELIGENTE)
 #? Função avançada para extrair o Modelo Canônico e a Capacidade (GB/RAM)
