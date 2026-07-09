@@ -188,6 +188,12 @@ function processarEDataRender() {
 
     renderVisaoVendedores(baseLocal);
 
+    if (!AppState.perf.mesVigente && dadosDashboard.produtos && dadosDashboard.produtos.length > 0) {
+    const mesesDisponiveis = [...new Set(dadosDashboard.produtos.map(p => p.AnoMes))].sort();
+    AppState.perf.mesVigente = mesesDisponiveis[mesesDisponiveis.length - 1]; // mês mais recente
+    AppState.perf.meses = mesesDisponiveis.slice(-4); // últimos 4 meses, para o gráfico de Tiers
+}
+
     if (typeof renderVisaoPerformance === 'function') {
         renderVisaoPerformance(); 
     }

@@ -15,6 +15,7 @@ def rodar_sistema():
     # 2. Processa cálculos e exporta para dashboard/dados.js
     # Passamos os 3 objetos necessários para o calculos_vendas.py
     sucesso = exportar_dados_dashboard(db, metas_pdv, metas_vend)
+    print(len(metas_pdv))
     
     if sucesso:
         print("🏁 PROCESSO FINALIZADO COM SUCESSO!")
