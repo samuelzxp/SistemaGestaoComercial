@@ -5,12 +5,13 @@ import { getDatabase, ref, set, get, child, update, remove, push } from "https:/
 
 // Suas Chaves do Cofre (Realtime Database)
 const firebaseConfig = {
-  apiKey: "AIzaSyAtL1r7Z8k9V90Xq-jxvO7WN7wdUUF4JCM",
-  authDomain: "phonestore-dashboard.firebaseapp.com",
-  projectId: "phonestore-dashboard",
-  storageBucket: "phonestore-dashboard.firebasestorage.app",
-  messagingSenderId: "1040405872269",
-  appId: "1:1040405872269:web:488619c22b66051f386cc4"
+  apiKey: "AIzaSyBxaDRtzS_bK3FO-D8pmyRJdRgHYdn4cvQ",
+  authDomain: "sistemagestaocomercial-cf852.firebaseapp.com",
+  databaseURL: "https://sistemagestaocomercial-cf852-default-rtdb.firebaseio.com",
+  projectId: "sistemagestaocomercial-cf852",
+  storageBucket: "sistemagestaocomercial-cf852.firebasestorage.app",
+  messagingSenderId: "406570306421",
+  appId: "1:406570306421:web:153b6f3e2440a9a295613c"
 };
 
 // Inicializando os Sistemas
