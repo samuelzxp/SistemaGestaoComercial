@@ -5,7 +5,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 #* CONFIGURAÇÃO DE CAMINHOS
-CAMINHO_DB = r"C:\Users\PHONE STORE\Documents\Análise de Dados PHONE STORE\Dados Phone Store Base.xlsx"
+CAMINHO_DB = r"C:\Users\ti\OneDrive\Documentos\Análise de Dados PHONE STORE\Dados Phone Store Base.xlsx"
 URL_BANCO = "https://sistemagestaocomercial-cf852-default-rtdb.firebaseio.com/"
 
 #TODO ==> 0. PROTOCOLO DE ENVIO PARA O FIREBASE
