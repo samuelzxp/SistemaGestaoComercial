@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     configurarEventosFiltro();
     configurarEventosTabela();
     configurarEventosRanking(); 
+    configurarEventosPerformance();
     iniciarRoteamento(); 
     
     atualizarRelogio();
@@ -484,6 +485,11 @@ function renderVisaoVendedores(baseUnidadesLocal) {
 
 let chartRankingInstancia = null;
 let chartRegioesInstancia = null; 
+let chartTop10 = null;
+let chartBottom10 = null;
+let chartTier = null;
+let chartTempo = null;
+let agrupamentoTempoAtual = 'mes';
 
 function desenharGraficoRanking(id, labels, valores, metrica) {
     const ctx = document.getElementById(id);
@@ -1168,6 +1174,65 @@ function atualizarRelogio() { const el = document.getElementById('relogio'); if 
 // ==========================================
 // [PERF] MÓDULOS DA VISÃO PERFORMANCE (PRODUTOS)
 // ==========================================
+
+function renderVisaoPerformance() {
+    const d = dadosDashboard;
+    if (!d || !d.produtos) return;
+
+    ['filtro-pdv-top10', 'filtro-pdv-bottom10'].forEach(id => {
+        const sel = document.getElementById(id);
+        if (sel && !sel.dataset.populated) {
+            const pdvsUnicos = [...new Set(d.produtos.map(p => p.PDV))].filter(Boolean).sort();
+            pdvsUnicos.forEach(pdv => {
+                const opt = document.createElement('option');
+                opt.value = pdv;
+                opt.innerText = pdv;
+                sel.appendChild(opt);
+            });
+            sel.dataset.populated = "true";
+        }
+    });
+
+    desenharTop10(d.produtos);
+    desenharBottom10(d.produtos);
+    desenharTiers(d.produtos);
+    desenharTendenciaTemporal(d.historico_dias);
+}
+
+function configurarEventosPerformance() {
+    document.querySelectorAll('.btn-ranking-metric[data-target-chart]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const chart = e.currentTarget.getAttribute('data-target-chart');
+            const metrica = e.currentTarget.getAttribute('data-metric');
+
+            document.querySelectorAll(`.btn-ranking-metric[data-target-chart="${chart}"]`).forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            AppState.perf[chart].metrica = metrica;
+
+            if (chart === 'top10') desenharTop10(dadosDashboard.produtos);
+            else desenharBottom10(dadosDashboard.produtos);
+        });
+    });
+
+    ['filtro-pdv-top10', 'filtro-pdv-bottom10'].forEach(id => {
+        const sel = document.getElementById(id);
+        if (sel) sel.addEventListener('change', (e) => {
+            const chart = id.includes('top10') ? 'top10' : 'bottom10';
+            AppState.perf[chart].pdv = e.target.value;
+            if (chart === 'top10') desenharTop10(dadosDashboard.produtos);
+            else desenharBottom10(dadosDashboard.produtos);
+        });
+    });
+
+    document.querySelectorAll('.button-group-time .btn-time').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            document.querySelectorAll('.button-group-time .btn-time').forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            agrupamentoTempoAtual = e.currentTarget.getAttribute('data-agrupamento');
+            desenharTendenciaTemporal(dadosDashboard.historico_dias);
+        });
+    });
+}
 
 function desenharTop10(base) {
     let baseFiltrada = base.filter(i => i.AnoMes === AppState.perf.mesVigente);
