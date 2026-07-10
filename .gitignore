@@ -13,3 +13,6 @@ __pycache__/
 # Ignorar as chaves de acesso do banco de dados
 firebase-key.json
 
+teste-firebase.py
+
+criar_usuario_master.py
