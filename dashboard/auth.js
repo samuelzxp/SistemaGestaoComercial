@@ -132,22 +132,29 @@ function mascararEmail(email) {
 // REGRA MASTER DE SEGURANÇA 2: INATIVIDADE
 // ==========================================
 let tempoInativo;
+const TEMPO_LIMITE_INATIVIDADE = 15 * 60 * 1000; // 15 minutos
 
 function resetarTimer() {
+    if (document.hidden) return; // não conta tempo enquanto a aba está em segundo plano
     clearTimeout(tempoInativo);
     
-    // 90000 ms = 1 minuto e 30 segundos
     tempoInativo = setTimeout(() => {
-        // A MÁGICA ACONTECE AQUI: Só desloga se houver usuário E o Modo TV estiver DESLIGADO
         if (window.usuarioLogado && !window.isModoTV) {
-            registrarLog('LOGOUT_INATIVIDADE', 'Sessão derrubada por 1m30s de inatividade', window.usuarioLogado.email);
-            alert("🔒 Sessão encerrada por inatividade de 1m 30s.");
+            registrarLog('LOGOUT_INATIVIDADE', 'Sessão derrubada por inatividade', window.usuarioLogado.email);
+            alert("🔒 Sessão encerrada por inatividade.");
             fazerLogout();
         }
-    }, 90000);
+    }, TEMPO_LIMITE_INATIVIDADE);
 }
 
-// Qualquer movimento na tela reseta a bomba-relógio
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        clearTimeout(tempoInativo); // pausa: trocar de aba não conta como inatividade
+    } else {
+        resetarTimer(); // retoma a contagem ao voltar pro dashboard
+    }
+});
+
 window.addEventListener('mousemove', resetarTimer);
 window.addEventListener('keypress', resetarTimer);
 window.addEventListener('click', resetarTimer);
