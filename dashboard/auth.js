@@ -1,6 +1,6 @@
 // Importações da versão mais moderna do Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, inMemoryPersistence, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence, browserLocalPersistence, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 import { getDatabase, ref, set, get, child, update, remove, push } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 
 // Suas Chaves do Cofre (Realtime Database)
@@ -38,13 +38,25 @@ window.registrarLog = async (acao, detalhes, ator = "Sistema") => {
 };
 
 // ==========================================
-// REGRA MASTER DE SEGURANÇA 1: LOGOUT NO F5
+// REGRA MASTER DE SEGURANÇA 1: PERSISTÊNCIA POR TIPO DE CONTA
 // ==========================================
-// Força o Firebase a NUNCA salvar a sessão no disco do navegador. Deu F5 = Deslogou.
-setPersistence(auth, inMemoryPersistence)
-  .catch((error) => {
-    console.error("Erro ao configurar persistência de segurança:", error);
-  });
+// Contas normais: sessão vive só na aba (F5 mantém o login; fechar a aba/navegador desloga).
+// Conta TV: sessão salva no navegador (sobrevive a reinício do aparelho).
+// A decisão vem do 'role' gravado no banco (usuarios/{uid}), que o próprio usuário não pode alterar.
+// Não chamamos setPersistence no carregamento da página: isso migraria a sessão da TV para a aba
+// a cada recarga. O tipo é definido no login (sessão de aba) e promovido a local só para role 'TV'.
+const ROLE_TV = 'TV';
+const CHAVE_ULTIMA_ATIVIDADE = 'sgc_ultima_atividade';
+
+function registrarAtividade() {
+    try { sessionStorage.setItem(CHAVE_ULTIMA_ATIVIDADE, String(Date.now())); } catch (e) { /* storage indisponível */ }
+}
+function lerUltimaAtividade() {
+    try { return Number(sessionStorage.getItem(CHAVE_ULTIMA_ATIVIDADE)) || 0; } catch (e) { return 0; }
+}
+function limparAtividade() {
+    try { sessionStorage.removeItem(CHAVE_ULTIMA_ATIVIDADE); } catch (e) { /* storage indisponível */ }
+}
 
 // Variável Global de Sessão
 window.usuarioLogado = null; 
@@ -137,9 +149,10 @@ const TEMPO_LIMITE_INATIVIDADE = 15 * 60 * 1000; // 15 minutos
 function resetarTimer() {
     if (document.hidden) return; // não conta tempo enquanto a aba está em segundo plano
     clearTimeout(tempoInativo);
+    if (window.usuarioLogado) registrarAtividade(); // permite checar inatividade mesmo após F5
     
     tempoInativo = setTimeout(() => {
-        if (window.usuarioLogado && !window.isModoTV) {
+        if (window.usuarioLogado && !window.isModoTV && window.usuarioLogado.role !== ROLE_TV) {
             registrarLog('LOGOUT_INATIVIDADE', 'Sessão derrubada por inatividade', window.usuarioLogado.email);
             alert("🔒 Sessão encerrada por inatividade.");
             fazerLogout();
@@ -206,6 +219,8 @@ loginForm.addEventListener('submit', async (e) => {
     const password = document.getElementById('login-password').value;
 
     try {
+        await setPersistence(auth, browserSessionPersistence); // padrão para todos; TV é promovida depois
+        registrarAtividade(); // login novo não pode herdar um horário de inatividade antigo da aba
         await signInWithEmailAndPassword(auth, email, password);
         registrarLog('LOGIN_SUCESSO', 'Usuário entrou no sistema', email);
     } catch (error) {
@@ -251,6 +266,23 @@ onAuthStateChanged(auth, async (user) => {
                 const userData = snapshot.val();
 
                 if (userData.status === 'aprovado' || userData.status === 'master') {
+                    // 0. Persistência por tipo de conta
+                    if (userData.role === ROLE_TV) {
+                        try {
+                            await setPersistence(auth, browserLocalPersistence); // migra a sessão atual para o disco
+                        } catch (erroPersist) {
+                            console.error("Falha ao salvar sessão da TV:", erroPersist);
+                        }
+                    } else {
+                        const ultima = lerUltimaAtividade();
+                        if (ultima && (Date.now() - ultima) > TEMPO_LIMITE_INATIVIDADE) {
+                            registrarLog('LOGOUT_INATIVIDADE', 'Sessão expirada por inatividade (detectada ao recarregar)', userData.email);
+                            limparAtividade();
+                            await signOut(auth);
+                            return;
+                        }
+                    }
+
                     // 1. Salva os dados do usuário na sessão
                     window.usuarioLogado = { uid: user.uid, nome: userData.nome, role: userData.role, loja_id: userData.loja_id, email: userData.email };
 
@@ -329,6 +361,7 @@ onAuthStateChanged(auth, async (user) => {
 // PAINEL MASTER & LOGOUT
 // ==========================================
 window.fazerLogout = () => {
+    limparAtividade();
     signOut(auth);
 };
 
@@ -384,6 +417,7 @@ async function carregarPainelMaster() {
                     <option value="DIRETOR" ${u.role === 'DIRETOR' ? 'selected' : ''}>Diretor (Vê Tudo)</option>
                     <option value="SUPERVISOR" ${u.role === 'SUPERVISOR' ? 'selected' : ''}>Supervisor (Múltiplas Lojas)</option>
                     <option value="LIDER" ${u.role === 'LIDER' ? 'selected' : ''}>Líder (1 Loja/Túnel)</option>
+                    <option value="TV" ${u.role === 'TV' ? 'selected' : ''}>TV (Só Exibição, Rede Completa)</option>
                 </select>
             </td>
             <td>
@@ -397,12 +431,14 @@ async function carregarPainelMaster() {
             </td>
             <td>
                 ${u.status === 'master' ? '<span style="color:#f8b518; font-size:10px; font-weight:bold;">DONO DO SISTEMA</span>' : `
-                    <button class="btn-time active btn-salvar-rh" data-uid="${uid}" style="font-size: 0.65rem;">
-                        ${u.status === 'pendente' ? 'Aprovar & Salvar' : 'Salvar'}
-                    </button>
-                    <button class="btn-time btn-rejeitar-rh" data-uid="${uid}" style="font-size: 0.65rem; border-color: #bd0000; color: #bd0000; margin-left: 5px;">
-                        Deletar
-                    </button>
+                    <div style="display: flex; gap: 5px; align-items: center; flex-wrap: nowrap;">
+                        <button class="btn-time active btn-salvar-rh" data-uid="${uid}" style="font-size: 0.65rem; white-space: nowrap;">
+                            ${u.status === 'pendente' ? 'Aprovar & Salvar' : 'Salvar'}
+                        </button>
+                        <button class="btn-time btn-rejeitar-rh" data-uid="${uid}" style="font-size: 0.65rem; border-color: #bd0000; color: #bd0000; white-space: nowrap;">
+                            Deletar
+                        </button>
+                    </div>
                 `}
             </td>
         `;
