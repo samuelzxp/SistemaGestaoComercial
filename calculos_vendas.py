@@ -451,11 +451,18 @@ def exportar_dados_dashboard(db_data, df_metas_pdv, df_metas_vend, caminho_desti
             "historico_dias": preparar_tendencia_temporal(db_data.get('vendas_cat_historico', pd.DataFrame()))
         }
         
+        #* Trava de segurança: blocos essenciais vazios zerariam o dashboard (o Firebase descarta listas vazias)
+        blocos_vazios = [chave for chave in ('unidades', 'vendedores') if not payload.get(chave)]
+        if blocos_vazios:
+            print(f"❌ Envio bloqueado: {', '.join(blocos_vazios)} saiu vazio. Confira as abas de metas e de vendas do mês.")
+            return False
+
         #* Converte o dicionário para o formato JSON nativo antes do upload
         dados_json_puros = json.loads(json.dumps(payload, default=str))
-        subir_para_firebase(dados_json_puros)
+        if not subir_para_firebase(dados_json_puros):
+            return False
         
-        print("✅ Sucesso: Métricas processadas e transmitidas com segurança para a Nuvem!")
+        print(f"✅ Sucesso: Métricas processadas e transmitidas com segurança para a Nuvem! ({len(payload['unidades'])} unidades, {len(payload['vendedores'])} vendedores)")
         return True
     except Exception as e:
         print(f"❌ Erro Crítico no Processamento/Envio: {e}")
