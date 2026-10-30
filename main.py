@@ -12,16 +12,22 @@ def rodar_sistema():
         print("❌ Abortando: Falha crítica na leitura dos arquivos Excel.")
         return
 
+    # 1.1 Trava de segurança: sem metas do mês, 'unidades' sairia vazio e zeraria o dashboard
+    ref_mes = f"{db['mes_vigente']:02d}/{db['ano_vigente']}"
+    if metas_pdv.empty:
+        print(f"❌ Abortando: a aba F_MetasPDV não tem linhas para {ref_mes}.")
+        print("   Nada foi enviado. O dashboard continua exibindo os dados anteriores.")
+        return
+    print(f"📋 Metas de loja carregadas para {ref_mes}: {len(metas_pdv)}")
+
     # 2. Processa cálculos e exporta para dashboard/dados.js
     # Passamos os 3 objetos necessários para o calculos_vendas.py
     sucesso = exportar_dados_dashboard(db, metas_pdv, metas_vend)
-    print(len(metas_pdv))
     
     if sucesso:
-        print("🏁 PROCESSO FINALIZADO COM SUCESSO!")
-        print("👉 Abra o arquivo index.html no navegador para visualizar.")
+        print("🏁 PROCESSO FINALIZADO COM SUCESSO! O dashboard já está com os dados novos.")
     else:
-        print("❌ Falha na geração do arquivo de saída (dados.js).")
+        print("❌ PROCESSO FINALIZADO COM FALHA: nada foi enviado. O dashboard continua com os dados anteriores.")
 
 if __name__ == "__main__":
     rodar_sistema()

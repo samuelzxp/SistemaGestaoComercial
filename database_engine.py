@@ -27,8 +27,10 @@ def subir_para_firebase(dados_completos):
         ref.set(dados_completos)
         
         print("✅ ALVO ATINGIDO! Nuvem atualizada com sucesso!")
+        return True
     except Exception as e:
         print(f"❌ Falha crítica no envio: {e}")
+        return False
 
 #TODO ==> 1. TRATAMENTO DE DADOS BÁSICOS
 #? Função auxiliar para limpeza de dados monetários (R$ -> Float)
